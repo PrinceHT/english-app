@@ -1525,19 +1525,16 @@ async function assessPronunciation(word, wavBlob, wordId){
   });
   if(!res.ok){ const t=await res.text(); throw new Error(`Azure ${res.status}: ${t.slice(0,120)}`); }
   const data = await res.json();
-  console.log('[Azure pronun]', JSON.stringify(data).slice(0,600));
-  const pa = data.NBest?.[0]?.PronunciationAssessment;
-  if(data.RecognitionStatus !== 'Success' || !pa){
-    const nbestKeys = data.NBest?.[0] ? Object.keys(data.NBest[0]).sort().join(',') : 'no-nbest';
-    const info = `${data.RecognitionStatus||'?'} | "${data.DisplayText||''}" | ${nbestKeys}`;
-    return {wordId, score:0, accuracy:0, fluency:0, completeness:0, recognized:data.DisplayText||'', failed:true, status:info};
+  const nb = data.NBest?.[0];
+  if(data.RecognitionStatus !== 'Success' || nb?.PronScore == null){
+    return {wordId, score:0, accuracy:0, fluency:0, completeness:0, recognized:data.DisplayText||'', failed:true, status:data.RecognitionStatus};
   }
   return {
     wordId,
-    score:        Math.round(pa.PronScore),
-    accuracy:     Math.round(pa.AccuracyScore),
-    fluency:      Math.round(pa.FluencyScore),
-    completeness: Math.round(pa.CompletenessScore),
+    score:        Math.round(nb.PronScore),
+    accuracy:     Math.round(nb.AccuracyScore),
+    fluency:      Math.round(nb.FluencyScore),
+    completeness: Math.round(nb.CompletenessScore),
     recognized:   (data.DisplayText||'').replace(/\.$/, '')
   };
 }
