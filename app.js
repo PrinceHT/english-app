@@ -1027,6 +1027,7 @@ const WORDS = [
   {id:1000, word:"themselves", ipa:"/ðəmˈselvz/", pos:"pronoun", level:1, vi:"chính họ, tự họ", examples:[{en:"They built the house themselves.", vi:"Họ tự xây ngôi nhà."},{en:"The children enjoyed themselves.", vi:"Bọn trẻ chơi vui vẻ."}]}
 ];
 const WORD_MAP = Object.fromEntries(WORDS.map(w=>[w.id,w]));
+const STATUS = { NEW: 'new', LEARNING: 'learning', KNOWN: 'known' };
 
 /* =================================================================
    1b) FIREBASE CONFIG — điền 6 giá trị sau khi tạo Firebase project
@@ -1049,11 +1050,11 @@ if (USE_FIREBASE) {
 }
 
 /* =================================================================
-   1c) AZURE SPEECH CONFIG — chấm điểm phát âm
+   1c) AZURE SPEECH CONFIG — chấm điểm phát âm qua Cloudflare Worker proxy
+       Sau khi deploy worker/, điền URL vào đây. Key không còn ở client.
    ================================================================= */
-const AZURE_KEY    = "BBWFrbBBOkHCng0Tc1ABRN14hve7LGr9Y0JCld5SyRbw1iraMdvOJQQJ99CEACi5YpzXJ3w3AAAYACOGnmY7";
-const AZURE_REGION = "northeurope";
-const USE_AZURE    = true;
+const WORKER_URL = "https://english-app-azure-proxy.tuanvu-kttt.workers.dev";
+const USE_AZURE  = WORKER_URL !== "FILL_IN_AFTER_DEPLOY";
 
 /* =================================================================
    2) LỚP LƯU TRỮ — localStorage, tự chuyển sang bộ nhớ tạm
@@ -1506,24 +1507,19 @@ function pcmToWav(pcm, rate){
 }
 
 async function assessPronunciation(word, wavBlob, wordId){
-  const cfg = btoa(JSON.stringify({
-    ReferenceText: word,
-    GradingSystem: "HundredMark",
-    Granularity: "Phoneme",
-    Dimension: "Comprehensive",
-    EnableMiscue: false
-  }));
-  const url = `https://${AZURE_REGION}.stt.speech.microsoft.com/speech/recognition/conversation/cognitiveservices/v1?language=en-US&format=detailed`;
-  const res = await fetch(url, {
-    method:'POST',
-    headers:{
-      'Ocp-Apim-Subscription-Key': AZURE_KEY,
-      'Content-Type': 'audio/wav; codecs=audio/pcm; samplerate=16000',
-      'Pronunciation-Assessment': cfg
-    },
-    body: wavBlob
+  const audioBase64 = await new Promise((resolve, reject) => {
+    const reader = new FileReader();
+    reader.onload = () => resolve(reader.result.split(',')[1]);
+    reader.onerror = reject;
+    reader.readAsDataURL(wavBlob);
   });
-  if(!res.ok){ const t=await res.text(); throw new Error(`Azure ${res.status}: ${t.slice(0,120)}`); }
+
+  const res = await fetch(WORKER_URL, {
+    method: 'POST',
+    headers: { 'Content-Type': 'application/json' },
+    body: JSON.stringify({ word, audioBase64 })
+  });
+  if(!res.ok){ const t=await res.text(); throw new Error(`Worker ${res.status}: ${t.slice(0,120)}`); }
   const data = await res.json();
   const nb = data.NBest?.[0];
   if(data.RecognitionStatus !== 'Success' || nb?.PronScore == null){

@@ -1,4 +1,4 @@
-const CACHE = 'vocab-v2';
+const CACHE = 'vocab-20260531';
 const ASSETS = [
   './',
   './index.html',

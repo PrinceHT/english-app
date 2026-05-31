@@ -1,0 +1,6 @@
+name = "english-app-azure-proxy"
+main = "index.js"
+compatibility_date = "2024-01-01"
+
+# Run: wrangler secret put AZURE_KEY
+# Run: wrangler secret put AZURE_REGION
