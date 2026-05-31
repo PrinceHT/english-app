@@ -123,11 +123,11 @@ Firestore SDK có offline persistence sẵn — khi mất mạng vẫn đọc/gh
 
 ### Checklist
 
-- [ ] **3.1** Tạo Firebase project, enable Auth + Firestore
-- [ ] **3.2** Thêm Firebase SDK vào `index.html`
-- [ ] **3.3** Màn hình đăng nhập — Google Sign-In (1 click)
-- [ ] **3.4** Thay `Store` layer bằng Firestore (giữ localStorage làm fallback offline/guest)
-- [ ] **3.5** Sync 2 chiều: load từ Firestore khi mở app, write ngay khi mark từ
+- [ ] **3.1** Tạo Firebase project, enable Auth + Firestore ← **BẠN LÀM (5 phút)**
+- [x] **3.2** Thêm Firebase SDK vào `index.html`
+- [x] **3.3** Màn hình đăng nhập — Google Sign-In (1 click)
+- [x] **3.4** Thay `Store` layer bằng Firestore (giữ localStorage làm fallback offline/guest)
+- [x] **3.5** Sync 2 chiều: load từ Firestore khi mở app, write ngay khi mark từ
 - [ ] **3.6** Test: học trên điện thoại → mở trên máy tính → tiến độ đồng bộ
 - [ ] **3.7** Test: tắt wifi → học → bật lại → data sync đúng
 

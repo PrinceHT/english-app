@@ -1,4 +1,4 @@
-const CACHE = 'vocab-v1';
+const CACHE = 'vocab-v2';
 const ASSETS = [
   './',
   './index.html',
@@ -29,10 +29,12 @@ self.addEventListener('activate', e => {
 
 self.addEventListener('fetch', e => {
   if (!e.request.url.startsWith('http')) return;
+  // Only cache same-origin assets — let Firebase/Google APIs go through the browser
+  if (new URL(e.request.url).origin !== self.location.origin) return;
   e.respondWith(
     caches.match(e.request).then(cached => {
       const fetchAndCache = fetch(e.request).then(res => {
-        if (res && res.status === 200 && res.type !== 'opaque') {
+        if (res && res.status === 200) {
           caches.open(CACHE).then(c => c.put(e.request, res.clone()));
         }
         return res;
