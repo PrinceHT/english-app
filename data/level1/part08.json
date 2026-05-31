@@ -1,0 +1,902 @@
+[
+  {
+    "id": 351,
+    "word": "famous",
+    "ipa": "/ˈfeɪməs/",
+    "pos": "adjective",
+    "level": 1,
+    "vi": "nổi tiếng",
+    "examples": [
+      {
+        "en": "He is a famous singer.",
+        "vi": "Anh ấy là một ca sĩ nổi tiếng."
+      },
+      {
+        "en": "This city is famous for its food.",
+        "vi": "Thành phố này nổi tiếng về ẩm thực."
+      }
+    ]
+  },
+  {
+    "id": 352,
+    "word": "fine",
+    "ipa": "/faɪn/",
+    "pos": "adjective",
+    "level": 1,
+    "vi": "ổn, khỏe, tốt",
+    "examples": [
+      {
+        "en": "I am fine, thank you.",
+        "vi": "Tôi khỏe, cảm ơn."
+      },
+      {
+        "en": "Everything will be fine.",
+        "vi": "Mọi chuyện sẽ ổn thôi."
+      }
+    ]
+  },
+  {
+    "id": 353,
+    "word": "funny",
+    "ipa": "/ˈfʌni/",
+    "pos": "adjective",
+    "level": 1,
+    "vi": "buồn cười, hài hước",
+    "examples": [
+      {
+        "en": "That movie is very funny.",
+        "vi": "Bộ phim đó rất hài."
+      },
+      {
+        "en": "He told a funny story.",
+        "vi": "Anh ấy kể một câu chuyện vui."
+      }
+    ]
+  },
+  {
+    "id": 354,
+    "word": "great",
+    "ipa": "/ɡreɪt/",
+    "pos": "adjective",
+    "level": 1,
+    "vi": "tuyệt vời; vĩ đại",
+    "examples": [
+      {
+        "en": "You did a great job!",
+        "vi": "Bạn làm rất tốt!"
+      },
+      {
+        "en": "We had a great time.",
+        "vi": "Chúng tôi đã có khoảng thời gian tuyệt vời."
+      }
+    ]
+  },
+  {
+    "id": 355,
+    "word": "heavy",
+    "ipa": "/ˈhevi/",
+    "pos": "adjective",
+    "level": 1,
+    "vi": "nặng",
+    "examples": [
+      {
+        "en": "This bag is too heavy.",
+        "vi": "Cái túi này nặng quá."
+      },
+      {
+        "en": "It was a heavy rain.",
+        "vi": "Đó là một cơn mưa lớn."
+      }
+    ]
+  },
+  {
+    "id": 356,
+    "word": "kind",
+    "ipa": "/kaɪnd/",
+    "pos": "adjective",
+    "level": 1,
+    "vi": "tử tế, tốt bụng",
+    "examples": [
+      {
+        "en": "She is very kind.",
+        "vi": "Cô ấy rất tốt bụng."
+      },
+      {
+        "en": "Thank you, that's very kind.",
+        "vi": "Cảm ơn, bạn thật tốt bụng."
+      }
+    ]
+  },
+  {
+    "id": 357,
+    "word": "lucky",
+    "ipa": "/ˈlʌki/",
+    "pos": "adjective",
+    "level": 1,
+    "vi": "may mắn",
+    "examples": [
+      {
+        "en": "You are so lucky!",
+        "vi": "Bạn thật may mắn!"
+      },
+      {
+        "en": "Seven is my lucky number.",
+        "vi": "Bảy là con số may mắn của tôi."
+      }
+    ]
+  },
+  {
+    "id": 358,
+    "word": "modern",
+    "ipa": "/ˈmɑːdərn/",
+    "pos": "adjective",
+    "level": 1,
+    "vi": "hiện đại",
+    "examples": [
+      {
+        "en": "They live in a modern house.",
+        "vi": "Họ sống trong một ngôi nhà hiện đại."
+      },
+      {
+        "en": "I like modern art.",
+        "vi": "Tôi thích nghệ thuật hiện đại."
+      }
+    ]
+  },
+  {
+    "id": 359,
+    "word": "near",
+    "ipa": "/nɪr/",
+    "pos": "adjective / preposition",
+    "level": 1,
+    "vi": "gần",
+    "examples": [
+      {
+        "en": "The shop is near my house.",
+        "vi": "Cửa hàng ở gần nhà tôi."
+      },
+      {
+        "en": "Is the station near?",
+        "vi": "Nhà ga có gần không?"
+      }
+    ]
+  },
+  {
+    "id": 360,
+    "word": "far",
+    "ipa": "/fɑːr/",
+    "pos": "adjective / adverb",
+    "level": 1,
+    "vi": "xa",
+    "examples": [
+      {
+        "en": "The airport is very far.",
+        "vi": "Sân bay rất xa."
+      },
+      {
+        "en": "How far is it?",
+        "vi": "Nó xa bao nhiêu?"
+      }
+    ]
+  },
+  {
+    "id": 361,
+    "word": "perfect",
+    "ipa": "/ˈpɜːrfɪkt/",
+    "pos": "adjective",
+    "level": 1,
+    "vi": "hoàn hảo",
+    "examples": [
+      {
+        "en": "This is the perfect place for a picnic.",
+        "vi": "Đây là nơi hoàn hảo để dã ngoại."
+      },
+      {
+        "en": "Nobody is perfect.",
+        "vi": "Không ai hoàn hảo cả."
+      }
+    ]
+  },
+  {
+    "id": 362,
+    "word": "pretty",
+    "ipa": "/ˈprɪti/",
+    "pos": "adjective / adverb",
+    "level": 1,
+    "vi": "xinh, đẹp; (trạng từ) khá",
+    "examples": [
+      {
+        "en": "She is very pretty.",
+        "vi": "Cô ấy rất xinh."
+      },
+      {
+        "en": "It is pretty cold today.",
+        "vi": "Hôm nay trời khá lạnh."
+      }
+    ]
+  },
+  {
+    "id": 363,
+    "word": "quiet",
+    "ipa": "/ˈkwaɪət/",
+    "pos": "adjective",
+    "level": 1,
+    "vi": "yên tĩnh, im lặng",
+    "examples": [
+      {
+        "en": "Please be quiet.",
+        "vi": "Vui lòng giữ im lặng."
+      },
+      {
+        "en": "It is a quiet street.",
+        "vi": "Đó là một con phố yên tĩnh."
+      }
+    ]
+  },
+  {
+    "id": 364,
+    "word": "sad",
+    "ipa": "/sæd/",
+    "pos": "adjective",
+    "level": 1,
+    "vi": "buồn",
+    "examples": [
+      {
+        "en": "Why do you look sad?",
+        "vi": "Sao trông bạn buồn vậy?"
+      },
+      {
+        "en": "It is a sad story.",
+        "vi": "Đó là một câu chuyện buồn."
+      }
+    ]
+  },
+  {
+    "id": 365,
+    "word": "safe",
+    "ipa": "/seɪf/",
+    "pos": "adjective",
+    "level": 1,
+    "vi": "an toàn",
+    "examples": [
+      {
+        "en": "This place is safe.",
+        "vi": "Nơi này an toàn."
+      },
+      {
+        "en": "Drive safely and stay safe.",
+        "vi": "Lái xe cẩn thận và giữ an toàn nhé."
+      }
+    ]
+  },
+  {
+    "id": 366,
+    "word": "about",
+    "ipa": "/əˈbaʊt/",
+    "pos": "preposition / adverb",
+    "level": 1,
+    "vi": "về (chủ đề); khoảng chừng",
+    "examples": [
+      {
+        "en": "Tell me about your day.",
+        "vi": "Kể tôi nghe về ngày của bạn."
+      },
+      {
+        "en": "It costs about ten dollars.",
+        "vi": "Nó giá khoảng mười đô la."
+      }
+    ]
+  },
+  {
+    "id": 367,
+    "word": "after",
+    "ipa": "/ˈæftər/",
+    "pos": "preposition",
+    "level": 1,
+    "vi": "sau, sau khi",
+    "examples": [
+      {
+        "en": "Let's meet after lunch.",
+        "vi": "Mình gặp nhau sau bữa trưa nhé."
+      },
+      {
+        "en": "She came after me.",
+        "vi": "Cô ấy đến sau tôi."
+      }
+    ]
+  },
+  {
+    "id": 368,
+    "word": "before",
+    "ipa": "/bɪˈfɔːr/",
+    "pos": "preposition",
+    "level": 1,
+    "vi": "trước, trước khi",
+    "examples": [
+      {
+        "en": "Wash your hands before dinner.",
+        "vi": "Rửa tay trước bữa tối."
+      },
+      {
+        "en": "I have seen this before.",
+        "vi": "Tôi đã thấy cái này trước đây."
+      }
+    ]
+  },
+  {
+    "id": 369,
+    "word": "around",
+    "ipa": "/əˈraʊnd/",
+    "pos": "preposition / adverb",
+    "level": 1,
+    "vi": "quanh, xung quanh; khoảng",
+    "examples": [
+      {
+        "en": "We walked around the lake.",
+        "vi": "Chúng tôi đi dạo quanh hồ."
+      },
+      {
+        "en": "She will arrive around noon.",
+        "vi": "Cô ấy sẽ đến khoảng trưa."
+      }
+    ]
+  },
+  {
+    "id": 370,
+    "word": "away",
+    "ipa": "/əˈweɪ/",
+    "pos": "adverb",
+    "level": 1,
+    "vi": "đi xa, ra xa",
+    "examples": [
+      {
+        "en": "Go away, please.",
+        "vi": "Đi chỗ khác đi."
+      },
+      {
+        "en": "The school is two miles away.",
+        "vi": "Trường học cách đây hai dặm."
+      }
+    ]
+  },
+  {
+    "id": 371,
+    "word": "back",
+    "ipa": "/bæk/",
+    "pos": "adverb",
+    "level": 1,
+    "vi": "trở lại, về lại",
+    "examples": [
+      {
+        "en": "I will be back soon.",
+        "vi": "Tôi sẽ quay lại sớm."
+      },
+      {
+        "en": "Give it back to me.",
+        "vi": "Trả nó lại cho tôi."
+      }
+    ]
+  },
+  {
+    "id": 372,
+    "word": "down",
+    "ipa": "/daʊn/",
+    "pos": "adverb / preposition",
+    "level": 1,
+    "vi": "xuống, ở dưới",
+    "examples": [
+      {
+        "en": "Sit down, please.",
+        "vi": "Mời ngồi xuống."
+      },
+      {
+        "en": "The price went down.",
+        "vi": "Giá đã giảm xuống."
+      }
+    ]
+  },
+  {
+    "id": 373,
+    "word": "up",
+    "ipa": "/ʌp/",
+    "pos": "adverb / preposition",
+    "level": 1,
+    "vi": "lên, ở trên",
+    "examples": [
+      {
+        "en": "Stand up, please.",
+        "vi": "Vui lòng đứng lên."
+      },
+      {
+        "en": "Prices are going up.",
+        "vi": "Giá cả đang tăng lên."
+      }
+    ]
+  },
+  {
+    "id": 374,
+    "word": "out",
+    "ipa": "/aʊt/",
+    "pos": "adverb",
+    "level": 1,
+    "vi": "ra ngoài",
+    "examples": [
+      {
+        "en": "Let's go out tonight.",
+        "vi": "Tối nay mình ra ngoài nhé."
+      },
+      {
+        "en": "He went out an hour ago.",
+        "vi": "Anh ấy ra ngoài một tiếng trước."
+      }
+    ]
+  },
+  {
+    "id": 375,
+    "word": "soon",
+    "ipa": "/suːn/",
+    "pos": "adverb",
+    "level": 1,
+    "vi": "sớm, chẳng bao lâu nữa",
+    "examples": [
+      {
+        "en": "See you soon!",
+        "vi": "Hẹn sớm gặp lại!"
+      },
+      {
+        "en": "The bus will come soon.",
+        "vi": "Xe buýt sắp đến rồi."
+      }
+    ]
+  },
+  {
+    "id": 376,
+    "word": "then",
+    "ipa": "/ðen/",
+    "pos": "adverb",
+    "level": 1,
+    "vi": "sau đó, rồi; khi đó",
+    "examples": [
+      {
+        "en": "We ate, then we left.",
+        "vi": "Chúng tôi ăn, rồi rời đi."
+      },
+      {
+        "en": "See you then.",
+        "vi": "Hẹn gặp lúc đó nhé."
+      }
+    ]
+  },
+  {
+    "id": 377,
+    "word": "too",
+    "ipa": "/tuː/",
+    "pos": "adverb",
+    "level": 1,
+    "vi": "cũng; quá (mức)",
+    "examples": [
+      {
+        "en": "I want to come too.",
+        "vi": "Tôi cũng muốn đến."
+      },
+      {
+        "en": "It is too hot today.",
+        "vi": "Hôm nay nóng quá."
+      }
+    ]
+  },
+  {
+    "id": 378,
+    "word": "well",
+    "ipa": "/wel/",
+    "pos": "adverb",
+    "level": 1,
+    "vi": "tốt, giỏi; khỏe",
+    "examples": [
+      {
+        "en": "She sings well.",
+        "vi": "Cô ấy hát hay."
+      },
+      {
+        "en": "I don't feel well.",
+        "vi": "Tôi thấy không khỏe."
+      }
+    ]
+  },
+  {
+    "id": 379,
+    "word": "almost",
+    "ipa": "/ˈɔːlmoʊst/",
+    "pos": "adverb",
+    "level": 1,
+    "vi": "gần như, suýt",
+    "examples": [
+      {
+        "en": "We are almost there.",
+        "vi": "Chúng ta gần đến nơi rồi."
+      },
+      {
+        "en": "I almost forgot!",
+        "vi": "Tôi suýt quên mất!"
+      }
+    ]
+  },
+  {
+    "id": 380,
+    "word": "enough",
+    "ipa": "/ɪˈnʌf/",
+    "pos": "adverb / adjective",
+    "level": 1,
+    "vi": "đủ",
+    "examples": [
+      {
+        "en": "That's enough, thank you.",
+        "vi": "Đủ rồi, cảm ơn."
+      },
+      {
+        "en": "We have enough food.",
+        "vi": "Chúng ta có đủ thức ăn."
+      }
+    ]
+  },
+  {
+    "id": 381,
+    "word": "even",
+    "ipa": "/ˈiːvn/",
+    "pos": "adverb",
+    "level": 1,
+    "vi": "ngay cả, thậm chí",
+    "examples": [
+      {
+        "en": "Even a child can do it.",
+        "vi": "Ngay cả một đứa trẻ cũng làm được."
+      },
+      {
+        "en": "She didn't even say hello.",
+        "vi": "Cô ấy thậm chí không chào."
+      }
+    ]
+  },
+  {
+    "id": 382,
+    "word": "ever",
+    "ipa": "/ˈevər/",
+    "pos": "adverb",
+    "level": 1,
+    "vi": "từng, bao giờ",
+    "examples": [
+      {
+        "en": "Have you ever been to Hanoi?",
+        "vi": "Bạn đã bao giờ đến Hà Nội chưa?"
+      },
+      {
+        "en": "It is the best meal ever.",
+        "vi": "Đó là bữa ăn ngon nhất từ trước đến nay."
+      }
+    ]
+  },
+  {
+    "id": 383,
+    "word": "just",
+    "ipa": "/dʒʌst/",
+    "pos": "adverb",
+    "level": 1,
+    "vi": "vừa mới; chỉ",
+    "examples": [
+      {
+        "en": "I just arrived.",
+        "vi": "Tôi vừa đến."
+      },
+      {
+        "en": "It is just a small problem.",
+        "vi": "Đó chỉ là một vấn đề nhỏ."
+      }
+    ]
+  },
+  {
+    "id": 384,
+    "word": "less",
+    "ipa": "/les/",
+    "pos": "adverb / adjective",
+    "level": 1,
+    "vi": "ít hơn",
+    "examples": [
+      {
+        "en": "I want to spend less money.",
+        "vi": "Tôi muốn tiêu ít tiền hơn."
+      },
+      {
+        "en": "Try to eat less sugar.",
+        "vi": "Cố ăn ít đường hơn nhé."
+      }
+    ]
+  },
+  {
+    "id": 385,
+    "word": "much",
+    "ipa": "/mʌtʃ/",
+    "pos": "adverb / adjective",
+    "level": 1,
+    "vi": "nhiều",
+    "examples": [
+      {
+        "en": "Thank you very much.",
+        "vi": "Cảm ơn bạn rất nhiều."
+      },
+      {
+        "en": "I don't have much time.",
+        "vi": "Tôi không có nhiều thời gian."
+      }
+    ]
+  },
+  {
+    "id": 386,
+    "word": "often",
+    "ipa": "/ˈɔːfn/",
+    "pos": "adverb",
+    "level": 1,
+    "vi": "thường, thường xuyên",
+    "examples": [
+      {
+        "en": "I often walk in the park.",
+        "vi": "Tôi thường đi dạo trong công viên."
+      },
+      {
+        "en": "How often do you exercise?",
+        "vi": "Bạn có hay tập thể dục không?"
+      }
+    ]
+  },
+  {
+    "id": 387,
+    "word": "perhaps",
+    "ipa": "/pərˈhæps/",
+    "pos": "adverb",
+    "level": 1,
+    "vi": "có lẽ",
+    "examples": [
+      {
+        "en": "Perhaps she is busy.",
+        "vi": "Có lẽ cô ấy bận."
+      },
+      {
+        "en": "Perhaps we can meet tomorrow.",
+        "vi": "Có lẽ ngày mai mình gặp được."
+      }
+    ]
+  },
+  {
+    "id": 388,
+    "word": "quite",
+    "ipa": "/kwaɪt/",
+    "pos": "adverb",
+    "level": 1,
+    "vi": "khá; hoàn toàn",
+    "examples": [
+      {
+        "en": "It is quite cold today.",
+        "vi": "Hôm nay khá lạnh."
+      },
+      {
+        "en": "She is quite tall.",
+        "vi": "Cô ấy khá cao."
+      }
+    ]
+  },
+  {
+    "id": 389,
+    "word": "sometimes",
+    "ipa": "/ˈsʌmtaɪmz/",
+    "pos": "adverb",
+    "level": 1,
+    "vi": "thỉnh thoảng, đôi khi",
+    "examples": [
+      {
+        "en": "Sometimes I cook at home.",
+        "vi": "Thỉnh thoảng tôi nấu ăn ở nhà."
+      },
+      {
+        "en": "He is sometimes late.",
+        "vi": "Anh ấy đôi khi đến muộn."
+      }
+    ]
+  },
+  {
+    "id": 390,
+    "word": "yet",
+    "ipa": "/jet/",
+    "pos": "adverb",
+    "level": 1,
+    "vi": "chưa (trong câu hỏi/phủ định)",
+    "examples": [
+      {
+        "en": "I haven't finished yet.",
+        "vi": "Tôi vẫn chưa xong."
+      },
+      {
+        "en": "Are you ready yet?",
+        "vi": "Bạn xong chưa?"
+      }
+    ]
+  },
+  {
+    "id": 391,
+    "word": "already",
+    "ipa": "/ɔːlˈredi/",
+    "pos": "adverb",
+    "level": 1,
+    "vi": "đã, rồi (sớm hơn dự kiến)",
+    "examples": [
+      {
+        "en": "I have already eaten.",
+        "vi": "Tôi đã ăn rồi."
+      },
+      {
+        "en": "She is already here.",
+        "vi": "Cô ấy đã ở đây rồi."
+      }
+    ]
+  },
+  {
+    "id": 392,
+    "word": "tonight",
+    "ipa": "/təˈnaɪt/",
+    "pos": "adverb / noun",
+    "level": 1,
+    "vi": "tối nay",
+    "examples": [
+      {
+        "en": "Let's go out tonight.",
+        "vi": "Tối nay mình đi chơi nhé."
+      },
+      {
+        "en": "I will call you tonight.",
+        "vi": "Tối nay tôi sẽ gọi bạn."
+      }
+    ]
+  },
+  {
+    "id": 393,
+    "word": "tomorrow",
+    "ipa": "/təˈmɔːroʊ/",
+    "pos": "adverb / noun",
+    "level": 1,
+    "vi": "ngày mai",
+    "examples": [
+      {
+        "en": "See you tomorrow.",
+        "vi": "Hẹn gặp ngày mai."
+      },
+      {
+        "en": "Tomorrow is Sunday.",
+        "vi": "Ngày mai là Chủ nhật."
+      }
+    ]
+  },
+  {
+    "id": 394,
+    "word": "yesterday",
+    "ipa": "/ˈjestərdeɪ/",
+    "pos": "adverb / noun",
+    "level": 1,
+    "vi": "hôm qua",
+    "examples": [
+      {
+        "en": "I saw her yesterday.",
+        "vi": "Tôi gặp cô ấy hôm qua."
+      },
+      {
+        "en": "Yesterday was very hot.",
+        "vi": "Hôm qua trời rất nóng."
+      }
+    ]
+  },
+  {
+    "id": 395,
+    "word": "ago",
+    "ipa": "/əˈɡoʊ/",
+    "pos": "adverb",
+    "level": 1,
+    "vi": "cách đây, về trước",
+    "examples": [
+      {
+        "en": "She left an hour ago.",
+        "vi": "Cô ấy rời đi cách đây một tiếng."
+      },
+      {
+        "en": "We met two years ago.",
+        "vi": "Chúng tôi gặp nhau hai năm trước."
+      }
+    ]
+  },
+  {
+    "id": 396,
+    "word": "instead",
+    "ipa": "/ɪnˈsted/",
+    "pos": "adverb",
+    "level": 1,
+    "vi": "thay vào đó",
+    "examples": [
+      {
+        "en": "Let's stay home instead.",
+        "vi": "Thay vào đó, mình ở nhà nhé."
+      },
+      {
+        "en": "I drank tea instead of coffee.",
+        "vi": "Tôi uống trà thay vì cà phê."
+      }
+    ]
+  },
+  {
+    "id": 397,
+    "word": "anywhere",
+    "ipa": "/ˈeniwer/",
+    "pos": "adverb",
+    "level": 1,
+    "vi": "bất cứ đâu; (phủ định) đâu cả",
+    "examples": [
+      {
+        "en": "You can sit anywhere.",
+        "vi": "Bạn ngồi đâu cũng được."
+      },
+      {
+        "en": "I can't find it anywhere.",
+        "vi": "Tôi tìm khắp nơi mà không thấy."
+      }
+    ]
+  },
+  {
+    "id": 398,
+    "word": "everywhere",
+    "ipa": "/ˈevriwer/",
+    "pos": "adverb",
+    "level": 1,
+    "vi": "khắp nơi",
+    "examples": [
+      {
+        "en": "I looked everywhere for my keys.",
+        "vi": "Tôi tìm chìa khóa khắp nơi."
+      },
+      {
+        "en": "There are people everywhere.",
+        "vi": "Đâu đâu cũng có người."
+      }
+    ]
+  },
+  {
+    "id": 399,
+    "word": "somewhere",
+    "ipa": "/ˈsʌmwer/",
+    "pos": "adverb",
+    "level": 1,
+    "vi": "đâu đó, nơi nào đó",
+    "examples": [
+      {
+        "en": "Let's go somewhere quiet.",
+        "vi": "Mình đến chỗ nào yên tĩnh đi."
+      },
+      {
+        "en": "I left my phone somewhere.",
+        "vi": "Tôi để quên điện thoại đâu đó rồi."
+      }
+    ]
+  },
+  {
+    "id": 400,
+    "word": "however",
+    "ipa": "/haʊˈevər/",
+    "pos": "adverb",
+    "level": 1,
+    "vi": "tuy nhiên, tuy vậy",
+    "examples": [
+      {
+        "en": "It was raining; however, we went out.",
+        "vi": "Trời mưa; tuy nhiên, chúng tôi vẫn ra ngoài."
+      },
+      {
+        "en": "It is expensive. However, it is very good.",
+        "vi": "Nó đắt. Tuy nhiên, nó rất tốt."
+      }
+    ]
+  }
+]

@@ -1,0 +1,902 @@
+[
+  {
+    "id": 501,
+    "word": "ear",
+    "ipa": "/ɪr/",
+    "pos": "noun",
+    "level": 1,
+    "vi": "cái tai",
+    "examples": [
+      {
+        "en": "My ears hurt.",
+        "vi": "Tai tôi đau."
+      },
+      {
+        "en": "Rabbits have long ears.",
+        "vi": "Thỏ có đôi tai dài."
+      }
+    ]
+  },
+  {
+    "id": 502,
+    "word": "edge",
+    "ipa": "/edʒ/",
+    "pos": "noun",
+    "level": 1,
+    "vi": "cạnh, mép, rìa",
+    "examples": [
+      {
+        "en": "Don't sit on the edge of the table.",
+        "vi": "Đừng ngồi ở mép bàn."
+      },
+      {
+        "en": "We stood at the edge of the forest.",
+        "vi": "Chúng tôi đứng ở bìa rừng."
+      }
+    ]
+  },
+  {
+    "id": 503,
+    "word": "effort",
+    "ipa": "/ˈefərt/",
+    "pos": "noun",
+    "level": 1,
+    "vi": "sự nỗ lực, công sức",
+    "examples": [
+      {
+        "en": "Thank you for your effort.",
+        "vi": "Cảm ơn vì công sức của bạn."
+      },
+      {
+        "en": "It takes a lot of effort.",
+        "vi": "Việc đó cần nhiều nỗ lực."
+      }
+    ]
+  },
+  {
+    "id": 504,
+    "word": "egg",
+    "ipa": "/eɡ/",
+    "pos": "noun",
+    "level": 1,
+    "vi": "quả trứng",
+    "examples": [
+      {
+        "en": "I had two eggs for breakfast.",
+        "vi": "Tôi ăn hai quả trứng vào bữa sáng."
+      },
+      {
+        "en": "The bird laid an egg.",
+        "vi": "Con chim đẻ một quả trứng."
+      }
+    ]
+  },
+  {
+    "id": 505,
+    "word": "energy",
+    "ipa": "/ˈenərdʒi/",
+    "pos": "noun",
+    "level": 1,
+    "vi": "năng lượng; sức lực",
+    "examples": [
+      {
+        "en": "The sun gives us energy.",
+        "vi": "Mặt trời cho chúng ta năng lượng."
+      },
+      {
+        "en": "I have no energy today.",
+        "vi": "Hôm nay tôi không có sức."
+      }
+    ]
+  },
+  {
+    "id": 506,
+    "word": "engine",
+    "ipa": "/ˈendʒɪn/",
+    "pos": "noun",
+    "level": 1,
+    "vi": "động cơ, máy",
+    "examples": [
+      {
+        "en": "The car engine is loud.",
+        "vi": "Động cơ xe kêu to."
+      },
+      {
+        "en": "The engine won't start.",
+        "vi": "Động cơ không khởi động được."
+      }
+    ]
+  },
+  {
+    "id": 507,
+    "word": "event",
+    "ipa": "/ɪˈvent/",
+    "pos": "noun",
+    "level": 1,
+    "vi": "sự kiện",
+    "examples": [
+      {
+        "en": "The event starts at noon.",
+        "vi": "Sự kiện bắt đầu lúc trưa."
+      },
+      {
+        "en": "It was a big event.",
+        "vi": "Đó là một sự kiện lớn."
+      }
+    ]
+  },
+  {
+    "id": 508,
+    "word": "exam",
+    "ipa": "/ɪɡˈzæm/",
+    "pos": "noun",
+    "level": 1,
+    "vi": "kỳ thi, bài thi",
+    "examples": [
+      {
+        "en": "I have an exam tomorrow.",
+        "vi": "Mai tôi có bài thi."
+      },
+      {
+        "en": "She passed her exam.",
+        "vi": "Cô ấy đã đậu kỳ thi."
+      }
+    ]
+  },
+  {
+    "id": 509,
+    "word": "exercise",
+    "ipa": "/ˈeksərsaɪz/",
+    "pos": "noun",
+    "level": 1,
+    "vi": "bài tập; sự tập thể dục",
+    "examples": [
+      {
+        "en": "Do this exercise at home.",
+        "vi": "Làm bài tập này ở nhà."
+      },
+      {
+        "en": "Exercise is good for you.",
+        "vi": "Tập thể dục tốt cho bạn."
+      }
+    ]
+  },
+  {
+    "id": 510,
+    "word": "experience",
+    "ipa": "/ɪkˈspɪriəns/",
+    "pos": "noun",
+    "level": 1,
+    "vi": "kinh nghiệm; trải nghiệm",
+    "examples": [
+      {
+        "en": "She has a lot of experience.",
+        "vi": "Cô ấy có nhiều kinh nghiệm."
+      },
+      {
+        "en": "It was a great experience.",
+        "vi": "Đó là một trải nghiệm tuyệt vời."
+      }
+    ]
+  },
+  {
+    "id": 511,
+    "word": "factory",
+    "ipa": "/ˈfæktri/",
+    "pos": "noun",
+    "level": 1,
+    "vi": "nhà máy",
+    "examples": [
+      {
+        "en": "He works in a factory.",
+        "vi": "Anh ấy làm việc trong nhà máy."
+      },
+      {
+        "en": "The factory makes shoes.",
+        "vi": "Nhà máy sản xuất giày."
+      }
+    ]
+  },
+  {
+    "id": 512,
+    "word": "fan",
+    "ipa": "/fæn/",
+    "pos": "noun",
+    "level": 1,
+    "vi": "cái quạt; người hâm mộ",
+    "examples": [
+      {
+        "en": "Turn on the fan, it's hot.",
+        "vi": "Bật quạt lên, trời nóng."
+      },
+      {
+        "en": "I am a big fan of this singer.",
+        "vi": "Tôi là người hâm mộ lớn của ca sĩ này."
+      }
+    ]
+  },
+  {
+    "id": 513,
+    "word": "fashion",
+    "ipa": "/ˈfæʃn/",
+    "pos": "noun",
+    "level": 1,
+    "vi": "thời trang",
+    "examples": [
+      {
+        "en": "She loves fashion.",
+        "vi": "Cô ấy yêu thời trang."
+      },
+      {
+        "en": "This style is in fashion now.",
+        "vi": "Kiểu này đang là mốt."
+      }
+    ]
+  },
+  {
+    "id": 514,
+    "word": "fear",
+    "ipa": "/fɪr/",
+    "pos": "noun",
+    "level": 1,
+    "vi": "nỗi sợ, sự sợ hãi",
+    "examples": [
+      {
+        "en": "He has a fear of heights.",
+        "vi": "Anh ấy sợ độ cao."
+      },
+      {
+        "en": "There is nothing to fear.",
+        "vi": "Không có gì phải sợ."
+      }
+    ]
+  },
+  {
+    "id": 515,
+    "word": "feeling",
+    "ipa": "/ˈfiːlɪŋ/",
+    "pos": "noun",
+    "level": 1,
+    "vi": "cảm giác, cảm xúc",
+    "examples": [
+      {
+        "en": "I have a good feeling about this.",
+        "vi": "Tôi có cảm giác tốt về việc này."
+      },
+      {
+        "en": "Don't hide your feelings.",
+        "vi": "Đừng giấu cảm xúc của bạn."
+      }
+    ]
+  },
+  {
+    "id": 516,
+    "word": "fever",
+    "ipa": "/ˈfiːvər/",
+    "pos": "noun",
+    "level": 1,
+    "vi": "cơn sốt",
+    "examples": [
+      {
+        "en": "The child has a fever.",
+        "vi": "Đứa trẻ bị sốt."
+      },
+      {
+        "en": "I had a high fever last night.",
+        "vi": "Tối qua tôi sốt cao."
+      }
+    ]
+  },
+  {
+    "id": 517,
+    "word": "finger",
+    "ipa": "/ˈfɪŋɡər/",
+    "pos": "noun",
+    "level": 1,
+    "vi": "ngón tay",
+    "examples": [
+      {
+        "en": "I cut my finger.",
+        "vi": "Tôi bị đứt tay."
+      },
+      {
+        "en": "We have ten fingers.",
+        "vi": "Chúng ta có mười ngón tay."
+      }
+    ]
+  },
+  {
+    "id": 518,
+    "word": "flag",
+    "ipa": "/flæɡ/",
+    "pos": "noun",
+    "level": 1,
+    "vi": "lá cờ",
+    "examples": [
+      {
+        "en": "The flag is red and yellow.",
+        "vi": "Lá cờ màu đỏ và vàng."
+      },
+      {
+        "en": "They raised the flag.",
+        "vi": "Họ kéo cờ lên."
+      }
+    ]
+  },
+  {
+    "id": 519,
+    "word": "flight",
+    "ipa": "/flaɪt/",
+    "pos": "noun",
+    "level": 1,
+    "vi": "chuyến bay",
+    "examples": [
+      {
+        "en": "My flight is at noon.",
+        "vi": "Chuyến bay của tôi lúc trưa."
+      },
+      {
+        "en": "The flight was delayed.",
+        "vi": "Chuyến bay bị hoãn."
+      }
+    ]
+  },
+  {
+    "id": 520,
+    "word": "floor",
+    "ipa": "/flɔːr/",
+    "pos": "noun",
+    "level": 1,
+    "vi": "sàn nhà; tầng (nhà)",
+    "examples": [
+      {
+        "en": "Don't sit on the floor.",
+        "vi": "Đừng ngồi trên sàn."
+      },
+      {
+        "en": "My office is on the third floor.",
+        "vi": "Văn phòng tôi ở tầng ba."
+      }
+    ]
+  },
+  {
+    "id": 521,
+    "word": "fog",
+    "ipa": "/fɔːɡ/",
+    "pos": "noun",
+    "level": 1,
+    "vi": "sương mù",
+    "examples": [
+      {
+        "en": "There is thick fog this morning.",
+        "vi": "Sáng nay sương mù dày đặc."
+      },
+      {
+        "en": "We can't see far in the fog.",
+        "vi": "Chúng ta không nhìn xa được trong sương mù."
+      }
+    ]
+  },
+  {
+    "id": 522,
+    "word": "form",
+    "ipa": "/fɔːrm/",
+    "pos": "noun",
+    "level": 1,
+    "vi": "mẫu đơn; hình thức, dạng",
+    "examples": [
+      {
+        "en": "Please fill in this form.",
+        "vi": "Vui lòng điền vào mẫu đơn này."
+      },
+      {
+        "en": "Water can take many forms.",
+        "vi": "Nước có thể tồn tại ở nhiều dạng."
+      }
+    ]
+  },
+  {
+    "id": 523,
+    "word": "fridge",
+    "ipa": "/frɪdʒ/",
+    "pos": "noun",
+    "level": 1,
+    "vi": "tủ lạnh",
+    "examples": [
+      {
+        "en": "Put the milk in the fridge.",
+        "vi": "Để sữa vào tủ lạnh."
+      },
+      {
+        "en": "The fridge is empty.",
+        "vi": "Tủ lạnh trống không."
+      }
+    ]
+  },
+  {
+    "id": 524,
+    "word": "front",
+    "ipa": "/frʌnt/",
+    "pos": "noun",
+    "level": 1,
+    "vi": "phía trước, mặt trước",
+    "examples": [
+      {
+        "en": "He sits in the front of the class.",
+        "vi": "Anh ấy ngồi ở phía trước lớp."
+      },
+      {
+        "en": "Wait for me in front of the shop.",
+        "vi": "Đợi tôi ở trước cửa hàng nhé."
+      }
+    ]
+  },
+  {
+    "id": 525,
+    "word": "fruit",
+    "ipa": "/fruːt/",
+    "pos": "noun",
+    "level": 1,
+    "vi": "trái cây, hoa quả",
+    "examples": [
+      {
+        "en": "I eat a lot of fruit.",
+        "vi": "Tôi ăn nhiều trái cây."
+      },
+      {
+        "en": "Apples and bananas are fruit.",
+        "vi": "Táo và chuối là trái cây."
+      }
+    ]
+  },
+  {
+    "id": 526,
+    "word": "gas",
+    "ipa": "/ɡæs/",
+    "pos": "noun",
+    "level": 1,
+    "vi": "khí ga; xăng (cách dùng ở Mỹ)",
+    "examples": [
+      {
+        "en": "Turn off the gas.",
+        "vi": "Tắt ga đi."
+      },
+      {
+        "en": "We need to buy gas for the car.",
+        "vi": "Chúng ta cần đổ xăng cho xe."
+      }
+    ]
+  },
+  {
+    "id": 527,
+    "word": "gate",
+    "ipa": "/ɡeɪt/",
+    "pos": "noun",
+    "level": 1,
+    "vi": "cái cổng",
+    "examples": [
+      {
+        "en": "Please close the gate.",
+        "vi": "Vui lòng đóng cổng."
+      },
+      {
+        "en": "The dog is at the gate.",
+        "vi": "Con chó ở ngoài cổng."
+      }
+    ]
+  },
+  {
+    "id": 528,
+    "word": "ghost",
+    "ipa": "/ɡoʊst/",
+    "pos": "noun",
+    "level": 1,
+    "vi": "con ma, hồn ma",
+    "examples": [
+      {
+        "en": "Do you believe in ghosts?",
+        "vi": "Bạn có tin vào ma không?"
+      },
+      {
+        "en": "It is just a ghost story.",
+        "vi": "Đó chỉ là một câu chuyện ma."
+      }
+    ]
+  },
+  {
+    "id": 529,
+    "word": "goal",
+    "ipa": "/ɡoʊl/",
+    "pos": "noun",
+    "level": 1,
+    "vi": "mục tiêu; bàn thắng",
+    "examples": [
+      {
+        "en": "My goal is to learn English.",
+        "vi": "Mục tiêu của tôi là học tiếng Anh."
+      },
+      {
+        "en": "He scored a goal.",
+        "vi": "Anh ấy ghi một bàn thắng."
+      }
+    ]
+  },
+  {
+    "id": 530,
+    "word": "grass",
+    "ipa": "/ɡræs/",
+    "pos": "noun",
+    "level": 1,
+    "vi": "cỏ",
+    "examples": [
+      {
+        "en": "The grass is green.",
+        "vi": "Cỏ xanh."
+      },
+      {
+        "en": "Don't walk on the grass.",
+        "vi": "Đừng giẫm lên cỏ."
+      }
+    ]
+  },
+  {
+    "id": 531,
+    "word": "alive",
+    "ipa": "/əˈlaɪv/",
+    "pos": "adjective",
+    "level": 1,
+    "vi": "còn sống",
+    "examples": [
+      {
+        "en": "The fish is still alive.",
+        "vi": "Con cá vẫn còn sống."
+      },
+      {
+        "en": "It is good to be alive.",
+        "vi": "Được sống thật tốt."
+      }
+    ]
+  },
+  {
+    "id": 532,
+    "word": "dead",
+    "ipa": "/ded/",
+    "pos": "adjective",
+    "level": 1,
+    "vi": "đã chết; hết (pin)",
+    "examples": [
+      {
+        "en": "The plant is dead.",
+        "vi": "Cái cây đã chết."
+      },
+      {
+        "en": "My phone is dead.",
+        "vi": "Điện thoại của tôi hết pin."
+      }
+    ]
+  },
+  {
+    "id": 533,
+    "word": "alone",
+    "ipa": "/əˈloʊn/",
+    "pos": "adjective / adverb",
+    "level": 1,
+    "vi": "một mình, cô đơn",
+    "examples": [
+      {
+        "en": "She lives alone.",
+        "vi": "Cô ấy sống một mình."
+      },
+      {
+        "en": "I don't like to eat alone.",
+        "vi": "Tôi không thích ăn một mình."
+      }
+    ]
+  },
+  {
+    "id": 534,
+    "word": "ancient",
+    "ipa": "/ˈeɪnʃənt/",
+    "pos": "adjective",
+    "level": 1,
+    "vi": "cổ xưa, cổ đại",
+    "examples": [
+      {
+        "en": "This is an ancient city.",
+        "vi": "Đây là một thành phố cổ."
+      },
+      {
+        "en": "They found an ancient coin.",
+        "vi": "Họ tìm thấy một đồng xu cổ."
+      }
+    ]
+  },
+  {
+    "id": 535,
+    "word": "brave",
+    "ipa": "/breɪv/",
+    "pos": "adjective",
+    "level": 1,
+    "vi": "dũng cảm, can đảm",
+    "examples": [
+      {
+        "en": "He is a brave boy.",
+        "vi": "Cậu ấy là một cậu bé dũng cảm."
+      },
+      {
+        "en": "Be brave and try again.",
+        "vi": "Hãy can đảm và thử lại."
+      }
+    ]
+  },
+  {
+    "id": 536,
+    "word": "bright",
+    "ipa": "/braɪt/",
+    "pos": "adjective",
+    "level": 1,
+    "vi": "sáng, tươi sáng; thông minh",
+    "examples": [
+      {
+        "en": "The sun is very bright.",
+        "vi": "Mặt trời rất sáng."
+      },
+      {
+        "en": "She is a bright student.",
+        "vi": "Cô ấy là một học sinh thông minh."
+      }
+    ]
+  },
+  {
+    "id": 537,
+    "word": "wide",
+    "ipa": "/waɪd/",
+    "pos": "adjective",
+    "level": 1,
+    "vi": "rộng",
+    "examples": [
+      {
+        "en": "The river is very wide.",
+        "vi": "Dòng sông rất rộng."
+      },
+      {
+        "en": "Open your mouth wide.",
+        "vi": "Há miệng to ra."
+      }
+    ]
+  },
+  {
+    "id": 538,
+    "word": "calm",
+    "ipa": "/kɑːm/",
+    "pos": "adjective",
+    "level": 1,
+    "vi": "bình tĩnh; yên ả",
+    "examples": [
+      {
+        "en": "Please stay calm.",
+        "vi": "Vui lòng giữ bình tĩnh."
+      },
+      {
+        "en": "The sea is calm today.",
+        "vi": "Hôm nay biển lặng."
+      }
+    ]
+  },
+  {
+    "id": 539,
+    "word": "certain",
+    "ipa": "/ˈsɜːrtn/",
+    "pos": "adjective",
+    "level": 1,
+    "vi": "chắc chắn",
+    "examples": [
+      {
+        "en": "Are you certain about this?",
+        "vi": "Bạn chắc chắn về điều này chứ?"
+      },
+      {
+        "en": "I am certain she will come.",
+        "vi": "Tôi chắc cô ấy sẽ đến."
+      }
+    ]
+  },
+  {
+    "id": 540,
+    "word": "thirsty",
+    "ipa": "/ˈθɜːrsti/",
+    "pos": "adjective",
+    "level": 1,
+    "vi": "khát (nước)",
+    "examples": [
+      {
+        "en": "I am very thirsty.",
+        "vi": "Tôi rất khát."
+      },
+      {
+        "en": "The runner felt thirsty.",
+        "vi": "Người chạy bộ thấy khát."
+      }
+    ]
+  },
+  {
+    "id": 541,
+    "word": "comfortable",
+    "ipa": "/ˈkʌmftəbl/",
+    "pos": "adjective",
+    "level": 1,
+    "vi": "thoải mái, dễ chịu",
+    "examples": [
+      {
+        "en": "This chair is very comfortable.",
+        "vi": "Cái ghế này rất thoải mái."
+      },
+      {
+        "en": "Make yourself comfortable.",
+        "vi": "Cứ tự nhiên thoải mái nhé."
+      }
+    ]
+  },
+  {
+    "id": 542,
+    "word": "common",
+    "ipa": "/ˈkɑːmən/",
+    "pos": "adjective",
+    "level": 1,
+    "vi": "phổ biến, thường gặp; chung",
+    "examples": [
+      {
+        "en": "This is a common mistake.",
+        "vi": "Đây là một lỗi thường gặp."
+      },
+      {
+        "en": "We have a common goal.",
+        "vi": "Chúng ta có một mục tiêu chung."
+      }
+    ]
+  },
+  {
+    "id": 543,
+    "word": "crazy",
+    "ipa": "/ˈkreɪzi/",
+    "pos": "adjective",
+    "level": 1,
+    "vi": "điên rồ, khùng (cách nói thân mật)",
+    "examples": [
+      {
+        "en": "That's a crazy idea.",
+        "vi": "Đó là một ý tưởng điên rồ."
+      },
+      {
+        "en": "The traffic is crazy today.",
+        "vi": "Giao thông hôm nay điên rồ thật."
+      }
+    ]
+  },
+  {
+    "id": 544,
+    "word": "dangerous",
+    "ipa": "/ˈdeɪndʒərəs/",
+    "pos": "adjective",
+    "level": 1,
+    "vi": "nguy hiểm",
+    "examples": [
+      {
+        "en": "This road is dangerous at night.",
+        "vi": "Con đường này nguy hiểm vào ban đêm."
+      },
+      {
+        "en": "Fire is dangerous.",
+        "vi": "Lửa thì nguy hiểm."
+      }
+    ]
+  },
+  {
+    "id": 545,
+    "word": "delicious",
+    "ipa": "/dɪˈlɪʃəs/",
+    "pos": "adjective",
+    "level": 1,
+    "vi": "ngon, ngon tuyệt",
+    "examples": [
+      {
+        "en": "This soup is delicious.",
+        "vi": "Món súp này ngon tuyệt."
+      },
+      {
+        "en": "What a delicious meal!",
+        "vi": "Bữa ăn ngon quá!"
+      }
+    ]
+  },
+  {
+    "id": 546,
+    "word": "difficult",
+    "ipa": "/ˈdɪfɪkəlt/",
+    "pos": "adjective",
+    "level": 1,
+    "vi": "khó, khó khăn",
+    "examples": [
+      {
+        "en": "This question is difficult.",
+        "vi": "Câu hỏi này khó."
+      },
+      {
+        "en": "It was a difficult year.",
+        "vi": "Đó là một năm khó khăn."
+      }
+    ]
+  },
+  {
+    "id": 547,
+    "word": "excited",
+    "ipa": "/ɪkˈsaɪtɪd/",
+    "pos": "adjective",
+    "level": 1,
+    "vi": "hào hứng, phấn khích",
+    "examples": [
+      {
+        "en": "I am excited about the trip.",
+        "vi": "Tôi háo hức về chuyến đi."
+      },
+      {
+        "en": "The children are excited.",
+        "vi": "Bọn trẻ rất phấn khích."
+      }
+    ]
+  },
+  {
+    "id": 548,
+    "word": "fair",
+    "ipa": "/fer/",
+    "pos": "adjective",
+    "level": 1,
+    "vi": "công bằng; hợp lý",
+    "examples": [
+      {
+        "en": "That's not fair!",
+        "vi": "Như vậy không công bằng!"
+      },
+      {
+        "en": "We want a fair price.",
+        "vi": "Chúng tôi muốn một mức giá hợp lý."
+      }
+    ]
+  },
+  {
+    "id": 549,
+    "word": "favorite",
+    "ipa": "/ˈfeɪvərɪt/",
+    "pos": "adjective",
+    "level": 1,
+    "vi": "yêu thích nhất",
+    "examples": [
+      {
+        "en": "Blue is my favorite color.",
+        "vi": "Xanh dương là màu tôi thích nhất."
+      },
+      {
+        "en": "What is your favorite food?",
+        "vi": "Món ăn yêu thích của bạn là gì?"
+      }
+    ]
+  },
+  {
+    "id": 550,
+    "word": "final",
+    "ipa": "/ˈfaɪnl/",
+    "pos": "adjective",
+    "level": 1,
+    "vi": "cuối cùng",
+    "examples": [
+      {
+        "en": "This is my final answer.",
+        "vi": "Đây là câu trả lời cuối cùng của tôi."
+      },
+      {
+        "en": "The final game is tonight.",
+        "vi": "Trận chung kết diễn ra tối nay."
+      }
+    ]
+  }
+]

@@ -1,0 +1,902 @@
+[
+  {
+    "id": 151,
+    "word": "window",
+    "ipa": "/ˈwɪndoʊ/",
+    "pos": "noun",
+    "level": 1,
+    "vi": "cửa sổ",
+    "examples": [
+      {
+        "en": "Open the window, please.",
+        "vi": "Mở cửa sổ giúp tôi nhé."
+      },
+      {
+        "en": "The cat is by the window.",
+        "vi": "Con mèo ở cạnh cửa sổ."
+      }
+    ]
+  },
+  {
+    "id": 152,
+    "word": "road",
+    "ipa": "/roʊd/",
+    "pos": "noun",
+    "level": 1,
+    "vi": "con đường",
+    "examples": [
+      {
+        "en": "This road is very long.",
+        "vi": "Con đường này rất dài."
+      },
+      {
+        "en": "Be careful on the road.",
+        "vi": "Cẩn thận khi đi đường."
+      }
+    ]
+  },
+  {
+    "id": 153,
+    "word": "river",
+    "ipa": "/ˈrɪvər/",
+    "pos": "noun",
+    "level": 1,
+    "vi": "dòng sông, con sông",
+    "examples": [
+      {
+        "en": "We swam in the river.",
+        "vi": "Chúng tôi bơi dưới sông."
+      },
+      {
+        "en": "The river is very clean.",
+        "vi": "Dòng sông rất trong."
+      }
+    ]
+  },
+  {
+    "id": 154,
+    "word": "sea",
+    "ipa": "/siː/",
+    "pos": "noun",
+    "level": 1,
+    "vi": "biển",
+    "examples": [
+      {
+        "en": "I love the sea.",
+        "vi": "Tôi yêu biển."
+      },
+      {
+        "en": "The sea is calm today.",
+        "vi": "Hôm nay biển lặng."
+      }
+    ]
+  },
+  {
+    "id": 155,
+    "word": "sky",
+    "ipa": "/skaɪ/",
+    "pos": "noun",
+    "level": 1,
+    "vi": "bầu trời",
+    "examples": [
+      {
+        "en": "The sky is blue.",
+        "vi": "Bầu trời xanh."
+      },
+      {
+        "en": "Look at the stars in the sky.",
+        "vi": "Nhìn những vì sao trên bầu trời kìa."
+      }
+    ]
+  },
+  {
+    "id": 156,
+    "word": "old",
+    "ipa": "/oʊld/",
+    "pos": "adjective",
+    "level": 1,
+    "vi": "già; cũ",
+    "examples": [
+      {
+        "en": "My grandfather is very old.",
+        "vi": "Ông tôi đã rất già."
+      },
+      {
+        "en": "This is an old house.",
+        "vi": "Đây là một ngôi nhà cũ."
+      }
+    ]
+  },
+  {
+    "id": 157,
+    "word": "young",
+    "ipa": "/jʌŋ/",
+    "pos": "adjective",
+    "level": 1,
+    "vi": "trẻ, nhỏ tuổi",
+    "examples": [
+      {
+        "en": "She is still young.",
+        "vi": "Cô ấy vẫn còn trẻ."
+      },
+      {
+        "en": "Young children need sleep.",
+        "vi": "Trẻ nhỏ cần ngủ nhiều."
+      }
+    ]
+  },
+  {
+    "id": 158,
+    "word": "long",
+    "ipa": "/lɔːŋ/",
+    "pos": "adjective",
+    "level": 1,
+    "vi": "dài",
+    "examples": [
+      {
+        "en": "It was a long day.",
+        "vi": "Đó là một ngày dài."
+      },
+      {
+        "en": "She has long hair.",
+        "vi": "Cô ấy có mái tóc dài."
+      }
+    ]
+  },
+  {
+    "id": 159,
+    "word": "short",
+    "ipa": "/ʃɔːrt/",
+    "pos": "adjective",
+    "level": 1,
+    "vi": "ngắn; thấp",
+    "examples": [
+      {
+        "en": "This is a short story.",
+        "vi": "Đây là một câu chuyện ngắn."
+      },
+      {
+        "en": "He is short but strong.",
+        "vi": "Anh ấy thấp nhưng khỏe."
+      }
+    ]
+  },
+  {
+    "id": 160,
+    "word": "high",
+    "ipa": "/haɪ/",
+    "pos": "adjective",
+    "level": 1,
+    "vi": "cao",
+    "examples": [
+      {
+        "en": "The mountain is very high.",
+        "vi": "Ngọn núi rất cao."
+      },
+      {
+        "en": "Prices are high now.",
+        "vi": "Giá cả bây giờ cao."
+      }
+    ]
+  },
+  {
+    "id": 161,
+    "word": "low",
+    "ipa": "/loʊ/",
+    "pos": "adjective",
+    "level": 1,
+    "vi": "thấp",
+    "examples": [
+      {
+        "en": "The price is low.",
+        "vi": "Giá thấp."
+      },
+      {
+        "en": "Speak in a low voice.",
+        "vi": "Hãy nói nhỏ thôi."
+      }
+    ]
+  },
+  {
+    "id": 162,
+    "word": "easy",
+    "ipa": "/ˈiːzi/",
+    "pos": "adjective",
+    "level": 1,
+    "vi": "dễ, dễ dàng",
+    "examples": [
+      {
+        "en": "This question is easy.",
+        "vi": "Câu hỏi này dễ."
+      },
+      {
+        "en": "Learning can be easy and fun.",
+        "vi": "Học có thể dễ và vui."
+      }
+    ]
+  },
+  {
+    "id": 163,
+    "word": "hard",
+    "ipa": "/hɑːrd/",
+    "pos": "adjective",
+    "level": 1,
+    "vi": "khó; cứng",
+    "examples": [
+      {
+        "en": "This test is hard.",
+        "vi": "Bài kiểm tra này khó."
+      },
+      {
+        "en": "The bed is too hard.",
+        "vi": "Cái giường cứng quá."
+      }
+    ]
+  },
+  {
+    "id": 164,
+    "word": "fast",
+    "ipa": "/fæst/",
+    "pos": "adjective",
+    "level": 1,
+    "vi": "nhanh",
+    "examples": [
+      {
+        "en": "He is a fast runner.",
+        "vi": "Anh ấy chạy nhanh."
+      },
+      {
+        "en": "This is a fast car.",
+        "vi": "Đây là một chiếc xe nhanh."
+      }
+    ]
+  },
+  {
+    "id": 165,
+    "word": "slow",
+    "ipa": "/sloʊ/",
+    "pos": "adjective",
+    "level": 1,
+    "vi": "chậm",
+    "examples": [
+      {
+        "en": "The bus is very slow.",
+        "vi": "Xe buýt rất chậm."
+      },
+      {
+        "en": "Please speak slowly.",
+        "vi": "Vui lòng nói chậm thôi."
+      }
+    ]
+  },
+  {
+    "id": 166,
+    "word": "early",
+    "ipa": "/ˈɜːrli/",
+    "pos": "adjective / adverb",
+    "level": 1,
+    "vi": "sớm",
+    "examples": [
+      {
+        "en": "I wake up early.",
+        "vi": "Tôi dậy sớm."
+      },
+      {
+        "en": "We had an early dinner.",
+        "vi": "Chúng tôi ăn tối sớm."
+      }
+    ]
+  },
+  {
+    "id": 167,
+    "word": "late",
+    "ipa": "/leɪt/",
+    "pos": "adjective / adverb",
+    "level": 1,
+    "vi": "muộn, trễ",
+    "examples": [
+      {
+        "en": "Sorry, I am late.",
+        "vi": "Xin lỗi, tôi đến muộn."
+      },
+      {
+        "en": "Don't sleep late.",
+        "vi": "Đừng ngủ muộn."
+      }
+    ]
+  },
+  {
+    "id": 168,
+    "word": "right",
+    "ipa": "/raɪt/",
+    "pos": "adjective",
+    "level": 1,
+    "vi": "đúng; bên phải",
+    "examples": [
+      {
+        "en": "You are right.",
+        "vi": "Bạn nói đúng."
+      },
+      {
+        "en": "Turn to the right.",
+        "vi": "Rẽ sang phải."
+      }
+    ]
+  },
+  {
+    "id": 169,
+    "word": "wrong",
+    "ipa": "/rɔːŋ/",
+    "pos": "adjective",
+    "level": 1,
+    "vi": "sai, không đúng",
+    "examples": [
+      {
+        "en": "That answer is wrong.",
+        "vi": "Câu trả lời đó sai."
+      },
+      {
+        "en": "Something is wrong.",
+        "vi": "Có gì đó không ổn."
+      }
+    ]
+  },
+  {
+    "id": 170,
+    "word": "true",
+    "ipa": "/truː/",
+    "pos": "adjective",
+    "level": 1,
+    "vi": "đúng sự thật, có thật",
+    "examples": [
+      {
+        "en": "Is that true?",
+        "vi": "Điều đó có thật không?"
+      },
+      {
+        "en": "It is a true story.",
+        "vi": "Đó là một câu chuyện có thật."
+      }
+    ]
+  },
+  {
+    "id": 171,
+    "word": "beautiful",
+    "ipa": "/ˈbjuːtɪfl/",
+    "pos": "adjective",
+    "level": 1,
+    "vi": "đẹp, xinh đẹp",
+    "examples": [
+      {
+        "en": "What a beautiful day!",
+        "vi": "Một ngày thật đẹp!"
+      },
+      {
+        "en": "She has a beautiful smile.",
+        "vi": "Cô ấy có nụ cười xinh."
+      }
+    ]
+  },
+  {
+    "id": 172,
+    "word": "important",
+    "ipa": "/ɪmˈpɔːrtnt/",
+    "pos": "adjective",
+    "level": 1,
+    "vi": "quan trọng",
+    "examples": [
+      {
+        "en": "This is very important.",
+        "vi": "Điều này rất quan trọng."
+      },
+      {
+        "en": "Family is important to me.",
+        "vi": "Gia đình rất quan trọng với tôi."
+      }
+    ]
+  },
+  {
+    "id": 173,
+    "word": "different",
+    "ipa": "/ˈdɪfrənt/",
+    "pos": "adjective",
+    "level": 1,
+    "vi": "khác, khác biệt",
+    "examples": [
+      {
+        "en": "We have different ideas.",
+        "vi": "Chúng ta có những ý tưởng khác nhau."
+      },
+      {
+        "en": "This one is a little different.",
+        "vi": "Cái này hơi khác một chút."
+      }
+    ]
+  },
+  {
+    "id": 174,
+    "word": "same",
+    "ipa": "/seɪm/",
+    "pos": "adjective",
+    "level": 1,
+    "vi": "giống nhau, như nhau",
+    "examples": [
+      {
+        "en": "We have the same name.",
+        "vi": "Chúng tôi trùng tên."
+      },
+      {
+        "en": "It is the same as before.",
+        "vi": "Vẫn giống như trước."
+      }
+    ]
+  },
+  {
+    "id": 175,
+    "word": "ready",
+    "ipa": "/ˈredi/",
+    "pos": "adjective",
+    "level": 1,
+    "vi": "sẵn sàng",
+    "examples": [
+      {
+        "en": "Are you ready?",
+        "vi": "Bạn sẵn sàng chưa?"
+      },
+      {
+        "en": "Dinner is ready.",
+        "vi": "Bữa tối đã sẵn sàng."
+      }
+    ]
+  },
+  {
+    "id": 176,
+    "word": "free",
+    "ipa": "/friː/",
+    "pos": "adjective",
+    "level": 1,
+    "vi": "rảnh; miễn phí; tự do",
+    "examples": [
+      {
+        "en": "Are you free today?",
+        "vi": "Hôm nay bạn rảnh không?"
+      },
+      {
+        "en": "This app is free.",
+        "vi": "Ứng dụng này miễn phí."
+      }
+    ]
+  },
+  {
+    "id": 177,
+    "word": "full",
+    "ipa": "/fʊl/",
+    "pos": "adjective",
+    "level": 1,
+    "vi": "đầy; no",
+    "examples": [
+      {
+        "en": "The cup is full.",
+        "vi": "Cái cốc đầy rồi."
+      },
+      {
+        "en": "I am full, thank you.",
+        "vi": "Tôi no rồi, cảm ơn."
+      }
+    ]
+  },
+  {
+    "id": 178,
+    "word": "empty",
+    "ipa": "/ˈempti/",
+    "pos": "adjective",
+    "level": 1,
+    "vi": "trống, rỗng",
+    "examples": [
+      {
+        "en": "The box is empty.",
+        "vi": "Cái hộp trống không."
+      },
+      {
+        "en": "The streets are empty at night.",
+        "vi": "Đường phố vắng tanh vào ban đêm."
+      }
+    ]
+  },
+  {
+    "id": 179,
+    "word": "strong",
+    "ipa": "/strɔːŋ/",
+    "pos": "adjective",
+    "level": 1,
+    "vi": "khỏe, mạnh, mạnh mẽ",
+    "examples": [
+      {
+        "en": "He is very strong.",
+        "vi": "Anh ấy rất khỏe."
+      },
+      {
+        "en": "She has a strong mind.",
+        "vi": "Cô ấy có ý chí mạnh mẽ."
+      }
+    ]
+  },
+  {
+    "id": 180,
+    "word": "weak",
+    "ipa": "/wiːk/",
+    "pos": "adjective",
+    "level": 1,
+    "vi": "yếu",
+    "examples": [
+      {
+        "en": "I feel weak today.",
+        "vi": "Hôm nay tôi thấy yếu trong người."
+      },
+      {
+        "en": "The signal is weak here.",
+        "vi": "Sóng ở đây yếu."
+      }
+    ]
+  },
+  {
+    "id": 181,
+    "word": "clean",
+    "ipa": "/kliːn/",
+    "pos": "adjective",
+    "level": 1,
+    "vi": "sạch, sạch sẽ",
+    "examples": [
+      {
+        "en": "The room is very clean.",
+        "vi": "Căn phòng rất sạch sẽ."
+      },
+      {
+        "en": "Keep your hands clean.",
+        "vi": "Hãy giữ tay sạch sẽ."
+      }
+    ]
+  },
+  {
+    "id": 182,
+    "word": "dirty",
+    "ipa": "/ˈdɜːrti/",
+    "pos": "adjective",
+    "level": 1,
+    "vi": "bẩn, dơ",
+    "examples": [
+      {
+        "en": "My shoes are dirty.",
+        "vi": "Giày của tôi bị bẩn."
+      },
+      {
+        "en": "Don't drink dirty water.",
+        "vi": "Đừng uống nước bẩn."
+      }
+    ]
+  },
+  {
+    "id": 183,
+    "word": "rich",
+    "ipa": "/rɪtʃ/",
+    "pos": "adjective",
+    "level": 1,
+    "vi": "giàu, giàu có",
+    "examples": [
+      {
+        "en": "He is a rich man.",
+        "vi": "Ông ấy là một người giàu."
+      },
+      {
+        "en": "The soup is rich and tasty.",
+        "vi": "Món súp đậm đà và ngon."
+      }
+    ]
+  },
+  {
+    "id": 184,
+    "word": "poor",
+    "ipa": "/pʊr/",
+    "pos": "adjective",
+    "level": 1,
+    "vi": "nghèo; tội nghiệp",
+    "examples": [
+      {
+        "en": "They were very poor.",
+        "vi": "Họ từng rất nghèo."
+      },
+      {
+        "en": "Poor thing, are you okay?",
+        "vi": "Tội nghiệp, bạn có sao không?"
+      }
+    ]
+  },
+  {
+    "id": 185,
+    "word": "nice",
+    "ipa": "/naɪs/",
+    "pos": "adjective",
+    "level": 1,
+    "vi": "tốt, dễ chịu, đẹp",
+    "examples": [
+      {
+        "en": "He is a nice person.",
+        "vi": "Anh ấy là người tốt."
+      },
+      {
+        "en": "The weather is nice today.",
+        "vi": "Hôm nay thời tiết đẹp."
+      }
+    ]
+  },
+  {
+    "id": 186,
+    "word": "now",
+    "ipa": "/naʊ/",
+    "pos": "adverb",
+    "level": 1,
+    "vi": "bây giờ, ngay lúc này",
+    "examples": [
+      {
+        "en": "I am busy now.",
+        "vi": "Bây giờ tôi đang bận."
+      },
+      {
+        "en": "Let's start now.",
+        "vi": "Bắt đầu ngay bây giờ thôi."
+      }
+    ]
+  },
+  {
+    "id": 187,
+    "word": "here",
+    "ipa": "/hɪr/",
+    "pos": "adverb",
+    "level": 1,
+    "vi": "ở đây",
+    "examples": [
+      {
+        "en": "I live here.",
+        "vi": "Tôi sống ở đây."
+      },
+      {
+        "en": "Sign here, please.",
+        "vi": "Vui lòng ký vào đây."
+      }
+    ]
+  },
+  {
+    "id": 188,
+    "word": "there",
+    "ipa": "/ðer/",
+    "pos": "adverb",
+    "level": 1,
+    "vi": "ở đó, ở kia",
+    "examples": [
+      {
+        "en": "Put it over there.",
+        "vi": "Để nó ở đằng kia."
+      },
+      {
+        "en": "I have never been there.",
+        "vi": "Tôi chưa từng đến đó."
+      }
+    ]
+  },
+  {
+    "id": 189,
+    "word": "today",
+    "ipa": "/təˈdeɪ/",
+    "pos": "adverb / noun",
+    "level": 1,
+    "vi": "hôm nay",
+    "examples": [
+      {
+        "en": "What day is it today?",
+        "vi": "Hôm nay là thứ mấy?"
+      },
+      {
+        "en": "I am free today.",
+        "vi": "Hôm nay tôi rảnh."
+      }
+    ]
+  },
+  {
+    "id": 190,
+    "word": "very",
+    "ipa": "/ˈveri/",
+    "pos": "adverb",
+    "level": 1,
+    "vi": "rất",
+    "examples": [
+      {
+        "en": "It is very cold.",
+        "vi": "Trời rất lạnh."
+      },
+      {
+        "en": "Thank you very much.",
+        "vi": "Cảm ơn bạn rất nhiều."
+      }
+    ]
+  },
+  {
+    "id": 191,
+    "word": "more",
+    "ipa": "/mɔːr/",
+    "pos": "adverb / adjective",
+    "level": 1,
+    "vi": "nhiều hơn, thêm",
+    "examples": [
+      {
+        "en": "I need more time.",
+        "vi": "Tôi cần thêm thời gian."
+      },
+      {
+        "en": "Can I have some more?",
+        "vi": "Cho tôi xin thêm một chút được không?"
+      }
+    ]
+  },
+  {
+    "id": 192,
+    "word": "also",
+    "ipa": "/ˈɔːlsoʊ/",
+    "pos": "adverb",
+    "level": 1,
+    "vi": "cũng; ngoài ra",
+    "examples": [
+      {
+        "en": "I also like tea.",
+        "vi": "Tôi cũng thích trà."
+      },
+      {
+        "en": "She is smart and also kind.",
+        "vi": "Cô ấy thông minh và cũng tốt bụng."
+      }
+    ]
+  },
+  {
+    "id": 193,
+    "word": "again",
+    "ipa": "/əˈɡen/",
+    "pos": "adverb",
+    "level": 1,
+    "vi": "lại, lần nữa",
+    "examples": [
+      {
+        "en": "Say it again, please.",
+        "vi": "Nói lại lần nữa đi."
+      },
+      {
+        "en": "Let's meet again soon.",
+        "vi": "Mình sớm gặp lại nhé."
+      }
+    ]
+  },
+  {
+    "id": 194,
+    "word": "always",
+    "ipa": "/ˈɔːlweɪz/",
+    "pos": "adverb",
+    "level": 1,
+    "vi": "luôn luôn",
+    "examples": [
+      {
+        "en": "She is always happy.",
+        "vi": "Cô ấy lúc nào cũng vui."
+      },
+      {
+        "en": "I always drink coffee in the morning.",
+        "vi": "Tôi luôn uống cà phê vào buổi sáng."
+      }
+    ]
+  },
+  {
+    "id": 195,
+    "word": "never",
+    "ipa": "/ˈnevər/",
+    "pos": "adverb",
+    "level": 1,
+    "vi": "không bao giờ",
+    "examples": [
+      {
+        "en": "I never give up.",
+        "vi": "Tôi không bao giờ bỏ cuộc."
+      },
+      {
+        "en": "She never eats meat.",
+        "vi": "Cô ấy không bao giờ ăn thịt."
+      }
+    ]
+  },
+  {
+    "id": 196,
+    "word": "together",
+    "ipa": "/təˈɡeðər/",
+    "pos": "adverb",
+    "level": 1,
+    "vi": "cùng nhau",
+    "examples": [
+      {
+        "en": "Let's work together.",
+        "vi": "Mình làm cùng nhau nhé."
+      },
+      {
+        "en": "They live together.",
+        "vi": "Họ sống cùng nhau."
+      }
+    ]
+  },
+  {
+    "id": 197,
+    "word": "maybe",
+    "ipa": "/ˈmeɪbi/",
+    "pos": "adverb",
+    "level": 1,
+    "vi": "có lẽ, có thể",
+    "examples": [
+      {
+        "en": "Maybe you are right.",
+        "vi": "Có lẽ bạn đúng."
+      },
+      {
+        "en": "Maybe it will rain.",
+        "vi": "Có thể trời sẽ mưa."
+      }
+    ]
+  },
+  {
+    "id": 198,
+    "word": "only",
+    "ipa": "/ˈoʊnli/",
+    "pos": "adverb",
+    "level": 1,
+    "vi": "chỉ; duy nhất",
+    "examples": [
+      {
+        "en": "I have only one dollar.",
+        "vi": "Tôi chỉ có một đô la."
+      },
+      {
+        "en": "She is the only child.",
+        "vi": "Cô ấy là con một."
+      }
+    ]
+  },
+  {
+    "id": 199,
+    "word": "really",
+    "ipa": "/ˈriːəli/",
+    "pos": "adverb",
+    "level": 1,
+    "vi": "thật sự; thật là",
+    "examples": [
+      {
+        "en": "I really like it.",
+        "vi": "Tôi thật sự thích nó."
+      },
+      {
+        "en": "Are you really sure?",
+        "vi": "Bạn thật sự chắc chứ?"
+      }
+    ]
+  },
+  {
+    "id": 200,
+    "word": "still",
+    "ipa": "/stɪl/",
+    "pos": "adverb",
+    "level": 1,
+    "vi": "vẫn, vẫn còn",
+    "examples": [
+      {
+        "en": "He is still sleeping.",
+        "vi": "Anh ấy vẫn đang ngủ."
+      },
+      {
+        "en": "Are you still there?",
+        "vi": "Bạn vẫn còn đó chứ?"
+      }
+    ]
+  }
+]

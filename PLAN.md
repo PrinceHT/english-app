@@ -215,11 +215,11 @@ async function loadLevel(n) {
 }
 ```
 
-- [ ] **C.1** Trích 1000 từ từ `app.js` → xuất ra `data/level1.json`
-- [ ] **C.2** Viết `loadLevel(n)` — fetch + cache trong `levelCache` object
-- [ ] **C.3** Sửa `startDeck()` và `startQuiz()` → `await loadLevel(n)` trước khi dùng
+- [x] **C.1** Trích 1000 từ từ `app.js` → 20 file `data/level1/part01-20.json` (50 từ/file, script: `scripts/extract-words.mjs`)
+- [x] **C.2** Viết `loadLevel1()` — fetch 20 parts song song, cache trong `levelCache`, populate `WORD_MAP`
+- [x] **C.3** `startDeck()` và `startQuiz()` đổi thành async, `await loadLevel1()` trước khi dùng WORDS
 - [ ] **C.4** Hiển thị loading indicator khi fetch (lần đầu tiên user chọn level)
-- [ ] **C.5** Cập nhật `sw.js`: cache `data/level1.json` cùng với assets, dùng cache-first
+- [x] **C.5** Cập nhật `sw.js`: cache toàn bộ 20 file JSON cùng với assets
 - [ ] **C.6** Test offline: load lần đầu có mạng, tắt wifi, mở lại → data vẫn có
 
 ---
@@ -371,7 +371,7 @@ Màu xanh = đúng, màu đỏ = sai/yếu
 |---|---|---|---|---|
 | A | Bảo mật | Azure key an toàn, Firestore rules đúng | ~3h | ⏳ Tiếp theo |
 | B | Quick wins | Accessibility + PWA polish | ~1h | ⏳ |
-| C | Tách data JSON | app.js còn 25KB, lazy load levels | ~2h | ⏳ |
+| C | Tách data JSON | app.js còn 47KB, lazy load levels | ~2h | ✅ |
 | D | Level 2/3 | Mở rộng lên 3000 từ | ~1h + data | ⏸️ Chờ data |
 | E | Statistics | Dashboard tiến độ học | ~4h | 🔜 |
 | F | Quiz nâng cao | Timer + quiz multi-level | ~3h | 🔜 |

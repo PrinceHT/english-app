@@ -1,0 +1,902 @@
+[
+  {
+    "id": 51,
+    "word": "get",
+    "ipa": "/ɡet/",
+    "pos": "verb",
+    "level": 1,
+    "vi": "lấy được, nhận được; trở nên; đến",
+    "examples": [
+      {
+        "en": "I get up at six.",
+        "vi": "Tôi thức dậy lúc sáu giờ."
+      },
+      {
+        "en": "Where did you get this?",
+        "vi": "Bạn lấy cái này ở đâu vậy?"
+      }
+    ]
+  },
+  {
+    "id": 52,
+    "word": "say",
+    "ipa": "/seɪ/",
+    "pos": "verb",
+    "level": 1,
+    "vi": "nói, phát biểu",
+    "examples": [
+      {
+        "en": "What did you say?",
+        "vi": "Bạn vừa nói gì?"
+      },
+      {
+        "en": "Say hello to her for me.",
+        "vi": "Cho tôi gửi lời chào cô ấy."
+      }
+    ]
+  },
+  {
+    "id": 53,
+    "word": "like",
+    "ipa": "/laɪk/",
+    "pos": "verb",
+    "level": 1,
+    "vi": "thích",
+    "examples": [
+      {
+        "en": "I like this song.",
+        "vi": "Tôi thích bài hát này."
+      },
+      {
+        "en": "Do you like coffee?",
+        "vi": "Bạn có thích cà phê không?"
+      }
+    ]
+  },
+  {
+    "id": 54,
+    "word": "need",
+    "ipa": "/niːd/",
+    "pos": "verb",
+    "level": 1,
+    "vi": "cần",
+    "examples": [
+      {
+        "en": "I need your help.",
+        "vi": "Tôi cần bạn giúp."
+      },
+      {
+        "en": "We need more time.",
+        "vi": "Chúng ta cần thêm thời gian."
+      }
+    ]
+  },
+  {
+    "id": 55,
+    "word": "feel",
+    "ipa": "/fiːl/",
+    "pos": "verb",
+    "level": 1,
+    "vi": "cảm thấy",
+    "examples": [
+      {
+        "en": "I feel happy today.",
+        "vi": "Hôm nay tôi thấy vui."
+      },
+      {
+        "en": "How do you feel?",
+        "vi": "Bạn cảm thấy thế nào?"
+      }
+    ]
+  },
+  {
+    "id": 56,
+    "word": "become",
+    "ipa": "/bɪˈkʌm/",
+    "pos": "verb",
+    "level": 1,
+    "vi": "trở thành, trở nên",
+    "examples": [
+      {
+        "en": "She became a doctor.",
+        "vi": "Cô ấy đã trở thành bác sĩ."
+      },
+      {
+        "en": "It is becoming cold.",
+        "vi": "Trời đang trở lạnh."
+      }
+    ]
+  },
+  {
+    "id": 57,
+    "word": "leave",
+    "ipa": "/liːv/",
+    "pos": "verb",
+    "level": 1,
+    "vi": "rời đi; để lại",
+    "examples": [
+      {
+        "en": "I leave home at eight.",
+        "vi": "Tôi rời nhà lúc tám giờ."
+      },
+      {
+        "en": "Don't leave me alone.",
+        "vi": "Đừng để tôi một mình."
+      }
+    ]
+  },
+  {
+    "id": 58,
+    "word": "put",
+    "ipa": "/pʊt/",
+    "pos": "verb",
+    "level": 1,
+    "vi": "đặt, để",
+    "examples": [
+      {
+        "en": "Put the book on the table.",
+        "vi": "Đặt quyển sách lên bàn."
+      },
+      {
+        "en": "Where did you put my keys?",
+        "vi": "Bạn để chìa khóa của tôi ở đâu?"
+      }
+    ]
+  },
+  {
+    "id": 59,
+    "word": "mean",
+    "ipa": "/miːn/",
+    "pos": "verb",
+    "level": 1,
+    "vi": "có nghĩa là; có ý",
+    "examples": [
+      {
+        "en": "What does this word mean?",
+        "vi": "Từ này có nghĩa là gì?"
+      },
+      {
+        "en": "I didn't mean that.",
+        "vi": "Tôi không có ý đó."
+      }
+    ]
+  },
+  {
+    "id": 60,
+    "word": "keep",
+    "ipa": "/kiːp/",
+    "pos": "verb",
+    "level": 1,
+    "vi": "giữ; tiếp tục",
+    "examples": [
+      {
+        "en": "Keep this for me, please.",
+        "vi": "Giữ cái này giúp tôi nhé."
+      },
+      {
+        "en": "Keep trying!",
+        "vi": "Cứ cố gắng lên!"
+      }
+    ]
+  },
+  {
+    "id": 61,
+    "word": "let",
+    "ipa": "/let/",
+    "pos": "verb",
+    "level": 1,
+    "vi": "cho phép, để cho",
+    "examples": [
+      {
+        "en": "Let me help you.",
+        "vi": "Để tôi giúp bạn."
+      },
+      {
+        "en": "Let's go now.",
+        "vi": "Mình đi thôi."
+      }
+    ]
+  },
+  {
+    "id": 62,
+    "word": "begin",
+    "ipa": "/bɪˈɡɪn/",
+    "pos": "verb",
+    "level": 1,
+    "vi": "bắt đầu",
+    "examples": [
+      {
+        "en": "The class begins at nine.",
+        "vi": "Lớp học bắt đầu lúc chín giờ."
+      },
+      {
+        "en": "Let's begin.",
+        "vi": "Bắt đầu thôi."
+      }
+    ]
+  },
+  {
+    "id": 63,
+    "word": "seem",
+    "ipa": "/siːm/",
+    "pos": "verb",
+    "level": 1,
+    "vi": "có vẻ, dường như",
+    "examples": [
+      {
+        "en": "You seem tired.",
+        "vi": "Bạn có vẻ mệt."
+      },
+      {
+        "en": "It seems easy.",
+        "vi": "Việc đó có vẻ dễ."
+      }
+    ]
+  },
+  {
+    "id": 64,
+    "word": "talk",
+    "ipa": "/tɔːk/",
+    "pos": "verb",
+    "level": 1,
+    "vi": "nói chuyện, trò chuyện",
+    "examples": [
+      {
+        "en": "Let's talk later.",
+        "vi": "Mình nói chuyện sau nhé."
+      },
+      {
+        "en": "She is talking on the phone.",
+        "vi": "Cô ấy đang nói chuyện điện thoại."
+      }
+    ]
+  },
+  {
+    "id": 65,
+    "word": "turn",
+    "ipa": "/tɜːrn/",
+    "pos": "verb",
+    "level": 1,
+    "vi": "quay, rẽ, xoay",
+    "examples": [
+      {
+        "en": "Turn left here.",
+        "vi": "Rẽ trái ở đây."
+      },
+      {
+        "en": "Turn off the light.",
+        "vi": "Tắt đèn đi."
+      }
+    ]
+  },
+  {
+    "id": 66,
+    "word": "start",
+    "ipa": "/stɑːrt/",
+    "pos": "verb",
+    "level": 1,
+    "vi": "bắt đầu; khởi động",
+    "examples": [
+      {
+        "en": "Let's start the game.",
+        "vi": "Bắt đầu trò chơi nào."
+      },
+      {
+        "en": "The car won't start.",
+        "vi": "Xe không khởi động được."
+      }
+    ]
+  },
+  {
+    "id": 67,
+    "word": "show",
+    "ipa": "/ʃoʊ/",
+    "pos": "verb",
+    "level": 1,
+    "vi": "chỉ, cho xem, trình diễn",
+    "examples": [
+      {
+        "en": "Show me your photos.",
+        "vi": "Cho tôi xem ảnh của bạn."
+      },
+      {
+        "en": "Let me show you the way.",
+        "vi": "Để tôi chỉ đường cho bạn."
+      }
+    ]
+  },
+  {
+    "id": 68,
+    "word": "hear",
+    "ipa": "/hɪr/",
+    "pos": "verb",
+    "level": 1,
+    "vi": "nghe, nghe thấy",
+    "examples": [
+      {
+        "en": "I can't hear you.",
+        "vi": "Tôi không nghe rõ bạn nói."
+      },
+      {
+        "en": "Did you hear the news?",
+        "vi": "Bạn nghe tin chưa?"
+      }
+    ]
+  },
+  {
+    "id": 69,
+    "word": "hold",
+    "ipa": "/hoʊld/",
+    "pos": "verb",
+    "level": 1,
+    "vi": "cầm, giữ, ôm",
+    "examples": [
+      {
+        "en": "Hold my hand.",
+        "vi": "Nắm tay tôi nào."
+      },
+      {
+        "en": "Can you hold this bag?",
+        "vi": "Bạn cầm giúp cái túi này được không?"
+      }
+    ]
+  },
+  {
+    "id": 70,
+    "word": "bring",
+    "ipa": "/brɪŋ/",
+    "pos": "verb",
+    "level": 1,
+    "vi": "mang đến, đem theo",
+    "examples": [
+      {
+        "en": "Bring an umbrella.",
+        "vi": "Mang theo cái ô nhé."
+      },
+      {
+        "en": "She brought some food.",
+        "vi": "Cô ấy mang đến chút đồ ăn."
+      }
+    ]
+  },
+  {
+    "id": 71,
+    "word": "happen",
+    "ipa": "/ˈhæpən/",
+    "pos": "verb",
+    "level": 1,
+    "vi": "xảy ra",
+    "examples": [
+      {
+        "en": "What happened here?",
+        "vi": "Ở đây đã xảy ra chuyện gì?"
+      },
+      {
+        "en": "It happens sometimes.",
+        "vi": "Chuyện đó thỉnh thoảng xảy ra."
+      }
+    ]
+  },
+  {
+    "id": 72,
+    "word": "sit",
+    "ipa": "/sɪt/",
+    "pos": "verb",
+    "level": 1,
+    "vi": "ngồi",
+    "examples": [
+      {
+        "en": "Please sit down.",
+        "vi": "Mời ngồi."
+      },
+      {
+        "en": "We sat in the garden.",
+        "vi": "Chúng tôi ngồi trong vườn."
+      }
+    ]
+  },
+  {
+    "id": 73,
+    "word": "stand",
+    "ipa": "/stænd/",
+    "pos": "verb",
+    "level": 1,
+    "vi": "đứng",
+    "examples": [
+      {
+        "en": "Please stand up.",
+        "vi": "Vui lòng đứng lên."
+      },
+      {
+        "en": "He is standing at the door.",
+        "vi": "Anh ấy đang đứng ở cửa."
+      }
+    ]
+  },
+  {
+    "id": 74,
+    "word": "lose",
+    "ipa": "/luːz/",
+    "pos": "verb",
+    "level": 1,
+    "vi": "mất; thua",
+    "examples": [
+      {
+        "en": "Don't lose your keys.",
+        "vi": "Đừng làm mất chìa khóa."
+      },
+      {
+        "en": "Our team lost the game.",
+        "vi": "Đội của chúng tôi thua trận."
+      }
+    ]
+  },
+  {
+    "id": 75,
+    "word": "pay",
+    "ipa": "/peɪ/",
+    "pos": "verb",
+    "level": 1,
+    "vi": "trả tiền, thanh toán",
+    "examples": [
+      {
+        "en": "I will pay for dinner.",
+        "vi": "Tôi sẽ trả tiền bữa tối."
+      },
+      {
+        "en": "How much did you pay?",
+        "vi": "Bạn đã trả bao nhiêu?"
+      }
+    ]
+  },
+  {
+    "id": 76,
+    "word": "meet",
+    "ipa": "/miːt/",
+    "pos": "verb",
+    "level": 1,
+    "vi": "gặp, gặp gỡ",
+    "examples": [
+      {
+        "en": "Nice to meet you.",
+        "vi": "Rất vui được gặp bạn."
+      },
+      {
+        "en": "Let's meet at noon.",
+        "vi": "Mình gặp nhau lúc trưa nhé."
+      }
+    ]
+  },
+  {
+    "id": 77,
+    "word": "change",
+    "ipa": "/tʃeɪndʒ/",
+    "pos": "verb",
+    "level": 1,
+    "vi": "thay đổi, đổi",
+    "examples": [
+      {
+        "en": "I want to change my plan.",
+        "vi": "Tôi muốn đổi kế hoạch."
+      },
+      {
+        "en": "Things change over time.",
+        "vi": "Mọi thứ thay đổi theo thời gian."
+      }
+    ]
+  },
+  {
+    "id": 78,
+    "word": "understand",
+    "ipa": "/ˌʌndərˈstænd/",
+    "pos": "verb",
+    "level": 1,
+    "vi": "hiểu",
+    "examples": [
+      {
+        "en": "I don't understand.",
+        "vi": "Tôi không hiểu."
+      },
+      {
+        "en": "Do you understand me?",
+        "vi": "Bạn hiểu ý tôi không?"
+      }
+    ]
+  },
+  {
+    "id": 79,
+    "word": "watch",
+    "ipa": "/wɑːtʃ/",
+    "pos": "verb",
+    "level": 1,
+    "vi": "xem, theo dõi; trông chừng",
+    "examples": [
+      {
+        "en": "I watch TV at night.",
+        "vi": "Tôi xem ti vi vào buổi tối."
+      },
+      {
+        "en": "Watch your step!",
+        "vi": "Coi chừng bước chân!"
+      }
+    ]
+  },
+  {
+    "id": 80,
+    "word": "follow",
+    "ipa": "/ˈfɑːloʊ/",
+    "pos": "verb",
+    "level": 1,
+    "vi": "đi theo, theo dõi, làm theo",
+    "examples": [
+      {
+        "en": "Follow me, please.",
+        "vi": "Đi theo tôi nào."
+      },
+      {
+        "en": "Follow the rules.",
+        "vi": "Hãy tuân theo quy tắc."
+      }
+    ]
+  },
+  {
+    "id": 81,
+    "word": "stop",
+    "ipa": "/stɑːp/",
+    "pos": "verb",
+    "level": 1,
+    "vi": "dừng lại, ngừng",
+    "examples": [
+      {
+        "en": "Stop here, please.",
+        "vi": "Dừng ở đây nhé."
+      },
+      {
+        "en": "It stopped raining.",
+        "vi": "Trời đã ngừng mưa."
+      }
+    ]
+  },
+  {
+    "id": 82,
+    "word": "spend",
+    "ipa": "/spend/",
+    "pos": "verb",
+    "level": 1,
+    "vi": "tiêu (tiền); dành (thời gian)",
+    "examples": [
+      {
+        "en": "I spend too much money.",
+        "vi": "Tôi tiêu quá nhiều tiền."
+      },
+      {
+        "en": "We spent the day together.",
+        "vi": "Chúng tôi dành cả ngày bên nhau."
+      }
+    ]
+  },
+  {
+    "id": 83,
+    "word": "grow",
+    "ipa": "/ɡroʊ/",
+    "pos": "verb",
+    "level": 1,
+    "vi": "lớn lên; trồng; phát triển",
+    "examples": [
+      {
+        "en": "Children grow fast.",
+        "vi": "Trẻ con lớn rất nhanh."
+      },
+      {
+        "en": "We grow vegetables.",
+        "vi": "Chúng tôi trồng rau."
+      }
+    ]
+  },
+  {
+    "id": 84,
+    "word": "open",
+    "ipa": "/ˈoʊpən/",
+    "pos": "verb",
+    "level": 1,
+    "vi": "mở",
+    "examples": [
+      {
+        "en": "Open the box, please.",
+        "vi": "Mở cái hộp ra giúp tôi nhé."
+      },
+      {
+        "en": "The shop opens at eight.",
+        "vi": "Cửa hàng mở lúc tám giờ."
+      }
+    ]
+  },
+  {
+    "id": 85,
+    "word": "walk",
+    "ipa": "/wɔːk/",
+    "pos": "verb",
+    "level": 1,
+    "vi": "đi bộ",
+    "examples": [
+      {
+        "en": "I walk to work.",
+        "vi": "Tôi đi bộ đến chỗ làm."
+      },
+      {
+        "en": "Let's walk in the park.",
+        "vi": "Mình đi dạo trong công viên nhé."
+      }
+    ]
+  },
+  {
+    "id": 86,
+    "word": "win",
+    "ipa": "/wɪn/",
+    "pos": "verb",
+    "level": 1,
+    "vi": "thắng, giành chiến thắng",
+    "examples": [
+      {
+        "en": "I hope we win.",
+        "vi": "Tôi hy vọng chúng ta thắng."
+      },
+      {
+        "en": "She won the game.",
+        "vi": "Cô ấy thắng trận."
+      }
+    ]
+  },
+  {
+    "id": 87,
+    "word": "remember",
+    "ipa": "/rɪˈmembər/",
+    "pos": "verb",
+    "level": 1,
+    "vi": "nhớ, ghi nhớ",
+    "examples": [
+      {
+        "en": "I can't remember his name.",
+        "vi": "Tôi không nhớ tên anh ấy."
+      },
+      {
+        "en": "Remember to call me.",
+        "vi": "Nhớ gọi cho tôi nhé."
+      }
+    ]
+  },
+  {
+    "id": 88,
+    "word": "buy",
+    "ipa": "/baɪ/",
+    "pos": "verb",
+    "level": 1,
+    "vi": "mua",
+    "examples": [
+      {
+        "en": "I want to buy a gift.",
+        "vi": "Tôi muốn mua một món quà."
+      },
+      {
+        "en": "Where did you buy that?",
+        "vi": "Bạn mua cái đó ở đâu?"
+      }
+    ]
+  },
+  {
+    "id": 89,
+    "word": "wait",
+    "ipa": "/weɪt/",
+    "pos": "verb",
+    "level": 1,
+    "vi": "chờ, đợi",
+    "examples": [
+      {
+        "en": "Please wait a moment.",
+        "vi": "Vui lòng đợi một lát."
+      },
+      {
+        "en": "I am waiting for you.",
+        "vi": "Tôi đang đợi bạn."
+      }
+    ]
+  },
+  {
+    "id": 90,
+    "word": "send",
+    "ipa": "/send/",
+    "pos": "verb",
+    "level": 1,
+    "vi": "gửi",
+    "examples": [
+      {
+        "en": "I will send you a message.",
+        "vi": "Tôi sẽ gửi tin nhắn cho bạn."
+      },
+      {
+        "en": "Send it by email.",
+        "vi": "Gửi nó qua email nhé."
+      }
+    ]
+  },
+  {
+    "id": 91,
+    "word": "build",
+    "ipa": "/bɪld/",
+    "pos": "verb",
+    "level": 1,
+    "vi": "xây, xây dựng",
+    "examples": [
+      {
+        "en": "They build houses.",
+        "vi": "Họ xây nhà."
+      },
+      {
+        "en": "We built a strong team.",
+        "vi": "Chúng tôi xây dựng một đội mạnh."
+      }
+    ]
+  },
+  {
+    "id": 92,
+    "word": "stay",
+    "ipa": "/steɪ/",
+    "pos": "verb",
+    "level": 1,
+    "vi": "ở lại, lưu lại",
+    "examples": [
+      {
+        "en": "Stay here with me.",
+        "vi": "Ở lại đây với tôi nhé."
+      },
+      {
+        "en": "We stayed at a hotel.",
+        "vi": "Chúng tôi ở khách sạn."
+      }
+    ]
+  },
+  {
+    "id": 93,
+    "word": "fall",
+    "ipa": "/fɔːl/",
+    "pos": "verb",
+    "level": 1,
+    "vi": "rơi, ngã",
+    "examples": [
+      {
+        "en": "Be careful, don't fall.",
+        "vi": "Cẩn thận, đừng ngã."
+      },
+      {
+        "en": "Leaves fall in autumn.",
+        "vi": "Lá rụng vào mùa thu."
+      }
+    ]
+  },
+  {
+    "id": 94,
+    "word": "run",
+    "ipa": "/rʌn/",
+    "pos": "verb",
+    "level": 1,
+    "vi": "chạy; điều hành",
+    "examples": [
+      {
+        "en": "I run every morning.",
+        "vi": "Tôi chạy bộ mỗi sáng."
+      },
+      {
+        "en": "She runs a small shop.",
+        "vi": "Cô ấy điều hành một cửa hàng nhỏ."
+      }
+    ]
+  },
+  {
+    "id": 95,
+    "word": "sleep",
+    "ipa": "/sliːp/",
+    "pos": "verb",
+    "level": 1,
+    "vi": "ngủ",
+    "examples": [
+      {
+        "en": "I sleep eight hours.",
+        "vi": "Tôi ngủ tám tiếng."
+      },
+      {
+        "en": "The baby is sleeping.",
+        "vi": "Em bé đang ngủ."
+      }
+    ]
+  },
+  {
+    "id": 96,
+    "word": "study",
+    "ipa": "/ˈstʌdi/",
+    "pos": "verb",
+    "level": 1,
+    "vi": "học, nghiên cứu",
+    "examples": [
+      {
+        "en": "I study English at night.",
+        "vi": "Tôi học tiếng Anh vào buổi tối."
+      },
+      {
+        "en": "She studies hard.",
+        "vi": "Cô ấy học chăm chỉ."
+      }
+    ]
+  },
+  {
+    "id": 97,
+    "word": "drive",
+    "ipa": "/draɪv/",
+    "pos": "verb",
+    "level": 1,
+    "vi": "lái xe",
+    "examples": [
+      {
+        "en": "Can you drive?",
+        "vi": "Bạn biết lái xe không?"
+      },
+      {
+        "en": "He drives to work.",
+        "vi": "Anh ấy lái xe đi làm."
+      }
+    ]
+  },
+  {
+    "id": 98,
+    "word": "sell",
+    "ipa": "/sel/",
+    "pos": "verb",
+    "level": 1,
+    "vi": "bán",
+    "examples": [
+      {
+        "en": "They sell fresh fruit.",
+        "vi": "Họ bán trái cây tươi."
+      },
+      {
+        "en": "I want to sell my old phone.",
+        "vi": "Tôi muốn bán chiếc điện thoại cũ."
+      }
+    ]
+  },
+  {
+    "id": 99,
+    "word": "teach",
+    "ipa": "/tiːtʃ/",
+    "pos": "verb",
+    "level": 1,
+    "vi": "dạy, giảng dạy",
+    "examples": [
+      {
+        "en": "She teaches English.",
+        "vi": "Cô ấy dạy tiếng Anh."
+      },
+      {
+        "en": "Can you teach me?",
+        "vi": "Bạn dạy tôi được không?"
+      }
+    ]
+  },
+  {
+    "id": 100,
+    "word": "call",
+    "ipa": "/kɔːl/",
+    "pos": "verb",
+    "level": 1,
+    "vi": "gọi; gọi điện",
+    "examples": [
+      {
+        "en": "Call me tonight.",
+        "vi": "Tối nay gọi cho tôi nhé."
+      },
+      {
+        "en": "They call him Tom.",
+        "vi": "Họ gọi anh ấy là Tom."
+      }
+    ]
+  }
+]

@@ -1,0 +1,902 @@
+[
+  {
+    "id": 301,
+    "word": "fish",
+    "ipa": "/fɪʃ/",
+    "pos": "noun",
+    "level": 1,
+    "vi": "con cá",
+    "examples": [
+      {
+        "en": "We caught three fish.",
+        "vi": "Chúng tôi bắt được ba con cá."
+      },
+      {
+        "en": "I like to eat fish.",
+        "vi": "Tôi thích ăn cá."
+      }
+    ]
+  },
+  {
+    "id": 302,
+    "word": "flower",
+    "ipa": "/ˈflaʊər/",
+    "pos": "noun",
+    "level": 1,
+    "vi": "bông hoa",
+    "examples": [
+      {
+        "en": "These flowers smell nice.",
+        "vi": "Những bông hoa này thơm."
+      },
+      {
+        "en": "He gave her a flower.",
+        "vi": "Anh ấy tặng cô ấy một bông hoa."
+      }
+    ]
+  },
+  {
+    "id": 303,
+    "word": "foot",
+    "ipa": "/fʊt/",
+    "pos": "noun",
+    "level": 1,
+    "vi": "bàn chân",
+    "examples": [
+      {
+        "en": "My foot hurts.",
+        "vi": "Bàn chân tôi đau."
+      },
+      {
+        "en": "We went there on foot.",
+        "vi": "Chúng tôi đi bộ đến đó."
+      }
+    ]
+  },
+  {
+    "id": 304,
+    "word": "forest",
+    "ipa": "/ˈfɔːrɪst/",
+    "pos": "noun",
+    "level": 1,
+    "vi": "khu rừng",
+    "examples": [
+      {
+        "en": "Many animals live in the forest.",
+        "vi": "Nhiều loài vật sống trong rừng."
+      },
+      {
+        "en": "The forest is quiet.",
+        "vi": "Khu rừng yên tĩnh."
+      }
+    ]
+  },
+  {
+    "id": 305,
+    "word": "fun",
+    "ipa": "/fʌn/",
+    "pos": "noun",
+    "level": 1,
+    "vi": "niềm vui, sự vui vẻ",
+    "examples": [
+      {
+        "en": "We had a lot of fun.",
+        "vi": "Chúng tôi đã rất vui."
+      },
+      {
+        "en": "Learning can be fun.",
+        "vi": "Học có thể rất vui."
+      }
+    ]
+  },
+  {
+    "id": 306,
+    "word": "future",
+    "ipa": "/ˈfjuːtʃər/",
+    "pos": "noun",
+    "level": 1,
+    "vi": "tương lai",
+    "examples": [
+      {
+        "en": "Think about your future.",
+        "vi": "Hãy nghĩ về tương lai của bạn."
+      },
+      {
+        "en": "Nobody knows the future.",
+        "vi": "Không ai biết được tương lai."
+      }
+    ]
+  },
+  {
+    "id": 307,
+    "word": "garden",
+    "ipa": "/ˈɡɑːrdn/",
+    "pos": "noun",
+    "level": 1,
+    "vi": "khu vườn",
+    "examples": [
+      {
+        "en": "We grow vegetables in the garden.",
+        "vi": "Chúng tôi trồng rau trong vườn."
+      },
+      {
+        "en": "The garden is beautiful in spring.",
+        "vi": "Khu vườn đẹp vào mùa xuân."
+      }
+    ]
+  },
+  {
+    "id": 308,
+    "word": "gift",
+    "ipa": "/ɡɪft/",
+    "pos": "noun",
+    "level": 1,
+    "vi": "món quà",
+    "examples": [
+      {
+        "en": "Thank you for the gift.",
+        "vi": "Cảm ơn vì món quà."
+      },
+      {
+        "en": "I bought a gift for my mother.",
+        "vi": "Tôi mua một món quà cho mẹ."
+      }
+    ]
+  },
+  {
+    "id": 309,
+    "word": "glass",
+    "ipa": "/ɡlæs/",
+    "pos": "noun",
+    "level": 1,
+    "vi": "cái ly; thủy tinh",
+    "examples": [
+      {
+        "en": "A glass of water, please.",
+        "vi": "Cho tôi một ly nước."
+      },
+      {
+        "en": "The window is made of glass.",
+        "vi": "Cửa sổ làm bằng thủy tinh."
+      }
+    ]
+  },
+  {
+    "id": 310,
+    "word": "gold",
+    "ipa": "/ɡoʊld/",
+    "pos": "noun",
+    "level": 1,
+    "vi": "vàng (kim loại)",
+    "examples": [
+      {
+        "en": "The ring is made of gold.",
+        "vi": "Chiếc nhẫn làm bằng vàng."
+      },
+      {
+        "en": "Gold is very expensive.",
+        "vi": "Vàng rất đắt."
+      }
+    ]
+  },
+  {
+    "id": 311,
+    "word": "ground",
+    "ipa": "/ɡraʊnd/",
+    "pos": "noun",
+    "level": 1,
+    "vi": "mặt đất",
+    "examples": [
+      {
+        "en": "The ball fell on the ground.",
+        "vi": "Quả bóng rơi xuống đất."
+      },
+      {
+        "en": "We sat on the ground.",
+        "vi": "Chúng tôi ngồi trên mặt đất."
+      }
+    ]
+  },
+  {
+    "id": 312,
+    "word": "hair",
+    "ipa": "/her/",
+    "pos": "noun",
+    "level": 1,
+    "vi": "tóc",
+    "examples": [
+      {
+        "en": "She has long black hair.",
+        "vi": "Cô ấy có mái tóc đen dài."
+      },
+      {
+        "en": "I need to cut my hair.",
+        "vi": "Tôi cần cắt tóc."
+      }
+    ]
+  },
+  {
+    "id": 313,
+    "word": "half",
+    "ipa": "/hæf/",
+    "pos": "noun",
+    "level": 1,
+    "vi": "một nửa",
+    "examples": [
+      {
+        "en": "I ate half of the cake.",
+        "vi": "Tôi ăn nửa cái bánh."
+      },
+      {
+        "en": "Half of the students are girls.",
+        "vi": "Một nửa số học sinh là nữ."
+      }
+    ]
+  },
+  {
+    "id": 314,
+    "word": "health",
+    "ipa": "/helθ/",
+    "pos": "noun",
+    "level": 1,
+    "vi": "sức khỏe",
+    "examples": [
+      {
+        "en": "Health is more important than money.",
+        "vi": "Sức khỏe quan trọng hơn tiền bạc."
+      },
+      {
+        "en": "She is in good health.",
+        "vi": "Cô ấy có sức khỏe tốt."
+      }
+    ]
+  },
+  {
+    "id": 315,
+    "word": "heart",
+    "ipa": "/hɑːrt/",
+    "pos": "noun",
+    "level": 1,
+    "vi": "trái tim",
+    "examples": [
+      {
+        "en": "My heart is beating fast.",
+        "vi": "Tim tôi đập nhanh."
+      },
+      {
+        "en": "She has a kind heart.",
+        "vi": "Cô ấy có một trái tim nhân hậu."
+      }
+    ]
+  },
+  {
+    "id": 316,
+    "word": "history",
+    "ipa": "/ˈhɪstri/",
+    "pos": "noun",
+    "level": 1,
+    "vi": "lịch sử",
+    "examples": [
+      {
+        "en": "I love studying history.",
+        "vi": "Tôi thích học lịch sử."
+      },
+      {
+        "en": "This city has a long history.",
+        "vi": "Thành phố này có lịch sử lâu đời."
+      }
+    ]
+  },
+  {
+    "id": 317,
+    "word": "home",
+    "ipa": "/hoʊm/",
+    "pos": "noun",
+    "level": 1,
+    "vi": "nhà, mái ấm",
+    "examples": [
+      {
+        "en": "I want to go home.",
+        "vi": "Tôi muốn về nhà."
+      },
+      {
+        "en": "There is no place like home.",
+        "vi": "Không đâu bằng nhà mình."
+      }
+    ]
+  },
+  {
+    "id": 318,
+    "word": "hospital",
+    "ipa": "/ˈhɑːspɪtl/",
+    "pos": "noun",
+    "level": 1,
+    "vi": "bệnh viện",
+    "examples": [
+      {
+        "en": "He is in the hospital.",
+        "vi": "Anh ấy đang ở bệnh viện."
+      },
+      {
+        "en": "The hospital is near my house.",
+        "vi": "Bệnh viện ở gần nhà tôi."
+      }
+    ]
+  },
+  {
+    "id": 319,
+    "word": "hotel",
+    "ipa": "/hoʊˈtel/",
+    "pos": "noun",
+    "level": 1,
+    "vi": "khách sạn",
+    "examples": [
+      {
+        "en": "We stayed at a nice hotel.",
+        "vi": "Chúng tôi ở một khách sạn đẹp."
+      },
+      {
+        "en": "The hotel is by the sea.",
+        "vi": "Khách sạn ở cạnh biển."
+      }
+    ]
+  },
+  {
+    "id": 320,
+    "word": "idea",
+    "ipa": "/aɪˈdiːə/",
+    "pos": "noun",
+    "level": 1,
+    "vi": "ý tưởng, ý kiến",
+    "examples": [
+      {
+        "en": "That's a great idea!",
+        "vi": "Một ý tưởng tuyệt vời!"
+      },
+      {
+        "en": "I have no idea.",
+        "vi": "Tôi chẳng có ý gì cả."
+      }
+    ]
+  },
+  {
+    "id": 321,
+    "word": "island",
+    "ipa": "/ˈaɪlənd/",
+    "pos": "noun",
+    "level": 1,
+    "vi": "hòn đảo",
+    "examples": [
+      {
+        "en": "They live on a small island.",
+        "vi": "Họ sống trên một hòn đảo nhỏ."
+      },
+      {
+        "en": "The island is beautiful.",
+        "vi": "Hòn đảo rất đẹp."
+      }
+    ]
+  },
+  {
+    "id": 322,
+    "word": "key",
+    "ipa": "/kiː/",
+    "pos": "noun",
+    "level": 1,
+    "vi": "chìa khóa",
+    "examples": [
+      {
+        "en": "I lost my keys.",
+        "vi": "Tôi làm mất chìa khóa."
+      },
+      {
+        "en": "Where is the car key?",
+        "vi": "Chìa khóa xe đâu rồi?"
+      }
+    ]
+  },
+  {
+    "id": 323,
+    "word": "kid",
+    "ipa": "/kɪd/",
+    "pos": "noun",
+    "level": 1,
+    "vi": "đứa trẻ, đứa nhỏ",
+    "examples": [
+      {
+        "en": "The kids are playing outside.",
+        "vi": "Bọn trẻ đang chơi bên ngoài."
+      },
+      {
+        "en": "She has two kids.",
+        "vi": "Cô ấy có hai đứa con."
+      }
+    ]
+  },
+  {
+    "id": 324,
+    "word": "king",
+    "ipa": "/kɪŋ/",
+    "pos": "noun",
+    "level": 1,
+    "vi": "vua, nhà vua",
+    "examples": [
+      {
+        "en": "The king lived in a big palace.",
+        "vi": "Nhà vua sống trong một cung điện lớn."
+      },
+      {
+        "en": "He is the king of the country.",
+        "vi": "Ông ấy là vua của đất nước."
+      }
+    ]
+  },
+  {
+    "id": 325,
+    "word": "kitchen",
+    "ipa": "/ˈkɪtʃɪn/",
+    "pos": "noun",
+    "level": 1,
+    "vi": "nhà bếp",
+    "examples": [
+      {
+        "en": "My mother is in the kitchen.",
+        "vi": "Mẹ tôi đang ở trong bếp."
+      },
+      {
+        "en": "The kitchen is clean.",
+        "vi": "Nhà bếp sạch sẽ."
+      }
+    ]
+  },
+  {
+    "id": 326,
+    "word": "land",
+    "ipa": "/lænd/",
+    "pos": "noun",
+    "level": 1,
+    "vi": "đất, vùng đất",
+    "examples": [
+      {
+        "en": "They bought some land.",
+        "vi": "Họ mua một mảnh đất."
+      },
+      {
+        "en": "The land here is good for rice.",
+        "vi": "Đất ở đây tốt cho cây lúa."
+      }
+    ]
+  },
+  {
+    "id": 327,
+    "word": "language",
+    "ipa": "/ˈlæŋɡwɪdʒ/",
+    "pos": "noun",
+    "level": 1,
+    "vi": "ngôn ngữ",
+    "examples": [
+      {
+        "en": "English is a useful language.",
+        "vi": "Tiếng Anh là một ngôn ngữ hữu ích."
+      },
+      {
+        "en": "How many languages do you speak?",
+        "vi": "Bạn nói được bao nhiêu thứ tiếng?"
+      }
+    ]
+  },
+  {
+    "id": 328,
+    "word": "leg",
+    "ipa": "/leɡ/",
+    "pos": "noun",
+    "level": 1,
+    "vi": "cái chân (cẳng chân)",
+    "examples": [
+      {
+        "en": "My legs are tired.",
+        "vi": "Chân tôi mỏi."
+      },
+      {
+        "en": "The table has four legs.",
+        "vi": "Cái bàn có bốn chân."
+      }
+    ]
+  },
+  {
+    "id": 329,
+    "word": "lesson",
+    "ipa": "/ˈlesn/",
+    "pos": "noun",
+    "level": 1,
+    "vi": "bài học",
+    "examples": [
+      {
+        "en": "Today's lesson is easy.",
+        "vi": "Bài học hôm nay dễ."
+      },
+      {
+        "en": "We learn a lesson from mistakes.",
+        "vi": "Chúng ta rút ra bài học từ sai lầm."
+      }
+    ]
+  },
+  {
+    "id": 330,
+    "word": "letter",
+    "ipa": "/ˈletər/",
+    "pos": "noun",
+    "level": 1,
+    "vi": "lá thư; chữ cái",
+    "examples": [
+      {
+        "en": "I wrote a letter to my friend.",
+        "vi": "Tôi viết một lá thư cho bạn."
+      },
+      {
+        "en": "The word 'cat' has three letters.",
+        "vi": "Từ 'cat' có ba chữ cái."
+      }
+    ]
+  },
+  {
+    "id": 331,
+    "word": "able",
+    "ipa": "/ˈeɪbl/",
+    "pos": "adjective",
+    "level": 1,
+    "vi": "có thể, có khả năng",
+    "examples": [
+      {
+        "en": "She is able to swim.",
+        "vi": "Cô ấy có thể bơi."
+      },
+      {
+        "en": "Are you able to come?",
+        "vi": "Bạn có thể đến không?"
+      }
+    ]
+  },
+  {
+    "id": 332,
+    "word": "afraid",
+    "ipa": "/əˈfreɪd/",
+    "pos": "adjective",
+    "level": 1,
+    "vi": "sợ, e ngại",
+    "examples": [
+      {
+        "en": "Don't be afraid.",
+        "vi": "Đừng sợ."
+      },
+      {
+        "en": "I am afraid of dogs.",
+        "vi": "Tôi sợ chó."
+      }
+    ]
+  },
+  {
+    "id": 333,
+    "word": "angry",
+    "ipa": "/ˈæŋɡri/",
+    "pos": "adjective",
+    "level": 1,
+    "vi": "tức giận",
+    "examples": [
+      {
+        "en": "Why are you angry?",
+        "vi": "Sao bạn lại giận?"
+      },
+      {
+        "en": "He was angry with me.",
+        "vi": "Anh ấy giận tôi."
+      }
+    ]
+  },
+  {
+    "id": 334,
+    "word": "bad",
+    "ipa": "/bæd/",
+    "pos": "adjective",
+    "level": 1,
+    "vi": "xấu, tệ, dở",
+    "examples": [
+      {
+        "en": "The weather is bad today.",
+        "vi": "Hôm nay thời tiết xấu."
+      },
+      {
+        "en": "That's not a bad idea.",
+        "vi": "Đó không phải là ý tồi."
+      }
+    ]
+  },
+  {
+    "id": 335,
+    "word": "black",
+    "ipa": "/blæk/",
+    "pos": "adjective",
+    "level": 1,
+    "vi": "màu đen",
+    "examples": [
+      {
+        "en": "She has a black cat.",
+        "vi": "Cô ấy có một con mèo đen."
+      },
+      {
+        "en": "I like black coffee.",
+        "vi": "Tôi thích cà phê đen."
+      }
+    ]
+  },
+  {
+    "id": 336,
+    "word": "white",
+    "ipa": "/waɪt/",
+    "pos": "adjective",
+    "level": 1,
+    "vi": "màu trắng",
+    "examples": [
+      {
+        "en": "He wore a white shirt.",
+        "vi": "Anh ấy mặc một chiếc áo trắng."
+      },
+      {
+        "en": "The snow is white.",
+        "vi": "Tuyết màu trắng."
+      }
+    ]
+  },
+  {
+    "id": 337,
+    "word": "red",
+    "ipa": "/red/",
+    "pos": "adjective",
+    "level": 1,
+    "vi": "màu đỏ",
+    "examples": [
+      {
+        "en": "She has a red dress.",
+        "vi": "Cô ấy có một chiếc váy đỏ."
+      },
+      {
+        "en": "The apple is red.",
+        "vi": "Quả táo màu đỏ."
+      }
+    ]
+  },
+  {
+    "id": 338,
+    "word": "blue",
+    "ipa": "/bluː/",
+    "pos": "adjective",
+    "level": 1,
+    "vi": "màu xanh dương",
+    "examples": [
+      {
+        "en": "The sky is blue.",
+        "vi": "Bầu trời xanh."
+      },
+      {
+        "en": "He bought a blue car.",
+        "vi": "Anh ấy mua một chiếc xe màu xanh."
+      }
+    ]
+  },
+  {
+    "id": 339,
+    "word": "green",
+    "ipa": "/ɡriːn/",
+    "pos": "adjective",
+    "level": 1,
+    "vi": "màu xanh lá",
+    "examples": [
+      {
+        "en": "The leaves are green.",
+        "vi": "Lá cây màu xanh."
+      },
+      {
+        "en": "She likes the green dress.",
+        "vi": "Cô ấy thích chiếc váy xanh lá."
+      }
+    ]
+  },
+  {
+    "id": 340,
+    "word": "busy",
+    "ipa": "/ˈbɪzi/",
+    "pos": "adjective",
+    "level": 1,
+    "vi": "bận rộn",
+    "examples": [
+      {
+        "en": "I am busy today.",
+        "vi": "Hôm nay tôi bận."
+      },
+      {
+        "en": "The street is busy.",
+        "vi": "Con phố đông đúc."
+      }
+    ]
+  },
+  {
+    "id": 341,
+    "word": "careful",
+    "ipa": "/ˈkerfl/",
+    "pos": "adjective",
+    "level": 1,
+    "vi": "cẩn thận",
+    "examples": [
+      {
+        "en": "Be careful on the road.",
+        "vi": "Cẩn thận khi đi đường."
+      },
+      {
+        "en": "She is a careful driver.",
+        "vi": "Cô ấy là một người lái xe cẩn thận."
+      }
+    ]
+  },
+  {
+    "id": 342,
+    "word": "cheap",
+    "ipa": "/tʃiːp/",
+    "pos": "adjective",
+    "level": 1,
+    "vi": "rẻ",
+    "examples": [
+      {
+        "en": "This shirt is cheap.",
+        "vi": "Cái áo này rẻ."
+      },
+      {
+        "en": "We found a cheap hotel.",
+        "vi": "Chúng tôi tìm được một khách sạn rẻ."
+      }
+    ]
+  },
+  {
+    "id": 343,
+    "word": "expensive",
+    "ipa": "/ɪkˈspensɪv/",
+    "pos": "adjective",
+    "level": 1,
+    "vi": "đắt, mắc",
+    "examples": [
+      {
+        "en": "This phone is too expensive.",
+        "vi": "Cái điện thoại này đắt quá."
+      },
+      {
+        "en": "Gold is expensive.",
+        "vi": "Vàng thì đắt."
+      }
+    ]
+  },
+  {
+    "id": 344,
+    "word": "clear",
+    "ipa": "/klɪr/",
+    "pos": "adjective",
+    "level": 1,
+    "vi": "rõ ràng; trong (nước, trời)",
+    "examples": [
+      {
+        "en": "The sky is clear today.",
+        "vi": "Hôm nay trời quang."
+      },
+      {
+        "en": "Is my explanation clear?",
+        "vi": "Tôi giải thích có rõ không?"
+      }
+    ]
+  },
+  {
+    "id": 345,
+    "word": "cool",
+    "ipa": "/kuːl/",
+    "pos": "adjective",
+    "level": 1,
+    "vi": "mát mẻ; tuyệt (cách nói thân mật)",
+    "examples": [
+      {
+        "en": "The weather is cool today.",
+        "vi": "Hôm nay trời mát."
+      },
+      {
+        "en": "That's a cool idea.",
+        "vi": "Đó là một ý tưởng hay đấy."
+      }
+    ]
+  },
+  {
+    "id": 346,
+    "word": "warm",
+    "ipa": "/wɔːrm/",
+    "pos": "adjective",
+    "level": 1,
+    "vi": "ấm áp",
+    "examples": [
+      {
+        "en": "The water is warm.",
+        "vi": "Nước ấm."
+      },
+      {
+        "en": "Wear a warm coat.",
+        "vi": "Mặc một chiếc áo khoác ấm vào."
+      }
+    ]
+  },
+  {
+    "id": 347,
+    "word": "dark",
+    "ipa": "/dɑːrk/",
+    "pos": "adjective",
+    "level": 1,
+    "vi": "tối; sẫm màu",
+    "examples": [
+      {
+        "en": "It is dark outside.",
+        "vi": "Bên ngoài trời tối."
+      },
+      {
+        "en": "She has dark hair.",
+        "vi": "Cô ấy có mái tóc sẫm màu."
+      }
+    ]
+  },
+  {
+    "id": 348,
+    "word": "deep",
+    "ipa": "/diːp/",
+    "pos": "adjective",
+    "level": 1,
+    "vi": "sâu",
+    "examples": [
+      {
+        "en": "The river is very deep.",
+        "vi": "Dòng sông rất sâu."
+      },
+      {
+        "en": "Take a deep breath.",
+        "vi": "Hít một hơi thật sâu."
+      }
+    ]
+  },
+  {
+    "id": 349,
+    "word": "dry",
+    "ipa": "/draɪ/",
+    "pos": "adjective",
+    "level": 1,
+    "vi": "khô",
+    "examples": [
+      {
+        "en": "My clothes are dry now.",
+        "vi": "Quần áo của tôi khô rồi."
+      },
+      {
+        "en": "The land is very dry.",
+        "vi": "Đất rất khô."
+      }
+    ]
+  },
+  {
+    "id": 350,
+    "word": "wet",
+    "ipa": "/wet/",
+    "pos": "adjective",
+    "level": 1,
+    "vi": "ướt",
+    "examples": [
+      {
+        "en": "My shoes are wet.",
+        "vi": "Giày của tôi bị ướt."
+      },
+      {
+        "en": "The grass is wet.",
+        "vi": "Cỏ ướt."
+      }
+    ]
+  }
+]

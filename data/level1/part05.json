@@ -1,0 +1,902 @@
+[
+  {
+    "id": 201,
+    "word": "add",
+    "ipa": "/æd/",
+    "pos": "verb",
+    "level": 1,
+    "vi": "thêm vào; cộng",
+    "examples": [
+      {
+        "en": "Add some salt to the soup.",
+        "vi": "Thêm chút muối vào súp."
+      },
+      {
+        "en": "Add your name to the list.",
+        "vi": "Thêm tên bạn vào danh sách."
+      }
+    ]
+  },
+  {
+    "id": 202,
+    "word": "answer",
+    "ipa": "/ˈænsər/",
+    "pos": "verb",
+    "level": 1,
+    "vi": "trả lời",
+    "examples": [
+      {
+        "en": "Please answer my question.",
+        "vi": "Vui lòng trả lời câu hỏi của tôi."
+      },
+      {
+        "en": "She didn't answer the phone.",
+        "vi": "Cô ấy không nghe máy."
+      }
+    ]
+  },
+  {
+    "id": 203,
+    "word": "believe",
+    "ipa": "/bɪˈliːv/",
+    "pos": "verb",
+    "level": 1,
+    "vi": "tin, tin tưởng",
+    "examples": [
+      {
+        "en": "I believe you.",
+        "vi": "Tôi tin bạn."
+      },
+      {
+        "en": "Do you believe in luck?",
+        "vi": "Bạn có tin vào may mắn không?"
+      }
+    ]
+  },
+  {
+    "id": 204,
+    "word": "break",
+    "ipa": "/breɪk/",
+    "pos": "verb",
+    "level": 1,
+    "vi": "làm vỡ, làm gãy; nghỉ giải lao",
+    "examples": [
+      {
+        "en": "Don't break the glass.",
+        "vi": "Đừng làm vỡ cái cốc."
+      },
+      {
+        "en": "Let's take a break.",
+        "vi": "Mình nghỉ một chút nhé."
+      }
+    ]
+  },
+  {
+    "id": 205,
+    "word": "carry",
+    "ipa": "/ˈkæri/",
+    "pos": "verb",
+    "level": 1,
+    "vi": "mang, vác, mang theo",
+    "examples": [
+      {
+        "en": "Can you carry this box?",
+        "vi": "Bạn mang giúp cái hộp này được không?"
+      },
+      {
+        "en": "She carries a small bag.",
+        "vi": "Cô ấy mang một cái túi nhỏ."
+      }
+    ]
+  },
+  {
+    "id": 206,
+    "word": "catch",
+    "ipa": "/kætʃ/",
+    "pos": "verb",
+    "level": 1,
+    "vi": "bắt, chụp; bắt kịp (xe)",
+    "examples": [
+      {
+        "en": "Catch the ball!",
+        "vi": "Bắt bóng đi!"
+      },
+      {
+        "en": "I need to catch the bus.",
+        "vi": "Tôi cần bắt kịp xe buýt."
+      }
+    ]
+  },
+  {
+    "id": 207,
+    "word": "choose",
+    "ipa": "/tʃuːz/",
+    "pos": "verb",
+    "level": 1,
+    "vi": "chọn, lựa chọn",
+    "examples": [
+      {
+        "en": "Choose one, please.",
+        "vi": "Chọn một cái nhé."
+      },
+      {
+        "en": "It's hard to choose.",
+        "vi": "Khó mà chọn được."
+      }
+    ]
+  },
+  {
+    "id": 208,
+    "word": "close",
+    "ipa": "/kloʊz/",
+    "pos": "verb",
+    "level": 1,
+    "vi": "đóng (lại)",
+    "examples": [
+      {
+        "en": "Please close the door.",
+        "vi": "Vui lòng đóng cửa."
+      },
+      {
+        "en": "The shop closes at ten.",
+        "vi": "Cửa hàng đóng cửa lúc mười giờ."
+      }
+    ]
+  },
+  {
+    "id": 209,
+    "word": "count",
+    "ipa": "/kaʊnt/",
+    "pos": "verb",
+    "level": 1,
+    "vi": "đếm",
+    "examples": [
+      {
+        "en": "Count to ten.",
+        "vi": "Đếm đến mười đi."
+      },
+      {
+        "en": "She counted the money.",
+        "vi": "Cô ấy đếm tiền."
+      }
+    ]
+  },
+  {
+    "id": 210,
+    "word": "cover",
+    "ipa": "/ˈkʌvər/",
+    "pos": "verb",
+    "level": 1,
+    "vi": "che, phủ, đậy",
+    "examples": [
+      {
+        "en": "Cover the food, please.",
+        "vi": "Đậy thức ăn lại nhé."
+      },
+      {
+        "en": "Snow covered the road.",
+        "vi": "Tuyết phủ kín con đường."
+      }
+    ]
+  },
+  {
+    "id": 211,
+    "word": "decide",
+    "ipa": "/dɪˈsaɪd/",
+    "pos": "verb",
+    "level": 1,
+    "vi": "quyết định",
+    "examples": [
+      {
+        "en": "I can't decide.",
+        "vi": "Tôi không quyết định được."
+      },
+      {
+        "en": "We decided to stay home.",
+        "vi": "Chúng tôi quyết định ở nhà."
+      }
+    ]
+  },
+  {
+    "id": 212,
+    "word": "describe",
+    "ipa": "/dɪˈskraɪb/",
+    "pos": "verb",
+    "level": 1,
+    "vi": "miêu tả, mô tả",
+    "examples": [
+      {
+        "en": "Can you describe him?",
+        "vi": "Bạn mô tả anh ấy được không?"
+      },
+      {
+        "en": "Describe what you saw.",
+        "vi": "Hãy kể lại những gì bạn thấy."
+      }
+    ]
+  },
+  {
+    "id": 213,
+    "word": "draw",
+    "ipa": "/drɔː/",
+    "pos": "verb",
+    "level": 1,
+    "vi": "vẽ; kéo",
+    "examples": [
+      {
+        "en": "She likes to draw.",
+        "vi": "Cô ấy thích vẽ."
+      },
+      {
+        "en": "Draw a circle here.",
+        "vi": "Vẽ một vòng tròn ở đây."
+      }
+    ]
+  },
+  {
+    "id": 214,
+    "word": "drop",
+    "ipa": "/drɑːp/",
+    "pos": "verb",
+    "level": 1,
+    "vi": "làm rơi; giảm xuống",
+    "examples": [
+      {
+        "en": "Don't drop your phone.",
+        "vi": "Đừng làm rơi điện thoại."
+      },
+      {
+        "en": "Prices dropped last week.",
+        "vi": "Giá đã giảm tuần trước."
+      }
+    ]
+  },
+  {
+    "id": 215,
+    "word": "enjoy",
+    "ipa": "/ɪnˈdʒɔɪ/",
+    "pos": "verb",
+    "level": 1,
+    "vi": "tận hưởng, thích thú",
+    "examples": [
+      {
+        "en": "Enjoy your meal!",
+        "vi": "Chúc ngon miệng!"
+      },
+      {
+        "en": "I really enjoy this song.",
+        "vi": "Tôi thật sự thích bài hát này."
+      }
+    ]
+  },
+  {
+    "id": 216,
+    "word": "explain",
+    "ipa": "/ɪkˈspleɪn/",
+    "pos": "verb",
+    "level": 1,
+    "vi": "giải thích",
+    "examples": [
+      {
+        "en": "Please explain it again.",
+        "vi": "Vui lòng giải thích lại."
+      },
+      {
+        "en": "Can you explain this word?",
+        "vi": "Bạn giải thích từ này được không?"
+      }
+    ]
+  },
+  {
+    "id": 217,
+    "word": "fill",
+    "ipa": "/fɪl/",
+    "pos": "verb",
+    "level": 1,
+    "vi": "làm đầy, đổ đầy; điền",
+    "examples": [
+      {
+        "en": "Fill the cup with water.",
+        "vi": "Đổ đầy nước vào cốc."
+      },
+      {
+        "en": "Fill in your name here.",
+        "vi": "Điền tên bạn vào đây."
+      }
+    ]
+  },
+  {
+    "id": 218,
+    "word": "finish",
+    "ipa": "/ˈfɪnɪʃ/",
+    "pos": "verb",
+    "level": 1,
+    "vi": "hoàn thành, làm xong",
+    "examples": [
+      {
+        "en": "Finish your homework first.",
+        "vi": "Làm xong bài tập trước đã."
+      },
+      {
+        "en": "I finished the book.",
+        "vi": "Tôi đã đọc xong cuốn sách."
+      }
+    ]
+  },
+  {
+    "id": 219,
+    "word": "fix",
+    "ipa": "/fɪks/",
+    "pos": "verb",
+    "level": 1,
+    "vi": "sửa, sửa chữa",
+    "examples": [
+      {
+        "en": "Can you fix my bike?",
+        "vi": "Bạn sửa giúp xe đạp của tôi được không?"
+      },
+      {
+        "en": "He fixed the problem.",
+        "vi": "Anh ấy đã khắc phục vấn đề."
+      }
+    ]
+  },
+  {
+    "id": 220,
+    "word": "fly",
+    "ipa": "/flaɪ/",
+    "pos": "verb",
+    "level": 1,
+    "vi": "bay",
+    "examples": [
+      {
+        "en": "Birds fly south in winter.",
+        "vi": "Chim bay về phương nam vào mùa đông."
+      },
+      {
+        "en": "We will fly to Da Nang.",
+        "vi": "Chúng tôi sẽ bay đến Đà Nẵng."
+      }
+    ]
+  },
+  {
+    "id": 221,
+    "word": "forget",
+    "ipa": "/fərˈɡet/",
+    "pos": "verb",
+    "level": 1,
+    "vi": "quên",
+    "examples": [
+      {
+        "en": "Don't forget your keys.",
+        "vi": "Đừng quên chìa khóa."
+      },
+      {
+        "en": "I forgot her name.",
+        "vi": "Tôi quên tên cô ấy rồi."
+      }
+    ]
+  },
+  {
+    "id": 222,
+    "word": "hate",
+    "ipa": "/heɪt/",
+    "pos": "verb",
+    "level": 1,
+    "vi": "ghét",
+    "examples": [
+      {
+        "en": "I hate waiting.",
+        "vi": "Tôi ghét phải chờ đợi."
+      },
+      {
+        "en": "She hates cold weather.",
+        "vi": "Cô ấy ghét trời lạnh."
+      }
+    ]
+  },
+  {
+    "id": 223,
+    "word": "hope",
+    "ipa": "/hoʊp/",
+    "pos": "verb",
+    "level": 1,
+    "vi": "hy vọng, mong",
+    "examples": [
+      {
+        "en": "I hope you feel better.",
+        "vi": "Mong bạn sớm khỏe."
+      },
+      {
+        "en": "We hope to see you soon.",
+        "vi": "Chúng tôi mong sớm gặp bạn."
+      }
+    ]
+  },
+  {
+    "id": 224,
+    "word": "hurt",
+    "ipa": "/hɜːrt/",
+    "pos": "verb",
+    "level": 1,
+    "vi": "làm đau; đau",
+    "examples": [
+      {
+        "en": "My leg hurts.",
+        "vi": "Chân tôi đau."
+      },
+      {
+        "en": "Did I hurt you?",
+        "vi": "Tôi có làm bạn đau không?"
+      }
+    ]
+  },
+  {
+    "id": 225,
+    "word": "join",
+    "ipa": "/dʒɔɪn/",
+    "pos": "verb",
+    "level": 1,
+    "vi": "tham gia, gia nhập",
+    "examples": [
+      {
+        "en": "Join us for dinner.",
+        "vi": "Tham gia bữa tối với chúng tôi nhé."
+      },
+      {
+        "en": "She joined the club.",
+        "vi": "Cô ấy gia nhập câu lạc bộ."
+      }
+    ]
+  },
+  {
+    "id": 226,
+    "word": "jump",
+    "ipa": "/dʒʌmp/",
+    "pos": "verb",
+    "level": 1,
+    "vi": "nhảy, nhảy lên",
+    "examples": [
+      {
+        "en": "The cat jumped on the bed.",
+        "vi": "Con mèo nhảy lên giường."
+      },
+      {
+        "en": "Don't jump on the sofa.",
+        "vi": "Đừng nhảy trên ghế sô-pha."
+      }
+    ]
+  },
+  {
+    "id": 227,
+    "word": "kick",
+    "ipa": "/kɪk/",
+    "pos": "verb",
+    "level": 1,
+    "vi": "đá",
+    "examples": [
+      {
+        "en": "He kicked the ball.",
+        "vi": "Anh ấy đá quả bóng."
+      },
+      {
+        "en": "Don't kick the door.",
+        "vi": "Đừng đá vào cửa."
+      }
+    ]
+  },
+  {
+    "id": 228,
+    "word": "kill",
+    "ipa": "/kɪl/",
+    "pos": "verb",
+    "level": 1,
+    "vi": "giết, làm chết",
+    "examples": [
+      {
+        "en": "Don't kill the spider.",
+        "vi": "Đừng giết con nhện."
+      },
+      {
+        "en": "The frost killed the plants.",
+        "vi": "Sương giá làm chết cây."
+      }
+    ]
+  },
+  {
+    "id": 229,
+    "word": "laugh",
+    "ipa": "/læf/",
+    "pos": "verb",
+    "level": 1,
+    "vi": "cười",
+    "examples": [
+      {
+        "en": "We laughed all night.",
+        "vi": "Chúng tôi cười cả đêm."
+      },
+      {
+        "en": "Don't laugh at me.",
+        "vi": "Đừng cười nhạo tôi."
+      }
+    ]
+  },
+  {
+    "id": 230,
+    "word": "lie",
+    "ipa": "/laɪ/",
+    "pos": "verb",
+    "level": 1,
+    "vi": "nói dối; nằm",
+    "examples": [
+      {
+        "en": "Don't lie to me.",
+        "vi": "Đừng nói dối tôi."
+      },
+      {
+        "en": "She lay down to rest.",
+        "vi": "Cô ấy nằm xuống nghỉ."
+      }
+    ]
+  },
+  {
+    "id": 231,
+    "word": "marry",
+    "ipa": "/ˈmæri/",
+    "pos": "verb",
+    "level": 1,
+    "vi": "kết hôn, cưới",
+    "examples": [
+      {
+        "en": "Will you marry me?",
+        "vi": "Em lấy anh nhé?"
+      },
+      {
+        "en": "They married last year.",
+        "vi": "Họ cưới nhau năm ngoái."
+      }
+    ]
+  },
+  {
+    "id": 232,
+    "word": "miss",
+    "ipa": "/mɪs/",
+    "pos": "verb",
+    "level": 1,
+    "vi": "nhớ; lỡ, bỏ lỡ",
+    "examples": [
+      {
+        "en": "I miss my family.",
+        "vi": "Tôi nhớ gia đình."
+      },
+      {
+        "en": "Don't miss the train.",
+        "vi": "Đừng lỡ chuyến tàu."
+      }
+    ]
+  },
+  {
+    "id": 233,
+    "word": "notice",
+    "ipa": "/ˈnoʊtɪs/",
+    "pos": "verb",
+    "level": 1,
+    "vi": "để ý, nhận ra",
+    "examples": [
+      {
+        "en": "Did you notice her new haircut?",
+        "vi": "Bạn có để ý kiểu tóc mới của cô ấy không?"
+      },
+      {
+        "en": "I didn't notice you there.",
+        "vi": "Tôi không để ý là bạn ở đó."
+      }
+    ]
+  },
+  {
+    "id": 234,
+    "word": "offer",
+    "ipa": "/ˈɔːfər/",
+    "pos": "verb",
+    "level": 1,
+    "vi": "đề nghị, mời, tặng",
+    "examples": [
+      {
+        "en": "She offered me some tea.",
+        "vi": "Cô ấy mời tôi uống trà."
+      },
+      {
+        "en": "They offered him a job.",
+        "vi": "Họ đề nghị anh ấy một công việc."
+      }
+    ]
+  },
+  {
+    "id": 235,
+    "word": "pass",
+    "ipa": "/pæs/",
+    "pos": "verb",
+    "level": 1,
+    "vi": "đưa qua; vượt qua; đậu (kỳ thi)",
+    "examples": [
+      {
+        "en": "Pass me the salt, please.",
+        "vi": "Đưa giúp tôi lọ muối nhé."
+      },
+      {
+        "en": "She passed the exam.",
+        "vi": "Cô ấy đã đậu kỳ thi."
+      }
+    ]
+  },
+  {
+    "id": 236,
+    "word": "plan",
+    "ipa": "/plæn/",
+    "pos": "verb",
+    "level": 1,
+    "vi": "lên kế hoạch, dự định",
+    "examples": [
+      {
+        "en": "We plan to travel this summer.",
+        "vi": "Chúng tôi dự định đi du lịch hè này."
+      },
+      {
+        "en": "Let's plan a trip.",
+        "vi": "Mình lên kế hoạch cho một chuyến đi nhé."
+      }
+    ]
+  },
+  {
+    "id": 237,
+    "word": "point",
+    "ipa": "/pɔɪnt/",
+    "pos": "verb",
+    "level": 1,
+    "vi": "chỉ (tay), chỉ vào",
+    "examples": [
+      {
+        "en": "Don't point at people.",
+        "vi": "Đừng chỉ tay vào người khác."
+      },
+      {
+        "en": "She pointed to the map.",
+        "vi": "Cô ấy chỉ vào tấm bản đồ."
+      }
+    ]
+  },
+  {
+    "id": 238,
+    "word": "prepare",
+    "ipa": "/prɪˈper/",
+    "pos": "verb",
+    "level": 1,
+    "vi": "chuẩn bị",
+    "examples": [
+      {
+        "en": "I need to prepare dinner.",
+        "vi": "Tôi cần chuẩn bị bữa tối."
+      },
+      {
+        "en": "Prepare for the test.",
+        "vi": "Hãy chuẩn bị cho bài kiểm tra."
+      }
+    ]
+  },
+  {
+    "id": 239,
+    "word": "pull",
+    "ipa": "/pʊl/",
+    "pos": "verb",
+    "level": 1,
+    "vi": "kéo",
+    "examples": [
+      {
+        "en": "Pull the door, don't push.",
+        "vi": "Kéo cửa, đừng đẩy."
+      },
+      {
+        "en": "He pulled the rope.",
+        "vi": "Anh ấy kéo sợi dây."
+      }
+    ]
+  },
+  {
+    "id": 240,
+    "word": "push",
+    "ipa": "/pʊʃ/",
+    "pos": "verb",
+    "level": 1,
+    "vi": "đẩy; nhấn",
+    "examples": [
+      {
+        "en": "Push the button.",
+        "vi": "Nhấn nút đi."
+      },
+      {
+        "en": "Push the door to open it.",
+        "vi": "Đẩy cửa để mở."
+      }
+    ]
+  },
+  {
+    "id": 241,
+    "word": "raise",
+    "ipa": "/reɪz/",
+    "pos": "verb",
+    "level": 1,
+    "vi": "giơ lên, nâng lên; nuôi dạy",
+    "examples": [
+      {
+        "en": "Raise your hand to ask.",
+        "vi": "Giơ tay lên để hỏi."
+      },
+      {
+        "en": "They raised three children.",
+        "vi": "Họ nuôi dạy ba người con."
+      }
+    ]
+  },
+  {
+    "id": 242,
+    "word": "reach",
+    "ipa": "/riːtʃ/",
+    "pos": "verb",
+    "level": 1,
+    "vi": "với tới; đến nơi",
+    "examples": [
+      {
+        "en": "I can't reach the shelf.",
+        "vi": "Tôi với không tới cái kệ."
+      },
+      {
+        "en": "We reached home late.",
+        "vi": "Chúng tôi về đến nhà muộn."
+      }
+    ]
+  },
+  {
+    "id": 243,
+    "word": "receive",
+    "ipa": "/rɪˈsiːv/",
+    "pos": "verb",
+    "level": 1,
+    "vi": "nhận, nhận được",
+    "examples": [
+      {
+        "en": "I received your letter.",
+        "vi": "Tôi đã nhận được thư của bạn."
+      },
+      {
+        "en": "She received a gift.",
+        "vi": "Cô ấy nhận được một món quà."
+      }
+    ]
+  },
+  {
+    "id": 244,
+    "word": "repeat",
+    "ipa": "/rɪˈpiːt/",
+    "pos": "verb",
+    "level": 1,
+    "vi": "lặp lại, nhắc lại",
+    "examples": [
+      {
+        "en": "Please repeat that.",
+        "vi": "Vui lòng nhắc lại điều đó."
+      },
+      {
+        "en": "Repeat after me.",
+        "vi": "Hãy nhắc lại theo tôi."
+      }
+    ]
+  },
+  {
+    "id": 245,
+    "word": "reply",
+    "ipa": "/rɪˈplaɪ/",
+    "pos": "verb",
+    "level": 1,
+    "vi": "trả lời, hồi đáp",
+    "examples": [
+      {
+        "en": "She didn't reply to my email.",
+        "vi": "Cô ấy không trả lời email của tôi."
+      },
+      {
+        "en": "Please reply soon.",
+        "vi": "Vui lòng sớm hồi đáp."
+      }
+    ]
+  },
+  {
+    "id": 246,
+    "word": "rest",
+    "ipa": "/rest/",
+    "pos": "verb",
+    "level": 1,
+    "vi": "nghỉ ngơi",
+    "examples": [
+      {
+        "en": "You should rest.",
+        "vi": "Bạn nên nghỉ ngơi."
+      },
+      {
+        "en": "Let's rest for a while.",
+        "vi": "Mình nghỉ một lát nhé."
+      }
+    ]
+  },
+  {
+    "id": 247,
+    "word": "return",
+    "ipa": "/rɪˈtɜːrn/",
+    "pos": "verb",
+    "level": 1,
+    "vi": "trở về; trả lại",
+    "examples": [
+      {
+        "en": "I will return tomorrow.",
+        "vi": "Tôi sẽ trở về vào ngày mai."
+      },
+      {
+        "en": "Return the book to the library.",
+        "vi": "Trả sách lại cho thư viện."
+      }
+    ]
+  },
+  {
+    "id": 248,
+    "word": "ride",
+    "ipa": "/raɪd/",
+    "pos": "verb",
+    "level": 1,
+    "vi": "cưỡi; đi (xe đạp, ngựa)",
+    "examples": [
+      {
+        "en": "I ride my bike to school.",
+        "vi": "Tôi đạp xe đến trường."
+      },
+      {
+        "en": "Can you ride a horse?",
+        "vi": "Bạn biết cưỡi ngựa không?"
+      }
+    ]
+  },
+  {
+    "id": 249,
+    "word": "ring",
+    "ipa": "/rɪŋ/",
+    "pos": "verb",
+    "level": 1,
+    "vi": "reo, rung (chuông)",
+    "examples": [
+      {
+        "en": "The phone is ringing.",
+        "vi": "Điện thoại đang reo."
+      },
+      {
+        "en": "Ring the bell, please.",
+        "vi": "Vui lòng rung chuông."
+      }
+    ]
+  },
+  {
+    "id": 250,
+    "word": "rise",
+    "ipa": "/raɪz/",
+    "pos": "verb",
+    "level": 1,
+    "vi": "mọc; lên cao; tăng",
+    "examples": [
+      {
+        "en": "The sun rises early in summer.",
+        "vi": "Mặt trời mọc sớm vào mùa hè."
+      },
+      {
+        "en": "Prices keep rising.",
+        "vi": "Giá cả cứ tăng lên."
+      }
+    ]
+  }
+]

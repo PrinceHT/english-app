@@ -1,0 +1,902 @@
+[
+  {
+    "id": 751,
+    "word": "cheerful",
+    "ipa": "/ˈtʃɪrfl/",
+    "pos": "adjective",
+    "level": 1,
+    "vi": "vui vẻ, vui tươi",
+    "examples": [
+      {
+        "en": "She has a cheerful smile.",
+        "vi": "Cô ấy có một nụ cười vui tươi."
+      },
+      {
+        "en": "He is always cheerful.",
+        "vi": "Anh ấy lúc nào cũng vui vẻ."
+      }
+    ]
+  },
+  {
+    "id": 752,
+    "word": "clever",
+    "ipa": "/ˈklevər/",
+    "pos": "adjective",
+    "level": 1,
+    "vi": "thông minh, khéo léo",
+    "examples": [
+      {
+        "en": "She is a clever girl.",
+        "vi": "Cô bé rất thông minh."
+      },
+      {
+        "en": "That's a clever trick.",
+        "vi": "Đó là một mẹo khéo léo."
+      }
+    ]
+  },
+  {
+    "id": 753,
+    "word": "cloudy",
+    "ipa": "/ˈklaʊdi/",
+    "pos": "adjective",
+    "level": 1,
+    "vi": "nhiều mây, u ám",
+    "examples": [
+      {
+        "en": "It is cloudy today.",
+        "vi": "Hôm nay trời nhiều mây."
+      },
+      {
+        "en": "The sky looks cloudy.",
+        "vi": "Bầu trời trông u ám."
+      }
+    ]
+  },
+  {
+    "id": 754,
+    "word": "colorful",
+    "ipa": "/ˈkʌlərfl/",
+    "pos": "adjective",
+    "level": 1,
+    "vi": "đầy màu sắc, sặc sỡ",
+    "examples": [
+      {
+        "en": "The market is colorful.",
+        "vi": "Khu chợ đầy màu sắc."
+      },
+      {
+        "en": "She wore a colorful dress.",
+        "vi": "Cô ấy mặc một chiếc váy sặc sỡ."
+      }
+    ]
+  },
+  {
+    "id": 755,
+    "word": "confident",
+    "ipa": "/ˈkɑːnfɪdənt/",
+    "pos": "adjective",
+    "level": 1,
+    "vi": "tự tin",
+    "examples": [
+      {
+        "en": "She is confident on stage.",
+        "vi": "Cô ấy tự tin trên sân khấu."
+      },
+      {
+        "en": "Be confident in yourself.",
+        "vi": "Hãy tự tin vào bản thân."
+      }
+    ]
+  },
+  {
+    "id": 756,
+    "word": "confused",
+    "ipa": "/kənˈfjuːzd/",
+    "pos": "adjective",
+    "level": 1,
+    "vi": "bối rối, lúng túng",
+    "examples": [
+      {
+        "en": "I am confused by this map.",
+        "vi": "Tôi bối rối với tấm bản đồ này."
+      },
+      {
+        "en": "She looked confused.",
+        "vi": "Cô ấy trông có vẻ lúng túng."
+      }
+    ]
+  },
+  {
+    "id": 757,
+    "word": "cruel",
+    "ipa": "/ˈkruːəl/",
+    "pos": "adjective",
+    "level": 1,
+    "vi": "tàn nhẫn, độc ác",
+    "examples": [
+      {
+        "en": "It is cruel to hurt animals.",
+        "vi": "Làm đau động vật là tàn nhẫn."
+      },
+      {
+        "en": "The king was cruel.",
+        "vi": "Vị vua đó rất độc ác."
+      }
+    ]
+  },
+  {
+    "id": 758,
+    "word": "curious",
+    "ipa": "/ˈkjʊriəs/",
+    "pos": "adjective",
+    "level": 1,
+    "vi": "tò mò, hiếu kỳ",
+    "examples": [
+      {
+        "en": "Children are naturally curious.",
+        "vi": "Trẻ con vốn tò mò."
+      },
+      {
+        "en": "I am curious about your trip.",
+        "vi": "Tôi tò mò về chuyến đi của bạn."
+      }
+    ]
+  },
+  {
+    "id": 759,
+    "word": "cute",
+    "ipa": "/kjuːt/",
+    "pos": "adjective",
+    "level": 1,
+    "vi": "dễ thương, đáng yêu",
+    "examples": [
+      {
+        "en": "What a cute puppy!",
+        "vi": "Chú cún dễ thương quá!"
+      },
+      {
+        "en": "The baby is so cute.",
+        "vi": "Em bé đáng yêu quá."
+      }
+    ]
+  },
+  {
+    "id": 760,
+    "word": "daily",
+    "ipa": "/ˈdeɪli/",
+    "pos": "adjective / adverb",
+    "level": 1,
+    "vi": "hằng ngày, mỗi ngày",
+    "examples": [
+      {
+        "en": "This is my daily routine.",
+        "vi": "Đây là thói quen hằng ngày của tôi."
+      },
+      {
+        "en": "I exercise daily.",
+        "vi": "Tôi tập thể dục mỗi ngày."
+      }
+    ]
+  },
+  {
+    "id": 761,
+    "word": "deaf",
+    "ipa": "/def/",
+    "pos": "adjective",
+    "level": 1,
+    "vi": "điếc, khiếm thính",
+    "examples": [
+      {
+        "en": "Her grandfather is deaf.",
+        "vi": "Ông của cô ấy bị điếc."
+      },
+      {
+        "en": "He is deaf in one ear.",
+        "vi": "Anh ấy bị điếc một bên tai."
+      }
+    ]
+  },
+  {
+    "id": 762,
+    "word": "dear",
+    "ipa": "/dɪr/",
+    "pos": "adjective",
+    "level": 1,
+    "vi": "thân mến, yêu quý",
+    "examples": [
+      {
+        "en": "Dear friend, thank you.",
+        "vi": "Bạn thân mến, cảm ơn bạn."
+      },
+      {
+        "en": "She is a dear friend of mine.",
+        "vi": "Cô ấy là một người bạn thân của tôi."
+      }
+    ]
+  },
+  {
+    "id": 763,
+    "word": "dense",
+    "ipa": "/dens/",
+    "pos": "adjective",
+    "level": 1,
+    "vi": "dày đặc, rậm rạp",
+    "examples": [
+      {
+        "en": "The forest is very dense.",
+        "vi": "Khu rừng rất rậm rạp."
+      },
+      {
+        "en": "There is dense fog tonight.",
+        "vi": "Tối nay sương mù dày đặc."
+      }
+    ]
+  },
+  {
+    "id": 764,
+    "word": "digital",
+    "ipa": "/ˈdɪdʒɪtl/",
+    "pos": "adjective",
+    "level": 1,
+    "vi": "kỹ thuật số, điện tử",
+    "examples": [
+      {
+        "en": "I bought a digital clock.",
+        "vi": "Tôi mua một chiếc đồng hồ điện tử."
+      },
+      {
+        "en": "We live in a digital world.",
+        "vi": "Chúng ta sống trong thế giới kỹ thuật số."
+      }
+    ]
+  },
+  {
+    "id": 765,
+    "word": "dizzy",
+    "ipa": "/ˈdɪzi/",
+    "pos": "adjective",
+    "level": 1,
+    "vi": "chóng mặt",
+    "examples": [
+      {
+        "en": "I feel dizzy.",
+        "vi": "Tôi thấy chóng mặt."
+      },
+      {
+        "en": "The ride made her dizzy.",
+        "vi": "Trò chơi làm cô ấy chóng mặt."
+      }
+    ]
+  },
+  {
+    "id": 766,
+    "word": "double",
+    "ipa": "/ˈdʌbl/",
+    "pos": "adjective",
+    "level": 1,
+    "vi": "đôi, gấp đôi",
+    "examples": [
+      {
+        "en": "I'd like a double room.",
+        "vi": "Tôi muốn một phòng đôi."
+      },
+      {
+        "en": "The price is double now.",
+        "vi": "Bây giờ giá đã gấp đôi."
+      }
+    ]
+  },
+  {
+    "id": 767,
+    "word": "dull",
+    "ipa": "/dʌl/",
+    "pos": "adjective",
+    "level": 1,
+    "vi": "buồn tẻ, chán; cùn",
+    "examples": [
+      {
+        "en": "The movie was dull.",
+        "vi": "Bộ phim thật buồn tẻ."
+      },
+      {
+        "en": "This knife is dull.",
+        "vi": "Con dao này cùn."
+      }
+    ]
+  },
+  {
+    "id": 768,
+    "word": "dusty",
+    "ipa": "/ˈdʌsti/",
+    "pos": "adjective",
+    "level": 1,
+    "vi": "đầy bụi, bám bụi",
+    "examples": [
+      {
+        "en": "The old books are dusty.",
+        "vi": "Những cuốn sách cũ đầy bụi."
+      },
+      {
+        "en": "The road is dry and dusty.",
+        "vi": "Con đường khô và đầy bụi."
+      }
+    ]
+  },
+  {
+    "id": 769,
+    "word": "eager",
+    "ipa": "/ˈiːɡər/",
+    "pos": "adjective",
+    "level": 1,
+    "vi": "hăm hở, háo hức",
+    "examples": [
+      {
+        "en": "The students are eager to learn.",
+        "vi": "Học sinh háo hức học hỏi."
+      },
+      {
+        "en": "She is eager to start.",
+        "vi": "Cô ấy hăm hở muốn bắt đầu."
+      }
+    ]
+  },
+  {
+    "id": 770,
+    "word": "elegant",
+    "ipa": "/ˈelɪɡənt/",
+    "pos": "adjective",
+    "level": 1,
+    "vi": "thanh lịch, tao nhã",
+    "examples": [
+      {
+        "en": "She wore an elegant dress.",
+        "vi": "Cô ấy mặc một chiếc váy thanh lịch."
+      },
+      {
+        "en": "The room has an elegant style.",
+        "vi": "Căn phòng có phong cách tao nhã."
+      }
+    ]
+  },
+  {
+    "id": 771,
+    "word": "enormous",
+    "ipa": "/ɪˈnɔːrməs/",
+    "pos": "adjective",
+    "level": 1,
+    "vi": "khổng lồ, to lớn",
+    "examples": [
+      {
+        "en": "The whale is enormous.",
+        "vi": "Con cá voi khổng lồ."
+      },
+      {
+        "en": "They live in an enormous house.",
+        "vi": "Họ sống trong một ngôi nhà to lớn."
+      }
+    ]
+  },
+  {
+    "id": 772,
+    "word": "equal",
+    "ipa": "/ˈiːkwəl/",
+    "pos": "adjective",
+    "level": 1,
+    "vi": "bằng nhau, ngang bằng",
+    "examples": [
+      {
+        "en": "Cut it into equal parts.",
+        "vi": "Cắt nó thành những phần bằng nhau."
+      },
+      {
+        "en": "Everyone should be equal.",
+        "vi": "Mọi người nên bình đẳng."
+      }
+    ]
+  },
+  {
+    "id": 773,
+    "word": "exact",
+    "ipa": "/ɪɡˈzækt/",
+    "pos": "adjective",
+    "level": 1,
+    "vi": "chính xác",
+    "examples": [
+      {
+        "en": "What is the exact time?",
+        "vi": "Chính xác là mấy giờ?"
+      },
+      {
+        "en": "Give me the exact number.",
+        "vi": "Cho tôi con số chính xác."
+      }
+    ]
+  },
+  {
+    "id": 774,
+    "word": "excellent",
+    "ipa": "/ˈeksələnt/",
+    "pos": "adjective",
+    "level": 1,
+    "vi": "xuất sắc, tuyệt hảo",
+    "examples": [
+      {
+        "en": "You did an excellent job.",
+        "vi": "Bạn đã làm rất xuất sắc."
+      },
+      {
+        "en": "The food here is excellent.",
+        "vi": "Đồ ăn ở đây tuyệt hảo."
+      }
+    ]
+  },
+  {
+    "id": 775,
+    "word": "exciting",
+    "ipa": "/ɪkˈsaɪtɪŋ/",
+    "pos": "adjective",
+    "level": 1,
+    "vi": "thú vị, hấp dẫn, gây hứng thú",
+    "examples": [
+      {
+        "en": "It was an exciting game.",
+        "vi": "Đó là một trận đấu hấp dẫn."
+      },
+      {
+        "en": "We have exciting news.",
+        "vi": "Chúng tôi có tin thú vị."
+      }
+    ]
+  },
+  {
+    "id": 776,
+    "word": "abroad",
+    "ipa": "/əˈbrɔːd/",
+    "pos": "adverb",
+    "level": 1,
+    "vi": "ở nước ngoài, ra nước ngoài",
+    "examples": [
+      {
+        "en": "She studies abroad.",
+        "vi": "Cô ấy du học ở nước ngoài."
+      },
+      {
+        "en": "They traveled abroad last year.",
+        "vi": "Họ đi nước ngoài năm ngoái."
+      }
+    ]
+  },
+  {
+    "id": 777,
+    "word": "absolutely",
+    "ipa": "/ˈæbsəluːtli/",
+    "pos": "adverb",
+    "level": 1,
+    "vi": "hoàn toàn, chắc chắn",
+    "examples": [
+      {
+        "en": "You are absolutely right.",
+        "vi": "Bạn hoàn toàn đúng."
+      },
+      {
+        "en": "It is absolutely beautiful.",
+        "vi": "Nó đẹp tuyệt đối."
+      }
+    ]
+  },
+  {
+    "id": 778,
+    "word": "actually",
+    "ipa": "/ˈæktʃuəli/",
+    "pos": "adverb",
+    "level": 1,
+    "vi": "thực ra, thật ra",
+    "examples": [
+      {
+        "en": "Actually, I prefer tea.",
+        "vi": "Thật ra, tôi thích trà hơn."
+      },
+      {
+        "en": "It is actually quite easy.",
+        "vi": "Thật ra nó khá dễ."
+      }
+    ]
+  },
+  {
+    "id": 779,
+    "word": "ahead",
+    "ipa": "/əˈhed/",
+    "pos": "adverb",
+    "level": 1,
+    "vi": "phía trước, lên trước",
+    "examples": [
+      {
+        "en": "Go straight ahead.",
+        "vi": "Đi thẳng về phía trước."
+      },
+      {
+        "en": "She walked ahead of us.",
+        "vi": "Cô ấy đi trước chúng tôi."
+      }
+    ]
+  },
+  {
+    "id": 780,
+    "word": "aloud",
+    "ipa": "/əˈlaʊd/",
+    "pos": "adverb",
+    "level": 1,
+    "vi": "thành tiếng, lớn tiếng",
+    "examples": [
+      {
+        "en": "Please read aloud.",
+        "vi": "Vui lòng đọc to lên."
+      },
+      {
+        "en": "She laughed aloud.",
+        "vi": "Cô ấy cười thành tiếng."
+      }
+    ]
+  },
+  {
+    "id": 781,
+    "word": "anymore",
+    "ipa": "/ˌeniˈmɔːr/",
+    "pos": "adverb",
+    "level": 1,
+    "vi": "nữa (trong câu phủ định)",
+    "examples": [
+      {
+        "en": "I don't live here anymore.",
+        "vi": "Tôi không còn sống ở đây nữa."
+      },
+      {
+        "en": "She doesn't cry anymore.",
+        "vi": "Cô ấy không khóc nữa."
+      }
+    ]
+  },
+  {
+    "id": 782,
+    "word": "apart",
+    "ipa": "/əˈpɑːrt/",
+    "pos": "adverb",
+    "level": 1,
+    "vi": "tách ra, cách xa",
+    "examples": [
+      {
+        "en": "They live far apart.",
+        "vi": "Họ sống cách xa nhau."
+      },
+      {
+        "en": "The two houses are close, not far apart.",
+        "vi": "Hai ngôi nhà gần nhau, không xa cách."
+      }
+    ]
+  },
+  {
+    "id": 783,
+    "word": "barely",
+    "ipa": "/ˈberli/",
+    "pos": "adverb",
+    "level": 1,
+    "vi": "hầu như không, vừa đủ",
+    "examples": [
+      {
+        "en": "I can barely hear you.",
+        "vi": "Tôi hầu như không nghe được bạn."
+      },
+      {
+        "en": "She barely ate anything.",
+        "vi": "Cô ấy gần như không ăn gì."
+      }
+    ]
+  },
+  {
+    "id": 784,
+    "word": "briefly",
+    "ipa": "/ˈbriːfli/",
+    "pos": "adverb",
+    "level": 1,
+    "vi": "ngắn gọn, vắn tắt",
+    "examples": [
+      {
+        "en": "He spoke briefly.",
+        "vi": "Anh ấy nói ngắn gọn."
+      },
+      {
+        "en": "Let me explain briefly.",
+        "vi": "Để tôi giải thích vắn tắt."
+      }
+    ]
+  },
+  {
+    "id": 785,
+    "word": "certainly",
+    "ipa": "/ˈsɜːrtnli/",
+    "pos": "adverb",
+    "level": 1,
+    "vi": "chắc chắn, dĩ nhiên",
+    "examples": [
+      {
+        "en": "Certainly, I will help.",
+        "vi": "Dĩ nhiên, tôi sẽ giúp."
+      },
+      {
+        "en": "She is certainly right.",
+        "vi": "Cô ấy chắc chắn đúng."
+      }
+    ]
+  },
+  {
+    "id": 786,
+    "word": "clearly",
+    "ipa": "/ˈklɪrli/",
+    "pos": "adverb",
+    "level": 1,
+    "vi": "rõ ràng",
+    "examples": [
+      {
+        "en": "Please speak clearly.",
+        "vi": "Vui lòng nói rõ ràng."
+      },
+      {
+        "en": "I can see it clearly now.",
+        "vi": "Giờ tôi thấy nó rõ rồi."
+      }
+    ]
+  },
+  {
+    "id": 787,
+    "word": "closely",
+    "ipa": "/ˈkloʊsli/",
+    "pos": "adverb",
+    "level": 1,
+    "vi": "sát sao, kỹ lưỡng",
+    "examples": [
+      {
+        "en": "Watch closely.",
+        "vi": "Quan sát thật kỹ."
+      },
+      {
+        "en": "They work closely together.",
+        "vi": "Họ làm việc cùng nhau rất sát sao."
+      }
+    ]
+  },
+  {
+    "id": 788,
+    "word": "completely",
+    "ipa": "/kəmˈpliːtli/",
+    "pos": "adverb",
+    "level": 1,
+    "vi": "hoàn toàn",
+    "examples": [
+      {
+        "en": "I completely agree.",
+        "vi": "Tôi hoàn toàn đồng ý."
+      },
+      {
+        "en": "The work is completely done.",
+        "vi": "Công việc đã hoàn thành hẳn."
+      }
+    ]
+  },
+  {
+    "id": 789,
+    "word": "deeply",
+    "ipa": "/ˈdiːpli/",
+    "pos": "adverb",
+    "level": 1,
+    "vi": "sâu sắc, sâu",
+    "examples": [
+      {
+        "en": "She breathed deeply.",
+        "vi": "Cô ấy hít thở thật sâu."
+      },
+      {
+        "en": "I am deeply sorry.",
+        "vi": "Tôi vô cùng xin lỗi."
+      }
+    ]
+  },
+  {
+    "id": 790,
+    "word": "easily",
+    "ipa": "/ˈiːzəli/",
+    "pos": "adverb",
+    "level": 1,
+    "vi": "dễ dàng",
+    "examples": [
+      {
+        "en": "She solved it easily.",
+        "vi": "Cô ấy giải nó một cách dễ dàng."
+      },
+      {
+        "en": "You can easily learn this.",
+        "vi": "Bạn có thể học cái này dễ dàng."
+      }
+    ]
+  },
+  {
+    "id": 791,
+    "word": "elsewhere",
+    "ipa": "/ˈelswer/",
+    "pos": "adverb",
+    "level": 1,
+    "vi": "ở nơi khác, chỗ khác",
+    "examples": [
+      {
+        "en": "Let's look elsewhere.",
+        "vi": "Mình tìm chỗ khác nhé."
+      },
+      {
+        "en": "He found a job elsewhere.",
+        "vi": "Anh ấy tìm được việc ở nơi khác."
+      }
+    ]
+  },
+  {
+    "id": 792,
+    "word": "entirely",
+    "ipa": "/ɪnˈtaɪərli/",
+    "pos": "adverb",
+    "level": 1,
+    "vi": "hoàn toàn, toàn bộ",
+    "examples": [
+      {
+        "en": "That is entirely true.",
+        "vi": "Điều đó hoàn toàn đúng."
+      },
+      {
+        "en": "It is an entirely new idea.",
+        "vi": "Đó là một ý tưởng hoàn toàn mới."
+      }
+    ]
+  },
+  {
+    "id": 793,
+    "word": "especially",
+    "ipa": "/ɪˈspeʃəli/",
+    "pos": "adverb",
+    "level": 1,
+    "vi": "đặc biệt là, nhất là",
+    "examples": [
+      {
+        "en": "I love fruit, especially mangoes.",
+        "vi": "Tôi thích trái cây, đặc biệt là xoài."
+      },
+      {
+        "en": "It is cold, especially at night.",
+        "vi": "Trời lạnh, nhất là vào ban đêm."
+      }
+    ]
+  },
+  {
+    "id": 794,
+    "word": "eventually",
+    "ipa": "/ɪˈventʃuəli/",
+    "pos": "adverb",
+    "level": 1,
+    "vi": "cuối cùng (thì), rồi cũng",
+    "examples": [
+      {
+        "en": "He eventually agreed.",
+        "vi": "Cuối cùng anh ấy cũng đồng ý."
+      },
+      {
+        "en": "We eventually found the way.",
+        "vi": "Rồi chúng tôi cũng tìm được đường."
+      }
+    ]
+  },
+  {
+    "id": 795,
+    "word": "exactly",
+    "ipa": "/ɪɡˈzæktli/",
+    "pos": "adverb",
+    "level": 1,
+    "vi": "chính xác, đúng vậy",
+    "examples": [
+      {
+        "en": "That is exactly what I mean.",
+        "vi": "Đó chính xác là điều tôi muốn nói."
+      },
+      {
+        "en": "It is exactly nine o'clock.",
+        "vi": "Bây giờ chính xác là chín giờ."
+      }
+    ]
+  },
+  {
+    "id": 796,
+    "word": "either",
+    "ipa": "/ˈiːðər/",
+    "pos": "conjunction / adverb",
+    "level": 1,
+    "vi": "hoặc; (phủ định) cũng không",
+    "examples": [
+      {
+        "en": "You can take either one.",
+        "vi": "Bạn có thể lấy cái nào cũng được."
+      },
+      {
+        "en": "I don't like it either.",
+        "vi": "Tôi cũng không thích nó."
+      }
+    ]
+  },
+  {
+    "id": 797,
+    "word": "neither",
+    "ipa": "/ˈniːðər/",
+    "pos": "conjunction / adverb",
+    "level": 1,
+    "vi": "không cái nào; cũng không",
+    "examples": [
+      {
+        "en": "Neither answer is correct.",
+        "vi": "Không câu trả lời nào đúng cả."
+      },
+      {
+        "en": "I don't smoke, and neither does she.",
+        "vi": "Tôi không hút thuốc, và cô ấy cũng vậy."
+      }
+    ]
+  },
+  {
+    "id": 798,
+    "word": "nobody",
+    "ipa": "/ˈnoʊbədi/",
+    "pos": "pronoun",
+    "level": 1,
+    "vi": "không ai, chẳng ai",
+    "examples": [
+      {
+        "en": "Nobody was at home.",
+        "vi": "Chẳng có ai ở nhà."
+      },
+      {
+        "en": "Nobody knows the answer.",
+        "vi": "Không ai biết câu trả lời."
+      }
+    ]
+  },
+  {
+    "id": 799,
+    "word": "somebody",
+    "ipa": "/ˈsʌmbədi/",
+    "pos": "pronoun",
+    "level": 1,
+    "vi": "ai đó, một người nào đó",
+    "examples": [
+      {
+        "en": "Somebody is at the door.",
+        "vi": "Có ai đó ở ngoài cửa."
+      },
+      {
+        "en": "Somebody left a bag here.",
+        "vi": "Ai đó để quên một cái túi ở đây."
+      }
+    ]
+  },
+  {
+    "id": 800,
+    "word": "ourselves",
+    "ipa": "/ɑːrˈselvz/",
+    "pos": "pronoun",
+    "level": 1,
+    "vi": "chính chúng tôi, tự chúng tôi",
+    "examples": [
+      {
+        "en": "We made it ourselves.",
+        "vi": "Chúng tôi tự làm ra nó."
+      },
+      {
+        "en": "We should take care of ourselves.",
+        "vi": "Chúng ta nên tự chăm sóc bản thân."
+      }
+    ]
+  }
+]

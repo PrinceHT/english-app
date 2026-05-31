@@ -1,0 +1,902 @@
+[
+  {
+    "id": 951,
+    "word": "strange",
+    "ipa": "/streɪndʒ/",
+    "pos": "adjective",
+    "level": 1,
+    "vi": "lạ, kỳ lạ",
+    "examples": [
+      {
+        "en": "I heard a strange noise.",
+        "vi": "Tôi nghe một tiếng động lạ."
+      },
+      {
+        "en": "That is a strange story.",
+        "vi": "Đó là một câu chuyện kỳ lạ."
+      }
+    ]
+  },
+  {
+    "id": 952,
+    "word": "straight",
+    "ipa": "/streɪt/",
+    "pos": "adjective",
+    "level": 1,
+    "vi": "thẳng",
+    "examples": [
+      {
+        "en": "Draw a straight line.",
+        "vi": "Vẽ một đường thẳng."
+      },
+      {
+        "en": "Her hair is long and straight.",
+        "vi": "Tóc cô ấy dài và thẳng."
+      }
+    ]
+  },
+  {
+    "id": 953,
+    "word": "strict",
+    "ipa": "/strɪkt/",
+    "pos": "adjective",
+    "level": 1,
+    "vi": "nghiêm khắc",
+    "examples": [
+      {
+        "en": "Our teacher is strict.",
+        "vi": "Giáo viên của chúng tôi rất nghiêm."
+      },
+      {
+        "en": "They have strict rules.",
+        "vi": "Họ có những quy định nghiêm ngặt."
+      }
+    ]
+  },
+  {
+    "id": 954,
+    "word": "stupid",
+    "ipa": "/ˈstuːpɪd/",
+    "pos": "adjective",
+    "level": 1,
+    "vi": "ngu ngốc, dại dột",
+    "examples": [
+      {
+        "en": "That was a stupid idea.",
+        "vi": "Đó là một ý tưởng ngu ngốc."
+      },
+      {
+        "en": "Don't do anything stupid.",
+        "vi": "Đừng làm điều gì dại dột."
+      }
+    ]
+  },
+  {
+    "id": 955,
+    "word": "successful",
+    "ipa": "/səkˈsesfl/",
+    "pos": "adjective",
+    "level": 1,
+    "vi": "thành công",
+    "examples": [
+      {
+        "en": "She is a successful writer.",
+        "vi": "Cô ấy là một nhà văn thành công."
+      },
+      {
+        "en": "The party was successful.",
+        "vi": "Bữa tiệc đã thành công."
+      }
+    ]
+  },
+  {
+    "id": 956,
+    "word": "sudden",
+    "ipa": "/ˈsʌdn/",
+    "pos": "adjective",
+    "level": 1,
+    "vi": "đột ngột, bất ngờ",
+    "examples": [
+      {
+        "en": "There was a sudden change.",
+        "vi": "Có một sự thay đổi đột ngột."
+      },
+      {
+        "en": "His sudden arrival surprised us.",
+        "vi": "Sự xuất hiện bất ngờ của anh ấy làm chúng tôi ngạc nhiên."
+      }
+    ]
+  },
+  {
+    "id": 957,
+    "word": "sunny",
+    "ipa": "/ˈsʌni/",
+    "pos": "adjective",
+    "level": 1,
+    "vi": "nắng, có nắng",
+    "examples": [
+      {
+        "en": "It is a sunny day.",
+        "vi": "Hôm nay là một ngày nắng."
+      },
+      {
+        "en": "The weather is sunny and warm.",
+        "vi": "Thời tiết nắng và ấm áp."
+      }
+    ]
+  },
+  {
+    "id": 958,
+    "word": "rainy",
+    "ipa": "/ˈreɪni/",
+    "pos": "adjective",
+    "level": 1,
+    "vi": "mưa, có mưa",
+    "examples": [
+      {
+        "en": "It is a rainy morning.",
+        "vi": "Đó là một buổi sáng mưa."
+      },
+      {
+        "en": "I stay home on rainy days.",
+        "vi": "Tôi ở nhà vào những ngày mưa."
+      }
+    ]
+  },
+  {
+    "id": 959,
+    "word": "windy",
+    "ipa": "/ˈwɪndi/",
+    "pos": "adjective",
+    "level": 1,
+    "vi": "có gió, lộng gió",
+    "examples": [
+      {
+        "en": "It is windy today.",
+        "vi": "Hôm nay trời có gió."
+      },
+      {
+        "en": "The hill is very windy.",
+        "vi": "Ngọn đồi lộng gió."
+      }
+    ]
+  },
+  {
+    "id": 960,
+    "word": "snowy",
+    "ipa": "/ˈsnoʊi/",
+    "pos": "adjective",
+    "level": 1,
+    "vi": "có tuyết, đầy tuyết",
+    "examples": [
+      {
+        "en": "It was a snowy night.",
+        "vi": "Đó là một đêm đầy tuyết."
+      },
+      {
+        "en": "The mountains are snowy.",
+        "vi": "Những ngọn núi phủ tuyết."
+      }
+    ]
+  },
+  {
+    "id": 961,
+    "word": "wild",
+    "ipa": "/waɪld/",
+    "pos": "adjective",
+    "level": 1,
+    "vi": "hoang dã, dại",
+    "examples": [
+      {
+        "en": "Wild animals live in the forest.",
+        "vi": "Động vật hoang dã sống trong rừng."
+      },
+      {
+        "en": "We picked some wild flowers.",
+        "vi": "Chúng tôi hái vài bông hoa dại."
+      }
+    ]
+  },
+  {
+    "id": 962,
+    "word": "wise",
+    "ipa": "/waɪz/",
+    "pos": "adjective",
+    "level": 1,
+    "vi": "khôn ngoan, sáng suốt",
+    "examples": [
+      {
+        "en": "She is a wise old woman.",
+        "vi": "Bà ấy là một người phụ nữ già khôn ngoan."
+      },
+      {
+        "en": "That was a wise decision.",
+        "vi": "Đó là một quyết định sáng suốt."
+      }
+    ]
+  },
+  {
+    "id": 963,
+    "word": "wooden",
+    "ipa": "/ˈwʊdn/",
+    "pos": "adjective",
+    "level": 1,
+    "vi": "bằng gỗ",
+    "examples": [
+      {
+        "en": "They have a wooden table.",
+        "vi": "Họ có một cái bàn gỗ."
+      },
+      {
+        "en": "The toy is made of wooden blocks.",
+        "vi": "Món đồ chơi được làm từ những khối gỗ."
+      }
+    ]
+  },
+  {
+    "id": 964,
+    "word": "worried",
+    "ipa": "/ˈwɜːrid/",
+    "pos": "adjective",
+    "level": 1,
+    "vi": "lo lắng, lo âu",
+    "examples": [
+      {
+        "en": "She is worried about the test.",
+        "vi": "Cô ấy lo lắng về bài kiểm tra."
+      },
+      {
+        "en": "Don't be worried, it's okay.",
+        "vi": "Đừng lo, ổn cả mà."
+      }
+    ]
+  },
+  {
+    "id": 965,
+    "word": "weird",
+    "ipa": "/wɪrd/",
+    "pos": "adjective",
+    "level": 1,
+    "vi": "kỳ quặc, kỳ dị",
+    "examples": [
+      {
+        "en": "That is a weird sound.",
+        "vi": "Đó là một âm thanh kỳ quặc."
+      },
+      {
+        "en": "The food tastes weird.",
+        "vi": "Món ăn có vị kỳ kỳ."
+      }
+    ]
+  },
+  {
+    "id": 966,
+    "word": "wealthy",
+    "ipa": "/ˈwelθi/",
+    "pos": "adjective",
+    "level": 1,
+    "vi": "giàu có, khá giả",
+    "examples": [
+      {
+        "en": "He is a wealthy man.",
+        "vi": "Ông ấy là một người giàu có."
+      },
+      {
+        "en": "They come from a wealthy family.",
+        "vi": "Họ xuất thân từ một gia đình khá giả."
+      }
+    ]
+  },
+  {
+    "id": 967,
+    "word": "quick",
+    "ipa": "/kwɪk/",
+    "pos": "adjective",
+    "level": 1,
+    "vi": "nhanh",
+    "examples": [
+      {
+        "en": "Let's have a quick lunch.",
+        "vi": "Mình ăn trưa nhanh nhé."
+      },
+      {
+        "en": "She gave a quick answer.",
+        "vi": "Cô ấy trả lời nhanh."
+      }
+    ]
+  },
+  {
+    "id": 968,
+    "word": "rare",
+    "ipa": "/rer/",
+    "pos": "adjective",
+    "level": 1,
+    "vi": "hiếm, hiếm có",
+    "examples": [
+      {
+        "en": "This is a rare bird.",
+        "vi": "Đây là một loài chim hiếm."
+      },
+      {
+        "en": "It is rare to see snow here.",
+        "vi": "Hiếm khi thấy tuyết ở đây."
+      }
+    ]
+  },
+  {
+    "id": 969,
+    "word": "raw",
+    "ipa": "/rɔː/",
+    "pos": "adjective",
+    "level": 1,
+    "vi": "sống, chưa nấu chín",
+    "examples": [
+      {
+        "en": "Don't eat raw meat.",
+        "vi": "Đừng ăn thịt sống."
+      },
+      {
+        "en": "Some fish is eaten raw.",
+        "vi": "Một số loại cá được ăn sống."
+      }
+    ]
+  },
+  {
+    "id": 970,
+    "word": "real",
+    "ipa": "/riːl/",
+    "pos": "adjective",
+    "level": 1,
+    "vi": "thật, có thật",
+    "examples": [
+      {
+        "en": "Is this a real diamond?",
+        "vi": "Đây có phải kim cương thật không?"
+      },
+      {
+        "en": "That is a real story.",
+        "vi": "Đó là một câu chuyện có thật."
+      }
+    ]
+  },
+  {
+    "id": 971,
+    "word": "recent",
+    "ipa": "/ˈriːsnt/",
+    "pos": "adjective",
+    "level": 1,
+    "vi": "gần đây, mới đây",
+    "examples": [
+      {
+        "en": "This is a recent photo.",
+        "vi": "Đây là một tấm ảnh gần đây."
+      },
+      {
+        "en": "In recent years, the city has grown.",
+        "vi": "Những năm gần đây, thành phố đã phát triển."
+      }
+    ]
+  },
+  {
+    "id": 972,
+    "word": "regular",
+    "ipa": "/ˈreɡjələr/",
+    "pos": "adjective",
+    "level": 1,
+    "vi": "thường xuyên, đều đặn; thông thường",
+    "examples": [
+      {
+        "en": "He is a regular customer.",
+        "vi": "Anh ấy là khách quen."
+      },
+      {
+        "en": "Do regular exercise.",
+        "vi": "Hãy tập thể dục đều đặn."
+      }
+    ]
+  },
+  {
+    "id": 973,
+    "word": "ripe",
+    "ipa": "/raɪp/",
+    "pos": "adjective",
+    "level": 1,
+    "vi": "chín (trái cây)",
+    "examples": [
+      {
+        "en": "The bananas are ripe.",
+        "vi": "Chuối đã chín."
+      },
+      {
+        "en": "Pick the ripe tomatoes.",
+        "vi": "Hái những quả cà chua chín."
+      }
+    ]
+  },
+  {
+    "id": 974,
+    "word": "rough",
+    "ipa": "/rʌf/",
+    "pos": "adjective",
+    "level": 1,
+    "vi": "thô ráp; gồ ghề",
+    "examples": [
+      {
+        "en": "The wall feels rough.",
+        "vi": "Bức tường sờ vào thấy thô ráp."
+      },
+      {
+        "en": "The road is rough.",
+        "vi": "Con đường gồ ghề."
+      }
+    ]
+  },
+  {
+    "id": 975,
+    "word": "rude",
+    "ipa": "/ruːd/",
+    "pos": "adjective",
+    "level": 1,
+    "vi": "thô lỗ, bất lịch sự",
+    "examples": [
+      {
+        "en": "It is rude to interrupt.",
+        "vi": "Ngắt lời người khác là bất lịch sự."
+      },
+      {
+        "en": "Don't be rude to her.",
+        "vi": "Đừng thô lỗ với cô ấy."
+      }
+    ]
+  },
+  {
+    "id": 976,
+    "word": "slowly",
+    "ipa": "/ˈsloʊli/",
+    "pos": "adverb",
+    "level": 1,
+    "vi": "chậm rãi, từ từ",
+    "examples": [
+      {
+        "en": "Please speak slowly.",
+        "vi": "Vui lòng nói chậm lại."
+      },
+      {
+        "en": "He walked slowly.",
+        "vi": "Anh ấy đi chậm rãi."
+      }
+    ]
+  },
+  {
+    "id": 977,
+    "word": "quickly",
+    "ipa": "/ˈkwɪkli/",
+    "pos": "adverb",
+    "level": 1,
+    "vi": "nhanh chóng, mau",
+    "examples": [
+      {
+        "en": "She finished quickly.",
+        "vi": "Cô ấy làm xong nhanh chóng."
+      },
+      {
+        "en": "Come here quickly!",
+        "vi": "Mau lại đây!"
+      }
+    ]
+  },
+  {
+    "id": 978,
+    "word": "quietly",
+    "ipa": "/ˈkwaɪətli/",
+    "pos": "adverb",
+    "level": 1,
+    "vi": "lặng lẽ, khẽ khàng",
+    "examples": [
+      {
+        "en": "He closed the door quietly.",
+        "vi": "Anh ấy khẽ khàng đóng cửa."
+      },
+      {
+        "en": "Please sit quietly.",
+        "vi": "Vui lòng ngồi yên lặng."
+      }
+    ]
+  },
+  {
+    "id": 979,
+    "word": "carefully",
+    "ipa": "/ˈkerfəli/",
+    "pos": "adverb",
+    "level": 1,
+    "vi": "cẩn thận, kỹ lưỡng",
+    "examples": [
+      {
+        "en": "Drive carefully.",
+        "vi": "Lái xe cẩn thận nhé."
+      },
+      {
+        "en": "Read the question carefully.",
+        "vi": "Đọc kỹ câu hỏi."
+      }
+    ]
+  },
+  {
+    "id": 980,
+    "word": "finally",
+    "ipa": "/ˈfaɪnəli/",
+    "pos": "adverb",
+    "level": 1,
+    "vi": "cuối cùng, rốt cuộc",
+    "examples": [
+      {
+        "en": "Finally, we arrived home.",
+        "vi": "Cuối cùng, chúng tôi cũng về đến nhà."
+      },
+      {
+        "en": "She finally agreed.",
+        "vi": "Rốt cuộc cô ấy cũng đồng ý."
+      }
+    ]
+  },
+  {
+    "id": 981,
+    "word": "immediately",
+    "ipa": "/ɪˈmiːdiətli/",
+    "pos": "adverb",
+    "level": 1,
+    "vi": "ngay lập tức",
+    "examples": [
+      {
+        "en": "Call me immediately.",
+        "vi": "Gọi cho tôi ngay lập tức."
+      },
+      {
+        "en": "She left immediately.",
+        "vi": "Cô ấy rời đi ngay."
+      }
+    ]
+  },
+  {
+    "id": 982,
+    "word": "nearly",
+    "ipa": "/ˈnɪrli/",
+    "pos": "adverb",
+    "level": 1,
+    "vi": "gần như, suýt",
+    "examples": [
+      {
+        "en": "It is nearly midnight.",
+        "vi": "Gần nửa đêm rồi."
+      },
+      {
+        "en": "I nearly fell.",
+        "vi": "Tôi suýt ngã."
+      }
+    ]
+  },
+  {
+    "id": 983,
+    "word": "hardly",
+    "ipa": "/ˈhɑːrdli/",
+    "pos": "adverb",
+    "level": 1,
+    "vi": "hầu như không",
+    "examples": [
+      {
+        "en": "I can hardly believe it.",
+        "vi": "Tôi hầu như không thể tin nổi."
+      },
+      {
+        "en": "She hardly ever cooks.",
+        "vi": "Cô ấy hầu như không bao giờ nấu ăn."
+      }
+    ]
+  },
+  {
+    "id": 984,
+    "word": "mostly",
+    "ipa": "/ˈmoʊstli/",
+    "pos": "adverb",
+    "level": 1,
+    "vi": "chủ yếu, phần lớn",
+    "examples": [
+      {
+        "en": "The guests are mostly students.",
+        "vi": "Khách phần lớn là sinh viên."
+      },
+      {
+        "en": "I mostly drink tea.",
+        "vi": "Tôi chủ yếu uống trà."
+      }
+    ]
+  },
+  {
+    "id": 985,
+    "word": "lately",
+    "ipa": "/ˈleɪtli/",
+    "pos": "adverb",
+    "level": 1,
+    "vi": "gần đây, dạo này",
+    "examples": [
+      {
+        "en": "Have you seen her lately?",
+        "vi": "Dạo này bạn có gặp cô ấy không?"
+      },
+      {
+        "en": "I have been busy lately.",
+        "vi": "Dạo này tôi khá bận."
+      }
+    ]
+  },
+  {
+    "id": 986,
+    "word": "simply",
+    "ipa": "/ˈsɪmpli/",
+    "pos": "adverb",
+    "level": 1,
+    "vi": "đơn giản là, chỉ là",
+    "examples": [
+      {
+        "en": "It is simply too expensive.",
+        "vi": "Nó đơn giản là quá đắt."
+      },
+      {
+        "en": "Just explain it simply.",
+        "vi": "Cứ giải thích đơn giản thôi."
+      }
+    ]
+  },
+  {
+    "id": 987,
+    "word": "truly",
+    "ipa": "/ˈtruːli/",
+    "pos": "adverb",
+    "level": 1,
+    "vi": "thật sự, thực lòng",
+    "examples": [
+      {
+        "en": "I am truly sorry.",
+        "vi": "Tôi thực lòng xin lỗi."
+      },
+      {
+        "en": "She is truly kind.",
+        "vi": "Cô ấy thật sự tốt bụng."
+      }
+    ]
+  },
+  {
+    "id": 988,
+    "word": "widely",
+    "ipa": "/ˈwaɪdli/",
+    "pos": "adverb",
+    "level": 1,
+    "vi": "rộng rãi, phổ biến",
+    "examples": [
+      {
+        "en": "English is widely spoken.",
+        "vi": "Tiếng Anh được nói rộng rãi."
+      },
+      {
+        "en": "The book is widely read.",
+        "vi": "Cuốn sách được đọc phổ biến."
+      }
+    ]
+  },
+  {
+    "id": 989,
+    "word": "surely",
+    "ipa": "/ˈʃʊrli/",
+    "pos": "adverb",
+    "level": 1,
+    "vi": "chắc chắn, hẳn là",
+    "examples": [
+      {
+        "en": "Surely you are joking.",
+        "vi": "Chắc bạn đang đùa."
+      },
+      {
+        "en": "This will surely work.",
+        "vi": "Cái này chắc chắn sẽ hiệu quả."
+      }
+    ]
+  },
+  {
+    "id": 990,
+    "word": "nicely",
+    "ipa": "/ˈnaɪsli/",
+    "pos": "adverb",
+    "level": 1,
+    "vi": "đẹp, tốt, tử tế",
+    "examples": [
+      {
+        "en": "The room is nicely decorated.",
+        "vi": "Căn phòng được trang trí đẹp."
+      },
+      {
+        "en": "She asked nicely.",
+        "vi": "Cô ấy hỏi rất nhã nhặn."
+      }
+    ]
+  },
+  {
+    "id": 991,
+    "word": "highly",
+    "ipa": "/ˈhaɪli/",
+    "pos": "adverb",
+    "level": 1,
+    "vi": "rất, cao độ",
+    "examples": [
+      {
+        "en": "She is highly skilled.",
+        "vi": "Cô ấy có tay nghề rất cao."
+      },
+      {
+        "en": "This book is highly recommended.",
+        "vi": "Cuốn sách này rất đáng đọc."
+      }
+    ]
+  },
+  {
+    "id": 992,
+    "word": "mainly",
+    "ipa": "/ˈmeɪnli/",
+    "pos": "adverb",
+    "level": 1,
+    "vi": "chủ yếu, phần lớn",
+    "examples": [
+      {
+        "en": "We mainly eat rice.",
+        "vi": "Chúng tôi chủ yếu ăn cơm."
+      },
+      {
+        "en": "The crowd was mainly young people.",
+        "vi": "Đám đông phần lớn là người trẻ."
+      }
+    ]
+  },
+  {
+    "id": 993,
+    "word": "rarely",
+    "ipa": "/ˈrerli/",
+    "pos": "adverb",
+    "level": 1,
+    "vi": "hiếm khi",
+    "examples": [
+      {
+        "en": "He rarely watches TV.",
+        "vi": "Anh ấy hiếm khi xem tivi."
+      },
+      {
+        "en": "It rarely snows here.",
+        "vi": "Hiếm khi có tuyết ở đây."
+      }
+    ]
+  },
+  {
+    "id": 994,
+    "word": "firmly",
+    "ipa": "/ˈfɜːrmli/",
+    "pos": "adverb",
+    "level": 1,
+    "vi": "chắc chắn, dứt khoát",
+    "examples": [
+      {
+        "en": "Hold the rope firmly.",
+        "vi": "Giữ chặt sợi dây."
+      },
+      {
+        "en": "She firmly said no.",
+        "vi": "Cô ấy dứt khoát nói không."
+      }
+    ]
+  },
+  {
+    "id": 995,
+    "word": "gently",
+    "ipa": "/ˈdʒentli/",
+    "pos": "adverb",
+    "level": 1,
+    "vi": "nhẹ nhàng, dịu dàng",
+    "examples": [
+      {
+        "en": "Hold the baby gently.",
+        "vi": "Bế em bé nhẹ nhàng nhé."
+      },
+      {
+        "en": "She gently closed the door.",
+        "vi": "Cô ấy nhẹ nhàng khép cửa."
+      }
+    ]
+  },
+  {
+    "id": 996,
+    "word": "myself",
+    "ipa": "/maɪˈself/",
+    "pos": "pronoun",
+    "level": 1,
+    "vi": "chính tôi, tự tôi",
+    "examples": [
+      {
+        "en": "I made this cake myself.",
+        "vi": "Tôi tự làm cái bánh này."
+      },
+      {
+        "en": "I hurt myself.",
+        "vi": "Tôi tự làm mình bị đau."
+      }
+    ]
+  },
+  {
+    "id": 997,
+    "word": "yourself",
+    "ipa": "/jɔːrˈself/",
+    "pos": "pronoun",
+    "level": 1,
+    "vi": "chính bạn, tự bạn",
+    "examples": [
+      {
+        "en": "Take care of yourself.",
+        "vi": "Hãy chăm sóc bản thân nhé."
+      },
+      {
+        "en": "Did you do it yourself?",
+        "vi": "Bạn tự làm nó à?"
+      }
+    ]
+  },
+  {
+    "id": 998,
+    "word": "himself",
+    "ipa": "/hɪmˈself/",
+    "pos": "pronoun",
+    "level": 1,
+    "vi": "chính anh ấy, tự anh ấy",
+    "examples": [
+      {
+        "en": "He fixed the car himself.",
+        "vi": "Anh ấy tự sửa chiếc xe."
+      },
+      {
+        "en": "He lives by himself.",
+        "vi": "Anh ấy sống một mình."
+      }
+    ]
+  },
+  {
+    "id": 999,
+    "word": "herself",
+    "ipa": "/hɜːrˈself/",
+    "pos": "pronoun",
+    "level": 1,
+    "vi": "chính cô ấy, tự cô ấy",
+    "examples": [
+      {
+        "en": "She made it herself.",
+        "vi": "Cô ấy tự làm ra nó."
+      },
+      {
+        "en": "She looked at herself in the mirror.",
+        "vi": "Cô ấy nhìn mình trong gương."
+      }
+    ]
+  },
+  {
+    "id": 1000,
+    "word": "themselves",
+    "ipa": "/ðəmˈselvz/",
+    "pos": "pronoun",
+    "level": 1,
+    "vi": "chính họ, tự họ",
+    "examples": [
+      {
+        "en": "They built the house themselves.",
+        "vi": "Họ tự xây ngôi nhà."
+      },
+      {
+        "en": "The children enjoyed themselves.",
+        "vi": "Bọn trẻ chơi vui vẻ."
+      }
+    ]
+  }
+]

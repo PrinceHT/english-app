@@ -1,0 +1,902 @@
+[
+  {
+    "id": 651,
+    "word": "accident",
+    "ipa": "/ˈæksɪdənt/",
+    "pos": "noun",
+    "level": 1,
+    "vi": "tai nạn; sự tình cờ",
+    "examples": [
+      {
+        "en": "There was a car accident.",
+        "vi": "Có một vụ tai nạn ô tô."
+      },
+      {
+        "en": "I broke it by accident.",
+        "vi": "Tôi làm vỡ nó một cách vô tình."
+      }
+    ]
+  },
+  {
+    "id": 652,
+    "word": "account",
+    "ipa": "/əˈkaʊnt/",
+    "pos": "noun",
+    "level": 1,
+    "vi": "tài khoản",
+    "examples": [
+      {
+        "en": "I opened a bank account.",
+        "vi": "Tôi mở một tài khoản ngân hàng."
+      },
+      {
+        "en": "Check your email account.",
+        "vi": "Kiểm tra tài khoản email của bạn."
+      }
+    ]
+  },
+  {
+    "id": 653,
+    "word": "actor",
+    "ipa": "/ˈæktər/",
+    "pos": "noun",
+    "level": 1,
+    "vi": "diễn viên (nam)",
+    "examples": [
+      {
+        "en": "He is a famous actor.",
+        "vi": "Anh ấy là một diễn viên nổi tiếng."
+      },
+      {
+        "en": "The actor played a king.",
+        "vi": "Diễn viên đó đóng vai một vị vua."
+      }
+    ]
+  },
+  {
+    "id": 654,
+    "word": "address",
+    "ipa": "/əˈdres/",
+    "pos": "noun",
+    "level": 1,
+    "vi": "địa chỉ",
+    "examples": [
+      {
+        "en": "What is your address?",
+        "vi": "Địa chỉ của bạn là gì?"
+      },
+      {
+        "en": "Write your address here.",
+        "vi": "Viết địa chỉ của bạn vào đây."
+      }
+    ]
+  },
+  {
+    "id": 655,
+    "word": "adult",
+    "ipa": "/ˈædʌlt/",
+    "pos": "noun",
+    "level": 1,
+    "vi": "người lớn, người trưởng thành",
+    "examples": [
+      {
+        "en": "This film is for adults.",
+        "vi": "Bộ phim này dành cho người lớn."
+      },
+      {
+        "en": "An adult should help the child.",
+        "vi": "Một người lớn nên giúp đứa trẻ."
+      }
+    ]
+  },
+  {
+    "id": 656,
+    "word": "advice",
+    "ipa": "/ədˈvaɪs/",
+    "pos": "noun",
+    "level": 1,
+    "vi": "lời khuyên",
+    "examples": [
+      {
+        "en": "Thank you for your advice.",
+        "vi": "Cảm ơn vì lời khuyên của bạn."
+      },
+      {
+        "en": "Can I ask for some advice?",
+        "vi": "Tôi xin một lời khuyên được không?"
+      }
+    ]
+  },
+  {
+    "id": 657,
+    "word": "airport",
+    "ipa": "/ˈerpɔːrt/",
+    "pos": "noun",
+    "level": 1,
+    "vi": "sân bay",
+    "examples": [
+      {
+        "en": "The airport is far from here.",
+        "vi": "Sân bay ở xa đây."
+      },
+      {
+        "en": "We met at the airport.",
+        "vi": "Chúng tôi gặp nhau ở sân bay."
+      }
+    ]
+  },
+  {
+    "id": 658,
+    "word": "ant",
+    "ipa": "/ænt/",
+    "pos": "noun",
+    "level": 1,
+    "vi": "con kiến",
+    "examples": [
+      {
+        "en": "There are ants on the table.",
+        "vi": "Có kiến trên bàn."
+      },
+      {
+        "en": "Ants are very small.",
+        "vi": "Kiến rất nhỏ."
+      }
+    ]
+  },
+  {
+    "id": 659,
+    "word": "apartment",
+    "ipa": "/əˈpɑːrtmənt/",
+    "pos": "noun",
+    "level": 1,
+    "vi": "căn hộ",
+    "examples": [
+      {
+        "en": "They live in a small apartment.",
+        "vi": "Họ sống trong một căn hộ nhỏ."
+      },
+      {
+        "en": "My apartment is on the fifth floor.",
+        "vi": "Căn hộ của tôi ở tầng năm."
+      }
+    ]
+  },
+  {
+    "id": 660,
+    "word": "arm",
+    "ipa": "/ɑːrm/",
+    "pos": "noun",
+    "level": 1,
+    "vi": "cánh tay",
+    "examples": [
+      {
+        "en": "She broke her arm.",
+        "vi": "Cô ấy bị gãy tay."
+      },
+      {
+        "en": "He held the baby in his arms.",
+        "vi": "Anh ấy bế em bé trong vòng tay."
+      }
+    ]
+  },
+  {
+    "id": 661,
+    "word": "army",
+    "ipa": "/ˈɑːrmi/",
+    "pos": "noun",
+    "level": 1,
+    "vi": "quân đội",
+    "examples": [
+      {
+        "en": "He joined the army.",
+        "vi": "Anh ấy gia nhập quân đội."
+      },
+      {
+        "en": "The army is very large.",
+        "vi": "Quân đội rất đông."
+      }
+    ]
+  },
+  {
+    "id": 662,
+    "word": "arrow",
+    "ipa": "/ˈæroʊ/",
+    "pos": "noun",
+    "level": 1,
+    "vi": "mũi tên",
+    "examples": [
+      {
+        "en": "Follow the arrow.",
+        "vi": "Đi theo mũi tên."
+      },
+      {
+        "en": "He shot an arrow.",
+        "vi": "Anh ấy bắn một mũi tên."
+      }
+    ]
+  },
+  {
+    "id": 663,
+    "word": "aunt",
+    "ipa": "/ænt/",
+    "pos": "noun",
+    "level": 1,
+    "vi": "cô, dì, bác gái",
+    "examples": [
+      {
+        "en": "My aunt lives in Hue.",
+        "vi": "Cô tôi sống ở Huế."
+      },
+      {
+        "en": "We visited our aunt.",
+        "vi": "Chúng tôi đến thăm dì."
+      }
+    ]
+  },
+  {
+    "id": 664,
+    "word": "author",
+    "ipa": "/ˈɔːθər/",
+    "pos": "noun",
+    "level": 1,
+    "vi": "tác giả",
+    "examples": [
+      {
+        "en": "Who is the author of this book?",
+        "vi": "Ai là tác giả của cuốn sách này?"
+      },
+      {
+        "en": "She is a famous author.",
+        "vi": "Cô ấy là một tác giả nổi tiếng."
+      }
+    ]
+  },
+  {
+    "id": 665,
+    "word": "balloon",
+    "ipa": "/bəˈluːn/",
+    "pos": "noun",
+    "level": 1,
+    "vi": "quả bóng bay",
+    "examples": [
+      {
+        "en": "The child has a red balloon.",
+        "vi": "Đứa trẻ có một quả bóng bay đỏ."
+      },
+      {
+        "en": "The balloons are flying away.",
+        "vi": "Những quả bóng bay đang bay đi."
+      }
+    ]
+  },
+  {
+    "id": 666,
+    "word": "banana",
+    "ipa": "/bəˈnænə/",
+    "pos": "noun",
+    "level": 1,
+    "vi": "quả chuối",
+    "examples": [
+      {
+        "en": "I eat a banana every morning.",
+        "vi": "Tôi ăn một quả chuối mỗi sáng."
+      },
+      {
+        "en": "Monkeys love bananas.",
+        "vi": "Khỉ thích chuối."
+      }
+    ]
+  },
+  {
+    "id": 667,
+    "word": "basket",
+    "ipa": "/ˈbæskɪt/",
+    "pos": "noun",
+    "level": 1,
+    "vi": "cái giỏ, rổ",
+    "examples": [
+      {
+        "en": "The basket is full of fruit.",
+        "vi": "Cái giỏ đầy trái cây."
+      },
+      {
+        "en": "Put the eggs in the basket.",
+        "vi": "Bỏ trứng vào giỏ."
+      }
+    ]
+  },
+  {
+    "id": 668,
+    "word": "bean",
+    "ipa": "/biːn/",
+    "pos": "noun",
+    "level": 1,
+    "vi": "hạt đậu",
+    "examples": [
+      {
+        "en": "I like green beans.",
+        "vi": "Tôi thích đậu xanh (đậu que)."
+      },
+      {
+        "en": "Beans are good for you.",
+        "vi": "Đậu tốt cho bạn."
+      }
+    ]
+  },
+  {
+    "id": 669,
+    "word": "bear",
+    "ipa": "/ber/",
+    "pos": "noun",
+    "level": 1,
+    "vi": "con gấu",
+    "examples": [
+      {
+        "en": "A bear lives in the forest.",
+        "vi": "Một con gấu sống trong rừng."
+      },
+      {
+        "en": "The bear is very big.",
+        "vi": "Con gấu rất to."
+      }
+    ]
+  },
+  {
+    "id": 670,
+    "word": "bee",
+    "ipa": "/biː/",
+    "pos": "noun",
+    "level": 1,
+    "vi": "con ong",
+    "examples": [
+      {
+        "en": "Bees make honey.",
+        "vi": "Ong làm ra mật."
+      },
+      {
+        "en": "A bee landed on the flower.",
+        "vi": "Một con ong đậu trên bông hoa."
+      }
+    ]
+  },
+  {
+    "id": 671,
+    "word": "beef",
+    "ipa": "/biːf/",
+    "pos": "noun",
+    "level": 1,
+    "vi": "thịt bò",
+    "examples": [
+      {
+        "en": "We had beef for dinner.",
+        "vi": "Chúng tôi ăn thịt bò vào bữa tối."
+      },
+      {
+        "en": "This beef is very tender.",
+        "vi": "Thịt bò này rất mềm."
+      }
+    ]
+  },
+  {
+    "id": 672,
+    "word": "belt",
+    "ipa": "/belt/",
+    "pos": "noun",
+    "level": 1,
+    "vi": "thắt lưng, dây nịt",
+    "examples": [
+      {
+        "en": "He wears a brown belt.",
+        "vi": "Anh ấy đeo một chiếc thắt lưng nâu."
+      },
+      {
+        "en": "Fasten your seat belt.",
+        "vi": "Thắt dây an toàn vào."
+      }
+    ]
+  },
+  {
+    "id": 673,
+    "word": "bench",
+    "ipa": "/bentʃ/",
+    "pos": "noun",
+    "level": 1,
+    "vi": "ghế dài (băng ghế)",
+    "examples": [
+      {
+        "en": "We sat on a bench in the park.",
+        "vi": "Chúng tôi ngồi trên băng ghế trong công viên."
+      },
+      {
+        "en": "The bench is wet.",
+        "vi": "Cái băng ghế bị ướt."
+      }
+    ]
+  },
+  {
+    "id": 674,
+    "word": "blanket",
+    "ipa": "/ˈblæŋkɪt/",
+    "pos": "noun",
+    "level": 1,
+    "vi": "cái chăn, mền",
+    "examples": [
+      {
+        "en": "Cover the baby with a blanket.",
+        "vi": "Đắp chăn cho em bé."
+      },
+      {
+        "en": "This blanket is warm.",
+        "vi": "Cái chăn này ấm."
+      }
+    ]
+  },
+  {
+    "id": 675,
+    "word": "bowl",
+    "ipa": "/boʊl/",
+    "pos": "noun",
+    "level": 1,
+    "vi": "cái bát, tô",
+    "examples": [
+      {
+        "en": "A bowl of rice, please.",
+        "vi": "Cho tôi một bát cơm."
+      },
+      {
+        "en": "The bowl is full of soup.",
+        "vi": "Cái tô đầy súp."
+      }
+    ]
+  },
+  {
+    "id": 676,
+    "word": "brain",
+    "ipa": "/breɪn/",
+    "pos": "noun",
+    "level": 1,
+    "vi": "bộ não",
+    "examples": [
+      {
+        "en": "The brain controls the body.",
+        "vi": "Bộ não điều khiển cơ thể."
+      },
+      {
+        "en": "Use your brain!",
+        "vi": "Hãy dùng cái đầu của bạn!"
+      }
+    ]
+  },
+  {
+    "id": 677,
+    "word": "branch",
+    "ipa": "/bræntʃ/",
+    "pos": "noun",
+    "level": 1,
+    "vi": "cành cây; chi nhánh",
+    "examples": [
+      {
+        "en": "A bird sat on a branch.",
+        "vi": "Một con chim đậu trên cành cây."
+      },
+      {
+        "en": "The bank has many branches.",
+        "vi": "Ngân hàng có nhiều chi nhánh."
+      }
+    ]
+  },
+  {
+    "id": 678,
+    "word": "brick",
+    "ipa": "/brɪk/",
+    "pos": "noun",
+    "level": 1,
+    "vi": "viên gạch",
+    "examples": [
+      {
+        "en": "The wall is made of bricks.",
+        "vi": "Bức tường được xây bằng gạch."
+      },
+      {
+        "en": "He carried a heavy brick.",
+        "vi": "Anh ấy mang một viên gạch nặng."
+      }
+    ]
+  },
+  {
+    "id": 679,
+    "word": "bucket",
+    "ipa": "/ˈbʌkɪt/",
+    "pos": "noun",
+    "level": 1,
+    "vi": "cái xô",
+    "examples": [
+      {
+        "en": "Fill the bucket with water.",
+        "vi": "Đổ đầy nước vào xô."
+      },
+      {
+        "en": "The bucket is empty.",
+        "vi": "Cái xô rỗng."
+      }
+    ]
+  },
+  {
+    "id": 680,
+    "word": "butter",
+    "ipa": "/ˈbʌtər/",
+    "pos": "noun",
+    "level": 1,
+    "vi": "bơ",
+    "examples": [
+      {
+        "en": "I put butter on my bread.",
+        "vi": "Tôi phết bơ lên bánh mì."
+      },
+      {
+        "en": "The butter is in the fridge.",
+        "vi": "Bơ ở trong tủ lạnh."
+      }
+    ]
+  },
+  {
+    "id": 681,
+    "word": "butterfly",
+    "ipa": "/ˈbʌtərflaɪ/",
+    "pos": "noun",
+    "level": 1,
+    "vi": "con bướm",
+    "examples": [
+      {
+        "en": "A butterfly landed on the flower.",
+        "vi": "Một con bướm đậu lên bông hoa."
+      },
+      {
+        "en": "Butterflies are colorful.",
+        "vi": "Những con bướm đầy màu sắc."
+      }
+    ]
+  },
+  {
+    "id": 682,
+    "word": "cabbage",
+    "ipa": "/ˈkæbɪdʒ/",
+    "pos": "noun",
+    "level": 1,
+    "vi": "bắp cải",
+    "examples": [
+      {
+        "en": "I bought a cabbage at the market.",
+        "vi": "Tôi mua một cây bắp cải ở chợ."
+      },
+      {
+        "en": "Cabbage is a healthy vegetable.",
+        "vi": "Bắp cải là một loại rau tốt cho sức khỏe."
+      }
+    ]
+  },
+  {
+    "id": 683,
+    "word": "camera",
+    "ipa": "/ˈkæmrə/",
+    "pos": "noun",
+    "level": 1,
+    "vi": "máy ảnh",
+    "examples": [
+      {
+        "en": "She bought a new camera.",
+        "vi": "Cô ấy mua một chiếc máy ảnh mới."
+      },
+      {
+        "en": "Smile for the camera!",
+        "vi": "Cười lên trước máy ảnh nào!"
+      }
+    ]
+  },
+  {
+    "id": 684,
+    "word": "candle",
+    "ipa": "/ˈkændl/",
+    "pos": "noun",
+    "level": 1,
+    "vi": "cây nến",
+    "examples": [
+      {
+        "en": "Light the candle, please.",
+        "vi": "Thắp nến lên nhé."
+      },
+      {
+        "en": "There are ten candles on the cake.",
+        "vi": "Có mười cây nến trên bánh."
+      }
+    ]
+  },
+  {
+    "id": 685,
+    "word": "candy",
+    "ipa": "/ˈkændi/",
+    "pos": "noun",
+    "level": 1,
+    "vi": "kẹo",
+    "examples": [
+      {
+        "en": "Children love candy.",
+        "vi": "Trẻ con thích kẹo."
+      },
+      {
+        "en": "Don't eat too much candy.",
+        "vi": "Đừng ăn quá nhiều kẹo."
+      }
+    ]
+  },
+  {
+    "id": 686,
+    "word": "cap",
+    "ipa": "/kæp/",
+    "pos": "noun",
+    "level": 1,
+    "vi": "mũ lưỡi trai; nắp",
+    "examples": [
+      {
+        "en": "He wears a blue cap.",
+        "vi": "Anh ấy đội một chiếc mũ lưỡi trai xanh."
+      },
+      {
+        "en": "Put the cap back on the bottle.",
+        "vi": "Đậy nắp chai lại."
+      }
+    ]
+  },
+  {
+    "id": 687,
+    "word": "captain",
+    "ipa": "/ˈkæptɪn/",
+    "pos": "noun",
+    "level": 1,
+    "vi": "đội trưởng; thuyền trưởng",
+    "examples": [
+      {
+        "en": "He is the captain of the team.",
+        "vi": "Anh ấy là đội trưởng của đội."
+      },
+      {
+        "en": "The captain steered the ship.",
+        "vi": "Thuyền trưởng lái con tàu."
+      }
+    ]
+  },
+  {
+    "id": 688,
+    "word": "carpet",
+    "ipa": "/ˈkɑːrpɪt/",
+    "pos": "noun",
+    "level": 1,
+    "vi": "tấm thảm",
+    "examples": [
+      {
+        "en": "The carpet is soft.",
+        "vi": "Tấm thảm mềm mại."
+      },
+      {
+        "en": "There is a red carpet in the hall.",
+        "vi": "Có một tấm thảm đỏ trong sảnh."
+      }
+    ]
+  },
+  {
+    "id": 689,
+    "word": "carrot",
+    "ipa": "/ˈkærət/",
+    "pos": "noun",
+    "level": 1,
+    "vi": "củ cà rốt",
+    "examples": [
+      {
+        "en": "Rabbits like carrots.",
+        "vi": "Thỏ thích cà rốt."
+      },
+      {
+        "en": "Add some carrots to the soup.",
+        "vi": "Thêm chút cà rốt vào súp."
+      }
+    ]
+  },
+  {
+    "id": 690,
+    "word": "castle",
+    "ipa": "/ˈkæsl/",
+    "pos": "noun",
+    "level": 1,
+    "vi": "lâu đài",
+    "examples": [
+      {
+        "en": "The king lives in a castle.",
+        "vi": "Nhà vua sống trong một lâu đài."
+      },
+      {
+        "en": "The old castle is on the hill.",
+        "vi": "Lâu đài cổ nằm trên đồi."
+      }
+    ]
+  },
+  {
+    "id": 691,
+    "word": "cave",
+    "ipa": "/keɪv/",
+    "pos": "noun",
+    "level": 1,
+    "vi": "hang động",
+    "examples": [
+      {
+        "en": "Bats live in the cave.",
+        "vi": "Dơi sống trong hang."
+      },
+      {
+        "en": "We explored a dark cave.",
+        "vi": "Chúng tôi khám phá một hang động tối."
+      }
+    ]
+  },
+  {
+    "id": 692,
+    "word": "century",
+    "ipa": "/ˈsentʃəri/",
+    "pos": "noun",
+    "level": 1,
+    "vi": "thế kỷ",
+    "examples": [
+      {
+        "en": "This castle is a century old.",
+        "vi": "Lâu đài này có tuổi đời một thế kỷ."
+      },
+      {
+        "en": "We live in the twenty-first century.",
+        "vi": "Chúng ta sống ở thế kỷ hai mươi mốt."
+      }
+    ]
+  },
+  {
+    "id": 693,
+    "word": "chain",
+    "ipa": "/tʃeɪn/",
+    "pos": "noun",
+    "level": 1,
+    "vi": "dây xích, chuỗi",
+    "examples": [
+      {
+        "en": "The dog is on a chain.",
+        "vi": "Con chó bị xích lại."
+      },
+      {
+        "en": "She wears a gold chain.",
+        "vi": "Cô ấy đeo một sợi dây chuyền vàng."
+      }
+    ]
+  },
+  {
+    "id": 694,
+    "word": "cheek",
+    "ipa": "/tʃiːk/",
+    "pos": "noun",
+    "level": 1,
+    "vi": "má",
+    "examples": [
+      {
+        "en": "The baby has soft cheeks.",
+        "vi": "Em bé có đôi má mềm mại."
+      },
+      {
+        "en": "She kissed my cheek.",
+        "vi": "Cô ấy hôn lên má tôi."
+      }
+    ]
+  },
+  {
+    "id": 695,
+    "word": "chest",
+    "ipa": "/tʃest/",
+    "pos": "noun",
+    "level": 1,
+    "vi": "ngực; rương, hòm",
+    "examples": [
+      {
+        "en": "He has a pain in his chest.",
+        "vi": "Anh ấy bị đau ngực."
+      },
+      {
+        "en": "The gold is in the chest.",
+        "vi": "Vàng nằm trong cái rương."
+      }
+    ]
+  },
+  {
+    "id": 696,
+    "word": "chief",
+    "ipa": "/tʃiːf/",
+    "pos": "noun",
+    "level": 1,
+    "vi": "thủ lĩnh, người đứng đầu",
+    "examples": [
+      {
+        "en": "He is the chief of the village.",
+        "vi": "Ông ấy là người đứng đầu làng."
+      },
+      {
+        "en": "The chief made a decision.",
+        "vi": "Vị thủ lĩnh đưa ra quyết định."
+      }
+    ]
+  },
+  {
+    "id": 697,
+    "word": "chimney",
+    "ipa": "/ˈtʃɪmni/",
+    "pos": "noun",
+    "level": 1,
+    "vi": "ống khói",
+    "examples": [
+      {
+        "en": "Smoke comes out of the chimney.",
+        "vi": "Khói bốc ra từ ống khói."
+      },
+      {
+        "en": "The house has a tall chimney.",
+        "vi": "Ngôi nhà có một ống khói cao."
+      }
+    ]
+  },
+  {
+    "id": 698,
+    "word": "chin",
+    "ipa": "/tʃɪn/",
+    "pos": "noun",
+    "level": 1,
+    "vi": "cằm",
+    "examples": [
+      {
+        "en": "He has a small chin.",
+        "vi": "Anh ấy có cái cằm nhỏ."
+      },
+      {
+        "en": "Lift your chin up.",
+        "vi": "Ngẩng cằm lên."
+      }
+    ]
+  },
+  {
+    "id": 699,
+    "word": "chocolate",
+    "ipa": "/ˈtʃɑːklət/",
+    "pos": "noun",
+    "level": 1,
+    "vi": "sô-cô-la",
+    "examples": [
+      {
+        "en": "I love dark chocolate.",
+        "vi": "Tôi thích sô-cô-la đen."
+      },
+      {
+        "en": "She gave me a box of chocolate.",
+        "vi": "Cô ấy tặng tôi một hộp sô-cô-la."
+      }
+    ]
+  },
+  {
+    "id": 700,
+    "word": "citizen",
+    "ipa": "/ˈsɪtɪzn/",
+    "pos": "noun",
+    "level": 1,
+    "vi": "công dân",
+    "examples": [
+      {
+        "en": "He is a citizen of Vietnam.",
+        "vi": "Anh ấy là công dân Việt Nam."
+      },
+      {
+        "en": "Every citizen has rights.",
+        "vi": "Mỗi công dân đều có quyền lợi."
+      }
+    ]
+  }
+]

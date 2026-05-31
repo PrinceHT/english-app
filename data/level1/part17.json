@@ -1,0 +1,902 @@
+[
+  {
+    "id": 801,
+    "word": "wash",
+    "ipa": "/wɑːʃ/",
+    "pos": "verb",
+    "level": 1,
+    "vi": "rửa, giặt",
+    "examples": [
+      {
+        "en": "Wash your hands before eating.",
+        "vi": "Rửa tay trước khi ăn."
+      },
+      {
+        "en": "She washes the clothes on Sunday.",
+        "vi": "Cô ấy giặt quần áo vào Chủ nhật."
+      }
+    ]
+  },
+  {
+    "id": 802,
+    "word": "throw",
+    "ipa": "/θroʊ/",
+    "pos": "verb",
+    "level": 1,
+    "vi": "ném, quăng",
+    "examples": [
+      {
+        "en": "Throw the ball to me.",
+        "vi": "Ném bóng cho tôi đi."
+      },
+      {
+        "en": "Don't throw trash on the street.",
+        "vi": "Đừng vứt rác ra đường."
+      }
+    ]
+  },
+  {
+    "id": 803,
+    "word": "cut",
+    "ipa": "/kʌt/",
+    "pos": "verb",
+    "level": 1,
+    "vi": "cắt",
+    "examples": [
+      {
+        "en": "Cut the paper in half.",
+        "vi": "Cắt đôi tờ giấy."
+      },
+      {
+        "en": "He cut his finger.",
+        "vi": "Anh ấy bị đứt tay."
+      }
+    ]
+  },
+  {
+    "id": 804,
+    "word": "swim",
+    "ipa": "/swɪm/",
+    "pos": "verb",
+    "level": 1,
+    "vi": "bơi",
+    "examples": [
+      {
+        "en": "I swim every weekend.",
+        "vi": "Tôi bơi mỗi cuối tuần."
+      },
+      {
+        "en": "Fish swim in the river.",
+        "vi": "Cá bơi dưới sông."
+      }
+    ]
+  },
+  {
+    "id": 805,
+    "word": "wake",
+    "ipa": "/weɪk/",
+    "pos": "verb",
+    "level": 1,
+    "vi": "thức dậy, đánh thức",
+    "examples": [
+      {
+        "en": "I wake up at six.",
+        "vi": "Tôi thức dậy lúc sáu giờ."
+      },
+      {
+        "en": "Please wake me at seven.",
+        "vi": "Vui lòng đánh thức tôi lúc bảy giờ."
+      }
+    ]
+  },
+  {
+    "id": 806,
+    "word": "visit",
+    "ipa": "/ˈvɪzɪt/",
+    "pos": "verb",
+    "level": 1,
+    "vi": "thăm, ghé thăm",
+    "examples": [
+      {
+        "en": "We visit our grandparents often.",
+        "vi": "Chúng tôi thường thăm ông bà."
+      },
+      {
+        "en": "Let's visit the museum.",
+        "vi": "Mình đi thăm bảo tàng nhé."
+      }
+    ]
+  },
+  {
+    "id": 807,
+    "word": "travel",
+    "ipa": "/ˈtrævl/",
+    "pos": "verb",
+    "level": 1,
+    "vi": "đi du lịch, đi lại",
+    "examples": [
+      {
+        "en": "I love to travel.",
+        "vi": "Tôi thích đi du lịch."
+      },
+      {
+        "en": "They travel by train.",
+        "vi": "Họ đi lại bằng tàu hỏa."
+      }
+    ]
+  },
+  {
+    "id": 808,
+    "word": "wonder",
+    "ipa": "/ˈwʌndər/",
+    "pos": "verb",
+    "level": 1,
+    "vi": "tự hỏi, băn khoăn",
+    "examples": [
+      {
+        "en": "I wonder where she is.",
+        "vi": "Tôi tự hỏi cô ấy đang ở đâu."
+      },
+      {
+        "en": "I wonder if it will rain.",
+        "vi": "Không biết trời có mưa không."
+      }
+    ]
+  },
+  {
+    "id": 809,
+    "word": "wish",
+    "ipa": "/wɪʃ/",
+    "pos": "verb",
+    "level": 1,
+    "vi": "ước, mong",
+    "examples": [
+      {
+        "en": "I wish you good luck.",
+        "vi": "Tôi chúc bạn may mắn."
+      },
+      {
+        "en": "She wishes to travel the world.",
+        "vi": "Cô ấy ước được đi khắp thế giới."
+      }
+    ]
+  },
+  {
+    "id": 810,
+    "word": "thank",
+    "ipa": "/θæŋk/",
+    "pos": "verb",
+    "level": 1,
+    "vi": "cảm ơn",
+    "examples": [
+      {
+        "en": "I want to thank you.",
+        "vi": "Tôi muốn cảm ơn bạn."
+      },
+      {
+        "en": "She thanked the driver.",
+        "vi": "Cô ấy cảm ơn bác tài."
+      }
+    ]
+  },
+  {
+    "id": 811,
+    "word": "wrap",
+    "ipa": "/ræp/",
+    "pos": "verb",
+    "level": 1,
+    "vi": "gói, bọc",
+    "examples": [
+      {
+        "en": "Wrap the gift in paper.",
+        "vi": "Gói món quà bằng giấy."
+      },
+      {
+        "en": "She wrapped a scarf around her neck.",
+        "vi": "Cô ấy quấn khăn quanh cổ."
+      }
+    ]
+  },
+  {
+    "id": 812,
+    "word": "wipe",
+    "ipa": "/waɪp/",
+    "pos": "verb",
+    "level": 1,
+    "vi": "lau, chùi",
+    "examples": [
+      {
+        "en": "Wipe the table, please.",
+        "vi": "Lau bàn giúp tôi nhé."
+      },
+      {
+        "en": "He wiped his hands on a towel.",
+        "vi": "Anh ấy lau tay vào khăn."
+      }
+    ]
+  },
+  {
+    "id": 813,
+    "word": "warn",
+    "ipa": "/wɔːrn/",
+    "pos": "verb",
+    "level": 1,
+    "vi": "cảnh báo, báo trước",
+    "examples": [
+      {
+        "en": "I warned you about the dog.",
+        "vi": "Tôi đã cảnh báo bạn về con chó."
+      },
+      {
+        "en": "The sign warns of danger.",
+        "vi": "Tấm biển cảnh báo nguy hiểm."
+      }
+    ]
+  },
+  {
+    "id": 814,
+    "word": "wave",
+    "ipa": "/weɪv/",
+    "pos": "verb",
+    "level": 1,
+    "vi": "vẫy tay; vẫy",
+    "examples": [
+      {
+        "en": "She waved goodbye.",
+        "vi": "Cô ấy vẫy tay chào tạm biệt."
+      },
+      {
+        "en": "He waved at his friend.",
+        "vi": "Anh ấy vẫy tay với bạn."
+      }
+    ]
+  },
+  {
+    "id": 815,
+    "word": "suggest",
+    "ipa": "/səˈdʒest/",
+    "pos": "verb",
+    "level": 1,
+    "vi": "đề nghị, gợi ý",
+    "examples": [
+      {
+        "en": "I suggest we leave early.",
+        "vi": "Tôi đề nghị mình đi sớm."
+      },
+      {
+        "en": "What do you suggest?",
+        "vi": "Bạn gợi ý gì nào?"
+      }
+    ]
+  },
+  {
+    "id": 816,
+    "word": "support",
+    "ipa": "/səˈpɔːrt/",
+    "pos": "verb",
+    "level": 1,
+    "vi": "ủng hộ, hỗ trợ",
+    "examples": [
+      {
+        "en": "I support your idea.",
+        "vi": "Tôi ủng hộ ý tưởng của bạn."
+      },
+      {
+        "en": "Her family supports her.",
+        "vi": "Gia đình ủng hộ cô ấy."
+      }
+    ]
+  },
+  {
+    "id": 817,
+    "word": "suppose",
+    "ipa": "/səˈpoʊz/",
+    "pos": "verb",
+    "level": 1,
+    "vi": "cho rằng, đoán là",
+    "examples": [
+      {
+        "en": "I suppose you are right.",
+        "vi": "Tôi cho là bạn đúng."
+      },
+      {
+        "en": "She is supposed to be here.",
+        "vi": "Đáng lẽ cô ấy phải ở đây."
+      }
+    ]
+  },
+  {
+    "id": 818,
+    "word": "surprise",
+    "ipa": "/sərˈpraɪz/",
+    "pos": "verb",
+    "level": 1,
+    "vi": "làm ngạc nhiên",
+    "examples": [
+      {
+        "en": "The news surprised me.",
+        "vi": "Tin đó làm tôi ngạc nhiên."
+      },
+      {
+        "en": "We want to surprise her.",
+        "vi": "Chúng tôi muốn làm cô ấy bất ngờ."
+      }
+    ]
+  },
+  {
+    "id": 819,
+    "word": "survive",
+    "ipa": "/sərˈvaɪv/",
+    "pos": "verb",
+    "level": 1,
+    "vi": "sống sót, tồn tại",
+    "examples": [
+      {
+        "en": "They survived the storm.",
+        "vi": "Họ sống sót qua cơn bão."
+      },
+      {
+        "en": "Plants need water to survive.",
+        "vi": "Cây cần nước để sống."
+      }
+    ]
+  },
+  {
+    "id": 820,
+    "word": "solve",
+    "ipa": "/sɑːlv/",
+    "pos": "verb",
+    "level": 1,
+    "vi": "giải quyết, giải (toán)",
+    "examples": [
+      {
+        "en": "Can you solve this problem?",
+        "vi": "Bạn giải được bài này không?"
+      },
+      {
+        "en": "We need to solve it together.",
+        "vi": "Chúng ta cần cùng nhau giải quyết."
+      }
+    ]
+  },
+  {
+    "id": 821,
+    "word": "spread",
+    "ipa": "/spred/",
+    "pos": "verb",
+    "level": 1,
+    "vi": "lan ra; phết, trải",
+    "examples": [
+      {
+        "en": "The fire spread quickly.",
+        "vi": "Đám cháy lan ra nhanh chóng."
+      },
+      {
+        "en": "Spread butter on the bread.",
+        "vi": "Phết bơ lên bánh mì."
+      }
+    ]
+  },
+  {
+    "id": 822,
+    "word": "steal",
+    "ipa": "/stiːl/",
+    "pos": "verb",
+    "level": 1,
+    "vi": "ăn cắp, trộm",
+    "examples": [
+      {
+        "en": "Someone stole my bike.",
+        "vi": "Ai đó đã trộm xe đạp của tôi."
+      },
+      {
+        "en": "It is wrong to steal.",
+        "vi": "Ăn cắp là sai."
+      }
+    ]
+  },
+  {
+    "id": 823,
+    "word": "stick",
+    "ipa": "/stɪk/",
+    "pos": "verb",
+    "level": 1,
+    "vi": "dán, gắn; kẹt",
+    "examples": [
+      {
+        "en": "Stick the stamp on the letter.",
+        "vi": "Dán tem lên lá thư."
+      },
+      {
+        "en": "The door is stuck.",
+        "vi": "Cánh cửa bị kẹt."
+      }
+    ]
+  },
+  {
+    "id": 824,
+    "word": "stretch",
+    "ipa": "/stretʃ/",
+    "pos": "verb",
+    "level": 1,
+    "vi": "duỗi, kéo căng",
+    "examples": [
+      {
+        "en": "Stretch your arms up.",
+        "vi": "Duỗi tay lên cao."
+      },
+      {
+        "en": "She stretched before running.",
+        "vi": "Cô ấy khởi động trước khi chạy."
+      }
+    ]
+  },
+  {
+    "id": 825,
+    "word": "strike",
+    "ipa": "/straɪk/",
+    "pos": "verb",
+    "level": 1,
+    "vi": "đánh, đập mạnh",
+    "examples": [
+      {
+        "en": "Lightning struck the tree.",
+        "vi": "Sét đánh trúng cái cây."
+      },
+      {
+        "en": "The clock struck twelve.",
+        "vi": "Đồng hồ điểm mười hai giờ."
+      }
+    ]
+  },
+  {
+    "id": 826,
+    "word": "suffer",
+    "ipa": "/ˈsʌfər/",
+    "pos": "verb",
+    "level": 1,
+    "vi": "chịu đựng, đau khổ",
+    "examples": [
+      {
+        "en": "He suffers from headaches.",
+        "vi": "Anh ấy bị những cơn đau đầu hành hạ."
+      },
+      {
+        "en": "Many people suffered in the war.",
+        "vi": "Nhiều người chịu khổ trong chiến tranh."
+      }
+    ]
+  },
+  {
+    "id": 827,
+    "word": "swallow",
+    "ipa": "/ˈswɑːloʊ/",
+    "pos": "verb",
+    "level": 1,
+    "vi": "nuốt",
+    "examples": [
+      {
+        "en": "Chew well before you swallow.",
+        "vi": "Nhai kỹ trước khi nuốt."
+      },
+      {
+        "en": "It is hard to swallow.",
+        "vi": "Khó nuốt quá."
+      }
+    ]
+  },
+  {
+    "id": 828,
+    "word": "sweep",
+    "ipa": "/swiːp/",
+    "pos": "verb",
+    "level": 1,
+    "vi": "quét",
+    "examples": [
+      {
+        "en": "Please sweep the floor.",
+        "vi": "Vui lòng quét nhà."
+      },
+      {
+        "en": "He swept the leaves away.",
+        "vi": "Anh ấy quét lá đi."
+      }
+    ]
+  },
+  {
+    "id": 829,
+    "word": "touch",
+    "ipa": "/tʌtʃ/",
+    "pos": "verb",
+    "level": 1,
+    "vi": "chạm, sờ",
+    "examples": [
+      {
+        "en": "Don't touch the hot pan.",
+        "vi": "Đừng chạm vào cái chảo nóng."
+      },
+      {
+        "en": "She touched my shoulder.",
+        "vi": "Cô ấy chạm vào vai tôi."
+      }
+    ]
+  },
+  {
+    "id": 830,
+    "word": "train",
+    "ipa": "/treɪn/",
+    "pos": "verb",
+    "level": 1,
+    "vi": "huấn luyện, rèn luyện",
+    "examples": [
+      {
+        "en": "He trains every morning.",
+        "vi": "Anh ấy luyện tập mỗi sáng."
+      },
+      {
+        "en": "She trains dogs.",
+        "vi": "Cô ấy huấn luyện chó."
+      }
+    ]
+  },
+  {
+    "id": 831,
+    "word": "treat",
+    "ipa": "/triːt/",
+    "pos": "verb",
+    "level": 1,
+    "vi": "đối xử; điều trị",
+    "examples": [
+      {
+        "en": "Treat others with respect.",
+        "vi": "Hãy đối xử với người khác bằng sự tôn trọng."
+      },
+      {
+        "en": "The doctor treated my cold.",
+        "vi": "Bác sĩ chữa cảm cho tôi."
+      }
+    ]
+  },
+  {
+    "id": 832,
+    "word": "trust",
+    "ipa": "/trʌst/",
+    "pos": "verb",
+    "level": 1,
+    "vi": "tin tưởng, tin cậy",
+    "examples": [
+      {
+        "en": "I trust you.",
+        "vi": "Tôi tin bạn."
+      },
+      {
+        "en": "You can trust her.",
+        "vi": "Bạn có thể tin cô ấy."
+      }
+    ]
+  },
+  {
+    "id": 833,
+    "word": "type",
+    "ipa": "/taɪp/",
+    "pos": "verb",
+    "level": 1,
+    "vi": "gõ (bàn phím), đánh máy",
+    "examples": [
+      {
+        "en": "She types very fast.",
+        "vi": "Cô ấy gõ phím rất nhanh."
+      },
+      {
+        "en": "Type your name here.",
+        "vi": "Gõ tên bạn vào đây."
+      }
+    ]
+  },
+  {
+    "id": 834,
+    "word": "vote",
+    "ipa": "/voʊt/",
+    "pos": "verb",
+    "level": 1,
+    "vi": "bỏ phiếu, bầu chọn",
+    "examples": [
+      {
+        "en": "People vote for a leader.",
+        "vi": "Người dân bỏ phiếu chọn một nhà lãnh đạo."
+      },
+      {
+        "en": "Did you vote yet?",
+        "vi": "Bạn bỏ phiếu chưa?"
+      }
+    ]
+  },
+  {
+    "id": 835,
+    "word": "weigh",
+    "ipa": "/weɪ/",
+    "pos": "verb",
+    "level": 1,
+    "vi": "cân; nặng (bao nhiêu)",
+    "examples": [
+      {
+        "en": "How much do you weigh?",
+        "vi": "Bạn nặng bao nhiêu?"
+      },
+      {
+        "en": "Please weigh the apples.",
+        "vi": "Vui lòng cân số táo."
+      }
+    ]
+  },
+  {
+    "id": 836,
+    "word": "whisper",
+    "ipa": "/ˈwɪspər/",
+    "pos": "verb",
+    "level": 1,
+    "vi": "thì thầm, nói nhỏ",
+    "examples": [
+      {
+        "en": "She whispered a secret.",
+        "vi": "Cô ấy thì thầm một bí mật."
+      },
+      {
+        "en": "Please whisper in the library.",
+        "vi": "Vui lòng nói nhỏ trong thư viện."
+      }
+    ]
+  },
+  {
+    "id": 837,
+    "word": "prefer",
+    "ipa": "/prɪˈfɜːr/",
+    "pos": "verb",
+    "level": 1,
+    "vi": "thích hơn, ưa hơn",
+    "examples": [
+      {
+        "en": "I prefer tea to coffee.",
+        "vi": "Tôi thích trà hơn cà phê."
+      },
+      {
+        "en": "Which do you prefer?",
+        "vi": "Bạn thích cái nào hơn?"
+      }
+    ]
+  },
+  {
+    "id": 838,
+    "word": "prevent",
+    "ipa": "/prɪˈvent/",
+    "pos": "verb",
+    "level": 1,
+    "vi": "ngăn chặn, phòng ngừa",
+    "examples": [
+      {
+        "en": "Wash your hands to prevent illness.",
+        "vi": "Rửa tay để phòng bệnh."
+      },
+      {
+        "en": "We must prevent accidents.",
+        "vi": "Chúng ta phải ngăn ngừa tai nạn."
+      }
+    ]
+  },
+  {
+    "id": 839,
+    "word": "pretend",
+    "ipa": "/prɪˈtend/",
+    "pos": "verb",
+    "level": 1,
+    "vi": "giả vờ, làm bộ",
+    "examples": [
+      {
+        "en": "The children pretend to be heroes.",
+        "vi": "Bọn trẻ giả làm anh hùng."
+      },
+      {
+        "en": "Don't pretend you didn't hear.",
+        "vi": "Đừng giả vờ là không nghe thấy."
+      }
+    ]
+  },
+  {
+    "id": 840,
+    "word": "provide",
+    "ipa": "/prəˈvaɪd/",
+    "pos": "verb",
+    "level": 1,
+    "vi": "cung cấp, cung ứng",
+    "examples": [
+      {
+        "en": "The school provides free books.",
+        "vi": "Trường cung cấp sách miễn phí."
+      },
+      {
+        "en": "We provide food to the poor.",
+        "vi": "Chúng tôi cung cấp thức ăn cho người nghèo."
+      }
+    ]
+  },
+  {
+    "id": 841,
+    "word": "punish",
+    "ipa": "/ˈpʌnɪʃ/",
+    "pos": "verb",
+    "level": 1,
+    "vi": "trừng phạt, phạt",
+    "examples": [
+      {
+        "en": "The teacher punished the boy.",
+        "vi": "Giáo viên phạt cậu bé."
+      },
+      {
+        "en": "Do not punish him too hard.",
+        "vi": "Đừng phạt cậu ấy quá nặng."
+      }
+    ]
+  },
+  {
+    "id": 842,
+    "word": "record",
+    "ipa": "/rɪˈkɔːrd/",
+    "pos": "verb",
+    "level": 1,
+    "vi": "ghi, ghi âm, ghi hình",
+    "examples": [
+      {
+        "en": "She recorded the song.",
+        "vi": "Cô ấy ghi âm bài hát."
+      },
+      {
+        "en": "Record the meeting, please.",
+        "vi": "Vui lòng ghi hình cuộc họp."
+      }
+    ]
+  },
+  {
+    "id": 843,
+    "word": "recover",
+    "ipa": "/rɪˈkʌvər/",
+    "pos": "verb",
+    "level": 1,
+    "vi": "hồi phục, bình phục",
+    "examples": [
+      {
+        "en": "She is recovering from the flu.",
+        "vi": "Cô ấy đang hồi phục sau cơn cúm."
+      },
+      {
+        "en": "He recovered quickly.",
+        "vi": "Anh ấy bình phục nhanh."
+      }
+    ]
+  },
+  {
+    "id": 844,
+    "word": "reduce",
+    "ipa": "/rɪˈduːs/",
+    "pos": "verb",
+    "level": 1,
+    "vi": "giảm, làm giảm",
+    "examples": [
+      {
+        "en": "We must reduce waste.",
+        "vi": "Chúng ta phải giảm rác thải."
+      },
+      {
+        "en": "They reduced the price.",
+        "vi": "Họ đã giảm giá."
+      }
+    ]
+  },
+  {
+    "id": 845,
+    "word": "refuse",
+    "ipa": "/rɪˈfjuːz/",
+    "pos": "verb",
+    "level": 1,
+    "vi": "từ chối",
+    "examples": [
+      {
+        "en": "He refused my offer.",
+        "vi": "Anh ấy từ chối lời đề nghị của tôi."
+      },
+      {
+        "en": "She refused to go.",
+        "vi": "Cô ấy từ chối đi."
+      }
+    ]
+  },
+  {
+    "id": 846,
+    "word": "relax",
+    "ipa": "/rɪˈlæks/",
+    "pos": "verb",
+    "level": 1,
+    "vi": "thư giãn, nghỉ ngơi",
+    "examples": [
+      {
+        "en": "Relax, everything is fine.",
+        "vi": "Thư giãn đi, mọi chuyện ổn cả."
+      },
+      {
+        "en": "I relax by reading.",
+        "vi": "Tôi thư giãn bằng cách đọc sách."
+      }
+    ]
+  },
+  {
+    "id": 847,
+    "word": "remain",
+    "ipa": "/rɪˈmeɪn/",
+    "pos": "verb",
+    "level": 1,
+    "vi": "vẫn còn, ở lại",
+    "examples": [
+      {
+        "en": "Please remain seated.",
+        "vi": "Vui lòng ngồi yên tại chỗ."
+      },
+      {
+        "en": "Only a few apples remain.",
+        "vi": "Chỉ còn lại vài quả táo."
+      }
+    ]
+  },
+  {
+    "id": 848,
+    "word": "remind",
+    "ipa": "/rɪˈmaɪnd/",
+    "pos": "verb",
+    "level": 1,
+    "vi": "nhắc nhở",
+    "examples": [
+      {
+        "en": "Remind me to call her.",
+        "vi": "Nhắc tôi gọi cho cô ấy nhé."
+      },
+      {
+        "en": "This song reminds me of summer.",
+        "vi": "Bài hát này làm tôi nhớ đến mùa hè."
+      }
+    ]
+  },
+  {
+    "id": 849,
+    "word": "remove",
+    "ipa": "/rɪˈmuːv/",
+    "pos": "verb",
+    "level": 1,
+    "vi": "loại bỏ, dời đi, tháo ra",
+    "examples": [
+      {
+        "en": "Please remove your shoes.",
+        "vi": "Vui lòng cởi giày ra."
+      },
+      {
+        "en": "Remove the dirty plates.",
+        "vi": "Dọn những cái đĩa bẩn đi."
+      }
+    ]
+  },
+  {
+    "id": 850,
+    "word": "repair",
+    "ipa": "/rɪˈper/",
+    "pos": "verb",
+    "level": 1,
+    "vi": "sửa chữa",
+    "examples": [
+      {
+        "en": "He repaired the broken chair.",
+        "vi": "Anh ấy sửa cái ghế gãy."
+      },
+      {
+        "en": "Can you repair my watch?",
+        "vi": "Bạn sửa giúp đồng hồ của tôi được không?"
+      }
+    ]
+  }
+]

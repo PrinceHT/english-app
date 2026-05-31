@@ -1,0 +1,902 @@
+[
+  {
+    "id": 551,
+    "word": "foreign",
+    "ipa": "/ˈfɔːrən/",
+    "pos": "adjective",
+    "level": 1,
+    "vi": "nước ngoài, ngoại quốc",
+    "examples": [
+      {
+        "en": "She speaks two foreign languages.",
+        "vi": "Cô ấy nói hai ngoại ngữ."
+      },
+      {
+        "en": "I met some foreign students.",
+        "vi": "Tôi gặp vài sinh viên nước ngoài."
+      }
+    ]
+  },
+  {
+    "id": 552,
+    "word": "fresh",
+    "ipa": "/freʃ/",
+    "pos": "adjective",
+    "level": 1,
+    "vi": "tươi, tươi mới",
+    "examples": [
+      {
+        "en": "I like fresh fruit.",
+        "vi": "Tôi thích trái cây tươi."
+      },
+      {
+        "en": "Let's get some fresh air.",
+        "vi": "Mình ra hít thở không khí trong lành nào."
+      }
+    ]
+  },
+  {
+    "id": 553,
+    "word": "friendly",
+    "ipa": "/ˈfrendli/",
+    "pos": "adjective",
+    "level": 1,
+    "vi": "thân thiện",
+    "examples": [
+      {
+        "en": "The people here are friendly.",
+        "vi": "Người ở đây rất thân thiện."
+      },
+      {
+        "en": "She has a friendly smile.",
+        "vi": "Cô ấy có nụ cười thân thiện."
+      }
+    ]
+  },
+  {
+    "id": 554,
+    "word": "gentle",
+    "ipa": "/ˈdʒentl/",
+    "pos": "adjective",
+    "level": 1,
+    "vi": "nhẹ nhàng, dịu dàng",
+    "examples": [
+      {
+        "en": "Be gentle with the baby.",
+        "vi": "Hãy nhẹ nhàng với em bé."
+      },
+      {
+        "en": "A gentle wind was blowing.",
+        "vi": "Một làn gió nhẹ đang thổi."
+      }
+    ]
+  },
+  {
+    "id": 555,
+    "word": "healthy",
+    "ipa": "/ˈhelθi/",
+    "pos": "adjective",
+    "level": 1,
+    "vi": "khỏe mạnh; lành mạnh",
+    "examples": [
+      {
+        "en": "Eat healthy food.",
+        "vi": "Hãy ăn đồ ăn lành mạnh."
+      },
+      {
+        "en": "She is strong and healthy.",
+        "vi": "Cô ấy khỏe mạnh."
+      }
+    ]
+  },
+  {
+    "id": 556,
+    "word": "honest",
+    "ipa": "/ˈɑːnɪst/",
+    "pos": "adjective",
+    "level": 1,
+    "vi": "trung thực, thật thà",
+    "examples": [
+      {
+        "en": "He is an honest man.",
+        "vi": "Anh ấy là một người trung thực."
+      },
+      {
+        "en": "Please be honest with me.",
+        "vi": "Hãy thành thật với tôi."
+      }
+    ]
+  },
+  {
+    "id": 557,
+    "word": "hungry",
+    "ipa": "/ˈhʌŋɡri/",
+    "pos": "adjective",
+    "level": 1,
+    "vi": "đói",
+    "examples": [
+      {
+        "en": "I am very hungry.",
+        "vi": "Tôi rất đói."
+      },
+      {
+        "en": "Are you hungry yet?",
+        "vi": "Bạn đói chưa?"
+      }
+    ]
+  },
+  {
+    "id": 558,
+    "word": "interesting",
+    "ipa": "/ˈɪntrəstɪŋ/",
+    "pos": "adjective",
+    "level": 1,
+    "vi": "thú vị, hay",
+    "examples": [
+      {
+        "en": "This book is very interesting.",
+        "vi": "Cuốn sách này rất thú vị."
+      },
+      {
+        "en": "She told an interesting story.",
+        "vi": "Cô ấy kể một câu chuyện thú vị."
+      }
+    ]
+  },
+  {
+    "id": 559,
+    "word": "light",
+    "ipa": "/laɪt/",
+    "pos": "adjective",
+    "level": 1,
+    "vi": "nhẹ; nhạt (màu)",
+    "examples": [
+      {
+        "en": "This bag is light.",
+        "vi": "Cái túi này nhẹ."
+      },
+      {
+        "en": "She wore a light blue dress.",
+        "vi": "Cô ấy mặc một chiếc váy xanh nhạt."
+      }
+    ]
+  },
+  {
+    "id": 560,
+    "word": "loud",
+    "ipa": "/laʊd/",
+    "pos": "adjective",
+    "level": 1,
+    "vi": "to, ồn ào",
+    "examples": [
+      {
+        "en": "The music is too loud.",
+        "vi": "Nhạc to quá."
+      },
+      {
+        "en": "Don't be so loud.",
+        "vi": "Đừng ồn ào thế."
+      }
+    ]
+  },
+  {
+    "id": 561,
+    "word": "lovely",
+    "ipa": "/ˈlʌvli/",
+    "pos": "adjective",
+    "level": 1,
+    "vi": "đáng yêu, dễ thương, đẹp",
+    "examples": [
+      {
+        "en": "What a lovely garden!",
+        "vi": "Khu vườn đẹp quá!"
+      },
+      {
+        "en": "She is a lovely person.",
+        "vi": "Cô ấy là một người dễ mến."
+      }
+    ]
+  },
+  {
+    "id": 562,
+    "word": "wonderful",
+    "ipa": "/ˈwʌndərfl/",
+    "pos": "adjective",
+    "level": 1,
+    "vi": "tuyệt vời",
+    "examples": [
+      {
+        "en": "We had a wonderful time.",
+        "vi": "Chúng tôi đã có khoảng thời gian tuyệt vời."
+      },
+      {
+        "en": "What a wonderful surprise!",
+        "vi": "Một bất ngờ tuyệt vời!"
+      }
+    ]
+  },
+  {
+    "id": 563,
+    "word": "narrow",
+    "ipa": "/ˈnæroʊ/",
+    "pos": "adjective",
+    "level": 1,
+    "vi": "hẹp",
+    "examples": [
+      {
+        "en": "This is a narrow street.",
+        "vi": "Đây là một con phố hẹp."
+      },
+      {
+        "en": "The path is too narrow.",
+        "vi": "Lối đi hẹp quá."
+      }
+    ]
+  },
+  {
+    "id": 564,
+    "word": "natural",
+    "ipa": "/ˈnætʃrəl/",
+    "pos": "adjective",
+    "level": 1,
+    "vi": "tự nhiên, thiên nhiên",
+    "examples": [
+      {
+        "en": "I prefer natural light.",
+        "vi": "Tôi thích ánh sáng tự nhiên hơn."
+      },
+      {
+        "en": "Honey is a natural food.",
+        "vi": "Mật ong là một thực phẩm tự nhiên."
+      }
+    ]
+  },
+  {
+    "id": 565,
+    "word": "normal",
+    "ipa": "/ˈnɔːrml/",
+    "pos": "adjective",
+    "level": 1,
+    "vi": "bình thường",
+    "examples": [
+      {
+        "en": "It is normal to feel tired.",
+        "vi": "Cảm thấy mệt là chuyện bình thường."
+      },
+      {
+        "en": "Everything looks normal.",
+        "vi": "Mọi thứ trông bình thường."
+      }
+    ]
+  },
+  {
+    "id": 566,
+    "word": "polite",
+    "ipa": "/pəˈlaɪt/",
+    "pos": "adjective",
+    "level": 1,
+    "vi": "lịch sự",
+    "examples": [
+      {
+        "en": "She is always polite.",
+        "vi": "Cô ấy luôn lịch sự."
+      },
+      {
+        "en": "It is polite to say thank you.",
+        "vi": "Nói cảm ơn là lịch sự."
+      }
+    ]
+  },
+  {
+    "id": 567,
+    "word": "popular",
+    "ipa": "/ˈpɑːpjələr/",
+    "pos": "adjective",
+    "level": 1,
+    "vi": "được ưa chuộng, nổi tiếng",
+    "examples": [
+      {
+        "en": "This song is very popular.",
+        "vi": "Bài hát này rất được ưa chuộng."
+      },
+      {
+        "en": "He is popular at school.",
+        "vi": "Cậu ấy được yêu mến ở trường."
+      }
+    ]
+  },
+  {
+    "id": 568,
+    "word": "possible",
+    "ipa": "/ˈpɑːsəbl/",
+    "pos": "adjective",
+    "level": 1,
+    "vi": "có thể, khả thi",
+    "examples": [
+      {
+        "en": "Is it possible to change the date?",
+        "vi": "Có thể đổi ngày được không?"
+      },
+      {
+        "en": "Anything is possible.",
+        "vi": "Mọi thứ đều có thể."
+      }
+    ]
+  },
+  {
+    "id": 569,
+    "word": "powerful",
+    "ipa": "/ˈpaʊərfl/",
+    "pos": "adjective",
+    "level": 1,
+    "vi": "mạnh mẽ, đầy sức mạnh",
+    "examples": [
+      {
+        "en": "This is a powerful engine.",
+        "vi": "Đây là một động cơ mạnh."
+      },
+      {
+        "en": "She gave a powerful speech.",
+        "vi": "Cô ấy có một bài phát biểu đầy sức thuyết phục."
+      }
+    ]
+  },
+  {
+    "id": 570,
+    "word": "proud",
+    "ipa": "/praʊd/",
+    "pos": "adjective",
+    "level": 1,
+    "vi": "tự hào, hãnh diện",
+    "examples": [
+      {
+        "en": "I am proud of you.",
+        "vi": "Tôi tự hào về bạn."
+      },
+      {
+        "en": "She is proud of her work.",
+        "vi": "Cô ấy tự hào về công việc của mình."
+      }
+    ]
+  },
+  {
+    "id": 571,
+    "word": "because",
+    "ipa": "/bɪˈkɔːz/",
+    "pos": "conjunction",
+    "level": 1,
+    "vi": "bởi vì, vì",
+    "examples": [
+      {
+        "en": "I stayed home because it was raining.",
+        "vi": "Tôi ở nhà vì trời mưa."
+      },
+      {
+        "en": "She is happy because she passed.",
+        "vi": "Cô ấy vui vì đã đậu."
+      }
+    ]
+  },
+  {
+    "id": 572,
+    "word": "if",
+    "ipa": "/ɪf/",
+    "pos": "conjunction",
+    "level": 1,
+    "vi": "nếu",
+    "examples": [
+      {
+        "en": "Call me if you need help.",
+        "vi": "Gọi tôi nếu bạn cần giúp."
+      },
+      {
+        "en": "If it rains, we will stay in.",
+        "vi": "Nếu trời mưa, chúng ta sẽ ở trong nhà."
+      }
+    ]
+  },
+  {
+    "id": 573,
+    "word": "although",
+    "ipa": "/ɔːlˈðoʊ/",
+    "pos": "conjunction",
+    "level": 1,
+    "vi": "mặc dù",
+    "examples": [
+      {
+        "en": "Although it was cold, we went out.",
+        "vi": "Mặc dù trời lạnh, chúng tôi vẫn ra ngoài."
+      },
+      {
+        "en": "She smiled, although she was tired.",
+        "vi": "Cô ấy mỉm cười, dù đang mệt."
+      }
+    ]
+  },
+  {
+    "id": 574,
+    "word": "while",
+    "ipa": "/waɪl/",
+    "pos": "conjunction",
+    "level": 1,
+    "vi": "trong khi",
+    "examples": [
+      {
+        "en": "I read while I wait.",
+        "vi": "Tôi đọc sách trong khi chờ."
+      },
+      {
+        "en": "She sang while cooking.",
+        "vi": "Cô ấy hát trong khi nấu ăn."
+      }
+    ]
+  },
+  {
+    "id": 575,
+    "word": "until",
+    "ipa": "/ənˈtɪl/",
+    "pos": "preposition / conjunction",
+    "level": 1,
+    "vi": "cho đến (khi)",
+    "examples": [
+      {
+        "en": "Wait here until I come back.",
+        "vi": "Đợi ở đây cho đến khi tôi quay lại."
+      },
+      {
+        "en": "The shop is open until ten.",
+        "vi": "Cửa hàng mở đến mười giờ."
+      }
+    ]
+  },
+  {
+    "id": 576,
+    "word": "between",
+    "ipa": "/bɪˈtwiːn/",
+    "pos": "preposition",
+    "level": 1,
+    "vi": "giữa (hai vật)",
+    "examples": [
+      {
+        "en": "The shop is between the bank and the café.",
+        "vi": "Cửa hàng nằm giữa ngân hàng và quán cà phê."
+      },
+      {
+        "en": "Sit between us.",
+        "vi": "Ngồi giữa chúng tôi nào."
+      }
+    ]
+  },
+  {
+    "id": 577,
+    "word": "among",
+    "ipa": "/əˈmʌŋ/",
+    "pos": "preposition",
+    "level": 1,
+    "vi": "giữa, ở giữa (nhiều vật)",
+    "examples": [
+      {
+        "en": "She is popular among students.",
+        "vi": "Cô ấy được yêu mến trong giới học sinh."
+      },
+      {
+        "en": "I found it among my books.",
+        "vi": "Tôi tìm thấy nó giữa đống sách."
+      }
+    ]
+  },
+  {
+    "id": 578,
+    "word": "against",
+    "ipa": "/əˈɡenst/",
+    "pos": "preposition",
+    "level": 1,
+    "vi": "chống lại; dựa vào",
+    "examples": [
+      {
+        "en": "We are against the plan.",
+        "vi": "Chúng tôi phản đối kế hoạch này."
+      },
+      {
+        "en": "He leaned against the wall.",
+        "vi": "Anh ấy tựa vào tường."
+      }
+    ]
+  },
+  {
+    "id": 579,
+    "word": "during",
+    "ipa": "/ˈdʊrɪŋ/",
+    "pos": "preposition",
+    "level": 1,
+    "vi": "trong suốt, trong lúc",
+    "examples": [
+      {
+        "en": "Don't talk during the film.",
+        "vi": "Đừng nói chuyện trong lúc xem phim."
+      },
+      {
+        "en": "She slept during the trip.",
+        "vi": "Cô ấy ngủ suốt chuyến đi."
+      }
+    ]
+  },
+  {
+    "id": 580,
+    "word": "through",
+    "ipa": "/θruː/",
+    "pos": "preposition",
+    "level": 1,
+    "vi": "qua, xuyên qua",
+    "examples": [
+      {
+        "en": "We walked through the park.",
+        "vi": "Chúng tôi đi xuyên qua công viên."
+      },
+      {
+        "en": "The train went through a tunnel.",
+        "vi": "Đoàn tàu chạy qua một đường hầm."
+      }
+    ]
+  },
+  {
+    "id": 581,
+    "word": "across",
+    "ipa": "/əˈkrɔːs/",
+    "pos": "preposition",
+    "level": 1,
+    "vi": "qua, băng qua; bên kia",
+    "examples": [
+      {
+        "en": "We walked across the bridge.",
+        "vi": "Chúng tôi đi qua cây cầu."
+      },
+      {
+        "en": "The shop is across the street.",
+        "vi": "Cửa hàng ở bên kia đường."
+      }
+    ]
+  },
+  {
+    "id": 582,
+    "word": "behind",
+    "ipa": "/bɪˈhaɪnd/",
+    "pos": "preposition",
+    "level": 1,
+    "vi": "phía sau, đằng sau",
+    "examples": [
+      {
+        "en": "The car is behind the house.",
+        "vi": "Chiếc xe ở sau nhà."
+      },
+      {
+        "en": "She is hiding behind the door.",
+        "vi": "Cô ấy đang trốn sau cánh cửa."
+      }
+    ]
+  },
+  {
+    "id": 583,
+    "word": "below",
+    "ipa": "/bɪˈloʊ/",
+    "pos": "preposition / adverb",
+    "level": 1,
+    "vi": "bên dưới, ở dưới",
+    "examples": [
+      {
+        "en": "The temperature is below zero.",
+        "vi": "Nhiệt độ dưới không độ."
+      },
+      {
+        "en": "Write your name below.",
+        "vi": "Viết tên bạn ở bên dưới."
+      }
+    ]
+  },
+  {
+    "id": 584,
+    "word": "above",
+    "ipa": "/əˈbʌv/",
+    "pos": "preposition / adverb",
+    "level": 1,
+    "vi": "bên trên, ở trên",
+    "examples": [
+      {
+        "en": "The plane flew above the clouds.",
+        "vi": "Máy bay bay trên những đám mây."
+      },
+      {
+        "en": "There is a lamp above the table.",
+        "vi": "Có một cái đèn phía trên bàn."
+      }
+    ]
+  },
+  {
+    "id": 585,
+    "word": "beside",
+    "ipa": "/bɪˈsaɪd/",
+    "pos": "preposition",
+    "level": 1,
+    "vi": "bên cạnh",
+    "examples": [
+      {
+        "en": "Sit beside me.",
+        "vi": "Ngồi cạnh tôi nào."
+      },
+      {
+        "en": "The dog sat beside the door.",
+        "vi": "Con chó ngồi cạnh cửa."
+      }
+    ]
+  },
+  {
+    "id": 586,
+    "word": "without",
+    "ipa": "/wɪˈðaʊt/",
+    "pos": "preposition",
+    "level": 1,
+    "vi": "không có, thiếu",
+    "examples": [
+      {
+        "en": "I can't see without my glasses.",
+        "vi": "Tôi không nhìn được nếu không có kính."
+      },
+      {
+        "en": "She left without a word.",
+        "vi": "Cô ấy rời đi không nói một lời."
+      }
+    ]
+  },
+  {
+    "id": 587,
+    "word": "within",
+    "ipa": "/wɪˈðɪn/",
+    "pos": "preposition",
+    "level": 1,
+    "vi": "trong vòng, bên trong",
+    "examples": [
+      {
+        "en": "I will reply within an hour.",
+        "vi": "Tôi sẽ trả lời trong vòng một tiếng."
+      },
+      {
+        "en": "The school is within walking distance.",
+        "vi": "Trường học nằm trong khoảng cách đi bộ."
+      }
+    ]
+  },
+  {
+    "id": 588,
+    "word": "toward",
+    "ipa": "/tɔːrd/",
+    "pos": "preposition",
+    "level": 1,
+    "vi": "về phía, hướng về",
+    "examples": [
+      {
+        "en": "She walked toward the door.",
+        "vi": "Cô ấy bước về phía cửa."
+      },
+      {
+        "en": "We drove toward the city.",
+        "vi": "Chúng tôi lái xe về phía thành phố."
+      }
+    ]
+  },
+  {
+    "id": 589,
+    "word": "inside",
+    "ipa": "/ɪnˈsaɪd/",
+    "pos": "preposition / adverb",
+    "level": 1,
+    "vi": "bên trong, ở trong",
+    "examples": [
+      {
+        "en": "Let's stay inside.",
+        "vi": "Mình ở trong nhà nhé."
+      },
+      {
+        "en": "The keys are inside the bag.",
+        "vi": "Chìa khóa ở trong túi."
+      }
+    ]
+  },
+  {
+    "id": 590,
+    "word": "outside",
+    "ipa": "/ˌaʊtˈsaɪd/",
+    "pos": "preposition / adverb",
+    "level": 1,
+    "vi": "bên ngoài, ở ngoài",
+    "examples": [
+      {
+        "en": "The kids are playing outside.",
+        "vi": "Bọn trẻ đang chơi bên ngoài."
+      },
+      {
+        "en": "Wait for me outside the shop.",
+        "vi": "Đợi tôi ở ngoài cửa hàng nhé."
+      }
+    ]
+  },
+  {
+    "id": 591,
+    "word": "forward",
+    "ipa": "/ˈfɔːrwərd/",
+    "pos": "adverb",
+    "level": 1,
+    "vi": "về phía trước, tiến lên",
+    "examples": [
+      {
+        "en": "Please move forward.",
+        "vi": "Vui lòng tiến lên phía trước."
+      },
+      {
+        "en": "I look forward to seeing you.",
+        "vi": "Tôi mong được gặp bạn."
+      }
+    ]
+  },
+  {
+    "id": 592,
+    "word": "anyway",
+    "ipa": "/ˈeniweɪ/",
+    "pos": "adverb",
+    "level": 1,
+    "vi": "dù sao thì, dẫu sao",
+    "examples": [
+      {
+        "en": "It's late, but let's try anyway.",
+        "vi": "Muộn rồi, nhưng dù sao cứ thử xem."
+      },
+      {
+        "en": "Thanks anyway.",
+        "vi": "Dù sao cũng cảm ơn."
+      }
+    ]
+  },
+  {
+    "id": 593,
+    "word": "probably",
+    "ipa": "/ˈprɑːbəbli/",
+    "pos": "adverb",
+    "level": 1,
+    "vi": "có lẽ, chắc là",
+    "examples": [
+      {
+        "en": "She is probably at home.",
+        "vi": "Có lẽ cô ấy đang ở nhà."
+      },
+      {
+        "en": "It will probably rain.",
+        "vi": "Chắc là trời sẽ mưa."
+      }
+    ]
+  },
+  {
+    "id": 594,
+    "word": "usually",
+    "ipa": "/ˈjuːʒuəli/",
+    "pos": "adverb",
+    "level": 1,
+    "vi": "thường, thường lệ",
+    "examples": [
+      {
+        "en": "I usually wake up at six.",
+        "vi": "Tôi thường dậy lúc sáu giờ."
+      },
+      {
+        "en": "She is usually busy on Mondays.",
+        "vi": "Cô ấy thường bận vào thứ Hai."
+      }
+    ]
+  },
+  {
+    "id": 595,
+    "word": "suddenly",
+    "ipa": "/ˈsʌdənli/",
+    "pos": "adverb",
+    "level": 1,
+    "vi": "đột nhiên, bỗng nhiên",
+    "examples": [
+      {
+        "en": "Suddenly, the lights went out.",
+        "vi": "Bỗng nhiên, đèn tắt."
+      },
+      {
+        "en": "He suddenly stopped.",
+        "vi": "Anh ấy đột ngột dừng lại."
+      }
+    ]
+  },
+  {
+    "id": 596,
+    "word": "everyone",
+    "ipa": "/ˈevriwʌn/",
+    "pos": "pronoun",
+    "level": 1,
+    "vi": "mọi người, tất cả mọi người",
+    "examples": [
+      {
+        "en": "Everyone is here.",
+        "vi": "Mọi người đều đã ở đây."
+      },
+      {
+        "en": "Everyone loves a holiday.",
+        "vi": "Ai cũng thích ngày nghỉ."
+      }
+    ]
+  },
+  {
+    "id": 597,
+    "word": "everything",
+    "ipa": "/ˈevriθɪŋ/",
+    "pos": "pronoun",
+    "level": 1,
+    "vi": "mọi thứ, tất cả",
+    "examples": [
+      {
+        "en": "Everything is ready.",
+        "vi": "Mọi thứ đã sẵn sàng."
+      },
+      {
+        "en": "Thank you for everything.",
+        "vi": "Cảm ơn vì tất cả."
+      }
+    ]
+  },
+  {
+    "id": 598,
+    "word": "anyone",
+    "ipa": "/ˈeniwʌn/",
+    "pos": "pronoun",
+    "level": 1,
+    "vi": "bất cứ ai; (phủ định) ai cả",
+    "examples": [
+      {
+        "en": "Is anyone home?",
+        "vi": "Có ai ở nhà không?"
+      },
+      {
+        "en": "I didn't tell anyone.",
+        "vi": "Tôi không nói với ai cả."
+      }
+    ]
+  },
+  {
+    "id": 599,
+    "word": "something",
+    "ipa": "/ˈsʌmθɪŋ/",
+    "pos": "pronoun",
+    "level": 1,
+    "vi": "cái gì đó, điều gì đó",
+    "examples": [
+      {
+        "en": "I want something to eat.",
+        "vi": "Tôi muốn ăn gì đó."
+      },
+      {
+        "en": "There is something on the table.",
+        "vi": "Có cái gì đó trên bàn."
+      }
+    ]
+  },
+  {
+    "id": 600,
+    "word": "nothing",
+    "ipa": "/ˈnʌθɪŋ/",
+    "pos": "pronoun",
+    "level": 1,
+    "vi": "không gì cả",
+    "examples": [
+      {
+        "en": "There is nothing in the box.",
+        "vi": "Không có gì trong hộp cả."
+      },
+      {
+        "en": "I have nothing to do today.",
+        "vi": "Hôm nay tôi chẳng có việc gì làm."
+      }
+    ]
+  }
+]

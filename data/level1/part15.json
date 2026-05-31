@@ -1,0 +1,902 @@
+[
+  {
+    "id": 701,
+    "word": "cliff",
+    "ipa": "/klɪf/",
+    "pos": "noun",
+    "level": 1,
+    "vi": "vách đá, vực đá",
+    "examples": [
+      {
+        "en": "The house is near a cliff.",
+        "vi": "Ngôi nhà ở gần một vách đá."
+      },
+      {
+        "en": "Don't stand close to the cliff.",
+        "vi": "Đừng đứng sát mép vực."
+      }
+    ]
+  },
+  {
+    "id": 702,
+    "word": "cloth",
+    "ipa": "/klɔːθ/",
+    "pos": "noun",
+    "level": 1,
+    "vi": "vải; miếng giẻ",
+    "examples": [
+      {
+        "en": "Clean the table with a cloth.",
+        "vi": "Lau bàn bằng một miếng giẻ."
+      },
+      {
+        "en": "This cloth is very soft.",
+        "vi": "Tấm vải này rất mềm."
+      }
+    ]
+  },
+  {
+    "id": 703,
+    "word": "coast",
+    "ipa": "/koʊst/",
+    "pos": "noun",
+    "level": 1,
+    "vi": "bờ biển, ven biển",
+    "examples": [
+      {
+        "en": "They live on the coast.",
+        "vi": "Họ sống ở vùng ven biển."
+      },
+      {
+        "en": "The coast is beautiful at sunset.",
+        "vi": "Bờ biển đẹp vào lúc hoàng hôn."
+      }
+    ]
+  },
+  {
+    "id": 704,
+    "word": "coat",
+    "ipa": "/koʊt/",
+    "pos": "noun",
+    "level": 1,
+    "vi": "áo khoác",
+    "examples": [
+      {
+        "en": "Wear a warm coat.",
+        "vi": "Mặc một chiếc áo khoác ấm."
+      },
+      {
+        "en": "She hung her coat on the door.",
+        "vi": "Cô ấy treo áo khoác lên cửa."
+      }
+    ]
+  },
+  {
+    "id": 705,
+    "word": "coin",
+    "ipa": "/kɔɪn/",
+    "pos": "noun",
+    "level": 1,
+    "vi": "đồng xu",
+    "examples": [
+      {
+        "en": "I found a coin on the floor.",
+        "vi": "Tôi nhặt được một đồng xu trên sàn."
+      },
+      {
+        "en": "He collects old coins.",
+        "vi": "Anh ấy sưu tầm tiền xu cổ."
+      }
+    ]
+  },
+  {
+    "id": 706,
+    "word": "corn",
+    "ipa": "/kɔːrn/",
+    "pos": "noun",
+    "level": 1,
+    "vi": "ngô, bắp",
+    "examples": [
+      {
+        "en": "We grow corn on the farm.",
+        "vi": "Chúng tôi trồng ngô ở nông trại."
+      },
+      {
+        "en": "I like sweet corn.",
+        "vi": "Tôi thích bắp ngọt."
+      }
+    ]
+  },
+  {
+    "id": 707,
+    "word": "cottage",
+    "ipa": "/ˈkɑːtɪdʒ/",
+    "pos": "noun",
+    "level": 1,
+    "vi": "nhà tranh, nhà nhỏ ở quê",
+    "examples": [
+      {
+        "en": "They have a cottage by the lake.",
+        "vi": "Họ có một căn nhà nhỏ bên hồ."
+      },
+      {
+        "en": "The cottage looks cozy.",
+        "vi": "Căn nhà nhỏ trông ấm cúng."
+      }
+    ]
+  },
+  {
+    "id": 708,
+    "word": "couple",
+    "ipa": "/ˈkʌpl/",
+    "pos": "noun",
+    "level": 1,
+    "vi": "cặp đôi; một vài",
+    "examples": [
+      {
+        "en": "They are a happy couple.",
+        "vi": "Họ là một cặp đôi hạnh phúc."
+      },
+      {
+        "en": "I'll be back in a couple of days.",
+        "vi": "Tôi sẽ quay lại sau vài ngày nữa."
+      }
+    ]
+  },
+  {
+    "id": 709,
+    "word": "cousin",
+    "ipa": "/ˈkʌzn/",
+    "pos": "noun",
+    "level": 1,
+    "vi": "anh/chị/em họ",
+    "examples": [
+      {
+        "en": "My cousin lives nearby.",
+        "vi": "Anh họ tôi sống gần đây."
+      },
+      {
+        "en": "I have many cousins.",
+        "vi": "Tôi có nhiều anh chị em họ."
+      }
+    ]
+  },
+  {
+    "id": 710,
+    "word": "cream",
+    "ipa": "/kriːm/",
+    "pos": "noun",
+    "level": 1,
+    "vi": "kem (sữa); kem bôi",
+    "examples": [
+      {
+        "en": "I like cream in my coffee.",
+        "vi": "Tôi thích cho kem vào cà phê."
+      },
+      {
+        "en": "Put some cream on your hands.",
+        "vi": "Bôi chút kem lên tay đi."
+      }
+    ]
+  },
+  {
+    "id": 711,
+    "word": "crime",
+    "ipa": "/kraɪm/",
+    "pos": "noun",
+    "level": 1,
+    "vi": "tội phạm, tội ác",
+    "examples": [
+      {
+        "en": "Stealing is a crime.",
+        "vi": "Trộm cắp là một tội."
+      },
+      {
+        "en": "The city has little crime.",
+        "vi": "Thành phố ít tội phạm."
+      }
+    ]
+  },
+  {
+    "id": 712,
+    "word": "crown",
+    "ipa": "/kraʊn/",
+    "pos": "noun",
+    "level": 1,
+    "vi": "vương miện",
+    "examples": [
+      {
+        "en": "The queen wears a crown.",
+        "vi": "Nữ hoàng đội vương miện."
+      },
+      {
+        "en": "The crown is made of gold.",
+        "vi": "Chiếc vương miện làm bằng vàng."
+      }
+    ]
+  },
+  {
+    "id": 713,
+    "word": "cucumber",
+    "ipa": "/ˈkjuːkʌmbər/",
+    "pos": "noun",
+    "level": 1,
+    "vi": "quả dưa chuột",
+    "examples": [
+      {
+        "en": "Add cucumber to the salad.",
+        "vi": "Thêm dưa chuột vào món salad."
+      },
+      {
+        "en": "Cucumbers are fresh and cool.",
+        "vi": "Dưa chuột tươi và mát."
+      }
+    ]
+  },
+  {
+    "id": 714,
+    "word": "curtain",
+    "ipa": "/ˈkɜːrtn/",
+    "pos": "noun",
+    "level": 1,
+    "vi": "tấm rèm, màn",
+    "examples": [
+      {
+        "en": "Please close the curtains.",
+        "vi": "Vui lòng kéo rèm lại."
+      },
+      {
+        "en": "The curtains are light blue.",
+        "vi": "Những tấm rèm màu xanh nhạt."
+      }
+    ]
+  },
+  {
+    "id": 715,
+    "word": "deer",
+    "ipa": "/dɪr/",
+    "pos": "noun",
+    "level": 1,
+    "vi": "con hươu, nai",
+    "examples": [
+      {
+        "en": "A deer ran across the road.",
+        "vi": "Một con hươu chạy băng qua đường."
+      },
+      {
+        "en": "Deer live in the forest.",
+        "vi": "Hươu sống trong rừng."
+      }
+    ]
+  },
+  {
+    "id": 716,
+    "word": "dentist",
+    "ipa": "/ˈdentɪst/",
+    "pos": "noun",
+    "level": 1,
+    "vi": "nha sĩ",
+    "examples": [
+      {
+        "en": "I have a dentist appointment.",
+        "vi": "Tôi có hẹn với nha sĩ."
+      },
+      {
+        "en": "The dentist checked my teeth.",
+        "vi": "Nha sĩ kiểm tra răng cho tôi."
+      }
+    ]
+  },
+  {
+    "id": 717,
+    "word": "desert",
+    "ipa": "/ˈdezərt/",
+    "pos": "noun",
+    "level": 1,
+    "vi": "sa mạc",
+    "examples": [
+      {
+        "en": "The desert is hot and dry.",
+        "vi": "Sa mạc nóng và khô."
+      },
+      {
+        "en": "Camels live in the desert.",
+        "vi": "Lạc đà sống ở sa mạc."
+      }
+    ]
+  },
+  {
+    "id": 718,
+    "word": "dessert",
+    "ipa": "/dɪˈzɜːrt/",
+    "pos": "noun",
+    "level": 1,
+    "vi": "món tráng miệng",
+    "examples": [
+      {
+        "en": "What's for dessert?",
+        "vi": "Món tráng miệng là gì?"
+      },
+      {
+        "en": "We had ice cream for dessert.",
+        "vi": "Chúng tôi ăn kem tráng miệng."
+      }
+    ]
+  },
+  {
+    "id": 719,
+    "word": "diamond",
+    "ipa": "/ˈdaɪmənd/",
+    "pos": "noun",
+    "level": 1,
+    "vi": "kim cương",
+    "examples": [
+      {
+        "en": "The ring has a small diamond.",
+        "vi": "Chiếc nhẫn có một viên kim cương nhỏ."
+      },
+      {
+        "en": "Diamonds are very expensive.",
+        "vi": "Kim cương rất đắt."
+      }
+    ]
+  },
+  {
+    "id": 720,
+    "word": "dictionary",
+    "ipa": "/ˈdɪkʃəneri/",
+    "pos": "noun",
+    "level": 1,
+    "vi": "từ điển",
+    "examples": [
+      {
+        "en": "Look it up in the dictionary.",
+        "vi": "Tra từ đó trong từ điển."
+      },
+      {
+        "en": "I have an English dictionary.",
+        "vi": "Tôi có một cuốn từ điển tiếng Anh."
+      }
+    ]
+  },
+  {
+    "id": 721,
+    "word": "dinosaur",
+    "ipa": "/ˈdaɪnəsɔːr/",
+    "pos": "noun",
+    "level": 1,
+    "vi": "khủng long",
+    "examples": [
+      {
+        "en": "Dinosaurs lived long ago.",
+        "vi": "Khủng long sống từ rất lâu trước đây."
+      },
+      {
+        "en": "The boy loves dinosaurs.",
+        "vi": "Cậu bé thích khủng long."
+      }
+    ]
+  },
+  {
+    "id": 722,
+    "word": "dish",
+    "ipa": "/dɪʃ/",
+    "pos": "noun",
+    "level": 1,
+    "vi": "cái đĩa; món ăn",
+    "examples": [
+      {
+        "en": "Please wash the dishes.",
+        "vi": "Vui lòng rửa bát đĩa."
+      },
+      {
+        "en": "This is my favorite dish.",
+        "vi": "Đây là món ăn tôi thích nhất."
+      }
+    ]
+  },
+  {
+    "id": 723,
+    "word": "distance",
+    "ipa": "/ˈdɪstəns/",
+    "pos": "noun",
+    "level": 1,
+    "vi": "khoảng cách",
+    "examples": [
+      {
+        "en": "What is the distance to the city?",
+        "vi": "Khoảng cách đến thành phố là bao nhiêu?"
+      },
+      {
+        "en": "I saw her in the distance.",
+        "vi": "Tôi thấy cô ấy ở đằng xa."
+      }
+    ]
+  },
+  {
+    "id": 724,
+    "word": "doll",
+    "ipa": "/dɑːl/",
+    "pos": "noun",
+    "level": 1,
+    "vi": "búp bê",
+    "examples": [
+      {
+        "en": "The girl plays with her doll.",
+        "vi": "Cô bé chơi với búp bê."
+      },
+      {
+        "en": "This doll has blue eyes.",
+        "vi": "Con búp bê này có đôi mắt xanh."
+      }
+    ]
+  },
+  {
+    "id": 725,
+    "word": "dolphin",
+    "ipa": "/ˈdɑːlfɪn/",
+    "pos": "noun",
+    "level": 1,
+    "vi": "cá heo",
+    "examples": [
+      {
+        "en": "Dolphins are very smart.",
+        "vi": "Cá heo rất thông minh."
+      },
+      {
+        "en": "We saw dolphins in the sea.",
+        "vi": "Chúng tôi thấy cá heo ngoài biển."
+      }
+    ]
+  },
+  {
+    "id": 726,
+    "word": "donkey",
+    "ipa": "/ˈdɑːŋki/",
+    "pos": "noun",
+    "level": 1,
+    "vi": "con lừa",
+    "examples": [
+      {
+        "en": "The donkey carried the bags.",
+        "vi": "Con lừa chở những bao đồ."
+      },
+      {
+        "en": "A donkey is like a small horse.",
+        "vi": "Con lừa giống một con ngựa nhỏ."
+      }
+    ]
+  },
+  {
+    "id": 727,
+    "word": "dragon",
+    "ipa": "/ˈdræɡən/",
+    "pos": "noun",
+    "level": 1,
+    "vi": "con rồng",
+    "examples": [
+      {
+        "en": "The story is about a dragon.",
+        "vi": "Câu chuyện kể về một con rồng."
+      },
+      {
+        "en": "Dragons appear in many tales.",
+        "vi": "Rồng xuất hiện trong nhiều câu chuyện."
+      }
+    ]
+  },
+  {
+    "id": 728,
+    "word": "drawer",
+    "ipa": "/drɔːr/",
+    "pos": "noun",
+    "level": 1,
+    "vi": "ngăn kéo",
+    "examples": [
+      {
+        "en": "The socks are in the drawer.",
+        "vi": "Tất ở trong ngăn kéo."
+      },
+      {
+        "en": "Open the top drawer.",
+        "vi": "Mở ngăn kéo trên cùng."
+      }
+    ]
+  },
+  {
+    "id": 729,
+    "word": "drum",
+    "ipa": "/drʌm/",
+    "pos": "noun",
+    "level": 1,
+    "vi": "cái trống",
+    "examples": [
+      {
+        "en": "He plays the drums.",
+        "vi": "Anh ấy chơi trống."
+      },
+      {
+        "en": "The drum is very loud.",
+        "vi": "Cái trống kêu rất to."
+      }
+    ]
+  },
+  {
+    "id": 730,
+    "word": "dust",
+    "ipa": "/dʌst/",
+    "pos": "noun",
+    "level": 1,
+    "vi": "bụi",
+    "examples": [
+      {
+        "en": "There is dust on the table.",
+        "vi": "Có bụi trên bàn."
+      },
+      {
+        "en": "The room is full of dust.",
+        "vi": "Căn phòng đầy bụi."
+      }
+    ]
+  },
+  {
+    "id": 731,
+    "word": "absent",
+    "ipa": "/ˈæbsənt/",
+    "pos": "adjective",
+    "level": 1,
+    "vi": "vắng mặt",
+    "examples": [
+      {
+        "en": "He was absent from school today.",
+        "vi": "Hôm nay cậu ấy nghỉ học."
+      },
+      {
+        "en": "Two students are absent.",
+        "vi": "Hai học sinh vắng mặt."
+      }
+    ]
+  },
+  {
+    "id": 732,
+    "word": "active",
+    "ipa": "/ˈæktɪv/",
+    "pos": "adjective",
+    "level": 1,
+    "vi": "năng động, hoạt bát",
+    "examples": [
+      {
+        "en": "She is a very active child.",
+        "vi": "Cô bé rất hiếu động."
+      },
+      {
+        "en": "Stay active and healthy.",
+        "vi": "Hãy năng động và khỏe mạnh."
+      }
+    ]
+  },
+  {
+    "id": 733,
+    "word": "amazing",
+    "ipa": "/əˈmeɪzɪŋ/",
+    "pos": "adjective",
+    "level": 1,
+    "vi": "tuyệt vời, kinh ngạc",
+    "examples": [
+      {
+        "en": "The view is amazing.",
+        "vi": "Cảnh đẹp đến kinh ngạc."
+      },
+      {
+        "en": "What an amazing story!",
+        "vi": "Một câu chuyện thật tuyệt vời!"
+      }
+    ]
+  },
+  {
+    "id": 734,
+    "word": "anxious",
+    "ipa": "/ˈæŋkʃəs/",
+    "pos": "adjective",
+    "level": 1,
+    "vi": "lo lắng, bồn chồn",
+    "examples": [
+      {
+        "en": "She felt anxious before the exam.",
+        "vi": "Cô ấy lo lắng trước kỳ thi."
+      },
+      {
+        "en": "Don't be anxious, it's fine.",
+        "vi": "Đừng lo lắng, ổn cả mà."
+      }
+    ]
+  },
+  {
+    "id": 735,
+    "word": "asleep",
+    "ipa": "/əˈsliːp/",
+    "pos": "adjective",
+    "level": 1,
+    "vi": "đang ngủ, ngủ say",
+    "examples": [
+      {
+        "en": "The baby is asleep.",
+        "vi": "Em bé đang ngủ."
+      },
+      {
+        "en": "He fell asleep on the sofa.",
+        "vi": "Anh ấy ngủ thiếp đi trên ghế."
+      }
+    ]
+  },
+  {
+    "id": 736,
+    "word": "available",
+    "ipa": "/əˈveɪləbl/",
+    "pos": "adjective",
+    "level": 1,
+    "vi": "có sẵn, rảnh (thời gian)",
+    "examples": [
+      {
+        "en": "Is this seat available?",
+        "vi": "Chỗ này còn trống không?"
+      },
+      {
+        "en": "Are you available tomorrow?",
+        "vi": "Mai bạn có rảnh không?"
+      }
+    ]
+  },
+  {
+    "id": 737,
+    "word": "average",
+    "ipa": "/ˈævərɪdʒ/",
+    "pos": "adjective",
+    "level": 1,
+    "vi": "trung bình, bình thường",
+    "examples": [
+      {
+        "en": "He is of average height.",
+        "vi": "Anh ấy có chiều cao trung bình."
+      },
+      {
+        "en": "It was an average day.",
+        "vi": "Đó là một ngày bình thường."
+      }
+    ]
+  },
+  {
+    "id": 738,
+    "word": "awake",
+    "ipa": "/əˈweɪk/",
+    "pos": "adjective",
+    "level": 1,
+    "vi": "thức, tỉnh táo",
+    "examples": [
+      {
+        "en": "Are you still awake?",
+        "vi": "Bạn vẫn còn thức à?"
+      },
+      {
+        "en": "I stayed awake all night.",
+        "vi": "Tôi thức cả đêm."
+      }
+    ]
+  },
+  {
+    "id": 739,
+    "word": "awful",
+    "ipa": "/ˈɔːfl/",
+    "pos": "adjective",
+    "level": 1,
+    "vi": "tồi tệ, kinh khủng",
+    "examples": [
+      {
+        "en": "The weather is awful today.",
+        "vi": "Hôm nay thời tiết tồi tệ."
+      },
+      {
+        "en": "That smell is awful.",
+        "vi": "Cái mùi đó thật kinh khủng."
+      }
+    ]
+  },
+  {
+    "id": 740,
+    "word": "basic",
+    "ipa": "/ˈbeɪsɪk/",
+    "pos": "adjective",
+    "level": 1,
+    "vi": "cơ bản",
+    "examples": [
+      {
+        "en": "These are basic rules.",
+        "vi": "Đây là những quy tắc cơ bản."
+      },
+      {
+        "en": "I have basic English skills.",
+        "vi": "Tôi có kỹ năng tiếng Anh cơ bản."
+      }
+    ]
+  },
+  {
+    "id": 741,
+    "word": "bitter",
+    "ipa": "/ˈbɪtər/",
+    "pos": "adjective",
+    "level": 1,
+    "vi": "đắng",
+    "examples": [
+      {
+        "en": "This coffee is too bitter.",
+        "vi": "Cà phê này đắng quá."
+      },
+      {
+        "en": "The medicine tastes bitter.",
+        "vi": "Thuốc có vị đắng."
+      }
+    ]
+  },
+  {
+    "id": 742,
+    "word": "blank",
+    "ipa": "/blæŋk/",
+    "pos": "adjective",
+    "level": 1,
+    "vi": "trống, để trống",
+    "examples": [
+      {
+        "en": "Leave this line blank.",
+        "vi": "Để trống dòng này."
+      },
+      {
+        "en": "The page is blank.",
+        "vi": "Trang giấy trống trơn."
+      }
+    ]
+  },
+  {
+    "id": 743,
+    "word": "blind",
+    "ipa": "/blaɪnd/",
+    "pos": "adjective",
+    "level": 1,
+    "vi": "mù, khiếm thị",
+    "examples": [
+      {
+        "en": "The old man is blind.",
+        "vi": "Ông cụ bị mù."
+      },
+      {
+        "en": "A blind dog needs care.",
+        "vi": "Một chú chó mù cần được chăm sóc."
+      }
+    ]
+  },
+  {
+    "id": 744,
+    "word": "bored",
+    "ipa": "/bɔːrd/",
+    "pos": "adjective",
+    "level": 1,
+    "vi": "chán, buồn chán",
+    "examples": [
+      {
+        "en": "I am bored at home.",
+        "vi": "Tôi thấy chán khi ở nhà."
+      },
+      {
+        "en": "The children look bored.",
+        "vi": "Bọn trẻ trông có vẻ chán."
+      }
+    ]
+  },
+  {
+    "id": 745,
+    "word": "brief",
+    "ipa": "/briːf/",
+    "pos": "adjective",
+    "level": 1,
+    "vi": "ngắn gọn, vắn tắt",
+    "examples": [
+      {
+        "en": "Please be brief.",
+        "vi": "Vui lòng nói ngắn gọn."
+      },
+      {
+        "en": "It was a brief meeting.",
+        "vi": "Đó là một cuộc họp ngắn."
+      }
+    ]
+  },
+  {
+    "id": 746,
+    "word": "brilliant",
+    "ipa": "/ˈbrɪliənt/",
+    "pos": "adjective",
+    "level": 1,
+    "vi": "xuất sắc, tài giỏi; rực rỡ",
+    "examples": [
+      {
+        "en": "That's a brilliant idea!",
+        "vi": "Đó là một ý tưởng xuất sắc!"
+      },
+      {
+        "en": "She is a brilliant student.",
+        "vi": "Cô ấy là một học sinh tài giỏi."
+      }
+    ]
+  },
+  {
+    "id": 747,
+    "word": "broad",
+    "ipa": "/brɔːd/",
+    "pos": "adjective",
+    "level": 1,
+    "vi": "rộng, rộng lớn",
+    "examples": [
+      {
+        "en": "He has broad shoulders.",
+        "vi": "Anh ấy có đôi vai rộng."
+      },
+      {
+        "en": "It is a broad river.",
+        "vi": "Đó là một con sông rộng."
+      }
+    ]
+  },
+  {
+    "id": 748,
+    "word": "broken",
+    "ipa": "/ˈbroʊkən/",
+    "pos": "adjective",
+    "level": 1,
+    "vi": "bị vỡ, bị hỏng",
+    "examples": [
+      {
+        "en": "The window is broken.",
+        "vi": "Cửa sổ bị vỡ."
+      },
+      {
+        "en": "My phone is broken.",
+        "vi": "Điện thoại của tôi bị hỏng."
+      }
+    ]
+  },
+  {
+    "id": 749,
+    "word": "careless",
+    "ipa": "/ˈkerləs/",
+    "pos": "adjective",
+    "level": 1,
+    "vi": "bất cẩn, cẩu thả",
+    "examples": [
+      {
+        "en": "That was a careless mistake.",
+        "vi": "Đó là một lỗi do bất cẩn."
+      },
+      {
+        "en": "Don't be careless with money.",
+        "vi": "Đừng cẩu thả với tiền bạc."
+      }
+    ]
+  },
+  {
+    "id": 750,
+    "word": "central",
+    "ipa": "/ˈsentrəl/",
+    "pos": "adjective",
+    "level": 1,
+    "vi": "trung tâm, ở giữa",
+    "examples": [
+      {
+        "en": "The hotel is in a central area.",
+        "vi": "Khách sạn ở khu vực trung tâm."
+      },
+      {
+        "en": "This is the central station.",
+        "vi": "Đây là nhà ga trung tâm."
+      }
+    ]
+  }
+]

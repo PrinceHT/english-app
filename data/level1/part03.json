@@ -1,0 +1,902 @@
+[
+  {
+    "id": 101,
+    "word": "move",
+    "ipa": "/muːv/",
+    "pos": "verb",
+    "level": 1,
+    "vi": "di chuyển; chuyển nhà",
+    "examples": [
+      {
+        "en": "Please move your car.",
+        "vi": "Vui lòng di chuyển xe của bạn."
+      },
+      {
+        "en": "We moved to a new house.",
+        "vi": "Chúng tôi chuyển đến nhà mới."
+      }
+    ]
+  },
+  {
+    "id": 102,
+    "word": "live",
+    "ipa": "/lɪv/",
+    "pos": "verb",
+    "level": 1,
+    "vi": "sống, sinh sống",
+    "examples": [
+      {
+        "en": "I live in the city.",
+        "vi": "Tôi sống ở thành phố."
+      },
+      {
+        "en": "Where do you live?",
+        "vi": "Bạn sống ở đâu?"
+      }
+    ]
+  },
+  {
+    "id": 103,
+    "word": "try",
+    "ipa": "/traɪ/",
+    "pos": "verb",
+    "level": 1,
+    "vi": "thử; cố gắng",
+    "examples": [
+      {
+        "en": "Try this cake.",
+        "vi": "Thử miếng bánh này đi."
+      },
+      {
+        "en": "I will try my best.",
+        "vi": "Tôi sẽ cố gắng hết sức."
+      }
+    ]
+  },
+  {
+    "id": 104,
+    "word": "drink",
+    "ipa": "/drɪŋk/",
+    "pos": "verb",
+    "level": 1,
+    "vi": "uống",
+    "examples": [
+      {
+        "en": "I drink water every day.",
+        "vi": "Tôi uống nước mỗi ngày."
+      },
+      {
+        "en": "Do you want something to drink?",
+        "vi": "Bạn có muốn uống gì không?"
+      }
+    ]
+  },
+  {
+    "id": 105,
+    "word": "listen",
+    "ipa": "/ˈlɪsən/",
+    "pos": "verb",
+    "level": 1,
+    "vi": "nghe, lắng nghe",
+    "examples": [
+      {
+        "en": "Listen to me, please.",
+        "vi": "Hãy lắng nghe tôi."
+      },
+      {
+        "en": "I listen to music every day.",
+        "vi": "Tôi nghe nhạc mỗi ngày."
+      }
+    ]
+  },
+  {
+    "id": 106,
+    "word": "word",
+    "ipa": "/wɜːrd/",
+    "pos": "noun",
+    "level": 1,
+    "vi": "từ; lời nói",
+    "examples": [
+      {
+        "en": "What does this word mean?",
+        "vi": "Từ này nghĩa là gì?"
+      },
+      {
+        "en": "Say a few words.",
+        "vi": "Hãy nói vài lời."
+      }
+    ]
+  },
+  {
+    "id": 107,
+    "word": "place",
+    "ipa": "/pleɪs/",
+    "pos": "noun",
+    "level": 1,
+    "vi": "nơi, chỗ, địa điểm",
+    "examples": [
+      {
+        "en": "This is a nice place.",
+        "vi": "Đây là một nơi đẹp."
+      },
+      {
+        "en": "Let's find a place to eat.",
+        "vi": "Mình tìm chỗ ăn nhé."
+      }
+    ]
+  },
+  {
+    "id": 108,
+    "word": "problem",
+    "ipa": "/ˈprɑːbləm/",
+    "pos": "noun",
+    "level": 1,
+    "vi": "vấn đề, rắc rối",
+    "examples": [
+      {
+        "en": "We have a small problem.",
+        "vi": "Chúng ta có một vấn đề nhỏ."
+      },
+      {
+        "en": "No problem!",
+        "vi": "Không sao đâu!"
+      }
+    ]
+  },
+  {
+    "id": 109,
+    "word": "hand",
+    "ipa": "/hænd/",
+    "pos": "noun",
+    "level": 1,
+    "vi": "bàn tay",
+    "examples": [
+      {
+        "en": "Wash your hands.",
+        "vi": "Rửa tay đi."
+      },
+      {
+        "en": "She raised her hand.",
+        "vi": "Cô ấy giơ tay lên."
+      }
+    ]
+  },
+  {
+    "id": 110,
+    "word": "part",
+    "ipa": "/pɑːrt/",
+    "pos": "noun",
+    "level": 1,
+    "vi": "phần, bộ phận",
+    "examples": [
+      {
+        "en": "This is the best part.",
+        "vi": "Đây là phần hay nhất."
+      },
+      {
+        "en": "It is part of my job.",
+        "vi": "Đó là một phần công việc của tôi."
+      }
+    ]
+  },
+  {
+    "id": 111,
+    "word": "eye",
+    "ipa": "/aɪ/",
+    "pos": "noun",
+    "level": 1,
+    "vi": "mắt",
+    "examples": [
+      {
+        "en": "She has beautiful eyes.",
+        "vi": "Cô ấy có đôi mắt đẹp."
+      },
+      {
+        "en": "Close your eyes.",
+        "vi": "Nhắm mắt lại."
+      }
+    ]
+  },
+  {
+    "id": 112,
+    "word": "week",
+    "ipa": "/wiːk/",
+    "pos": "noun",
+    "level": 1,
+    "vi": "tuần",
+    "examples": [
+      {
+        "en": "I work five days a week.",
+        "vi": "Tôi làm việc năm ngày một tuần."
+      },
+      {
+        "en": "See you next week.",
+        "vi": "Hẹn gặp tuần sau."
+      }
+    ]
+  },
+  {
+    "id": 113,
+    "word": "number",
+    "ipa": "/ˈnʌmbər/",
+    "pos": "noun",
+    "level": 1,
+    "vi": "con số; số lượng",
+    "examples": [
+      {
+        "en": "What is your phone number?",
+        "vi": "Số điện thoại của bạn là gì?"
+      },
+      {
+        "en": "Pick a number.",
+        "vi": "Chọn một con số đi."
+      }
+    ]
+  },
+  {
+    "id": 114,
+    "word": "group",
+    "ipa": "/ɡruːp/",
+    "pos": "noun",
+    "level": 1,
+    "vi": "nhóm",
+    "examples": [
+      {
+        "en": "We work in a group.",
+        "vi": "Chúng tôi làm việc theo nhóm."
+      },
+      {
+        "en": "A group of students came.",
+        "vi": "Một nhóm học sinh đã đến."
+      }
+    ]
+  },
+  {
+    "id": 115,
+    "word": "room",
+    "ipa": "/ruːm/",
+    "pos": "noun",
+    "level": 1,
+    "vi": "phòng; không gian",
+    "examples": [
+      {
+        "en": "My room is small.",
+        "vi": "Phòng tôi nhỏ."
+      },
+      {
+        "en": "There is no room here.",
+        "vi": "Ở đây không còn chỗ."
+      }
+    ]
+  },
+  {
+    "id": 116,
+    "word": "mother",
+    "ipa": "/ˈmʌðər/",
+    "pos": "noun",
+    "level": 1,
+    "vi": "mẹ",
+    "examples": [
+      {
+        "en": "My mother cooks well.",
+        "vi": "Mẹ tôi nấu ăn ngon."
+      },
+      {
+        "en": "She is a good mother.",
+        "vi": "Cô ấy là một người mẹ tốt."
+      }
+    ]
+  },
+  {
+    "id": 117,
+    "word": "father",
+    "ipa": "/ˈfɑːðər/",
+    "pos": "noun",
+    "level": 1,
+    "vi": "bố, cha",
+    "examples": [
+      {
+        "en": "My father works hard.",
+        "vi": "Bố tôi làm việc chăm chỉ."
+      },
+      {
+        "en": "His father is a teacher.",
+        "vi": "Bố anh ấy là giáo viên."
+      }
+    ]
+  },
+  {
+    "id": 118,
+    "word": "car",
+    "ipa": "/kɑːr/",
+    "pos": "noun",
+    "level": 1,
+    "vi": "xe hơi, ô tô",
+    "examples": [
+      {
+        "en": "I have a new car.",
+        "vi": "Tôi có một chiếc xe mới."
+      },
+      {
+        "en": "The car is very fast.",
+        "vi": "Chiếc xe chạy rất nhanh."
+      }
+    ]
+  },
+  {
+    "id": 119,
+    "word": "city",
+    "ipa": "/ˈsɪti/",
+    "pos": "noun",
+    "level": 1,
+    "vi": "thành phố",
+    "examples": [
+      {
+        "en": "I live in a big city.",
+        "vi": "Tôi sống ở một thành phố lớn."
+      },
+      {
+        "en": "This city is beautiful.",
+        "vi": "Thành phố này thật đẹp."
+      }
+    ]
+  },
+  {
+    "id": 120,
+    "word": "name",
+    "ipa": "/neɪm/",
+    "pos": "noun",
+    "level": 1,
+    "vi": "tên",
+    "examples": [
+      {
+        "en": "What is your name?",
+        "vi": "Tên bạn là gì?"
+      },
+      {
+        "en": "My name is Lan.",
+        "vi": "Tên tôi là Lan."
+      }
+    ]
+  },
+  {
+    "id": 121,
+    "word": "country",
+    "ipa": "/ˈkʌntri/",
+    "pos": "noun",
+    "level": 1,
+    "vi": "đất nước, quốc gia; vùng quê",
+    "examples": [
+      {
+        "en": "Vietnam is a beautiful country.",
+        "vi": "Việt Nam là một đất nước xinh đẹp."
+      },
+      {
+        "en": "They live in the country.",
+        "vi": "Họ sống ở vùng quê."
+      }
+    ]
+  },
+  {
+    "id": 122,
+    "word": "story",
+    "ipa": "/ˈstɔːri/",
+    "pos": "noun",
+    "level": 1,
+    "vi": "câu chuyện",
+    "examples": [
+      {
+        "en": "Tell me a story.",
+        "vi": "Kể cho tôi một câu chuyện đi."
+      },
+      {
+        "en": "It is a long story.",
+        "vi": "Đó là một câu chuyện dài."
+      }
+    ]
+  },
+  {
+    "id": 123,
+    "word": "job",
+    "ipa": "/dʒɑːb/",
+    "pos": "noun",
+    "level": 1,
+    "vi": "công việc, nghề",
+    "examples": [
+      {
+        "en": "She has a new job.",
+        "vi": "Cô ấy có công việc mới."
+      },
+      {
+        "en": "I like my job.",
+        "vi": "Tôi thích công việc của mình."
+      }
+    ]
+  },
+  {
+    "id": 124,
+    "word": "night",
+    "ipa": "/naɪt/",
+    "pos": "noun",
+    "level": 1,
+    "vi": "ban đêm, buổi tối",
+    "examples": [
+      {
+        "en": "Good night!",
+        "vi": "Chúc ngủ ngon!"
+      },
+      {
+        "en": "I study at night.",
+        "vi": "Tôi học vào ban đêm."
+      }
+    ]
+  },
+  {
+    "id": 125,
+    "word": "morning",
+    "ipa": "/ˈmɔːrnɪŋ/",
+    "pos": "noun",
+    "level": 1,
+    "vi": "buổi sáng",
+    "examples": [
+      {
+        "en": "Good morning!",
+        "vi": "Chào buổi sáng!"
+      },
+      {
+        "en": "I run in the morning.",
+        "vi": "Tôi chạy bộ vào buổi sáng."
+      }
+    ]
+  },
+  {
+    "id": 126,
+    "word": "minute",
+    "ipa": "/ˈmɪnɪt/",
+    "pos": "noun",
+    "level": 1,
+    "vi": "phút",
+    "examples": [
+      {
+        "en": "Wait a minute.",
+        "vi": "Đợi một phút."
+      },
+      {
+        "en": "It takes five minutes.",
+        "vi": "Việc đó mất năm phút."
+      }
+    ]
+  },
+  {
+    "id": 127,
+    "word": "hour",
+    "ipa": "/ˈaʊər/",
+    "pos": "noun",
+    "level": 1,
+    "vi": "giờ, tiếng đồng hồ",
+    "examples": [
+      {
+        "en": "I waited for an hour.",
+        "vi": "Tôi đã đợi một tiếng."
+      },
+      {
+        "en": "The trip takes two hours.",
+        "vi": "Chuyến đi mất hai tiếng."
+      }
+    ]
+  },
+  {
+    "id": 128,
+    "word": "month",
+    "ipa": "/mʌnθ/",
+    "pos": "noun",
+    "level": 1,
+    "vi": "tháng",
+    "examples": [
+      {
+        "en": "There are twelve months in a year.",
+        "vi": "Một năm có mười hai tháng."
+      },
+      {
+        "en": "See you next month.",
+        "vi": "Hẹn gặp tháng sau."
+      }
+    ]
+  },
+  {
+    "id": 129,
+    "word": "body",
+    "ipa": "/ˈbɑːdi/",
+    "pos": "noun",
+    "level": 1,
+    "vi": "cơ thể, thân thể",
+    "examples": [
+      {
+        "en": "Exercise is good for the body.",
+        "vi": "Tập thể dục tốt cho cơ thể."
+      },
+      {
+        "en": "My whole body hurts.",
+        "vi": "Cả người tôi đau nhức."
+      }
+    ]
+  },
+  {
+    "id": 130,
+    "word": "head",
+    "ipa": "/hed/",
+    "pos": "noun",
+    "level": 1,
+    "vi": "đầu",
+    "examples": [
+      {
+        "en": "My head hurts.",
+        "vi": "Tôi bị đau đầu."
+      },
+      {
+        "en": "She nodded her head.",
+        "vi": "Cô ấy gật đầu."
+      }
+    ]
+  },
+  {
+    "id": 131,
+    "word": "face",
+    "ipa": "/feɪs/",
+    "pos": "noun",
+    "level": 1,
+    "vi": "khuôn mặt",
+    "examples": [
+      {
+        "en": "She has a kind face.",
+        "vi": "Cô ấy có gương mặt phúc hậu."
+      },
+      {
+        "en": "Wash your face.",
+        "vi": "Rửa mặt đi."
+      }
+    ]
+  },
+  {
+    "id": 132,
+    "word": "door",
+    "ipa": "/dɔːr/",
+    "pos": "noun",
+    "level": 1,
+    "vi": "cửa, cửa ra vào",
+    "examples": [
+      {
+        "en": "Please close the door.",
+        "vi": "Vui lòng đóng cửa."
+      },
+      {
+        "en": "Someone is at the door.",
+        "vi": "Có người ở ngoài cửa."
+      }
+    ]
+  },
+  {
+    "id": 133,
+    "word": "street",
+    "ipa": "/striːt/",
+    "pos": "noun",
+    "level": 1,
+    "vi": "đường phố, con phố",
+    "examples": [
+      {
+        "en": "The street is busy.",
+        "vi": "Con phố rất đông đúc."
+      },
+      {
+        "en": "I live on this street.",
+        "vi": "Tôi sống trên con phố này."
+      }
+    ]
+  },
+  {
+    "id": 134,
+    "word": "table",
+    "ipa": "/ˈteɪbl/",
+    "pos": "noun",
+    "level": 1,
+    "vi": "cái bàn",
+    "examples": [
+      {
+        "en": "Put it on the table.",
+        "vi": "Để nó lên bàn."
+      },
+      {
+        "en": "We sat at the table.",
+        "vi": "Chúng tôi ngồi vào bàn."
+      }
+    ]
+  },
+  {
+    "id": 135,
+    "word": "phone",
+    "ipa": "/foʊn/",
+    "pos": "noun",
+    "level": 1,
+    "vi": "điện thoại",
+    "examples": [
+      {
+        "en": "My phone is dead.",
+        "vi": "Điện thoại của tôi hết pin."
+      },
+      {
+        "en": "Answer the phone.",
+        "vi": "Nghe điện thoại đi."
+      }
+    ]
+  },
+  {
+    "id": 136,
+    "word": "game",
+    "ipa": "/ɡeɪm/",
+    "pos": "noun",
+    "level": 1,
+    "vi": "trò chơi; trận đấu",
+    "examples": [
+      {
+        "en": "Let's play a game.",
+        "vi": "Mình chơi một trò chơi nhé."
+      },
+      {
+        "en": "We watched the game.",
+        "vi": "Chúng tôi xem trận đấu."
+      }
+    ]
+  },
+  {
+    "id": 137,
+    "word": "music",
+    "ipa": "/ˈmjuːzɪk/",
+    "pos": "noun",
+    "level": 1,
+    "vi": "âm nhạc",
+    "examples": [
+      {
+        "en": "I love music.",
+        "vi": "Tôi yêu âm nhạc."
+      },
+      {
+        "en": "She plays soft music.",
+        "vi": "Cô ấy mở nhạc nhẹ nhàng."
+      }
+    ]
+  },
+  {
+    "id": 138,
+    "word": "tree",
+    "ipa": "/triː/",
+    "pos": "noun",
+    "level": 1,
+    "vi": "cây, cây cối",
+    "examples": [
+      {
+        "en": "There is a big tree in the garden.",
+        "vi": "Có một cái cây lớn trong vườn."
+      },
+      {
+        "en": "Birds live in trees.",
+        "vi": "Chim sống trên cây."
+      }
+    ]
+  },
+  {
+    "id": 139,
+    "word": "animal",
+    "ipa": "/ˈænɪml/",
+    "pos": "noun",
+    "level": 1,
+    "vi": "động vật, con vật",
+    "examples": [
+      {
+        "en": "I love animals.",
+        "vi": "Tôi yêu động vật."
+      },
+      {
+        "en": "The dog is a friendly animal.",
+        "vi": "Chó là một con vật thân thiện."
+      }
+    ]
+  },
+  {
+    "id": 140,
+    "word": "dog",
+    "ipa": "/dɔːɡ/",
+    "pos": "noun",
+    "level": 1,
+    "vi": "con chó",
+    "examples": [
+      {
+        "en": "My dog is very cute.",
+        "vi": "Con chó của tôi rất dễ thương."
+      },
+      {
+        "en": "The dog is sleeping.",
+        "vi": "Con chó đang ngủ."
+      }
+    ]
+  },
+  {
+    "id": 141,
+    "word": "cat",
+    "ipa": "/kæt/",
+    "pos": "noun",
+    "level": 1,
+    "vi": "con mèo",
+    "examples": [
+      {
+        "en": "The cat is on the chair.",
+        "vi": "Con mèo đang ở trên ghế."
+      },
+      {
+        "en": "She has two cats.",
+        "vi": "Cô ấy nuôi hai con mèo."
+      }
+    ]
+  },
+  {
+    "id": 142,
+    "word": "coffee",
+    "ipa": "/ˈkɔːfi/",
+    "pos": "noun",
+    "level": 1,
+    "vi": "cà phê",
+    "examples": [
+      {
+        "en": "I drink coffee every morning.",
+        "vi": "Tôi uống cà phê mỗi sáng."
+      },
+      {
+        "en": "This coffee is hot.",
+        "vi": "Cà phê này nóng."
+      }
+    ]
+  },
+  {
+    "id": 143,
+    "word": "bread",
+    "ipa": "/bred/",
+    "pos": "noun",
+    "level": 1,
+    "vi": "bánh mì",
+    "examples": [
+      {
+        "en": "I eat bread for breakfast.",
+        "vi": "Tôi ăn bánh mì vào bữa sáng."
+      },
+      {
+        "en": "Buy some bread, please.",
+        "vi": "Mua chút bánh mì giúp tôi nhé."
+      }
+    ]
+  },
+  {
+    "id": 144,
+    "word": "milk",
+    "ipa": "/mɪlk/",
+    "pos": "noun",
+    "level": 1,
+    "vi": "sữa",
+    "examples": [
+      {
+        "en": "Children drink milk.",
+        "vi": "Trẻ em uống sữa."
+      },
+      {
+        "en": "I want some milk.",
+        "vi": "Tôi muốn một chút sữa."
+      }
+    ]
+  },
+  {
+    "id": 145,
+    "word": "air",
+    "ipa": "/er/",
+    "pos": "noun",
+    "level": 1,
+    "vi": "không khí",
+    "examples": [
+      {
+        "en": "The air is fresh here.",
+        "vi": "Không khí ở đây trong lành."
+      },
+      {
+        "en": "Open the window for fresh air.",
+        "vi": "Mở cửa sổ cho thoáng khí."
+      }
+    ]
+  },
+  {
+    "id": 146,
+    "word": "sun",
+    "ipa": "/sʌn/",
+    "pos": "noun",
+    "level": 1,
+    "vi": "mặt trời",
+    "examples": [
+      {
+        "en": "The sun is bright today.",
+        "vi": "Hôm nay mặt trời rất sáng."
+      },
+      {
+        "en": "The sun rises in the east.",
+        "vi": "Mặt trời mọc ở hướng đông."
+      }
+    ]
+  },
+  {
+    "id": 147,
+    "word": "rain",
+    "ipa": "/reɪn/",
+    "pos": "noun",
+    "level": 1,
+    "vi": "mưa, cơn mưa",
+    "examples": [
+      {
+        "en": "I love the sound of rain.",
+        "vi": "Tôi thích tiếng mưa."
+      },
+      {
+        "en": "We stayed home because of the rain.",
+        "vi": "Chúng tôi ở nhà vì trời mưa."
+      }
+    ]
+  },
+  {
+    "id": 148,
+    "word": "color",
+    "ipa": "/ˈkʌlər/",
+    "pos": "noun",
+    "level": 1,
+    "vi": "màu sắc",
+    "examples": [
+      {
+        "en": "What is your favorite color?",
+        "vi": "Màu yêu thích của bạn là gì?"
+      },
+      {
+        "en": "Blue is a calm color.",
+        "vi": "Xanh dương là một màu dịu mắt."
+      }
+    ]
+  },
+  {
+    "id": 149,
+    "word": "paper",
+    "ipa": "/ˈpeɪpər/",
+    "pos": "noun",
+    "level": 1,
+    "vi": "giấy, tờ giấy",
+    "examples": [
+      {
+        "en": "Write it on paper.",
+        "vi": "Viết nó ra giấy đi."
+      },
+      {
+        "en": "I need a piece of paper.",
+        "vi": "Tôi cần một tờ giấy."
+      }
+    ]
+  },
+  {
+    "id": 150,
+    "word": "picture",
+    "ipa": "/ˈpɪktʃər/",
+    "pos": "noun",
+    "level": 1,
+    "vi": "bức tranh, bức ảnh",
+    "examples": [
+      {
+        "en": "This is a nice picture.",
+        "vi": "Đây là một bức ảnh đẹp."
+      },
+      {
+        "en": "She drew a picture.",
+        "vi": "Cô ấy vẽ một bức tranh."
+      }
+    ]
+  }
+]

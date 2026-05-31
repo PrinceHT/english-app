@@ -1,0 +1,902 @@
+[
+  {
+    "id": 601,
+    "word": "act",
+    "ipa": "/ækt/",
+    "pos": "verb",
+    "level": 1,
+    "vi": "hành động; diễn (kịch)",
+    "examples": [
+      {
+        "en": "We must act now.",
+        "vi": "Chúng ta phải hành động ngay."
+      },
+      {
+        "en": "She acts in a play.",
+        "vi": "Cô ấy diễn trong một vở kịch."
+      }
+    ]
+  },
+  {
+    "id": 602,
+    "word": "admit",
+    "ipa": "/ədˈmɪt/",
+    "pos": "verb",
+    "level": 1,
+    "vi": "thừa nhận, công nhận",
+    "examples": [
+      {
+        "en": "He admitted his mistake.",
+        "vi": "Anh ấy thừa nhận lỗi của mình."
+      },
+      {
+        "en": "I admit I was wrong.",
+        "vi": "Tôi công nhận là tôi đã sai."
+      }
+    ]
+  },
+  {
+    "id": 603,
+    "word": "advise",
+    "ipa": "/ədˈvaɪz/",
+    "pos": "verb",
+    "level": 1,
+    "vi": "khuyên, tư vấn",
+    "examples": [
+      {
+        "en": "The doctor advised me to rest.",
+        "vi": "Bác sĩ khuyên tôi nghỉ ngơi."
+      },
+      {
+        "en": "What do you advise?",
+        "vi": "Bạn khuyên gì nào?"
+      }
+    ]
+  },
+  {
+    "id": 604,
+    "word": "argue",
+    "ipa": "/ˈɑːrɡjuː/",
+    "pos": "verb",
+    "level": 1,
+    "vi": "tranh cãi, cãi nhau",
+    "examples": [
+      {
+        "en": "They argue about money.",
+        "vi": "Họ cãi nhau về tiền bạc."
+      },
+      {
+        "en": "Please don't argue.",
+        "vi": "Đừng cãi nhau nữa."
+      }
+    ]
+  },
+  {
+    "id": 605,
+    "word": "arrange",
+    "ipa": "/əˈreɪndʒ/",
+    "pos": "verb",
+    "level": 1,
+    "vi": "sắp xếp, thu xếp",
+    "examples": [
+      {
+        "en": "I arranged the books on the shelf.",
+        "vi": "Tôi sắp xếp sách lên kệ."
+      },
+      {
+        "en": "Let's arrange a meeting.",
+        "vi": "Mình thu xếp một buổi gặp nhé."
+      }
+    ]
+  },
+  {
+    "id": 606,
+    "word": "attack",
+    "ipa": "/əˈtæk/",
+    "pos": "verb",
+    "level": 1,
+    "vi": "tấn công",
+    "examples": [
+      {
+        "en": "The dog attacked the cat.",
+        "vi": "Con chó tấn công con mèo."
+      },
+      {
+        "en": "Do not attack first.",
+        "vi": "Đừng tấn công trước."
+      }
+    ]
+  },
+  {
+    "id": 607,
+    "word": "avoid",
+    "ipa": "/əˈvɔɪd/",
+    "pos": "verb",
+    "level": 1,
+    "vi": "tránh, né tránh",
+    "examples": [
+      {
+        "en": "Avoid the busy road.",
+        "vi": "Tránh con đường đông xe."
+      },
+      {
+        "en": "She avoids spicy food.",
+        "vi": "Cô ấy tránh ăn đồ cay."
+      }
+    ]
+  },
+  {
+    "id": 608,
+    "word": "bake",
+    "ipa": "/beɪk/",
+    "pos": "verb",
+    "level": 1,
+    "vi": "nướng (bánh)",
+    "examples": [
+      {
+        "en": "She bakes bread every morning.",
+        "vi": "Cô ấy nướng bánh mì mỗi sáng."
+      },
+      {
+        "en": "Let's bake a cake.",
+        "vi": "Mình nướng bánh nhé."
+      }
+    ]
+  },
+  {
+    "id": 609,
+    "word": "beg",
+    "ipa": "/beɡ/",
+    "pos": "verb",
+    "level": 1,
+    "vi": "van xin, cầu xin",
+    "examples": [
+      {
+        "en": "The dog begs for food.",
+        "vi": "Con chó xin ăn."
+      },
+      {
+        "en": "I beg you to stay.",
+        "vi": "Tôi xin bạn ở lại."
+      }
+    ]
+  },
+  {
+    "id": 610,
+    "word": "belong",
+    "ipa": "/bɪˈlɔːŋ/",
+    "pos": "verb",
+    "level": 1,
+    "vi": "thuộc về",
+    "examples": [
+      {
+        "en": "This book belongs to me.",
+        "vi": "Cuốn sách này là của tôi."
+      },
+      {
+        "en": "Where does this belong?",
+        "vi": "Cái này để ở đâu nhỉ?"
+      }
+    ]
+  },
+  {
+    "id": 611,
+    "word": "bend",
+    "ipa": "/bend/",
+    "pos": "verb",
+    "level": 1,
+    "vi": "uốn cong; cúi xuống",
+    "examples": [
+      {
+        "en": "Bend your knees.",
+        "vi": "Gập đầu gối lại."
+      },
+      {
+        "en": "The road bends to the left.",
+        "vi": "Con đường rẽ cong sang trái."
+      }
+    ]
+  },
+  {
+    "id": 612,
+    "word": "bite",
+    "ipa": "/baɪt/",
+    "pos": "verb",
+    "level": 1,
+    "vi": "cắn",
+    "examples": [
+      {
+        "en": "The dog bit my hand.",
+        "vi": "Con chó cắn tay tôi."
+      },
+      {
+        "en": "Don't bite your nails.",
+        "vi": "Đừng cắn móng tay."
+      }
+    ]
+  },
+  {
+    "id": 613,
+    "word": "blow",
+    "ipa": "/bloʊ/",
+    "pos": "verb",
+    "level": 1,
+    "vi": "thổi",
+    "examples": [
+      {
+        "en": "The wind is blowing.",
+        "vi": "Gió đang thổi."
+      },
+      {
+        "en": "Blow out the candles.",
+        "vi": "Thổi tắt nến đi."
+      }
+    ]
+  },
+  {
+    "id": 614,
+    "word": "boil",
+    "ipa": "/bɔɪl/",
+    "pos": "verb",
+    "level": 1,
+    "vi": "đun sôi, luộc",
+    "examples": [
+      {
+        "en": "Boil the water first.",
+        "vi": "Đun sôi nước trước."
+      },
+      {
+        "en": "She is boiling some eggs.",
+        "vi": "Cô ấy đang luộc trứng."
+      }
+    ]
+  },
+  {
+    "id": 615,
+    "word": "bother",
+    "ipa": "/ˈbɑːðər/",
+    "pos": "verb",
+    "level": 1,
+    "vi": "làm phiền, quấy rầy",
+    "examples": [
+      {
+        "en": "Sorry to bother you.",
+        "vi": "Xin lỗi đã làm phiền bạn."
+      },
+      {
+        "en": "The noise bothers me.",
+        "vi": "Tiếng ồn làm tôi khó chịu."
+      }
+    ]
+  },
+  {
+    "id": 616,
+    "word": "breathe",
+    "ipa": "/briːð/",
+    "pos": "verb",
+    "level": 1,
+    "vi": "thở, hít thở",
+    "examples": [
+      {
+        "en": "Breathe slowly.",
+        "vi": "Hít thở chậm rãi."
+      },
+      {
+        "en": "It is hard to breathe here.",
+        "vi": "Ở đây khó thở."
+      }
+    ]
+  },
+  {
+    "id": 617,
+    "word": "bury",
+    "ipa": "/ˈberi/",
+    "pos": "verb",
+    "level": 1,
+    "vi": "chôn, vùi",
+    "examples": [
+      {
+        "en": "The dog buried the bone.",
+        "vi": "Con chó chôn cục xương."
+      },
+      {
+        "en": "They buried the treasure.",
+        "vi": "Họ chôn kho báu."
+      }
+    ]
+  },
+  {
+    "id": 618,
+    "word": "cancel",
+    "ipa": "/ˈkænsl/",
+    "pos": "verb",
+    "level": 1,
+    "vi": "hủy, hủy bỏ",
+    "examples": [
+      {
+        "en": "They canceled the flight.",
+        "vi": "Họ hủy chuyến bay."
+      },
+      {
+        "en": "I want to cancel my order.",
+        "vi": "Tôi muốn hủy đơn hàng."
+      }
+    ]
+  },
+  {
+    "id": 619,
+    "word": "chase",
+    "ipa": "/tʃeɪs/",
+    "pos": "verb",
+    "level": 1,
+    "vi": "đuổi theo, rượt",
+    "examples": [
+      {
+        "en": "The cat chased the mouse.",
+        "vi": "Con mèo đuổi theo con chuột."
+      },
+      {
+        "en": "The dog chased the ball.",
+        "vi": "Con chó đuổi theo quả bóng."
+      }
+    ]
+  },
+  {
+    "id": 620,
+    "word": "cheat",
+    "ipa": "/tʃiːt/",
+    "pos": "verb",
+    "level": 1,
+    "vi": "gian lận, lừa dối",
+    "examples": [
+      {
+        "en": "Don't cheat on the test.",
+        "vi": "Đừng gian lận trong bài thi."
+      },
+      {
+        "en": "He cheated in the game.",
+        "vi": "Anh ấy gian lận trong trò chơi."
+      }
+    ]
+  },
+  {
+    "id": 621,
+    "word": "celebrate",
+    "ipa": "/ˈseləbreɪt/",
+    "pos": "verb",
+    "level": 1,
+    "vi": "ăn mừng, kỷ niệm",
+    "examples": [
+      {
+        "en": "We celebrate her birthday today.",
+        "vi": "Hôm nay chúng tôi mừng sinh nhật cô ấy."
+      },
+      {
+        "en": "Let's celebrate!",
+        "vi": "Mình ăn mừng nào!"
+      }
+    ]
+  },
+  {
+    "id": 622,
+    "word": "compare",
+    "ipa": "/kəmˈper/",
+    "pos": "verb",
+    "level": 1,
+    "vi": "so sánh",
+    "examples": [
+      {
+        "en": "Compare these two pictures.",
+        "vi": "So sánh hai bức tranh này."
+      },
+      {
+        "en": "Don't compare yourself to others.",
+        "vi": "Đừng so sánh mình với người khác."
+      }
+    ]
+  },
+  {
+    "id": 623,
+    "word": "complain",
+    "ipa": "/kəmˈpleɪn/",
+    "pos": "verb",
+    "level": 1,
+    "vi": "phàn nàn, than phiền",
+    "examples": [
+      {
+        "en": "She complains about the weather.",
+        "vi": "Cô ấy than phiền về thời tiết."
+      },
+      {
+        "en": "Stop complaining, please.",
+        "vi": "Đừng phàn nàn nữa."
+      }
+    ]
+  },
+  {
+    "id": 624,
+    "word": "control",
+    "ipa": "/kənˈtroʊl/",
+    "pos": "verb",
+    "level": 1,
+    "vi": "kiểm soát, điều khiển",
+    "examples": [
+      {
+        "en": "Control your temper.",
+        "vi": "Hãy kiểm soát cơn nóng giận."
+      },
+      {
+        "en": "He controls the machine.",
+        "vi": "Anh ấy điều khiển cỗ máy."
+      }
+    ]
+  },
+  {
+    "id": 625,
+    "word": "copy",
+    "ipa": "/ˈkɑːpi/",
+    "pos": "verb",
+    "level": 1,
+    "vi": "sao chép, chép lại",
+    "examples": [
+      {
+        "en": "Copy this sentence.",
+        "vi": "Chép lại câu này."
+      },
+      {
+        "en": "Don't copy your friend's work.",
+        "vi": "Đừng chép bài của bạn."
+      }
+    ]
+  },
+  {
+    "id": 626,
+    "word": "create",
+    "ipa": "/kriˈeɪt/",
+    "pos": "verb",
+    "level": 1,
+    "vi": "tạo ra, sáng tạo",
+    "examples": [
+      {
+        "en": "She creates beautiful art.",
+        "vi": "Cô ấy sáng tạo ra những tác phẩm đẹp."
+      },
+      {
+        "en": "Let's create something new.",
+        "vi": "Mình tạo ra một thứ gì đó mới nhé."
+      }
+    ]
+  },
+  {
+    "id": 627,
+    "word": "cross",
+    "ipa": "/krɔːs/",
+    "pos": "verb",
+    "level": 1,
+    "vi": "băng qua, vượt qua",
+    "examples": [
+      {
+        "en": "Cross the road carefully.",
+        "vi": "Băng qua đường cẩn thận nhé."
+      },
+      {
+        "en": "We crossed the river by boat.",
+        "vi": "Chúng tôi qua sông bằng thuyền."
+      }
+    ]
+  },
+  {
+    "id": 628,
+    "word": "damage",
+    "ipa": "/ˈdæmɪdʒ/",
+    "pos": "verb",
+    "level": 1,
+    "vi": "làm hư hại, gây hại",
+    "examples": [
+      {
+        "en": "The storm damaged the house.",
+        "vi": "Cơn bão làm hư hại ngôi nhà."
+      },
+      {
+        "en": "Smoking damages your health.",
+        "vi": "Hút thuốc gây hại cho sức khỏe."
+      }
+    ]
+  },
+  {
+    "id": 629,
+    "word": "deliver",
+    "ipa": "/dɪˈlɪvər/",
+    "pos": "verb",
+    "level": 1,
+    "vi": "giao, chuyển (hàng)",
+    "examples": [
+      {
+        "en": "They deliver pizza to your door.",
+        "vi": "Họ giao pizza đến tận cửa."
+      },
+      {
+        "en": "The mail is delivered every day.",
+        "vi": "Thư được giao mỗi ngày."
+      }
+    ]
+  },
+  {
+    "id": 630,
+    "word": "deny",
+    "ipa": "/dɪˈnaɪ/",
+    "pos": "verb",
+    "level": 1,
+    "vi": "phủ nhận, chối",
+    "examples": [
+      {
+        "en": "He denied the story.",
+        "vi": "Anh ấy phủ nhận câu chuyện đó."
+      },
+      {
+        "en": "She can't deny the truth.",
+        "vi": "Cô ấy không thể chối sự thật."
+      }
+    ]
+  },
+  {
+    "id": 631,
+    "word": "design",
+    "ipa": "/dɪˈzaɪn/",
+    "pos": "verb",
+    "level": 1,
+    "vi": "thiết kế",
+    "examples": [
+      {
+        "en": "She designs clothes.",
+        "vi": "Cô ấy thiết kế quần áo."
+      },
+      {
+        "en": "They designed a new park.",
+        "vi": "Họ thiết kế một công viên mới."
+      }
+    ]
+  },
+  {
+    "id": 632,
+    "word": "destroy",
+    "ipa": "/dɪˈstrɔɪ/",
+    "pos": "verb",
+    "level": 1,
+    "vi": "phá hủy, hủy diệt",
+    "examples": [
+      {
+        "en": "The fire destroyed the building.",
+        "vi": "Đám cháy phá hủy tòa nhà."
+      },
+      {
+        "en": "War destroys everything.",
+        "vi": "Chiến tranh hủy diệt mọi thứ."
+      }
+    ]
+  },
+  {
+    "id": 633,
+    "word": "develop",
+    "ipa": "/dɪˈveləp/",
+    "pos": "verb",
+    "level": 1,
+    "vi": "phát triển",
+    "examples": [
+      {
+        "en": "The city is developing fast.",
+        "vi": "Thành phố đang phát triển nhanh."
+      },
+      {
+        "en": "Children develop quickly.",
+        "vi": "Trẻ em phát triển nhanh."
+      }
+    ]
+  },
+  {
+    "id": 634,
+    "word": "discover",
+    "ipa": "/dɪˈskʌvər/",
+    "pos": "verb",
+    "level": 1,
+    "vi": "khám phá, phát hiện",
+    "examples": [
+      {
+        "en": "They discovered a new island.",
+        "vi": "Họ khám phá một hòn đảo mới."
+      },
+      {
+        "en": "I discovered a great café.",
+        "vi": "Tôi phát hiện một quán cà phê tuyệt vời."
+      }
+    ]
+  },
+  {
+    "id": 635,
+    "word": "discuss",
+    "ipa": "/dɪˈskʌs/",
+    "pos": "verb",
+    "level": 1,
+    "vi": "thảo luận, bàn bạc",
+    "examples": [
+      {
+        "en": "Let's discuss the plan.",
+        "vi": "Mình thảo luận về kế hoạch nhé."
+      },
+      {
+        "en": "We discussed the problem.",
+        "vi": "Chúng tôi đã bàn về vấn đề đó."
+      }
+    ]
+  },
+  {
+    "id": 636,
+    "word": "divide",
+    "ipa": "/dɪˈvaɪd/",
+    "pos": "verb",
+    "level": 1,
+    "vi": "chia, phân chia",
+    "examples": [
+      {
+        "en": "Divide the cake into eight.",
+        "vi": "Chia cái bánh thành tám phần."
+      },
+      {
+        "en": "The river divides the city.",
+        "vi": "Dòng sông chia đôi thành phố."
+      }
+    ]
+  },
+  {
+    "id": 637,
+    "word": "earn",
+    "ipa": "/ɜːrn/",
+    "pos": "verb",
+    "level": 1,
+    "vi": "kiếm (tiền); giành được",
+    "examples": [
+      {
+        "en": "She earns a good salary.",
+        "vi": "Cô ấy kiếm được mức lương tốt."
+      },
+      {
+        "en": "He earned their respect.",
+        "vi": "Anh ấy giành được sự tôn trọng của họ."
+      }
+    ]
+  },
+  {
+    "id": 638,
+    "word": "escape",
+    "ipa": "/ɪˈskeɪp/",
+    "pos": "verb",
+    "level": 1,
+    "vi": "trốn thoát, thoát ra",
+    "examples": [
+      {
+        "en": "The bird escaped from the cage.",
+        "vi": "Con chim thoát ra khỏi lồng."
+      },
+      {
+        "en": "They escaped the fire.",
+        "vi": "Họ thoát khỏi đám cháy."
+      }
+    ]
+  },
+  {
+    "id": 639,
+    "word": "examine",
+    "ipa": "/ɪɡˈzæmɪn/",
+    "pos": "verb",
+    "level": 1,
+    "vi": "kiểm tra, khám",
+    "examples": [
+      {
+        "en": "The doctor examined the patient.",
+        "vi": "Bác sĩ khám cho bệnh nhân."
+      },
+      {
+        "en": "Examine the map closely.",
+        "vi": "Xem kỹ tấm bản đồ."
+      }
+    ]
+  },
+  {
+    "id": 640,
+    "word": "explore",
+    "ipa": "/ɪkˈsplɔːr/",
+    "pos": "verb",
+    "level": 1,
+    "vi": "khám phá, thám hiểm",
+    "examples": [
+      {
+        "en": "We explored the old town.",
+        "vi": "Chúng tôi khám phá phố cổ."
+      },
+      {
+        "en": "Let's explore the cave.",
+        "vi": "Mình thám hiểm hang động nhé."
+      }
+    ]
+  },
+  {
+    "id": 641,
+    "word": "fold",
+    "ipa": "/foʊld/",
+    "pos": "verb",
+    "level": 1,
+    "vi": "gấp, gập",
+    "examples": [
+      {
+        "en": "Fold the paper in half.",
+        "vi": "Gấp đôi tờ giấy."
+      },
+      {
+        "en": "She folded the clothes.",
+        "vi": "Cô ấy gấp quần áo."
+      }
+    ]
+  },
+  {
+    "id": 642,
+    "word": "forgive",
+    "ipa": "/fərˈɡɪv/",
+    "pos": "verb",
+    "level": 1,
+    "vi": "tha thứ",
+    "examples": [
+      {
+        "en": "Please forgive me.",
+        "vi": "Xin hãy tha thứ cho tôi."
+      },
+      {
+        "en": "She forgave her friend.",
+        "vi": "Cô ấy tha thứ cho bạn mình."
+      }
+    ]
+  },
+  {
+    "id": 643,
+    "word": "freeze",
+    "ipa": "/friːz/",
+    "pos": "verb",
+    "level": 1,
+    "vi": "đông cứng, đóng băng",
+    "examples": [
+      {
+        "en": "Water freezes at zero degrees.",
+        "vi": "Nước đóng băng ở không độ."
+      },
+      {
+        "en": "My hands are freezing.",
+        "vi": "Tay tôi lạnh cóng."
+      }
+    ]
+  },
+  {
+    "id": 644,
+    "word": "gather",
+    "ipa": "/ˈɡæðər/",
+    "pos": "verb",
+    "level": 1,
+    "vi": "tụ họp, thu gom",
+    "examples": [
+      {
+        "en": "The family gathered for dinner.",
+        "vi": "Cả nhà tụ họp ăn tối."
+      },
+      {
+        "en": "She gathered the leaves.",
+        "vi": "Cô ấy gom lá lại."
+      }
+    ]
+  },
+  {
+    "id": 645,
+    "word": "grab",
+    "ipa": "/ɡræb/",
+    "pos": "verb",
+    "level": 1,
+    "vi": "chộp, nắm lấy",
+    "examples": [
+      {
+        "en": "Grab my hand!",
+        "vi": "Nắm lấy tay tôi!"
+      },
+      {
+        "en": "He grabbed his bag and ran.",
+        "vi": "Anh ấy chộp lấy túi rồi chạy."
+      }
+    ]
+  },
+  {
+    "id": 646,
+    "word": "greet",
+    "ipa": "/ɡriːt/",
+    "pos": "verb",
+    "level": 1,
+    "vi": "chào, chào đón",
+    "examples": [
+      {
+        "en": "She greeted us with a smile.",
+        "vi": "Cô ấy chào chúng tôi bằng một nụ cười."
+      },
+      {
+        "en": "Greet your guests politely.",
+        "vi": "Hãy chào khách lịch sự."
+      }
+    ]
+  },
+  {
+    "id": 647,
+    "word": "hide",
+    "ipa": "/haɪd/",
+    "pos": "verb",
+    "level": 1,
+    "vi": "trốn, giấu",
+    "examples": [
+      {
+        "en": "The children hid behind the tree.",
+        "vi": "Bọn trẻ trốn sau cái cây."
+      },
+      {
+        "en": "She hid the gift.",
+        "vi": "Cô ấy giấu món quà."
+      }
+    ]
+  },
+  {
+    "id": 648,
+    "word": "hunt",
+    "ipa": "/hʌnt/",
+    "pos": "verb",
+    "level": 1,
+    "vi": "săn, săn bắt",
+    "examples": [
+      {
+        "en": "Lions hunt at night.",
+        "vi": "Sư tử săn mồi vào ban đêm."
+      },
+      {
+        "en": "They went to hunt for food.",
+        "vi": "Họ đi săn để kiếm thức ăn."
+      }
+    ]
+  },
+  {
+    "id": 649,
+    "word": "ignore",
+    "ipa": "/ɪɡˈnɔːr/",
+    "pos": "verb",
+    "level": 1,
+    "vi": "phớt lờ, làm ngơ",
+    "examples": [
+      {
+        "en": "Don't ignore my message.",
+        "vi": "Đừng phớt lờ tin nhắn của tôi."
+      },
+      {
+        "en": "She ignored the noise.",
+        "vi": "Cô ấy mặc kệ tiếng ồn."
+      }
+    ]
+  },
+  {
+    "id": 650,
+    "word": "invent",
+    "ipa": "/ɪnˈvent/",
+    "pos": "verb",
+    "level": 1,
+    "vi": "phát minh, sáng chế",
+    "examples": [
+      {
+        "en": "Who invented the phone?",
+        "vi": "Ai đã phát minh ra điện thoại?"
+      },
+      {
+        "en": "She invented a new game.",
+        "vi": "Cô ấy sáng tạo ra một trò chơi mới."
+      }
+    ]
+  }
+]

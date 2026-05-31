@@ -1,0 +1,902 @@
+[
+  {
+    "id": 251,
+    "word": "save",
+    "ipa": "/seɪv/",
+    "pos": "verb",
+    "level": 1,
+    "vi": "cứu; tiết kiệm; lưu",
+    "examples": [
+      {
+        "en": "He saved the child.",
+        "vi": "Anh ấy đã cứu đứa trẻ."
+      },
+      {
+        "en": "I save money every month.",
+        "vi": "Tôi tiết kiệm tiền mỗi tháng."
+      }
+    ]
+  },
+  {
+    "id": 252,
+    "word": "serve",
+    "ipa": "/sɜːrv/",
+    "pos": "verb",
+    "level": 1,
+    "vi": "phục vụ, dọn (món)",
+    "examples": [
+      {
+        "en": "They serve breakfast at seven.",
+        "vi": "Họ phục vụ bữa sáng lúc bảy giờ."
+      },
+      {
+        "en": "She served us tea.",
+        "vi": "Cô ấy mời chúng tôi trà."
+      }
+    ]
+  },
+  {
+    "id": 253,
+    "word": "set",
+    "ipa": "/set/",
+    "pos": "verb",
+    "level": 1,
+    "vi": "đặt, bày; (mặt trời) lặn",
+    "examples": [
+      {
+        "en": "Set the table, please.",
+        "vi": "Dọn bàn ăn giúp tôi nhé."
+      },
+      {
+        "en": "The sun sets in the west.",
+        "vi": "Mặt trời lặn ở hướng tây."
+      }
+    ]
+  },
+  {
+    "id": 254,
+    "word": "shake",
+    "ipa": "/ʃeɪk/",
+    "pos": "verb",
+    "level": 1,
+    "vi": "lắc, rung; bắt tay",
+    "examples": [
+      {
+        "en": "Shake the bottle well.",
+        "vi": "Lắc đều chai."
+      },
+      {
+        "en": "They shook hands.",
+        "vi": "Họ bắt tay nhau."
+      }
+    ]
+  },
+  {
+    "id": 255,
+    "word": "share",
+    "ipa": "/ʃer/",
+    "pos": "verb",
+    "level": 1,
+    "vi": "chia sẻ, dùng chung",
+    "examples": [
+      {
+        "en": "Let's share the cake.",
+        "vi": "Mình chia nhau cái bánh nhé."
+      },
+      {
+        "en": "She shared her story.",
+        "vi": "Cô ấy chia sẻ câu chuyện của mình."
+      }
+    ]
+  },
+  {
+    "id": 256,
+    "word": "shout",
+    "ipa": "/ʃaʊt/",
+    "pos": "verb",
+    "level": 1,
+    "vi": "la, hét, hô to",
+    "examples": [
+      {
+        "en": "Don't shout, please.",
+        "vi": "Đừng la hét nhé."
+      },
+      {
+        "en": "He shouted for help.",
+        "vi": "Anh ấy hét lên cầu cứu."
+      }
+    ]
+  },
+  {
+    "id": 257,
+    "word": "sign",
+    "ipa": "/saɪn/",
+    "pos": "verb",
+    "level": 1,
+    "vi": "ký (tên)",
+    "examples": [
+      {
+        "en": "Sign here, please.",
+        "vi": "Vui lòng ký vào đây."
+      },
+      {
+        "en": "She signed the letter.",
+        "vi": "Cô ấy ký vào lá thư."
+      }
+    ]
+  },
+  {
+    "id": 258,
+    "word": "sing",
+    "ipa": "/sɪŋ/",
+    "pos": "verb",
+    "level": 1,
+    "vi": "hát",
+    "examples": [
+      {
+        "en": "She sings very well.",
+        "vi": "Cô ấy hát rất hay."
+      },
+      {
+        "en": "Let's sing together.",
+        "vi": "Mình cùng hát nhé."
+      }
+    ]
+  },
+  {
+    "id": 259,
+    "word": "smile",
+    "ipa": "/smaɪl/",
+    "pos": "verb",
+    "level": 1,
+    "vi": "mỉm cười",
+    "examples": [
+      {
+        "en": "She smiled at me.",
+        "vi": "Cô ấy mỉm cười với tôi."
+      },
+      {
+        "en": "Smile for the photo!",
+        "vi": "Cười lên để chụp ảnh nào!"
+      }
+    ]
+  },
+  {
+    "id": 260,
+    "word": "smell",
+    "ipa": "/smel/",
+    "pos": "verb",
+    "level": 1,
+    "vi": "ngửi; có mùi",
+    "examples": [
+      {
+        "en": "This flower smells nice.",
+        "vi": "Bông hoa này thơm."
+      },
+      {
+        "en": "I can smell coffee.",
+        "vi": "Tôi ngửi thấy mùi cà phê."
+      }
+    ]
+  },
+  {
+    "id": 261,
+    "word": "art",
+    "ipa": "/ɑːrt/",
+    "pos": "noun",
+    "level": 1,
+    "vi": "nghệ thuật",
+    "examples": [
+      {
+        "en": "She loves art.",
+        "vi": "Cô ấy yêu nghệ thuật."
+      },
+      {
+        "en": "This is a work of art.",
+        "vi": "Đây là một tác phẩm nghệ thuật."
+      }
+    ]
+  },
+  {
+    "id": 262,
+    "word": "baby",
+    "ipa": "/ˈbeɪbi/",
+    "pos": "noun",
+    "level": 1,
+    "vi": "em bé",
+    "examples": [
+      {
+        "en": "The baby is sleeping.",
+        "vi": "Em bé đang ngủ."
+      },
+      {
+        "en": "She has a new baby.",
+        "vi": "Cô ấy vừa có em bé."
+      }
+    ]
+  },
+  {
+    "id": 263,
+    "word": "ball",
+    "ipa": "/bɔːl/",
+    "pos": "noun",
+    "level": 1,
+    "vi": "quả bóng",
+    "examples": [
+      {
+        "en": "The kids are playing with a ball.",
+        "vi": "Bọn trẻ đang chơi bóng."
+      },
+      {
+        "en": "Throw the ball to me.",
+        "vi": "Ném bóng cho tôi đi."
+      }
+    ]
+  },
+  {
+    "id": 264,
+    "word": "bank",
+    "ipa": "/bæŋk/",
+    "pos": "noun",
+    "level": 1,
+    "vi": "ngân hàng; bờ (sông)",
+    "examples": [
+      {
+        "en": "I need to go to the bank.",
+        "vi": "Tôi cần đến ngân hàng."
+      },
+      {
+        "en": "We sat by the river bank.",
+        "vi": "Chúng tôi ngồi bên bờ sông."
+      }
+    ]
+  },
+  {
+    "id": 265,
+    "word": "beach",
+    "ipa": "/biːtʃ/",
+    "pos": "noun",
+    "level": 1,
+    "vi": "bãi biển",
+    "examples": [
+      {
+        "en": "Let's go to the beach.",
+        "vi": "Mình đi biển nhé."
+      },
+      {
+        "en": "The beach is crowded today.",
+        "vi": "Hôm nay bãi biển đông người."
+      }
+    ]
+  },
+  {
+    "id": 266,
+    "word": "bed",
+    "ipa": "/bed/",
+    "pos": "noun",
+    "level": 1,
+    "vi": "cái giường",
+    "examples": [
+      {
+        "en": "Go to bed now.",
+        "vi": "Đi ngủ thôi."
+      },
+      {
+        "en": "The bed is very soft.",
+        "vi": "Cái giường rất êm."
+      }
+    ]
+  },
+  {
+    "id": 267,
+    "word": "bird",
+    "ipa": "/bɜːrd/",
+    "pos": "noun",
+    "level": 1,
+    "vi": "con chim",
+    "examples": [
+      {
+        "en": "A bird is singing.",
+        "vi": "Một con chim đang hót."
+      },
+      {
+        "en": "Birds fly in the sky.",
+        "vi": "Chim bay trên trời."
+      }
+    ]
+  },
+  {
+    "id": 268,
+    "word": "blood",
+    "ipa": "/blʌd/",
+    "pos": "noun",
+    "level": 1,
+    "vi": "máu",
+    "examples": [
+      {
+        "en": "There is blood on the floor.",
+        "vi": "Có máu trên sàn."
+      },
+      {
+        "en": "Blood is red.",
+        "vi": "Máu màu đỏ."
+      }
+    ]
+  },
+  {
+    "id": 269,
+    "word": "boat",
+    "ipa": "/boʊt/",
+    "pos": "noun",
+    "level": 1,
+    "vi": "chiếc thuyền",
+    "examples": [
+      {
+        "en": "We rode a small boat.",
+        "vi": "Chúng tôi đi một chiếc thuyền nhỏ."
+      },
+      {
+        "en": "The boat is on the river.",
+        "vi": "Chiếc thuyền ở trên sông."
+      }
+    ]
+  },
+  {
+    "id": 270,
+    "word": "boy",
+    "ipa": "/bɔɪ/",
+    "pos": "noun",
+    "level": 1,
+    "vi": "cậu bé, con trai",
+    "examples": [
+      {
+        "en": "The boy is playing.",
+        "vi": "Cậu bé đang chơi."
+      },
+      {
+        "en": "He is a good boy.",
+        "vi": "Cậu ấy là một cậu bé ngoan."
+      }
+    ]
+  },
+  {
+    "id": 271,
+    "word": "girl",
+    "ipa": "/ɡɜːrl/",
+    "pos": "noun",
+    "level": 1,
+    "vi": "cô bé, con gái",
+    "examples": [
+      {
+        "en": "The girl is reading.",
+        "vi": "Cô bé đang đọc sách."
+      },
+      {
+        "en": "She is a kind girl.",
+        "vi": "Cô ấy là một cô bé tốt bụng."
+      }
+    ]
+  },
+  {
+    "id": 272,
+    "word": "brother",
+    "ipa": "/ˈbrʌðər/",
+    "pos": "noun",
+    "level": 1,
+    "vi": "anh trai, em trai",
+    "examples": [
+      {
+        "en": "I have one brother.",
+        "vi": "Tôi có một người anh trai."
+      },
+      {
+        "en": "My brother is tall.",
+        "vi": "Anh trai tôi cao."
+      }
+    ]
+  },
+  {
+    "id": 273,
+    "word": "sister",
+    "ipa": "/ˈsɪstər/",
+    "pos": "noun",
+    "level": 1,
+    "vi": "chị gái, em gái",
+    "examples": [
+      {
+        "en": "She is my older sister.",
+        "vi": "Cô ấy là chị gái tôi."
+      },
+      {
+        "en": "My sister loves music.",
+        "vi": "Em gái tôi thích âm nhạc."
+      }
+    ]
+  },
+  {
+    "id": 274,
+    "word": "building",
+    "ipa": "/ˈbɪldɪŋ/",
+    "pos": "noun",
+    "level": 1,
+    "vi": "tòa nhà",
+    "examples": [
+      {
+        "en": "That building is very tall.",
+        "vi": "Tòa nhà đó rất cao."
+      },
+      {
+        "en": "I work in this building.",
+        "vi": "Tôi làm việc trong tòa nhà này."
+      }
+    ]
+  },
+  {
+    "id": 275,
+    "word": "bus",
+    "ipa": "/bʌs/",
+    "pos": "noun",
+    "level": 1,
+    "vi": "xe buýt",
+    "examples": [
+      {
+        "en": "I take the bus to work.",
+        "vi": "Tôi đi xe buýt đến chỗ làm."
+      },
+      {
+        "en": "The bus is late today.",
+        "vi": "Hôm nay xe buýt đến muộn."
+      }
+    ]
+  },
+  {
+    "id": 276,
+    "word": "business",
+    "ipa": "/ˈbɪznəs/",
+    "pos": "noun",
+    "level": 1,
+    "vi": "kinh doanh, việc làm ăn",
+    "examples": [
+      {
+        "en": "He runs a small business.",
+        "vi": "Anh ấy kinh doanh nhỏ."
+      },
+      {
+        "en": "Business is good this year.",
+        "vi": "Năm nay việc làm ăn tốt."
+      }
+    ]
+  },
+  {
+    "id": 277,
+    "word": "cake",
+    "ipa": "/keɪk/",
+    "pos": "noun",
+    "level": 1,
+    "vi": "bánh ngọt",
+    "examples": [
+      {
+        "en": "I made a birthday cake.",
+        "vi": "Tôi làm một cái bánh sinh nhật."
+      },
+      {
+        "en": "This cake is sweet.",
+        "vi": "Cái bánh này ngọt."
+      }
+    ]
+  },
+  {
+    "id": 278,
+    "word": "card",
+    "ipa": "/kɑːrd/",
+    "pos": "noun",
+    "level": 1,
+    "vi": "tấm thiệp; thẻ",
+    "examples": [
+      {
+        "en": "She sent me a card.",
+        "vi": "Cô ấy gửi tôi một tấm thiệp."
+      },
+      {
+        "en": "Where is my bank card?",
+        "vi": "Thẻ ngân hàng của tôi đâu rồi?"
+      }
+    ]
+  },
+  {
+    "id": 279,
+    "word": "chair",
+    "ipa": "/tʃer/",
+    "pos": "noun",
+    "level": 1,
+    "vi": "cái ghế",
+    "examples": [
+      {
+        "en": "Please sit on this chair.",
+        "vi": "Mời ngồi vào ghế này."
+      },
+      {
+        "en": "The chair is broken.",
+        "vi": "Cái ghế bị gãy."
+      }
+    ]
+  },
+  {
+    "id": 280,
+    "word": "class",
+    "ipa": "/klæs/",
+    "pos": "noun",
+    "level": 1,
+    "vi": "lớp học; tiết học",
+    "examples": [
+      {
+        "en": "My English class is at nine.",
+        "vi": "Lớp tiếng Anh của tôi lúc chín giờ."
+      },
+      {
+        "en": "There are thirty students in the class.",
+        "vi": "Lớp có ba mươi học sinh."
+      }
+    ]
+  },
+  {
+    "id": 281,
+    "word": "clock",
+    "ipa": "/klɑːk/",
+    "pos": "noun",
+    "level": 1,
+    "vi": "đồng hồ (treo tường, để bàn)",
+    "examples": [
+      {
+        "en": "The clock on the wall is slow.",
+        "vi": "Cái đồng hồ trên tường chạy chậm."
+      },
+      {
+        "en": "Look at the clock.",
+        "vi": "Nhìn đồng hồ đi."
+      }
+    ]
+  },
+  {
+    "id": 282,
+    "word": "cloud",
+    "ipa": "/klaʊd/",
+    "pos": "noun",
+    "level": 1,
+    "vi": "đám mây",
+    "examples": [
+      {
+        "en": "There are no clouds today.",
+        "vi": "Hôm nay trời không có mây."
+      },
+      {
+        "en": "The clouds are gray.",
+        "vi": "Những đám mây xám xịt."
+      }
+    ]
+  },
+  {
+    "id": 283,
+    "word": "club",
+    "ipa": "/klʌb/",
+    "pos": "noun",
+    "level": 1,
+    "vi": "câu lạc bộ",
+    "examples": [
+      {
+        "en": "I joined a book club.",
+        "vi": "Tôi tham gia một câu lạc bộ sách."
+      },
+      {
+        "en": "The club meets on Fridays.",
+        "vi": "Câu lạc bộ họp vào thứ Sáu."
+      }
+    ]
+  },
+  {
+    "id": 284,
+    "word": "computer",
+    "ipa": "/kəmˈpjuːtər/",
+    "pos": "noun",
+    "level": 1,
+    "vi": "máy tính",
+    "examples": [
+      {
+        "en": "My computer is slow.",
+        "vi": "Máy tính của tôi chậm."
+      },
+      {
+        "en": "She works on a computer all day.",
+        "vi": "Cô ấy làm việc với máy tính cả ngày."
+      }
+    ]
+  },
+  {
+    "id": 285,
+    "word": "corner",
+    "ipa": "/ˈkɔːrnər/",
+    "pos": "noun",
+    "level": 1,
+    "vi": "góc",
+    "examples": [
+      {
+        "en": "The shop is on the corner.",
+        "vi": "Cửa hàng ở góc đường."
+      },
+      {
+        "en": "Put it in the corner.",
+        "vi": "Để nó vào góc nhà."
+      }
+    ]
+  },
+  {
+    "id": 286,
+    "word": "cup",
+    "ipa": "/kʌp/",
+    "pos": "noun",
+    "level": 1,
+    "vi": "cái cốc, tách",
+    "examples": [
+      {
+        "en": "A cup of tea, please.",
+        "vi": "Cho tôi một tách trà."
+      },
+      {
+        "en": "The cup is empty.",
+        "vi": "Cái cốc rỗng."
+      }
+    ]
+  },
+  {
+    "id": 287,
+    "word": "date",
+    "ipa": "/deɪt/",
+    "pos": "noun",
+    "level": 1,
+    "vi": "ngày tháng; buổi hẹn hò",
+    "examples": [
+      {
+        "en": "What is the date today?",
+        "vi": "Hôm nay là ngày mấy?"
+      },
+      {
+        "en": "We went on a date.",
+        "vi": "Chúng tôi đi hẹn hò."
+      }
+    ]
+  },
+  {
+    "id": 288,
+    "word": "death",
+    "ipa": "/deθ/",
+    "pos": "noun",
+    "level": 1,
+    "vi": "cái chết, sự qua đời",
+    "examples": [
+      {
+        "en": "His death was very sad.",
+        "vi": "Sự ra đi của ông ấy thật buồn."
+      },
+      {
+        "en": "They were sad after the dog's death.",
+        "vi": "Họ buồn sau khi chú chó qua đời."
+      }
+    ]
+  },
+  {
+    "id": 289,
+    "word": "dinner",
+    "ipa": "/ˈdɪnər/",
+    "pos": "noun",
+    "level": 1,
+    "vi": "bữa tối",
+    "examples": [
+      {
+        "en": "Dinner is ready.",
+        "vi": "Bữa tối đã sẵn sàng."
+      },
+      {
+        "en": "We had dinner together.",
+        "vi": "Chúng tôi ăn tối cùng nhau."
+      }
+    ]
+  },
+  {
+    "id": 290,
+    "word": "doctor",
+    "ipa": "/ˈdɑːktər/",
+    "pos": "noun",
+    "level": 1,
+    "vi": "bác sĩ",
+    "examples": [
+      {
+        "en": "You should see a doctor.",
+        "vi": "Bạn nên đi khám bác sĩ."
+      },
+      {
+        "en": "My sister is a doctor.",
+        "vi": "Chị tôi là bác sĩ."
+      }
+    ]
+  },
+  {
+    "id": 291,
+    "word": "dollar",
+    "ipa": "/ˈdɑːlər/",
+    "pos": "noun",
+    "level": 1,
+    "vi": "đô la",
+    "examples": [
+      {
+        "en": "It costs ten dollars.",
+        "vi": "Nó giá mười đô la."
+      },
+      {
+        "en": "I have only one dollar.",
+        "vi": "Tôi chỉ có một đô la."
+      }
+    ]
+  },
+  {
+    "id": 292,
+    "word": "dress",
+    "ipa": "/dres/",
+    "pos": "noun",
+    "level": 1,
+    "vi": "váy, đầm",
+    "examples": [
+      {
+        "en": "She is wearing a red dress.",
+        "vi": "Cô ấy đang mặc một chiếc váy đỏ."
+      },
+      {
+        "en": "This dress is beautiful.",
+        "vi": "Chiếc váy này đẹp."
+      }
+    ]
+  },
+  {
+    "id": 293,
+    "word": "earth",
+    "ipa": "/ɜːrθ/",
+    "pos": "noun",
+    "level": 1,
+    "vi": "trái đất; mặt đất",
+    "examples": [
+      {
+        "en": "We must protect the earth.",
+        "vi": "Chúng ta phải bảo vệ trái đất."
+      },
+      {
+        "en": "The earth goes around the sun.",
+        "vi": "Trái đất quay quanh mặt trời."
+      }
+    ]
+  },
+  {
+    "id": 294,
+    "word": "evening",
+    "ipa": "/ˈiːvnɪŋ/",
+    "pos": "noun",
+    "level": 1,
+    "vi": "buổi tối, chiều tối",
+    "examples": [
+      {
+        "en": "Good evening!",
+        "vi": "Chào buổi tối!"
+      },
+      {
+        "en": "We walk in the evening.",
+        "vi": "Chúng tôi đi dạo vào buổi tối."
+      }
+    ]
+  },
+  {
+    "id": 295,
+    "word": "example",
+    "ipa": "/ɪɡˈzæmpl/",
+    "pos": "noun",
+    "level": 1,
+    "vi": "ví dụ",
+    "examples": [
+      {
+        "en": "Can you give an example?",
+        "vi": "Bạn cho một ví dụ được không?"
+      },
+      {
+        "en": "For example, apples are fruit.",
+        "vi": "Ví dụ, táo là trái cây."
+      }
+    ]
+  },
+  {
+    "id": 296,
+    "word": "fact",
+    "ipa": "/fækt/",
+    "pos": "noun",
+    "level": 1,
+    "vi": "sự thật, sự việc",
+    "examples": [
+      {
+        "en": "That is a fact.",
+        "vi": "Đó là sự thật."
+      },
+      {
+        "en": "In fact, I agree with you.",
+        "vi": "Thật ra, tôi đồng ý với bạn."
+      }
+    ]
+  },
+  {
+    "id": 297,
+    "word": "farm",
+    "ipa": "/fɑːrm/",
+    "pos": "noun",
+    "level": 1,
+    "vi": "nông trại, trang trại",
+    "examples": [
+      {
+        "en": "They live on a farm.",
+        "vi": "Họ sống ở một nông trại."
+      },
+      {
+        "en": "The farm has many cows.",
+        "vi": "Nông trại có nhiều con bò."
+      }
+    ]
+  },
+  {
+    "id": 298,
+    "word": "field",
+    "ipa": "/fiːld/",
+    "pos": "noun",
+    "level": 1,
+    "vi": "cánh đồng; sân (bóng)",
+    "examples": [
+      {
+        "en": "The field is full of flowers.",
+        "vi": "Cánh đồng đầy hoa."
+      },
+      {
+        "en": "We played on the field.",
+        "vi": "Chúng tôi chơi trên sân."
+      }
+    ]
+  },
+  {
+    "id": 299,
+    "word": "film",
+    "ipa": "/fɪlm/",
+    "pos": "noun",
+    "level": 1,
+    "vi": "bộ phim",
+    "examples": [
+      {
+        "en": "Let's watch a film tonight.",
+        "vi": "Tối nay mình xem phim nhé."
+      },
+      {
+        "en": "This film is very long.",
+        "vi": "Bộ phim này rất dài."
+      }
+    ]
+  },
+  {
+    "id": 300,
+    "word": "fire",
+    "ipa": "/ˈfaɪər/",
+    "pos": "noun",
+    "level": 1,
+    "vi": "lửa; đám cháy",
+    "examples": [
+      {
+        "en": "Don't play with fire.",
+        "vi": "Đừng nghịch lửa."
+      },
+      {
+        "en": "The fire is warm.",
+        "vi": "Ngọn lửa ấm áp."
+      }
+    ]
+  }
+]

@@ -1,0 +1,902 @@
+[
+  {
+    "id": 901,
+    "word": "crew",
+    "ipa": "/kruː/",
+    "pos": "noun",
+    "level": 1,
+    "vi": "phi hành đoàn, đội (làm việc)",
+    "examples": [
+      {
+        "en": "The crew worked all night.",
+        "vi": "Đội đã làm việc suốt đêm."
+      },
+      {
+        "en": "The ship has a small crew.",
+        "vi": "Con tàu có một đội thủy thủ nhỏ."
+      }
+    ]
+  },
+  {
+    "id": 902,
+    "word": "crop",
+    "ipa": "/krɑːp/",
+    "pos": "noun",
+    "level": 1,
+    "vi": "vụ mùa, cây trồng",
+    "examples": [
+      {
+        "en": "Rice is an important crop.",
+        "vi": "Lúa là một cây trồng quan trọng."
+      },
+      {
+        "en": "The crops grow well this year.",
+        "vi": "Mùa màng năm nay tốt."
+      }
+    ]
+  },
+  {
+    "id": 903,
+    "word": "cube",
+    "ipa": "/kjuːb/",
+    "pos": "noun",
+    "level": 1,
+    "vi": "khối lập phương; viên (đá)",
+    "examples": [
+      {
+        "en": "Put an ice cube in my drink.",
+        "vi": "Cho một viên đá vào ly của tôi."
+      },
+      {
+        "en": "A cube has six sides.",
+        "vi": "Khối lập phương có sáu mặt."
+      }
+    ]
+  },
+  {
+    "id": 904,
+    "word": "dawn",
+    "ipa": "/dɔːn/",
+    "pos": "noun",
+    "level": 1,
+    "vi": "bình minh, rạng đông",
+    "examples": [
+      {
+        "en": "We left at dawn.",
+        "vi": "Chúng tôi rời đi lúc bình minh."
+      },
+      {
+        "en": "The birds sing at dawn.",
+        "vi": "Chim hót lúc rạng đông."
+      }
+    ]
+  },
+  {
+    "id": 905,
+    "word": "deck",
+    "ipa": "/dek/",
+    "pos": "noun",
+    "level": 1,
+    "vi": "boong tàu; sàn (gỗ)",
+    "examples": [
+      {
+        "en": "We stood on the deck of the ship.",
+        "vi": "Chúng tôi đứng trên boong tàu."
+      },
+      {
+        "en": "They had dinner on the deck.",
+        "vi": "Họ ăn tối trên sàn gỗ."
+      }
+    ]
+  },
+  {
+    "id": 906,
+    "word": "department",
+    "ipa": "/dɪˈpɑːrtmənt/",
+    "pos": "noun",
+    "level": 1,
+    "vi": "phòng ban, bộ phận",
+    "examples": [
+      {
+        "en": "She works in the sales department.",
+        "vi": "Cô ấy làm ở bộ phận bán hàng."
+      },
+      {
+        "en": "Which department do you need?",
+        "vi": "Bạn cần phòng ban nào?"
+      }
+    ]
+  },
+  {
+    "id": 907,
+    "word": "diary",
+    "ipa": "/ˈdaɪəri/",
+    "pos": "noun",
+    "level": 1,
+    "vi": "nhật ký",
+    "examples": [
+      {
+        "en": "She writes in her diary every night.",
+        "vi": "Cô ấy viết nhật ký mỗi tối."
+      },
+      {
+        "en": "Keep a diary of your trip.",
+        "vi": "Hãy ghi nhật ký chuyến đi của bạn."
+      }
+    ]
+  },
+  {
+    "id": 908,
+    "word": "dot",
+    "ipa": "/dɑːt/",
+    "pos": "noun",
+    "level": 1,
+    "vi": "dấu chấm, chấm tròn",
+    "examples": [
+      {
+        "en": "Put a dot here.",
+        "vi": "Đặt một dấu chấm ở đây."
+      },
+      {
+        "en": "The dress has white dots.",
+        "vi": "Chiếc váy có những chấm trắng."
+      }
+    ]
+  },
+  {
+    "id": 909,
+    "word": "dozen",
+    "ipa": "/ˈdʌzn/",
+    "pos": "noun",
+    "level": 1,
+    "vi": "tá (mười hai cái)",
+    "examples": [
+      {
+        "en": "I bought a dozen eggs.",
+        "vi": "Tôi mua một tá trứng."
+      },
+      {
+        "en": "A dozen means twelve.",
+        "vi": "Một tá nghĩa là mười hai."
+      }
+    ]
+  },
+  {
+    "id": 910,
+    "word": "drawing",
+    "ipa": "/ˈdrɔːɪŋ/",
+    "pos": "noun",
+    "level": 1,
+    "vi": "bức vẽ, bản vẽ",
+    "examples": [
+      {
+        "en": "This is a nice drawing.",
+        "vi": "Đây là một bức vẽ đẹp."
+      },
+      {
+        "en": "She showed me her drawings.",
+        "vi": "Cô ấy cho tôi xem các bức vẽ của mình."
+      }
+    ]
+  },
+  {
+    "id": 911,
+    "word": "eagle",
+    "ipa": "/ˈiːɡl/",
+    "pos": "noun",
+    "level": 1,
+    "vi": "đại bàng",
+    "examples": [
+      {
+        "en": "The eagle flew high.",
+        "vi": "Con đại bàng bay cao."
+      },
+      {
+        "en": "Eagles have sharp eyes.",
+        "vi": "Đại bàng có đôi mắt sắc bén."
+      }
+    ]
+  },
+  {
+    "id": 912,
+    "word": "east",
+    "ipa": "/iːst/",
+    "pos": "noun",
+    "level": 1,
+    "vi": "hướng đông, phía đông",
+    "examples": [
+      {
+        "en": "The sun rises in the east.",
+        "vi": "Mặt trời mọc ở hướng đông."
+      },
+      {
+        "en": "They traveled to the east.",
+        "vi": "Họ đi về phía đông."
+      }
+    ]
+  },
+  {
+    "id": 913,
+    "word": "economy",
+    "ipa": "/ɪˈkɑːnəmi/",
+    "pos": "noun",
+    "level": 1,
+    "vi": "nền kinh tế",
+    "examples": [
+      {
+        "en": "The economy is growing.",
+        "vi": "Nền kinh tế đang phát triển."
+      },
+      {
+        "en": "Tourism helps the economy.",
+        "vi": "Du lịch giúp ích cho nền kinh tế."
+      }
+    ]
+  },
+  {
+    "id": 914,
+    "word": "education",
+    "ipa": "/ˌedʒuˈkeɪʃn/",
+    "pos": "noun",
+    "level": 1,
+    "vi": "giáo dục, sự học hành",
+    "examples": [
+      {
+        "en": "Education is very important.",
+        "vi": "Giáo dục rất quan trọng."
+      },
+      {
+        "en": "She had a good education.",
+        "vi": "Cô ấy được học hành tử tế."
+      }
+    ]
+  },
+  {
+    "id": 915,
+    "word": "elbow",
+    "ipa": "/ˈelboʊ/",
+    "pos": "noun",
+    "level": 1,
+    "vi": "khuỷu tay",
+    "examples": [
+      {
+        "en": "I hurt my elbow.",
+        "vi": "Tôi bị đau khuỷu tay."
+      },
+      {
+        "en": "Don't put your elbows on the table.",
+        "vi": "Đừng chống khuỷu tay lên bàn."
+      }
+    ]
+  },
+  {
+    "id": 916,
+    "word": "election",
+    "ipa": "/ɪˈlekʃn/",
+    "pos": "noun",
+    "level": 1,
+    "vi": "cuộc bầu cử",
+    "examples": [
+      {
+        "en": "The election is next month.",
+        "vi": "Cuộc bầu cử diễn ra vào tháng sau."
+      },
+      {
+        "en": "Many people voted in the election.",
+        "vi": "Nhiều người đã bỏ phiếu trong cuộc bầu cử."
+      }
+    ]
+  },
+  {
+    "id": 917,
+    "word": "elephant",
+    "ipa": "/ˈelɪfənt/",
+    "pos": "noun",
+    "level": 1,
+    "vi": "con voi",
+    "examples": [
+      {
+        "en": "Elephants are very big.",
+        "vi": "Voi rất to."
+      },
+      {
+        "en": "The elephant has a long trunk.",
+        "vi": "Con voi có cái vòi dài."
+      }
+    ]
+  },
+  {
+    "id": 918,
+    "word": "emotion",
+    "ipa": "/ɪˈmoʊʃn/",
+    "pos": "noun",
+    "level": 1,
+    "vi": "cảm xúc, tình cảm",
+    "examples": [
+      {
+        "en": "She showed no emotion.",
+        "vi": "Cô ấy không để lộ cảm xúc."
+      },
+      {
+        "en": "Music can stir our emotions.",
+        "vi": "Âm nhạc có thể khơi gợi cảm xúc của chúng ta."
+      }
+    ]
+  },
+  {
+    "id": 919,
+    "word": "employee",
+    "ipa": "/ɪmˈplɔɪiː/",
+    "pos": "noun",
+    "level": 1,
+    "vi": "nhân viên",
+    "examples": [
+      {
+        "en": "The company has many employees.",
+        "vi": "Công ty có nhiều nhân viên."
+      },
+      {
+        "en": "She is a good employee.",
+        "vi": "Cô ấy là một nhân viên giỏi."
+      }
+    ]
+  },
+  {
+    "id": 920,
+    "word": "enemy",
+    "ipa": "/ˈenəmi/",
+    "pos": "noun",
+    "level": 1,
+    "vi": "kẻ thù, kẻ địch",
+    "examples": [
+      {
+        "en": "He has no enemies.",
+        "vi": "Anh ấy không có kẻ thù nào."
+      },
+      {
+        "en": "They became enemies.",
+        "vi": "Họ trở thành kẻ thù của nhau."
+      }
+    ]
+  },
+  {
+    "id": 921,
+    "word": "engineer",
+    "ipa": "/ˌendʒɪˈnɪr/",
+    "pos": "noun",
+    "level": 1,
+    "vi": "kỹ sư",
+    "examples": [
+      {
+        "en": "My father is an engineer.",
+        "vi": "Bố tôi là kỹ sư."
+      },
+      {
+        "en": "The engineer designed the bridge.",
+        "vi": "Kỹ sư đã thiết kế cây cầu."
+      }
+    ]
+  },
+  {
+    "id": 922,
+    "word": "entrance",
+    "ipa": "/ˈentrəns/",
+    "pos": "noun",
+    "level": 1,
+    "vi": "lối vào, cửa vào",
+    "examples": [
+      {
+        "en": "Wait at the main entrance.",
+        "vi": "Đợi ở lối vào chính nhé."
+      },
+      {
+        "en": "The entrance is on the left.",
+        "vi": "Lối vào ở bên trái."
+      }
+    ]
+  },
+  {
+    "id": 923,
+    "word": "envelope",
+    "ipa": "/ˈenvəloʊp/",
+    "pos": "noun",
+    "level": 1,
+    "vi": "phong bì",
+    "examples": [
+      {
+        "en": "Put the letter in the envelope.",
+        "vi": "Bỏ lá thư vào phong bì."
+      },
+      {
+        "en": "She opened the envelope.",
+        "vi": "Cô ấy mở phong bì."
+      }
+    ]
+  },
+  {
+    "id": 924,
+    "word": "equipment",
+    "ipa": "/ɪˈkwɪpmənt/",
+    "pos": "noun",
+    "level": 1,
+    "vi": "trang thiết bị, dụng cụ",
+    "examples": [
+      {
+        "en": "The gym has new equipment.",
+        "vi": "Phòng tập có thiết bị mới."
+      },
+      {
+        "en": "We need camping equipment.",
+        "vi": "Chúng tôi cần dụng cụ cắm trại."
+      }
+    ]
+  },
+  {
+    "id": 925,
+    "word": "error",
+    "ipa": "/ˈerər/",
+    "pos": "noun",
+    "level": 1,
+    "vi": "lỗi, sai sót",
+    "examples": [
+      {
+        "en": "There is an error in the report.",
+        "vi": "Có một lỗi trong bản báo cáo."
+      },
+      {
+        "en": "The computer showed an error.",
+        "vi": "Máy tính báo lỗi."
+      }
+    ]
+  },
+  {
+    "id": 926,
+    "word": "expert",
+    "ipa": "/ˈekspɜːrt/",
+    "pos": "noun",
+    "level": 1,
+    "vi": "chuyên gia",
+    "examples": [
+      {
+        "en": "She is an expert in history.",
+        "vi": "Cô ấy là chuyên gia về lịch sử."
+      },
+      {
+        "en": "Ask an expert for advice.",
+        "vi": "Hãy hỏi chuyên gia để được tư vấn."
+      }
+    ]
+  },
+  {
+    "id": 927,
+    "word": "fairy",
+    "ipa": "/ˈferi/",
+    "pos": "noun",
+    "level": 1,
+    "vi": "nàng tiên, tiên",
+    "examples": [
+      {
+        "en": "The story is about a fairy.",
+        "vi": "Câu chuyện kể về một nàng tiên."
+      },
+      {
+        "en": "Children love fairy tales.",
+        "vi": "Trẻ con thích truyện cổ tích."
+      }
+    ]
+  },
+  {
+    "id": 928,
+    "word": "farmer",
+    "ipa": "/ˈfɑːrmər/",
+    "pos": "noun",
+    "level": 1,
+    "vi": "nông dân",
+    "examples": [
+      {
+        "en": "The farmer grows rice.",
+        "vi": "Người nông dân trồng lúa."
+      },
+      {
+        "en": "Farmers work very hard.",
+        "vi": "Nông dân làm việc rất vất vả."
+      }
+    ]
+  },
+  {
+    "id": 929,
+    "word": "fault",
+    "ipa": "/fɔːlt/",
+    "pos": "noun",
+    "level": 1,
+    "vi": "lỗi, sai sót (thuộc về ai)",
+    "examples": [
+      {
+        "en": "It is not your fault.",
+        "vi": "Đó không phải lỗi của bạn."
+      },
+      {
+        "en": "He admitted his fault.",
+        "vi": "Anh ấy thừa nhận lỗi của mình."
+      }
+    ]
+  },
+  {
+    "id": 930,
+    "word": "feather",
+    "ipa": "/ˈfeðər/",
+    "pos": "noun",
+    "level": 1,
+    "vi": "lông vũ, lông chim",
+    "examples": [
+      {
+        "en": "The bird has soft feathers.",
+        "vi": "Con chim có bộ lông mềm mại."
+      },
+      {
+        "en": "A feather fell from the sky.",
+        "vi": "Một chiếc lông rơi từ trên trời."
+      }
+    ]
+  },
+  {
+    "id": 931,
+    "word": "huge",
+    "ipa": "/hjuːdʒ/",
+    "pos": "adjective",
+    "level": 1,
+    "vi": "khổng lồ, to lớn",
+    "examples": [
+      {
+        "en": "They live in a huge house.",
+        "vi": "Họ sống trong một ngôi nhà rất lớn."
+      },
+      {
+        "en": "The elephant is huge.",
+        "vi": "Con voi to khổng lồ."
+      }
+    ]
+  },
+  {
+    "id": 932,
+    "word": "tiny",
+    "ipa": "/ˈtaɪni/",
+    "pos": "adjective",
+    "level": 1,
+    "vi": "bé tí, nhỏ xíu",
+    "examples": [
+      {
+        "en": "A tiny ant climbed the wall.",
+        "vi": "Một con kiến bé tí leo lên tường."
+      },
+      {
+        "en": "The room is tiny.",
+        "vi": "Căn phòng nhỏ xíu."
+      }
+    ]
+  },
+  {
+    "id": 933,
+    "word": "tall",
+    "ipa": "/tɔːl/",
+    "pos": "adjective",
+    "level": 1,
+    "vi": "cao",
+    "examples": [
+      {
+        "en": "He is very tall.",
+        "vi": "Anh ấy rất cao."
+      },
+      {
+        "en": "That is a tall tree.",
+        "vi": "Đó là một cái cây cao."
+      }
+    ]
+  },
+  {
+    "id": 934,
+    "word": "thick",
+    "ipa": "/θɪk/",
+    "pos": "adjective",
+    "level": 1,
+    "vi": "dày",
+    "examples": [
+      {
+        "en": "This is a thick book.",
+        "vi": "Đây là một cuốn sách dày."
+      },
+      {
+        "en": "Wear a thick coat.",
+        "vi": "Mặc một chiếc áo khoác dày vào."
+      }
+    ]
+  },
+  {
+    "id": 935,
+    "word": "thin",
+    "ipa": "/θɪn/",
+    "pos": "adjective",
+    "level": 1,
+    "vi": "mỏng; gầy",
+    "examples": [
+      {
+        "en": "The ice is too thin.",
+        "vi": "Lớp băng mỏng quá."
+      },
+      {
+        "en": "He is tall and thin.",
+        "vi": "Anh ấy cao và gầy."
+      }
+    ]
+  },
+  {
+    "id": 936,
+    "word": "round",
+    "ipa": "/raʊnd/",
+    "pos": "adjective",
+    "level": 1,
+    "vi": "tròn",
+    "examples": [
+      {
+        "en": "The table is round.",
+        "vi": "Cái bàn hình tròn."
+      },
+      {
+        "en": "The moon is round tonight.",
+        "vi": "Tối nay trăng tròn."
+      }
+    ]
+  },
+  {
+    "id": 937,
+    "word": "sharp",
+    "ipa": "/ʃɑːrp/",
+    "pos": "adjective",
+    "level": 1,
+    "vi": "sắc, bén; nhọn",
+    "examples": [
+      {
+        "en": "This knife is very sharp.",
+        "vi": "Con dao này rất sắc."
+      },
+      {
+        "en": "The pencil has a sharp point.",
+        "vi": "Cây bút chì có đầu nhọn."
+      }
+    ]
+  },
+  {
+    "id": 938,
+    "word": "smooth",
+    "ipa": "/smuːð/",
+    "pos": "adjective",
+    "level": 1,
+    "vi": "mịn, trơn, mượt",
+    "examples": [
+      {
+        "en": "Her skin is smooth.",
+        "vi": "Da cô ấy mịn màng."
+      },
+      {
+        "en": "The road is smooth.",
+        "vi": "Con đường bằng phẳng."
+      }
+    ]
+  },
+  {
+    "id": 939,
+    "word": "soft",
+    "ipa": "/sɔːft/",
+    "pos": "adjective",
+    "level": 1,
+    "vi": "mềm, êm",
+    "examples": [
+      {
+        "en": "The pillow is soft.",
+        "vi": "Cái gối êm."
+      },
+      {
+        "en": "She has a soft voice.",
+        "vi": "Cô ấy có giọng nói nhẹ nhàng."
+      }
+    ]
+  },
+  {
+    "id": 940,
+    "word": "sweet",
+    "ipa": "/swiːt/",
+    "pos": "adjective",
+    "level": 1,
+    "vi": "ngọt; dễ thương",
+    "examples": [
+      {
+        "en": "This cake is too sweet.",
+        "vi": "Cái bánh này ngọt quá."
+      },
+      {
+        "en": "That was a sweet thing to say.",
+        "vi": "Đó là một lời nói thật dễ thương."
+      }
+    ]
+  },
+  {
+    "id": 941,
+    "word": "sour",
+    "ipa": "/ˈsaʊər/",
+    "pos": "adjective",
+    "level": 1,
+    "vi": "chua",
+    "examples": [
+      {
+        "en": "This lemon is very sour.",
+        "vi": "Quả chanh này rất chua."
+      },
+      {
+        "en": "The milk has gone sour.",
+        "vi": "Sữa đã bị chua."
+      }
+    ]
+  },
+  {
+    "id": 942,
+    "word": "salty",
+    "ipa": "/ˈsɔːlti/",
+    "pos": "adjective",
+    "level": 1,
+    "vi": "mặn",
+    "examples": [
+      {
+        "en": "The soup is too salty.",
+        "vi": "Món súp mặn quá."
+      },
+      {
+        "en": "Sea water is salty.",
+        "vi": "Nước biển mặn."
+      }
+    ]
+  },
+  {
+    "id": 943,
+    "word": "spicy",
+    "ipa": "/ˈspaɪsi/",
+    "pos": "adjective",
+    "level": 1,
+    "vi": "cay",
+    "examples": [
+      {
+        "en": "I like spicy food.",
+        "vi": "Tôi thích đồ ăn cay."
+      },
+      {
+        "en": "This soup is very spicy.",
+        "vi": "Món súp này rất cay."
+      }
+    ]
+  },
+  {
+    "id": 944,
+    "word": "sleepy",
+    "ipa": "/ˈsliːpi/",
+    "pos": "adjective",
+    "level": 1,
+    "vi": "buồn ngủ",
+    "examples": [
+      {
+        "en": "I feel sleepy after lunch.",
+        "vi": "Tôi thấy buồn ngủ sau bữa trưa."
+      },
+      {
+        "en": "The baby looks sleepy.",
+        "vi": "Em bé trông buồn ngủ."
+      }
+    ]
+  },
+  {
+    "id": 945,
+    "word": "silly",
+    "ipa": "/ˈsɪli/",
+    "pos": "adjective",
+    "level": 1,
+    "vi": "ngớ ngẩn, ngốc nghếch",
+    "examples": [
+      {
+        "en": "That was a silly mistake.",
+        "vi": "Đó là một lỗi ngớ ngẩn."
+      },
+      {
+        "en": "Don't be silly.",
+        "vi": "Đừng có ngốc thế."
+      }
+    ]
+  },
+  {
+    "id": 946,
+    "word": "simple",
+    "ipa": "/ˈsɪmpl/",
+    "pos": "adjective",
+    "level": 1,
+    "vi": "đơn giản, giản dị",
+    "examples": [
+      {
+        "en": "It is a simple question.",
+        "vi": "Đó là một câu hỏi đơn giản."
+      },
+      {
+        "en": "They live a simple life.",
+        "vi": "Họ sống một cuộc sống giản dị."
+      }
+    ]
+  },
+  {
+    "id": 947,
+    "word": "silent",
+    "ipa": "/ˈsaɪlənt/",
+    "pos": "adjective",
+    "level": 1,
+    "vi": "im lặng, lặng lẽ",
+    "examples": [
+      {
+        "en": "The room was silent.",
+        "vi": "Căn phòng im lặng."
+      },
+      {
+        "en": "Please be silent.",
+        "vi": "Vui lòng giữ im lặng."
+      }
+    ]
+  },
+  {
+    "id": 948,
+    "word": "sick",
+    "ipa": "/sɪk/",
+    "pos": "adjective",
+    "level": 1,
+    "vi": "ốm, bệnh",
+    "examples": [
+      {
+        "en": "She is sick today.",
+        "vi": "Hôm nay cô ấy bị ốm."
+      },
+      {
+        "en": "He feels sick.",
+        "vi": "Anh ấy thấy không khỏe."
+      }
+    ]
+  },
+  {
+    "id": 949,
+    "word": "shy",
+    "ipa": "/ʃaɪ/",
+    "pos": "adjective",
+    "level": 1,
+    "vi": "nhút nhát, e thẹn",
+    "examples": [
+      {
+        "en": "The boy is very shy.",
+        "vi": "Cậu bé rất nhút nhát."
+      },
+      {
+        "en": "She felt shy at the party.",
+        "vi": "Cô ấy thấy e thẹn ở bữa tiệc."
+      }
+    ]
+  },
+  {
+    "id": 950,
+    "word": "smart",
+    "ipa": "/smɑːrt/",
+    "pos": "adjective",
+    "level": 1,
+    "vi": "thông minh",
+    "examples": [
+      {
+        "en": "She is a smart student.",
+        "vi": "Cô ấy là một học sinh thông minh."
+      },
+      {
+        "en": "That's a smart choice.",
+        "vi": "Đó là một lựa chọn khôn ngoan."
+      }
+    ]
+  }
+]
