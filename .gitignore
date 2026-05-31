@@ -1,0 +1,11 @@
+# Editor
+.vscode/
+*.swp
+*~
+
+# OS
+.DS_Store
+Thumbs.db
+
+# Backup (không deploy file gốc một file)
+index_2.html
