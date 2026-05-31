@@ -56,12 +56,12 @@ Kết quả: ảnh hưởng SM-2 (đúng = good, sai = again)
 
 ### Checklist
 
-- [ ] **1.1** Thêm `view = "quiz"` vào state machine
-- [ ] **1.2** Hàm `generateDistractors(word, count=3)` — chọn từ cùng level + POS
-- [ ] **1.3** UI quiz 4 đáp án, shuffle thứ tự mỗi lần
-- [ ] **1.4** Feedback đúng/sai có animation
-- [ ] **1.5** Tích hợp kết quả quiz vào `review()` (SM-2)
-- [ ] **1.6** Thêm button "Quiz" vào home screen bên cạnh "Học thẻ"
+- [x] **1.1** Thêm `view = "quiz"` vào state machine
+- [x] **1.2** Hàm `generateDistractors(word, count=3)` — chọn từ cùng level + POS
+- [x] **1.3** UI quiz 4 đáp án, shuffle thứ tự mỗi lần
+- [x] **1.4** Feedback đúng/sai có animation (correct=xanh, wrong=đỏ, dimmed=mờ)
+- [x] **1.5** Tích hợp kết quả quiz vào `review()` (SM-2)
+- [x] **1.6** Thêm section "Trắc nghiệm" vào home screen
 
 ---
 
