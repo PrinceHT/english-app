@@ -140,7 +140,7 @@ export default {
 - [x] **A.1.4** CORS: chỉ cho phép `princeht.github.io` và `localhost`
 - [x] **A.1.5** Sửa `assessPronunciation()` trong app.js → gọi Worker thay vì Azure trực tiếp
 - [x] **A.1.6** Xóa `AZURE_KEY` khỏi app.js, chỉ giữ `WORKER_URL` placeholder
-- [ ] **A.1.7** Test end-to-end: ghi âm từ GitHub Pages → Worker → Azure → nhận điểm đúng
+- [x] **A.1.7** Test end-to-end: ghi âm từ GitHub Pages → Worker → Azure → nhận điểm đúng
 
 ### A.2 — Kiểm tra Firestore Security Rules (~1h)
 
