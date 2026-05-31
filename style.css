@@ -408,3 +408,36 @@ body::before{
 }
 .part-btn:hover{border-color:var(--accent);background:var(--accent-soft)}
 .part-btn:active{transform:scale(.97)}
+.part-listen-btn{width:100%;margin-top:8px;background:var(--known-soft);border-color:var(--known);color:var(--known)}
+.part-listen-btn:hover{background:var(--known-soft);border-color:var(--known);opacity:.85}
+
+/* =========================================================
+   LISTENING VIEW
+   ========================================================= */
+.listen-card{
+  background:var(--surface);border:1.5px solid var(--line);border-radius:22px;
+  padding:28px 20px 22px;text-align:center;margin-bottom:18px;box-shadow:var(--shadow-sm);
+}
+.listen-label{font-size:.85rem;color:var(--ink-soft);margin-bottom:20px;font-weight:500}
+.listen-play-btn{
+  display:inline-flex;align-items:center;gap:10px;
+  background:var(--accent);color:#fff;border:none;border-radius:99px;
+  padding:16px 32px;font-size:1.1rem;font-weight:700;cursor:pointer;
+  box-shadow:0 8px 20px -8px var(--accent);transition:transform .15s,box-shadow .2s;
+  font-family:inherit;
+}
+.listen-play-btn:hover{transform:scale(1.04);box-shadow:0 12px 24px -8px var(--accent)}
+.listen-play-btn:active{transform:scale(.96)}
+.listen-ipa{margin-top:14px;font-family:"Fraunces",serif;font-style:italic;color:var(--ink-soft);font-size:.95rem}
+.listen-options{display:flex;flex-direction:column;gap:10px;margin-bottom:14px}
+.listen-btn{
+  width:100%;text-align:left;padding:14px 16px;
+  background:var(--surface);border:1.5px solid var(--line);border-radius:14px;
+  font-family:inherit;font-size:.9rem;line-height:1.5;color:var(--ink);
+  cursor:pointer;transition:border-color .15s,background .15s;
+}
+.listen-btn:hover:not([disabled]){border-color:var(--accent);background:var(--accent-soft)}
+.listen-btn[disabled]{cursor:default}
+.listen-btn.correct{background:var(--known-soft)!important;border-color:var(--known)!important;color:var(--known)!important;font-weight:600}
+.listen-btn.wrong{background:var(--relearn-soft)!important;border-color:var(--relearn)!important;color:var(--relearn)!important}
+.listen-btn.dimmed{opacity:.35}

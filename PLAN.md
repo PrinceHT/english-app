@@ -1,6 +1,6 @@
 # English Vocab App — Kế hoạch phát triển
 
-> Cập nhật: 2026-05-31 · Review toàn diện sau 5 giai đoạn hoàn thành
+> Cập nhật: 2026-05-31 · C+ hoàn thành, đang triển khai Listening mode
 
 ## Context
 
@@ -65,7 +65,9 @@ Vanilla JS/CSS  →  Không framework, không bundler
       ↓
 [C] Tách data JSON  ✅ Xong (47KB, 20 JSON parts)
       ↓
-[C+] UI 20 phần     ← LÀM TIẾP (màn hình phần học trong Level 1)
+[C+] UI 20 phần     ✅ Xong
+      ↓
+[C++] Listening     ← LÀM TIẾP (nghe từ + chọn câu ví dụ đúng)
       ↓
 [D] Level 2/3       ← Khi có đủ data (chờ content)
       ↓
@@ -256,14 +258,60 @@ function partStats(partIndex) {
 
 ### Tasks
 
-- [ ] **C+.1** Thêm `"level1"` vào state machine và `render()`
-- [ ] **C+.2** Viết `viewLevel1()` — hiển thị 20 part cards với progress bar + nút Học/Quiz
-- [ ] **C+.3** Sửa `startDeck()` hỗ trợ `kind = "level1_part_N"` (N = 0–19)
-- [ ] **C+.4** Sửa `startQuiz()` hỗ trợ `kind = "level1_part_N"`
-- [ ] **C+.5** Sửa Home screen: nút "Học Level 1" → nút điều hướng đến `view = "level1"`
-- [ ] **C+.6** Loading indicator khi `level1Ready === false` (spinner thay vì blank screen)
-- [ ] **C+.7** Highlight part gợi ý học tiếp (phần đầu tiên chưa đạt 80%)
-- [ ] **C+.8** Nút back từ `viewLevel1` về Home
+- [x] **C+.1** Thêm `"level1"` vào state machine và `render()`
+- [x] **C+.2** Viết `viewLevel1()` — hiển thị 20 part cards với progress bar + nút Học/Quiz
+- [x] **C+.3** Sửa `startDeck()` hỗ trợ `kind = "level1_part_N"` (N = 0–19)
+- [x] **C+.4** Sửa `startQuiz()` hỗ trợ `kind = "level1_part_N"`
+- [x] **C+.5** Sửa Home screen: nút "Học Level 1" → nút điều hướng đến `view = "level1"`
+- [x] **C+.6** Loading indicator khi `level1Ready === false` (spinner thay vì blank screen)
+- [x] **C+.7** Highlight part gợi ý học tiếp (phần đầu tiên chưa đạt 80%)
+- [x] **C+.8** Nút back từ `viewLevel1` về Home
+
+---
+
+## Giai đoạn C++ — Home Cleanup + Listening Mode
+
+**Ưu tiên: Cao (làm ngay sau C+) | Ước tính: ~2 giờ**
+
+### Mục tiêu
+1. Dọn Home screen: bỏ 2 quiz button thừa (Quiz đang học, Quiz Level 1) — quiz đã có trong từng phần Level 1.
+2. Thêm chế độ **Listening** vào mỗi phần trong Level 1: nghe từ → chọn câu ví dụ đúng.
+
+### Format Listening
+
+```
+Nghe từ: "abandon" 🔊
+
+Câu nào dùng từ vừa nghe?
+┌─────────────────────────────────────────┐
+│ She had to ___ her car in the snowstorm.│  ← đúng (abandon's example)
+│ The doctor asked him to ___ smoking.    │  ← sai (quit's example)
+│ She tried to ___ a new skill each month.│  ← sai (acquire's example)
+│ He wanted to ___ the world record.      │  ← sai (break's example)
+└─────────────────────────────────────────┘
+```
+
+**Dữ liệu:** Dùng `examples[0].en` của từng từ, thay từ bằng `___` — không cần thêm field mới vào JSON.
+
+### Layout nút trong part card (Option B — 2 hàng)
+
+```
+[📖 Học]           [🧠 Quiz]
+[👂 Nghe — Listening          ]   ← full width
+```
+
+### Tasks
+
+- [ ] **C++.1** Xóa section "Trắc nghiệm" (label + 2 nút) khỏi `viewHome()`
+- [ ] **C++.2** Thêm state variables cho Listening vào section 3
+- [ ] **C++.3** Viết helper `blankWord(sentence, word)` — thay từ bằng `___`
+- [ ] **C++.4** Viết `startListening(kind)` — build deck từ `level1_part_N`, shuffle, cap 20
+- [ ] **C++.5** Viết `prepareListeningQuestion()` — chọn từ + 3 distractors cùng phần, tạo 4 options
+- [ ] **C++.6** Viết `listeningAnswer(id)` + `listeningNext()` — xử lý câu trả lời + SM-2 review
+- [ ] **C++.7** Viết `viewListening()` — UI với nút 🔊 Nghe lại, 4 option buttons, score bar
+- [ ] **C++.8** Cập nhật `render()` thêm `view==="listening"`
+- [ ] **C++.9** Cập nhật `viewLevel1()`: thêm nút [👂 Nghe] full-width vào part cards (Option B layout)
+- [ ] **C++.10** Thêm CSS cho listening view
 
 ---
 
@@ -416,12 +464,13 @@ Màu xanh = đúng, màu đỏ = sai/yếu
 | A | Bảo mật | Azure key an toàn, Firestore rules đúng | ~3h | ✅ |
 | B | Quick wins | Accessibility + PWA polish | ~1h | ✅ |
 | C | Tách data JSON | app.js còn 47KB, 20 file JSON | ~2h | ✅ |
-| C+ | UI 20 phần Level 1 | Màn hình phần học, progress từng phần | ~3h | ⏳ Tiếp theo |
-| D | Level 2/3 | Mở rộng lên 3000 từ | ~1h + data | ⏸️ Chờ data + C+ |
+| C+ | UI 20 phần Level 1 | Màn hình phần học, progress từng phần | ~3h | ✅ |
+| C++ | Home cleanup + Listening | Bỏ quiz thừa, thêm chế độ nghe từ | ~2h | ⏳ Tiếp theo |
+| D | Level 2/3 | Mở rộng lên 3000 từ | ~1h + data | ⏸️ Chờ data |
 | E | Statistics | Dashboard tiến độ học | ~4h | 🔜 |
 | F | Quiz nâng cao | Timer + quiz multi-level | ~3h | 🔜 |
 | G | Push notifications | Nhắc học hàng ngày | ~3h | 🔜 |
 | H | Phoneme feedback | Highlight từng âm sai | ~4h | 🔜 |
 | TD | Technical debt | Tests, README, refactor | ongoing | 🔜 |
 
-**Ước tính còn lại:** ~21 giờ để hoàn thiện toàn bộ roadmap.
+**Ước tính còn lại:** ~23 giờ để hoàn thiện toàn bộ roadmap.

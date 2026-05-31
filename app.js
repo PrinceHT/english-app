@@ -161,6 +161,13 @@ let quizAnswered = false, quizSelectedId = null, quizCorrectId = null;
 let quizOptions = [], quizScore = { correct:0, total:0 };
 let quizDone = false, lastQuizKind = null;
 
+// Listening state
+let listeningDeck = [], listeningPos = 0;
+let listeningAnswered = false, listeningSelectedId = null;
+let listeningCorrectId = null, listeningOptions = [];
+let listeningScore = { correct:0, total:0 };
+let listeningDone = false, lastListeningKind = null;
+
 // Pronunciation assessment state
 let isRecording    = false;
 let mediaRecorder  = null;
@@ -338,6 +345,78 @@ function quizNext(){
   else { quizDone = true; render(); }
 }
 
+/* =================================================================
+   LISTENING
+   ================================================================= */
+async function startListening(kind) {
+  if (!level1Ready) await loadLevel1();
+  lastListeningKind = kind;
+  listeningDone = false;
+  listeningScore = { correct:0, total:0 };
+  listeningPos = 0;
+  const CAP = 20;
+  if (typeof kind === 'string' && kind.startsWith('level1_part_')) {
+    const partIdx = parseInt(kind.slice('level1_part_'.length), 10);
+    const start = partIdx * 50;
+    const slice = (levelCache[1] || WORDS).slice(start, start + 50);
+    listeningDeck = shuffle(slice.map(w => w.id)).slice(0, CAP);
+    deckTitle = `Listening · Phần ${partIdx + 1} (${start + 1}–${start + 50})`;
+  } else {
+    listeningDeck = shuffle(WORDS.map(w => w.id)).slice(0, CAP);
+    deckTitle = 'Listening — Tất cả';
+  }
+  prepareListeningQuestion();
+  view = 'listening';
+  render();
+}
+
+function prepareListeningQuestion() {
+  listeningAnswered = false;
+  listeningSelectedId = null;
+  const correctWord = WORD_MAP[listeningDeck[listeningPos]];
+  listeningCorrectId = correctWord.id;
+
+  // Build distractor pool from same part slice (prefer same part, fallback to all WORDS)
+  const partIds = new Set(listeningDeck);
+  let pool = WORDS.filter(w => w.id !== correctWord.id && w.examples && w.examples.length > 0
+    && partIds.has(w.id));
+  if (pool.length < 3) {
+    pool = WORDS.filter(w => w.id !== correctWord.id && w.examples && w.examples.length > 0);
+  }
+  const distractors = shuffle(pool).slice(0, 3);
+
+  listeningOptions = shuffle([correctWord, ...distractors]).map(w => ({
+    id: w.id,
+    display: esc(blankWord(w.examples[0].en, w.word))
+  }));
+
+  // Auto-play after a short delay to let render complete
+  setTimeout(() => { if (view === 'listening') speak(correctWord.word); }, 300);
+}
+
+function listeningAnswer(id) {
+  if (listeningAnswered) return;
+  listeningAnswered = true;
+  listeningSelectedId = id;
+  const correct = id === listeningCorrectId;
+  listeningScore.total++;
+  if (correct) listeningScore.correct++;
+  review(listeningCorrectId, correct ? 'good' : 'again');
+  if (!dailyMarked.has(listeningCorrectId)) { bumpDaily(); dailyMarked.add(listeningCorrectId); }
+  render();
+}
+
+function listeningNext() {
+  if (listeningPos < listeningDeck.length - 1) {
+    listeningPos++;
+    prepareListeningQuestion();
+    render();
+  } else {
+    listeningDone = true;
+    render();
+  }
+}
+
 /* ---------- MÀN HÌNH QUIZ ---------- */
 function viewQuiz(){
   if(quizDone){
@@ -399,6 +478,69 @@ function viewQuiz(){
     : '<div class="quiz-score-bar">Chọn đáp án đúng</div>'}`;
 }
 
+/* ---------- MÀN HÌNH LISTENING ---------- */
+function viewListening() {
+  if (listeningDone) {
+    const pct = listeningScore.total ? Math.round(listeningScore.correct / listeningScore.total * 100) : 0;
+    const emoji = pct >= 80 ? '🏆' : pct >= 50 ? '👍' : '💪';
+    const msg   = pct >= 80 ? 'Xuất sắc!' : pct >= 50 ? 'Tốt lắm!' : 'Cố lên nhé!';
+    const reArg = `'${lastListeningKind}'`;
+    return `
+      <div class="topbar"><button class="icon-btn" aria-label="Về trang trước" onclick="go('level1')">‹</button><h1 style="font-size:1.1rem">${deckTitle}</h1></div>
+      <div class="empty-state" style="padding-top:50px">
+        <div class="big">${emoji}</div>
+        <b style="font-size:1.3rem">${msg}</b><br><br>
+        <div style="font-size:2rem;font-weight:700;color:var(--accent)">${listeningScore.correct}/${listeningScore.total}</div>
+        <div style="color:var(--ink-soft);margin-top:4px">câu đúng · ${pct}%</div>
+        <div style="margin-top:28px;display:flex;flex-direction:column;gap:12px;max-width:280px;margin-left:auto;margin-right:auto">
+          <button class="mark-btn mark-known" onclick="startListening(${reArg})">🔁 Nghe lại</button>
+          <button class="nav-btn" onclick="go('level1')" style="padding:14px">‹ Về Level 1</button>
+        </div>
+      </div>`;
+  }
+
+  if (!listeningDeck.length) {
+    return `<div class="topbar"><button class="icon-btn" onclick="go('level1')">‹</button><h1>Listening</h1></div>
+      <div class="empty-state"><div class="big">😅</div><b>Không có từ nào!</b></div>`;
+  }
+
+  const word = WORD_MAP[listeningCorrectId];
+  const total = listeningDeck.length;
+
+  const optionBtns = listeningOptions.map(opt => {
+    let cls = 'listen-btn';
+    if (listeningAnswered) {
+      if (opt.id === listeningCorrectId)      cls += ' correct';
+      else if (opt.id === listeningSelectedId) cls += ' wrong';
+      else                                     cls += ' dimmed';
+    }
+    return `<button class="${cls}" onclick="listeningAnswer(${opt.id})" ${listeningAnswered ? 'disabled' : ''}>${opt.display}</button>`;
+  }).join('');
+
+  return `
+  <div class="study-head">
+    <button class="icon-btn" aria-label="Về Level 1" onclick="go('level1')">‹</button>
+    <span class="deck-name">${deckTitle}</span>
+    <span class="counter">${listeningPos + 1} / ${total}</span>
+  </div>
+  <div class="progress-track" style="margin-bottom:20px">
+    <div class="progress-fill" style="width:${(listeningPos + 1) / total * 100}%"></div>
+  </div>
+  <div class="listen-card">
+    <div class="listen-label">Câu nào dùng từ vừa nghe?</div>
+    <button class="listen-play-btn" onclick="speak('${jsEsc(word.word)}')" title="Nghe lại">
+      🔊 <span>Nghe lại</span>
+    </button>
+    <div class="listen-ipa">${esc(word.ipa)} · ${esc(word.pos)}</div>
+  </div>
+  <div class="listen-options">${optionBtns}</div>
+  ${listeningAnswered ? `
+    <div class="quiz-score-bar">${listeningScore.correct}/${listeningScore.total} câu đúng</div>
+    <button class="mark-btn mark-known" onclick="listeningNext()" style="width:100%">
+      ${listeningPos < total - 1 ? 'Tiếp theo ›' : 'Xem kết quả 🏆'}
+    </button>` : `<div class="quiz-score-bar">Chọn câu đúng</div>`}`;
+}
+
 /* ---------- MÀN HÌNH LEVEL 1 — 20 PHẦN ---------- */
 function partStats(partIndex) {
   const words = (levelCache[1] || []).slice(partIndex * 50, (partIndex + 1) * 50);
@@ -445,6 +587,7 @@ function viewLevel1() {
         <button class="part-btn" onclick="startDeck(${k})">📖 Học</button>
         <button class="part-btn" onclick="startQuiz(${k})">🧠 Quiz</button>
       </div>
+      <button class="part-btn part-listen-btn" onclick="startListening(${k})">👂 Listening</button>
     </div>`;
   }).join('');
 
@@ -700,7 +843,8 @@ function render(){
   else if(view==="study")  app.innerHTML = viewStudy();
   else if(view==="quiz")   app.innerHTML = viewQuiz();
   else if(view==="browse") app.innerHTML = viewBrowse();
-  else if(view==="level1") app.innerHTML = viewLevel1();
+  else if(view==="level1")     app.innerHTML = viewLevel1();
+  else if(view==="listening")  app.innerHTML = viewListening();
   else if(view==="settings")app.innerHTML = viewSettings();
   // ép trình duyệt chạy lại animation
   void app.offsetWidth;
@@ -802,19 +946,6 @@ function viewHome(){
     ${levelRow('🌳','Cấp độ 3','1000 từ nâng cao hơn',l3,3)}
     ${levelRow('📚','Học tất cả',`Toàn bộ ${s.total} từ hiện có`,{count:0},'all',true)}
     ${levelRow('🔁','Ôn từ chưa thuộc','Ưu tiên từ cần ôn lại',{count:0},'review',true)}
-  </div>
-  <div class="section-label" style="margin-top:20px">Trắc nghiệm</div>
-  <div class="level-grid">
-    <button class="level-btn" onclick="startQuiz('review')">
-      <div class="level-emoji">🧠</div>
-      <div class="level-info"><span class="t">Quiz từ đang học</span><span class="d">20 câu EN↔VI từ các từ đang ôn</span></div>
-      <span class="level-chev">›</span>
-    </button>
-    <button class="level-btn special" onclick="startQuiz(1)">
-      <div class="level-emoji">⚡</div>
-      <div class="level-info"><span class="t">Quiz cấp độ 1</span><span class="d">20 câu ngẫu nhiên từ Level 1</span></div>
-      <span class="level-chev">›</span>
-    </button>
   </div>
   <div class="app-note" style="margin-top:22px">${currentUser?'☁️ Tiến độ đồng bộ qua tài khoản Google.':Store.available?'':'⚠️ Môi trường này không lưu được tiến độ lâu dài. Khi mở file trên điện thoại/máy tính thật, tiến độ sẽ được lưu tự động.'}</div>`;
 }
@@ -1118,6 +1249,10 @@ function resetProgress(){
 /* =================================================================
    9) TIỆN ÍCH
    ================================================================= */
+function blankWord(sentence, word) {
+  const escaped = word.replace(/[.*+?^${}()|[\]\\]/g, '\\$&');
+  return sentence.replace(new RegExp('\\b' + escaped + '\\b', 'gi'), '___');
+}
 function esc(s){ return String(s).replace(/[&<>"']/g,c=>({'&':'&amp;','<':'&lt;','>':'&gt;','"':'&quot;',"'":'&#39;'}[c])); }
 function jsEsc(s){ return String(s).replace(/\\/g,'\\\\').replace(/'/g,"\\'").replace(/"/g,'&quot;'); }
 let toastTimer;
