@@ -1,6 +1,6 @@
 # English Vocab App — Kế hoạch phát triển
 
-> Cập nhật: 2026-05-31 · A, B, C, C+, C++, C+++, E hoàn thành — tiếp theo: D (chờ data) hoặc F (Quiz nâng cao)
+> Cập nhật: 2026-05-31 · A, B, C, C+, C++, C+++, E, H hoàn thành — tiếp theo: D (chờ data) hoặc F (Quiz nâng cao)
 
 ## Context
 
@@ -484,10 +484,11 @@ Từ: "beautiful"  →  beau·ti·ful
 Màu xanh = đúng, màu đỏ = sai/yếu
 ```
 
-- [ ] **H.1** Parse `NBest[0].Words[].Phonemes[]` từ Azure response
-- [ ] **H.2** Map phoneme scores → màu (>=80: xanh, 50-79: vàng, <50: đỏ)
-- [ ] **H.3** Hiển thị từ dạng syllable + màu dưới score card
-- [ ] **H.4** Tooltip/label khi tap vào phoneme: hiện tên IPA
+- [x] **H.1** Parse `NBest[0].Words[0].Phonemes[]` từ Azure response — trả về `[{phoneme, score}]`
+- [x] **H.2** Map phoneme scores → màu (>=80: xanh, 50-79: vàng, <50: đỏ)
+- [x] **H.3** Hiển thị từng phoneme dưới dạng chip (IPA + score + màu)
+- [x] **H.4** Bỏ rows "Lưu loát" và "Đầy đủ" — chỉ giữ điểm tổng + phoneme chips
+- [x] **H.5** (thêm mới) Bỏ cả row "Chính xác" — phoneme chips đã đủ chi tiết
 
 ---
 
@@ -516,7 +517,7 @@ Màu xanh = đúng, màu đỏ = sai/yếu
 | E | Statistics | Dashboard tiến độ học | ~4h | ✅ |
 | F | Quiz nâng cao | Timer + quiz multi-level | ~3h | 🔜 |
 | G | Push notifications | Nhắc học hàng ngày | ~3h | 🔜 |
-| H | Phoneme feedback | Highlight từng âm sai | ~4h | 🔜 |
+| H | Phoneme feedback | Highlight từng âm sai | ~4h | ✅ |
 | TD | Technical debt | Tests, README, refactor | ongoing | 🔜 |
 
 **Ước tính còn lại:** ~23 giờ để hoàn thiện toàn bộ roadmap.

@@ -776,15 +776,18 @@ async function assessPronunciation(word, wavBlob, wordId){
   const data = await res.json();
   const nb = data.NBest?.[0];
   if(data.RecognitionStatus !== 'Success' || nb?.PronScore == null){
-    return {wordId, score:0, accuracy:0, fluency:0, completeness:0, recognized:data.DisplayText||'', failed:true, status:data.RecognitionStatus};
+    return {wordId, score:0, phonemes:[], recognized:data.DisplayText||'', failed:true, status:data.RecognitionStatus};
   }
+  const rawPhonemes = nb.Words?.[0]?.Phonemes || [];
+  const phonemes = rawPhonemes.map(p => ({
+    phoneme: p.Phoneme,
+    score:   Math.round(p.AccuracyScore ?? 0)
+  }));
   return {
     wordId,
-    score:        Math.round(nb.PronScore),
-    accuracy:     Math.round(nb.AccuracyScore),
-    fluency:      Math.round(nb.FluencyScore),
-    completeness: Math.round(nb.CompletenessScore),
-    recognized:   (data.DisplayText||'').replace(/\.$/, '')
+    score:     Math.round(nb.PronScore),
+    phonemes,
+    recognized: (data.DisplayText||'').replace(/\.$/, '')
   };
 }
 
@@ -801,20 +804,19 @@ function recordBtn(wordId){
 function viewPronResult(wordId){
   if(!pronResult || pronResult.wordId!==wordId) return '';
   const r = pronResult;
-  const color = r.score>=80?'var(--known)':r.score>=50?'var(--accent)':'var(--relearn)';
-  const bar = v=>`<div class="pron-bar-track"><div class="pron-bar-fill" style="width:${v}%;background:${color}"></div></div>`;
   if(r.failed) return `<div class="pronun-result"><div class="pron-fail">Không nhận ra được từ (${r.status||'NoMatch'}). Nói to và rõ hơn nhé!</div></div>`;
+  const totalColor = r.score>=80?'var(--known)':r.score>=50?'var(--accent)':'var(--relearn)';
+  const chips = (r.phonemes||[]).map(p=>{
+    const c = p.score>=80?'ph-good':p.score>=50?'ph-warn':'ph-bad';
+    return `<div class="ph-chip ${c}"><span class="ph-ipa">${esc(p.phoneme)}</span><span class="ph-score">${p.score}</span></div>`;
+  }).join('');
   return `
   <div class="pronun-result">
     <div class="pron-header">
-      <span class="pron-main" style="color:${color}">${r.score}<span class="pron-pct">%</span></span>
+      <span class="pron-main" style="color:${totalColor}">${r.score}<span class="pron-pct">%</span></span>
       <span class="pron-sublabel">Phát âm tổng</span>
     </div>
-    <div class="pron-breakdown">
-      <div class="pron-row"><span>Chính xác</span>${bar(r.accuracy)}<span class="pron-val">${r.accuracy}</span></div>
-      <div class="pron-row"><span>Lưu loát</span>${bar(r.fluency)}<span class="pron-val">${r.fluency}</span></div>
-      <div class="pron-row"><span>Đầy đủ</span>${bar(r.completeness)}<span class="pron-val">${r.completeness}</span></div>
-    </div>
+    ${chips ? `<div class="ph-chips">${chips}</div>` : ''}
     ${r.recognized?`<div class="pron-recognized">Nghe được: "<b>${esc(r.recognized)}</b>"</div>`:''}
   </div>`;
 }
