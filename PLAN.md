@@ -28,13 +28,13 @@ PWA           →  Cài lên Home Screen mobile, chạy offline
 
 **Ưu tiên: Làm ngay | Ước tính: ~2 giờ**
 
-- [ ] **0.1** Fix filter bug: `"adverb".includes("verb") = true` → lọc "Động từ" đang hiện cả adverb
-- [ ] **0.2** Thêm màn hình hoàn thành deck → học xong thẻ cuối không có feedback
-- [ ] **0.3** Fix logic "Ôn từ chưa thuộc" → đang show tất cả 1000 từ với người mới
-- [ ] **0.4** Thêm `WORD_MAP` (O(1) lookup) → `WORDS.find()` O(n) gọi nhiều lần mỗi render
-- [ ] **0.5** Fix `daily.count` đếm đúng unique words → hiện đếm cả lượt mark lại
-- [ ] **0.6** Fix mobile viewport `height: 100dvh` → bàn phím ảo iOS che layout
-- [ ] **0.7** Thêm `aria-label` cho icon buttons → accessibility
+- [x] **0.1** Fix filter bug: `"adverb".includes("verb") = true` → lọc "Động từ" đang hiện cả adverb
+- [x] **0.2** Thêm màn hình hoàn thành deck → học xong thẻ cuối không có feedback
+- [x] **0.3** Fix logic "Ôn từ chưa thuộc" → đang show tất cả 1000 từ với người mới
+- [x] **0.4** Thêm `WORD_MAP` (O(1) lookup) → `WORDS.find()` O(n) gọi nhiều lần mỗi render
+- [x] **0.5** Fix `daily.count` đếm đúng unique words → hiện đếm cả lượt mark lại
+- [x] **0.6** Fix mobile viewport `height: 100dvh` → bàn phím ảo iOS che layout
+- [x] **0.7** Thêm `aria-label` cho icon buttons → accessibility
 
 ---
 
@@ -88,11 +88,11 @@ english-app/
 
 ### Checklist
 
-- [ ] **2.1** Tách CSS → `style.css`, JS → `app.js`, data → `data/level1.json`
-- [ ] **2.2** Tạo `manifest.json` (tên app, icon, theme color)
-- [ ] **2.3** Viết `sw.js` — cache assets để offline
-- [ ] **2.4** Thêm `<link rel="manifest">` và register service worker trong `index.html`
-- [ ] **2.5** Tạo GitHub repo public, enable GitHub Pages
+- [x] **2.1** Tách CSS → `style.css`, JS → `app.js` (data giữ trong app.js, tách riêng sau khi có Level 2/3)
+- [x] **2.2** Tạo `manifest.json` (tên app, icon, theme color)
+- [x] **2.3** Viết `sw.js` — cache assets để offline
+- [x] **2.4** Thêm `<link rel="manifest">` và register service worker trong `index.html`
+- [x] **2.5** Tạo GitHub repo public, enable GitHub Pages → https://princeht.github.io/english-app/
 - [ ] **2.6** Test: mở URL trên iOS Safari → "Add to Home Screen"
 - [ ] **2.7** Test: tắt wifi → mở app → vẫn chạy được
 

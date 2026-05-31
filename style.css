@@ -277,6 +277,32 @@ body::before{
 @keyframes fadeIn{from{opacity:0;transform:translateY(10px)}to{opacity:1;transform:none}}
 .hidden{display:none!important}
 
+/* =========================================================
+   QUIZ MODE
+   ========================================================= */
+.quiz-question-card{
+  background:var(--surface);border:1.5px solid var(--line);border-radius:26px;
+  padding:28px 24px;text-align:center;margin-bottom:8px;box-shadow:var(--shadow);
+  min-height:120px;display:flex;flex-direction:column;align-items:center;justify-content:center;
+}
+.quiz-word{font-family:"Fraunces",serif;font-size:2.2rem;font-weight:600;line-height:1.1;margin-bottom:8px;word-break:break-word}
+.quiz-meta{color:var(--ink-soft);font-size:.85rem}
+.quiz-vi-q{font-size:1.15rem;line-height:1.6;color:var(--ink)}
+.quiz-label{font-size:.78rem;font-weight:600;letter-spacing:.05em;text-transform:uppercase;color:var(--ink-soft);margin-bottom:12px;text-align:center}
+.quiz-answers{display:flex;flex-direction:column;gap:9px;margin-bottom:12px}
+.quiz-btn{
+  width:100%;padding:14px 18px;border:1.5px solid var(--line);border-radius:15px;
+  background:var(--surface);color:var(--ink);font-family:inherit;font-size:.97rem;
+  font-weight:500;text-align:left;cursor:pointer;line-height:1.4;
+  transition:background .18s,border-color .18s,color .18s,opacity .18s;
+}
+.quiz-btn:hover:not([disabled]){border-color:var(--accent);background:var(--accent-soft)}
+.quiz-btn[disabled]{cursor:default}
+.quiz-btn.correct{background:var(--known-soft)!important;border-color:var(--known)!important;color:var(--known)!important;font-weight:600}
+.quiz-btn.wrong{background:var(--relearn-soft)!important;border-color:var(--relearn)!important;color:var(--relearn)!important}
+.quiz-btn.dimmed{opacity:.35}
+.quiz-score-bar{font-size:.83rem;color:var(--ink-soft);text-align:center;margin-bottom:12px}
+
 @media(min-width:560px){
   .card-stage,.card,.face{min-height:420px}
 }

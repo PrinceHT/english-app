@@ -1080,6 +1080,12 @@ let deckDone = false;
 let lastDeckKind = null;
 const dailyMarked = new Set();
 
+// Quiz state
+let quizDeck = [], quizPos = 0, quizMode = "en_vi";
+let quizAnswered = false, quizSelectedId = null, quizCorrectId = null;
+let quizOptions = [], quizScore = { correct:0, total:0 };
+let quizDone = false, lastQuizKind = null;
+
 const P = id => progress[id] || { status:"new", reps:0, ease:2.5, intervalDays:0, due:0, last:0 };
 const isKnown = id => P(id).status === "known";
 
@@ -1176,6 +1182,123 @@ function startSingle(id){
 }
 
 /* =================================================================
+   QUIZ
+   ================================================================= */
+function shuffle(arr){
+  const a=[...arr];
+  for(let i=a.length-1;i>0;i--){ const j=Math.floor(Math.random()*(i+1)); [a[i],a[j]]=[a[j],a[i]]; }
+  return a;
+}
+function generateDistractors(word, count=3){
+  const mainPos = word.pos.split(/\s*\/\s*/)[0];
+  let pool = WORDS.filter(w=>w.id!==word.id && w.level===word.level && w.pos.split(/\s*\/\s*/)[0]===mainPos);
+  if(pool.length < count) pool = WORDS.filter(w=>w.id!==word.id && w.level===word.level);
+  if(pool.length < count) pool = WORDS.filter(w=>w.id!==word.id);
+  return shuffle(pool).slice(0, count);
+}
+function startQuiz(kind){
+  lastQuizKind = kind; quizDone = false;
+  quizScore = { correct:0, total:0 }; quizPos = 0;
+  const CAP = 20;
+  if(kind === "all"){
+    quizDeck = shuffle(WORDS.map(w=>w.id)).slice(0, CAP);
+    deckTitle = "Quiz — Tất cả";
+  } else if(kind === "review"){
+    const now = Date.now();
+    let ids = WORDS.filter(w=>{ const p=P(w.id); return p.status==="learning"||(p.status==="known"&&p.due<=now); }).map(w=>w.id);
+    if(!ids.length) ids = WORDS.map(w=>w.id);
+    quizDeck = shuffle(ids).slice(0, CAP);
+    deckTitle = "Quiz — Ôn từ";
+  } else {
+    quizDeck = shuffle(WORDS.filter(w=>w.level===kind).map(w=>w.id)).slice(0, CAP);
+    deckTitle = "Quiz — Cấp độ " + kind;
+  }
+  prepareQuestion();
+  view = "quiz"; render();
+}
+function prepareQuestion(){
+  quizAnswered = false; quizSelectedId = null;
+  const word = WORD_MAP[quizDeck[quizPos]];
+  quizMode = Math.random() > 0.5 ? "en_vi" : "vi_en";
+  quizCorrectId = word.id;
+  quizOptions = shuffle([word, ...generateDistractors(word, 3)]);
+}
+function quizAnswer(selectedId){
+  if(quizAnswered) return;
+  quizAnswered = true; quizSelectedId = selectedId;
+  const correct = selectedId === quizCorrectId;
+  quizScore.total++;
+  if(correct) quizScore.correct++;
+  review(quizCorrectId, correct ? "good" : "again");
+  if(!dailyMarked.has(quizCorrectId)){ bumpDaily(); dailyMarked.add(quizCorrectId); }
+  render();
+}
+function quizNext(){
+  if(quizPos < quizDeck.length-1){ quizPos++; prepareQuestion(); render(); }
+  else { quizDone = true; render(); }
+}
+
+/* ---------- MÀN HÌNH QUIZ ---------- */
+function viewQuiz(){
+  if(quizDone){
+    const pct = quizScore.total ? Math.round(quizScore.correct/quizScore.total*100) : 0;
+    const emoji = pct>=80?'🏆':pct>=50?'👍':'💪';
+    const msg   = pct>=80?'Xuất sắc!':pct>=50?'Tốt lắm!':'Cố lên nhé!';
+    const reArg = typeof lastQuizKind==='number' ? lastQuizKind : `'${lastQuizKind}'`;
+    return `
+      <div class="topbar"><button class="icon-btn" aria-label="Về trang chính" onclick="go('home')">‹</button><h1 style="font-size:1.1rem">${deckTitle}</h1></div>
+      <div class="empty-state" style="padding-top:50px">
+        <div class="big">${emoji}</div>
+        <b style="font-size:1.3rem">${msg}</b><br><br>
+        <div style="font-size:2rem;font-weight:700;color:var(--accent)">${quizScore.correct}/${quizScore.total}</div>
+        <div style="color:var(--ink-soft);margin-top:4px">câu đúng · ${pct}%</div>
+        <div style="margin-top:28px;display:flex;flex-direction:column;gap:12px;max-width:280px;margin-left:auto;margin-right:auto">
+          <button class="mark-btn mark-known" onclick="startQuiz(${reArg})">🔁 Quiz lại</button>
+          <button class="nav-btn" onclick="go('home')" style="padding:14px">🏠 Về trang chính</button>
+        </div>
+      </div>`;
+  }
+  if(!quizDeck.length){
+    return `<div class="topbar"><button class="icon-btn" aria-label="Về trang chính" onclick="go('home')">‹</button><h1>Quiz</h1></div>
+      <div class="empty-state"><div class="big">😅</div><b>Không có từ để quiz!</b></div>`;
+  }
+  const word = WORD_MAP[quizCorrectId];
+  const total = quizDeck.length;
+  const isEnVi = quizMode === "en_vi";
+  const shortVi = w => esc(w.vi.split(/[—;]/)[0].trim());
+  const answerBtns = quizOptions.map(opt=>{
+    const label = isEnVi ? shortVi(opt) : esc(opt.word);
+    let cls = 'quiz-btn';
+    if(quizAnswered){
+      if(opt.id===quizCorrectId)       cls += ' correct';
+      else if(opt.id===quizSelectedId) cls += ' wrong';
+      else                             cls += ' dimmed';
+    }
+    return `<button class="${cls}" onclick="quizAnswer(${opt.id})" ${quizAnswered?'disabled':''}>${label}</button>`;
+  }).join('');
+  return `
+  <div class="study-head">
+    <button class="icon-btn" aria-label="Về trang chính" onclick="go('home')">‹</button>
+    <span class="deck-name">${deckTitle}</span>
+    <span class="counter">${quizPos+1} / ${total}</span>
+  </div>
+  <div class="progress-track" style="margin-bottom:16px">
+    <div class="progress-fill" style="width:${(quizPos+1)/total*100}%"></div>
+  </div>
+  <div class="quiz-question-card">
+    ${isEnVi
+      ? `<div class="quiz-word">${esc(word.word)}</div><div class="quiz-meta">${esc(word.ipa)} · ${esc(word.pos)}</div>`
+      : `<div class="quiz-vi-q">${shortVi(word)}</div>`}
+  </div>
+  <div class="quiz-label">${isEnVi ? 'Nghĩa tiếng Việt là gì?' : 'Từ tiếng Anh là gì?'}</div>
+  <div class="quiz-answers">${answerBtns}</div>
+  ${quizAnswered
+    ? `<div class="quiz-score-bar">${quizScore.correct}/${quizScore.total} câu đúng</div>
+       <button class="mark-btn mark-known" onclick="quizNext()" style="width:100%">${quizPos<total-1?'Tiếp theo ›':'Xem kết quả 🏆'}</button>`
+    : '<div class="quiz-score-bar">Chọn đáp án đúng</div>'}`;
+}
+
+/* =================================================================
    7) RENDER — vẽ giao diện theo trạng thái
    ================================================================= */
 const app = document.getElementById("app");
@@ -1189,9 +1312,10 @@ function setTheme(t){
 
 function render(){
   app.className = "app fade-in";
-  if(view==="home")      app.innerHTML = viewHome();
-  else if(view==="study")app.innerHTML = viewStudy();
-  else if(view==="browse")app.innerHTML = viewBrowse();
+  if(view==="home")        app.innerHTML = viewHome();
+  else if(view==="study")  app.innerHTML = viewStudy();
+  else if(view==="quiz")   app.innerHTML = viewQuiz();
+  else if(view==="browse") app.innerHTML = viewBrowse();
   else if(view==="settings")app.innerHTML = viewSettings();
   // ép trình duyệt chạy lại animation
   void app.offsetWidth;
@@ -1256,13 +1380,26 @@ function viewHome(){
     <div class="progress-track"><div class="progress-fill" style="width:${goalPct}%"></div></div>
   </div>
 
-  <div class="section-label">Chọn nội dung học</div>
+  <div class="section-label">Học thẻ</div>
   <div class="level-grid">
     ${levelRow('🌱','Cấp độ 1','1000 từ thông dụng nhất',l1,1)}
     ${levelRow('🌿','Cấp độ 2','1000 từ mức trung bình',l2,2)}
     ${levelRow('🌳','Cấp độ 3','1000 từ nâng cao hơn',l3,3)}
     ${levelRow('📚','Học tất cả',`Toàn bộ ${s.total} từ hiện có`,{count:0},'all',true)}
     ${levelRow('🔁','Ôn từ chưa thuộc','Ưu tiên từ cần ôn lại',{count:0},'review',true)}
+  </div>
+  <div class="section-label" style="margin-top:20px">Trắc nghiệm</div>
+  <div class="level-grid">
+    <button class="level-btn" onclick="startQuiz('review')">
+      <div class="level-emoji">🧠</div>
+      <div class="level-info"><span class="t">Quiz từ đang học</span><span class="d">20 câu EN↔VI từ các từ đang ôn</span></div>
+      <span class="level-chev">›</span>
+    </button>
+    <button class="level-btn special" onclick="startQuiz(1)">
+      <div class="level-emoji">⚡</div>
+      <div class="level-info"><span class="t">Quiz cấp độ 1</span><span class="d">20 câu ngẫu nhiên từ Level 1</span></div>
+      <span class="level-chev">›</span>
+    </button>
   </div>
   <div class="app-note" style="margin-top:22px">${Store.available?'':'⚠️ Môi trường này không lưu được tiến độ lâu dài. Khi mở file trên điện thoại/máy tính thật, tiến độ sẽ được lưu tự động.'}</div>`;
 }
