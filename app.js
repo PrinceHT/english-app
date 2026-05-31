@@ -1506,12 +1506,13 @@ function pcmToWav(pcm, rate){
 }
 
 async function assessPronunciation(word, wavBlob, wordId){
-  const cfg = btoa(unescape(encodeURIComponent(JSON.stringify({
+  const cfg = btoa(JSON.stringify({
     ReferenceText: word,
     GradingSystem: "HundredMark",
-    Granularity: "FullText",
+    Granularity: "Phoneme",
+    Dimension: "Comprehensive",
     EnableMiscue: false
-  }))));
+  }));
   const url = `https://${AZURE_REGION}.stt.speech.microsoft.com/speech/recognition/conversation/cognitiveservices/v1?language=en-US&format=detailed`;
   const res = await fetch(url, {
     method:'POST',
@@ -1524,9 +1525,12 @@ async function assessPronunciation(word, wavBlob, wordId){
   });
   if(!res.ok){ const t=await res.text(); throw new Error(`Azure ${res.status}: ${t.slice(0,120)}`); }
   const data = await res.json();
+  console.log('[Azure pronun]', JSON.stringify(data).slice(0,600));
   const pa = data.NBest?.[0]?.PronunciationAssessment;
   if(data.RecognitionStatus !== 'Success' || !pa){
-    return {wordId, score:0, accuracy:0, fluency:0, completeness:0, recognized:data.DisplayText||'', failed:true, status:data.RecognitionStatus};
+    const nbestKeys = data.NBest?.[0] ? Object.keys(data.NBest[0]).sort().join(',') : 'no-nbest';
+    const info = `${data.RecognitionStatus||'?'} | "${data.DisplayText||''}" | ${nbestKeys}`;
+    return {wordId, score:0, accuracy:0, fluency:0, completeness:0, recognized:data.DisplayText||'', failed:true, status:info};
   }
   return {
     wordId,
