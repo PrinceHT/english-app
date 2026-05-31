@@ -531,7 +531,6 @@ function viewListening() {
     <button class="listen-play-btn" onclick="speak('${jsEsc(word.word)}')" title="Nghe lại">
       🔊 <span>Nghe lại</span>
     </button>
-    <div class="listen-ipa">${esc(word.ipa)} · ${esc(word.pos)}</div>
   </div>
   <div class="listen-options">${optionBtns}</div>
   ${listeningAnswered ? `
