@@ -159,9 +159,9 @@ service cloud.firestore {
 }
 ```
 
-- [ ] **A.2.1** Vào Firebase Console → Firestore → Rules
-- [ ] **A.2.2** Xác nhận rule trên đã active (hoặc thiết lập nếu chưa có)
-- [ ] **A.2.3** Test: đăng nhập user A, thử truy cập `/users/{userB_id}` → phải bị từ chối
+- [x] **A.2.1** Vào Firebase Console → Firestore → Rules
+- [x] **A.2.2** Xác nhận rule trên đã active (rules đúng, đã publish)
+- [x] **A.2.3** Test qua Rules Playground: user lạ → Denied, đúng user → Allowed
 
 ---
 
