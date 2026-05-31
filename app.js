@@ -58,26 +58,29 @@ const Store = (() => {
    ================================================================= */
 const levelCache = {};
 let level1Ready = false;
+let _level1Promise = null;
 
 async function loadLevel1() {
   if (level1Ready) return;
-  if (levelCache[1]) {
-    WORDS = levelCache[1];
-    level1Ready = true;
-    return;
+  if (!_level1Promise) {
+    _level1Promise = (async () => {
+      if (levelCache[1]) { WORDS = levelCache[1]; level1Ready = true; return; }
+      const manifest = await fetch('./data/level1/manifest.json').then(r => r.json());
+      const parts = await Promise.all(
+        Array.from({ length: manifest.parts }, (_, i) => {
+          const n = String(i + 1).padStart(2, '0');
+          return fetch(`./data/level1/part${n}.json`).then(r => r.json());
+        })
+      );
+      const words = parts.flat();
+      words.forEach(w => { WORD_MAP[w.id] = w; });
+      WORDS = words;
+      levelCache[1] = words;
+      level1Ready = true;
+      if (view === 'level1') render();
+    })();
   }
-  const manifest = await fetch('./data/level1/manifest.json').then(r => r.json());
-  const parts = await Promise.all(
-    Array.from({ length: manifest.parts }, (_, i) => {
-      const n = String(i + 1).padStart(2, '0');
-      return fetch(`./data/level1/part${n}.json`).then(r => r.json());
-    })
-  );
-  const words = parts.flat();
-  words.forEach(w => { WORD_MAP[w.id] = w; });
-  WORDS = words;
-  levelCache[1] = words;
-  level1Ready = true;
+  return _level1Promise;
 }
 
 
@@ -253,6 +256,12 @@ async function startDeck(kind){
                 .map(w=>w.id);
     deckTitle = "Ôn từ chưa thuộc";
   }
+  else if(typeof kind==='string' && kind.startsWith('level1_part_')){
+    const partIdx = parseInt(kind.slice('level1_part_'.length), 10);
+    const start = partIdx * 50;
+    deck = (levelCache[1] || WORDS).slice(start, start + 50).map(w => w.id);
+    deckTitle = `Level 1 · Phần ${partIdx + 1} (${start + 1}–${start + 50})`;
+  }
   else { // level 1/2/3
     deck = WORDS.filter(w=>w.level===kind).map(w=>w.id);
     deckTitle = "Cấp độ " + kind;
@@ -293,6 +302,12 @@ async function startQuiz(kind){
     if(!ids.length) ids = WORDS.map(w=>w.id);
     quizDeck = shuffle(ids).slice(0, CAP);
     deckTitle = "Quiz — Ôn từ";
+  } else if(typeof kind==='string' && kind.startsWith('level1_part_')){
+    const partIdx = parseInt(kind.slice('level1_part_'.length), 10);
+    const start = partIdx * 50;
+    const slice = (levelCache[1] || WORDS).slice(start, start + 50);
+    quizDeck = shuffle(slice.map(w => w.id)).slice(0, CAP);
+    deckTitle = `Quiz · Phần ${partIdx + 1} (${start + 1}–${start + 50})`;
   } else {
     quizDeck = shuffle(WORDS.filter(w=>w.level===kind).map(w=>w.id)).slice(0, CAP);
     deckTitle = "Quiz — Cấp độ " + kind;
@@ -382,6 +397,79 @@ function viewQuiz(){
        <button class="mark-btn mark-known" onclick="quizNext()" style="width:100%">${quizPos<total-1?'Tiếp theo ›':'Xem kết quả 🏆'}</button>
        <div class="pronun-section">${recordBtn(quizCorrectId)}${viewPronResult(quizCorrectId)}</div>`
     : '<div class="quiz-score-bar">Chọn đáp án đúng</div>'}`;
+}
+
+/* ---------- MÀN HÌNH LEVEL 1 — 20 PHẦN ---------- */
+function partStats(partIndex) {
+  const words = (levelCache[1] || []).slice(partIndex * 50, (partIndex + 1) * 50);
+  const known = words.filter(w => isKnown(w.id)).length;
+  const learning = words.filter(w => P(w.id).status === 'learning').length;
+  return { total: words.length || 50, known, learning };
+}
+
+function viewLevel1() {
+  if (!level1Ready) {
+    loadLevel1(); // promise memoized — safe to call repeatedly
+    return `
+    <div class="topbar">
+      <button class="icon-btn" aria-label="Về trang chính" onclick="go('home')">‹</button>
+      <h1 style="font-size:1.2rem">Cấp độ 1</h1>
+    </div>
+    <div style="display:flex;flex-direction:column;align-items:center;justify-content:center;min-height:55vh;gap:14px">
+      <div class="loading-dot"></div>
+      <p style="color:var(--ink-soft);font-size:.9rem">Đang tải từ vựng…</p>
+    </div>`;
+  }
+
+  const total = levelCache[1].length;
+  const totalKnown = levelCache[1].filter(w => isKnown(w.id)).length;
+  const totalPct = Math.round(totalKnown / total * 100);
+  const nextPartIdx = Array.from({length: 20}, (_, i) => i)
+    .find(i => { const s = partStats(i); return s.total && s.known / s.total < 0.8; });
+
+  const partCards = Array.from({length: 20}, (_, i) => {
+    const s = partStats(i);
+    const pct = s.total ? Math.round(s.known / s.total * 100) : 0;
+    const start = i * 50 + 1;
+    const end = (i + 1) * 50;
+    const isRec = i === nextPartIdx;
+    const colorCls = pct >= 80 ? 'part-done' : (s.known > 0 || s.learning > 0) ? 'part-progress' : '';
+    const k = `'level1_part_${i}'`;
+    return `<div class="part-card ${colorCls}">
+      <div class="part-card-header">
+        <div class="part-card-title">Phần ${i + 1}<span class="part-range">${start}–${end}</span>${isRec ? '<span class="part-badge">Học tiếp</span>' : ''}</div>
+        <div class="part-stat">${s.known}/${s.total} thuộc</div>
+      </div>
+      <div class="progress-track" style="margin:6px 0 10px"><div class="progress-fill" style="width:${pct}%"></div></div>
+      <div class="part-actions">
+        <button class="part-btn" onclick="startDeck(${k})">📖 Học</button>
+        <button class="part-btn" onclick="startQuiz(${k})">🧠 Quiz</button>
+      </div>
+    </div>`;
+  }).join('');
+
+  return `
+  <div class="topbar">
+    <button class="icon-btn" aria-label="Về trang chính" onclick="go('home')">‹</button>
+    <h1 style="font-size:1.2rem">Cấp độ 1 — 1000 Từ</h1>
+  </div>
+  <div class="progress-wrap">
+    <div class="progress-meta"><span>Tiến độ Level 1</span><span>${totalKnown}/${total} từ (${totalPct}%)</span></div>
+    <div class="progress-track"><div class="progress-fill" style="width:${totalPct}%"></div></div>
+  </div>
+  <div class="part-grid">${partCards}</div>
+  <div class="level-grid" style="margin-top:12px;padding-bottom:20px">
+    <button class="level-btn special" onclick="startDeck(1)">
+      <div class="level-emoji">📚</div>
+      <div class="level-info"><span class="t">Học tất cả Level 1</span><span class="d">Học toàn bộ 1000 từ liên tục</span></div>
+      <span class="level-chev">›</span>
+    </button>
+    <button class="level-btn special" onclick="startQuiz(1)">
+      <div class="level-emoji">⚡</div>
+      <div class="level-info"><span class="t">Quiz Level 1</span><span class="d">20 câu ngẫu nhiên từ toàn bộ</span></div>
+      <span class="level-chev">›</span>
+    </button>
+  </div>`;
 }
 
 /* =================================================================
@@ -612,6 +700,7 @@ function render(){
   else if(view==="study")  app.innerHTML = viewStudy();
   else if(view==="quiz")   app.innerHTML = viewQuiz();
   else if(view==="browse") app.innerHTML = viewBrowse();
+  else if(view==="level1") app.innerHTML = viewLevel1();
   else if(view==="settings")app.innerHTML = viewSettings();
   // ép trình duyệt chạy lại animation
   void app.offsetWidth;
@@ -700,7 +789,15 @@ function viewHome(){
 
   <div class="section-label">Học thẻ</div>
   <div class="level-grid">
-    ${levelRow('🌱','Cấp độ 1','1000 từ thông dụng nhất',l1,1)}
+    <button class="level-btn" onclick="go('level1')">
+      <div class="level-emoji">🌱</div>
+      <div class="level-info">
+        <span class="t">Cấp độ 1</span>
+        <span class="d">1000 từ thông dụng · 20 phần học</span>
+        ${l1.count ? `<div class="level-mini-track"><div class="level-mini-fill" style="width:${l1.pct}%"></div></div>` : ''}
+      </div>
+      <span class="level-chev">›</span>
+    </button>
     ${levelRow('🌿','Cấp độ 2','1000 từ mức trung bình',l2,2)}
     ${levelRow('🌳','Cấp độ 3','1000 từ nâng cao hơn',l3,3)}
     ${levelRow('📚','Học tất cả',`Toàn bộ ${s.total} từ hiện có`,{count:0},'all',true)}

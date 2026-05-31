@@ -381,3 +381,30 @@ body::before{
 @media(min-width:560px){
   .card-stage,.card,.face{min-height:420px}
 }
+
+/* =========================================================
+   LEVEL 1 — 20 PHẦN
+   ========================================================= */
+.part-grid{display:flex;flex-direction:column;gap:10px;padding:0 0 4px}
+.part-card{
+  background:var(--surface);border:1.5px solid var(--line);border-radius:18px;
+  padding:14px 16px;transition:border-color .2s;
+}
+.part-card.part-done{border-color:var(--known)}
+.part-card.part-progress{border-color:var(--accent)}
+.part-card-header{display:flex;align-items:center;justify-content:space-between;margin-bottom:2px}
+.part-card-title{font-weight:600;font-size:.95rem;display:flex;align-items:center;gap:7px}
+.part-range{font-size:.74rem;color:var(--ink-soft);font-weight:400}
+.part-stat{font-size:.8rem;color:var(--ink-soft);flex-shrink:0}
+.part-badge{
+  background:var(--accent);color:#fff;font-size:.68rem;font-weight:700;
+  padding:2px 8px;border-radius:20px;letter-spacing:.3px;white-space:nowrap;
+}
+.part-actions{display:flex;gap:8px}
+.part-btn{
+  flex:1;background:var(--bg);border:1.5px solid var(--line);border-radius:12px;
+  padding:9px 0;font-size:.85rem;font-weight:600;cursor:pointer;color:var(--ink);
+  font-family:inherit;transition:background .15s,border-color .2s;
+}
+.part-btn:hover{border-color:var(--accent);background:var(--accent-soft)}
+.part-btn:active{transform:scale(.97)}
