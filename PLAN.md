@@ -1,6 +1,6 @@
 # English Vocab App — Kế hoạch phát triển
 
-> Cập nhật: 2026-05-31 · A, B, C, C+, C++ hoàn thành — tiếp theo: D (chờ data) hoặc E (Statistics)
+> Cập nhật: 2026-05-31 · A, B, C, C+, C++, C+++ hoàn thành — tiếp theo: D (chờ data) hoặc E (Statistics)
 
 ## Context
 
@@ -68,6 +68,8 @@ Vanilla JS/CSS  →  Không framework, không bundler
 [C+] UI 20 phần     ✅ Xong
       ↓
 [C++] Listening     ✅ Xong
+      ↓
+[C+++] Lưu vị trí   ✅ Xong
       ↓
 [D] Level 2/3       ← Khi có đủ data (chờ content)
 [E] Statistics      ← Làm được ngay (data đã có)
@@ -316,6 +318,46 @@ Câu nào dùng từ vừa nghe?
 
 ---
 
+## Giai đoạn C+++ — Lưu vị trí học + Auto-mark
+
+**Ưu tiên: Cao (UX thiết yếu) | Ước tính: ~1 giờ**
+
+### Mục tiêu
+1. Khi người dùng thoát ra và quay lại một phần (Phần 1 Level 1...), app mở đúng thẻ từ lần trước — không bắt đầu lại từ đầu.
+2. Bỏ nút "Đã thuộc" và "Học lại" — xem thẻ nào = tự động đánh dấu đã học thẻ đó.
+
+### Logic lưu vị trí
+
+```javascript
+// localStorage key: vocab_part_pos
+// Shape: { "level1_part_0": 5, "level1_part_3": 12, ... }
+```
+
+- Vị trí được lưu mỗi khi chuyển thẻ (next/prev)
+- Khi vào lại phần đó: `pos = partPositions[kind] ?? 0`
+- Khi hoàn thành bộ thẻ: reset về 0 (bắt đầu lại từ đầu lần sau)
+
+### Logic auto-mark
+
+Mỗi thẻ được xem → gọi `review(id, 'good')` một lần (tracking bằng `dailyMarked`):
+- Từ "new" → "learning" (reps=1, interval=1 ngày)
+- Từ "learning" → "known" (reps=2, interval=3 ngày)
+- Từ "known" → không thay đổi
+
+### Tasks
+
+- [x] **C+++.1** Thêm `partPositions` vào localStorage store + `saveAll()`
+- [x] **C+++.2** Sửa `startDeck()`: khôi phục pos từ `partPositions` khi vào phần, gọi `autoMarkWord()`
+- [x] **C+++.3** Thêm `savePartPos()` helper — lưu pos vào localStorage mỗi khi chuyển thẻ
+- [x] **C+++.4** Thêm `autoMarkWord()` helper — gọi `review(id, 'good')` một lần mỗi từ mỗi phiên
+- [x] **C+++.5** Sửa `next()` và `prev()` để gọi `savePartPos()` + `autoMarkWord()`
+- [x] **C+++.6** Xóa nút "Đã thuộc" và "Học lại" khỏi `viewStudy()`
+- [x] **C+++.7** Thêm nút "✓ Xong" khi ở thẻ cuối cùng thay cho nút "Sau ›" bị disabled
+- [x] **C+++.8** Xóa keyboard shortcut `1` và `2` (mark again/good)
+- [x] **C+++.9** Gọi `finishDeck()` khi xong: reset partPositions về 0
+
+---
+
 ## Giai đoạn D — Level 2 và Level 3
 
 **Chờ data | Ước tính: ~1 giờ code (sau khi có C+ xong)**
@@ -467,6 +509,7 @@ Màu xanh = đúng, màu đỏ = sai/yếu
 | C | Tách data JSON | app.js còn 47KB, 20 file JSON | ~2h | ✅ |
 | C+ | UI 20 phần Level 1 | Màn hình phần học, progress từng phần | ~3h | ✅ |
 | C++ | Home cleanup + Listening | Bỏ quiz thừa, thêm chế độ nghe từ | ~2h | ✅ |
+| C+++ | Lưu vị trí + Auto-mark | Tiếp tục đúng chỗ, xem = đã học | ~1h | ✅ |
 | D | Level 2/3 | Mở rộng lên 3000 từ | ~1h + data | ⏸️ Chờ data |
 | E | Statistics | Dashboard tiến độ học | ~4h | 🔜 |
 | F | Quiz nâng cao | Timer + quiz multi-level | ~3h | 🔜 |

@@ -197,6 +197,7 @@ body::before{
 .nav-btn:hover{border-color:var(--accent)}
 .nav-btn:active{transform:scale(.96)}
 .nav-btn:disabled{opacity:.4;cursor:not-allowed}
+.nav-finish{background:var(--known);border-color:var(--known);color:#fff;font-weight:600}
 
 .empty-state{text-align:center;padding:50px 20px;color:var(--ink-soft)}
 .empty-state .big{font-size:3rem;margin-bottom:12px}

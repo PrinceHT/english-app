@@ -94,9 +94,10 @@ let settings = Object.assign(
   Store.get("vocab_settings", {})
 );
 // progress[id] = {status:'new'|'learning'|'known', reps, ease, intervalDays, due(ts), last(ts)}
-let progress = Store.get("vocab_progress", {});
-let streak   = Store.get("vocab_streak", { count:0, lastDate:null });
-let daily    = Store.get("vocab_daily",  { date:todayStr(), count:0 });
+let progress      = Store.get("vocab_progress", {});
+let streak        = Store.get("vocab_streak", { count:0, lastDate:null });
+let daily         = Store.get("vocab_daily",  { date:todayStr(), count:0 });
+let partPositions = Store.get("vocab_part_pos", {});
 let currentUser = null;
 let fsWriteTimer = null;
 
@@ -105,6 +106,7 @@ function saveAll(){
   Store.set("vocab_progress", progress);
   Store.set("vocab_streak", streak);
   Store.set("vocab_daily", daily);
+  Store.set("vocab_part_pos", partPositions);
   if(currentUser){ clearTimeout(fsWriteTimer); fsWriteTimer = setTimeout(saveToFirestore, 2000); }
 }
 
@@ -273,7 +275,10 @@ async function startDeck(kind){
     deck = WORDS.filter(w=>w.level===kind).map(w=>w.id);
     deckTitle = "Cấp độ " + kind;
   }
-  pos = 0; flipped = false; view = "study";
+  const savedPos = (typeof kind === 'string' && kind.startsWith('level1_part_')) ? (partPositions[kind] ?? 0) : 0;
+  pos = deck.length > 0 ? Math.min(savedPos, deck.length - 1) : 0;
+  flipped = false; view = "study";
+  autoMarkWord();
   render();
 }
 function startSingle(id){
@@ -1022,13 +1027,11 @@ function viewStudy(){
   <div id="pronunSection" class="pronun-section" style="${flipped?'':'display:none'}">${recordBtn(w.id)}${viewPronResult(w.id)}</div>
 
   <div class="study-controls">
-    <div class="mark-row">
-      <button class="mark-btn mark-relearn" onclick="mark('again')">🔁 Học lại</button>
-      <button class="mark-btn mark-known" onclick="mark('good')">✅ Đã thuộc</button>
-    </div>
     <div class="nav-row">
       <button class="nav-btn" onclick="prev()" ${pos===0?'disabled':''}>‹ Trước</button>
-      <button class="nav-btn" onclick="next()" ${pos>=total-1?'disabled':''}>Sau ›</button>
+      ${pos>=total-1
+        ? `<button class="nav-btn nav-finish" onclick="finishDeck()">✓ Xong</button>`
+        : `<button class="nav-btn" onclick="next()">Sau ›</button>`}
     </div>
   </div>`;
 }
@@ -1182,18 +1185,28 @@ function toggleFlip(){
     if(w && w.examples[0]) setTimeout(()=>speak(w.examples[0].en),350);
   }
 }
-function next(){ if(pos<deck.length-1){ cancelRecording(); pos++; flipped=false; render(); autoSpeak(); } }
-function prev(){ if(pos>0){ cancelRecording(); pos--; flipped=false; render(); autoSpeak(); } }
+function next(){ if(pos<deck.length-1){ cancelRecording(); pos++; flipped=false; savePartPos(); autoMarkWord(); render(); autoSpeak(); } }
+function prev(){ if(pos>0){ cancelRecording(); pos--; flipped=false; savePartPos(); autoMarkWord(); render(); autoSpeak(); } }
 function autoSpeak(){
   if(settings.autoSpeak){ const w=WORD_MAP[deck[pos]]; if(w) setTimeout(()=>speak(w.word),250); }
 }
-function mark(quality){
-  cancelRecording();
+function savePartPos(){
+  if(lastDeckKind && typeof lastDeckKind === 'string' && lastDeckKind.startsWith('level1_part_')){
+    partPositions[lastDeckKind] = pos;
+    Store.set("vocab_part_pos", partPositions);
+  }
+}
+function autoMarkWord(){
+  if(!deck.length) return;
   const id = deck[pos];
-  review(id, quality);
-  if(!dailyMarked.has(id)){ bumpDaily(); dailyMarked.add(id); }
-  toast(quality==='good' ? '✅ Đã đánh dấu thuộc' : '🔁 Sẽ ôn lại sớm');
-  setTimeout(()=>{ if(pos<deck.length-1){ next(); } else { deckDone=true; render(); } }, 250);
+  if(!dailyMarked.has(id)){ review(id, 'good'); bumpDaily(); dailyMarked.add(id); }
+}
+function finishDeck(){
+  if(lastDeckKind && typeof lastDeckKind === 'string' && lastDeckKind.startsWith('level1_part_')){
+    partPositions[lastDeckKind] = 0;
+    Store.set("vocab_part_pos", partPositions);
+  }
+  deckDone = true; render();
 }
 function applyTheme(t){ setTheme(t); saveAll(); render(); }
 
@@ -1268,8 +1281,6 @@ document.addEventListener("keydown", e=>{
   if(e.code==="Space"){ e.preventDefault(); toggleFlip(); }
   else if(e.code==="ArrowRight"){ next(); }
   else if(e.code==="ArrowLeft"){ prev(); }
-  else if(e.key==="1"){ mark('again'); }
-  else if(e.key==="2"){ mark('good'); }
 });
 // vuốt trái/phải trên mobile
 let touchX=0, touchY=0;
