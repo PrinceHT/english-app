@@ -144,16 +144,73 @@ Firestore SDK có offline persistence sẵn — khi mất mạng vẫn đọc/gh
 
 ---
 
+## Giai đoạn 5 — Chấm điểm phát âm (Azure Pronunciation Assessment)
+
+**Ưu tiên: Cao | Ước tính: ~5 giờ**
+
+Sau giai đoạn này: Người dùng có thể ghi âm giọng đọc và nhận điểm phát âm % theo chuẩn người bản xứ, cả trong màn học lẫn quiz.
+
+### Thiết kế tính năng
+
+```
+Màn học (mặt sau thẻ):
+  → Nút 🎙️ "Ghi âm phát âm"
+  → Bấm 1 lần: bắt đầu ghi (có chỉ báo đang ghi)
+  → Bấm lần 2 (hoặc tự dừng sau 5s): gửi lên Azure
+  → Hiện kết quả: Phát âm 87% · Chính xác 90% · Lưu loát 85%
+
+Màn quiz (sau khi chọn đáp án):
+  → Tương tự — ghi âm từ vừa học
+  → Không ảnh hưởng đến điểm quiz, chỉ cho phản hồi phát âm
+```
+
+### Kỹ thuật
+
+- **Ghi âm**: `MediaRecorder` API (có sẵn trong trình duyệt, không cần thư viện)
+- **API**: Azure Cognitive Services Speech — Pronunciation Assessment REST API
+- **Định dạng audio**: `audio/webm` (Chrome/Android), `audio/mp4` (iOS Safari)
+- **Không cần SDK**: Gọi trực tiếp qua `fetch()` — nhẹ, không tải thêm file
+
+### Điểm trả về từ Azure
+
+| Điểm | Ý nghĩa |
+|---|---|
+| `PronScore` | Tổng điểm phát âm (cái hiển thị chính) |
+| `AccuracyScore` | Từng âm tiết có đúng không |
+| `FluencyScore` | Nói có tự nhiên, đúng tốc độ không |
+| `CompletenessScore` | Có đọc đủ tất cả các âm không |
+
+### Lưu ý bảo mật
+
+Azure Speech Key sẽ nằm trong `app.js` (public repo). Rủi ro thấp vì:
+- Free tier giới hạn 5 giờ/tháng — nếu ai dùng hết, chỉ cần đổi key
+- Có thể restrict key chỉ cho phép từ `princeht.github.io` bằng Azure Policy
+
+### Checklist
+
+- [ ] **5.1** Tạo Azure Speech resource (free tier F0)
+- [ ] **5.2** Thêm Azure config vào `app.js` (key + region)
+- [ ] **5.3** Hàm `startRecording()` / `stopRecording()` — `MediaRecorder` API
+- [ ] **5.4** Hàm `assessPronunciation(word, audioBlob)` — gọi Azure REST API
+- [ ] **5.5** UI nút ghi âm trong màn học (mặt sau thẻ) + chỉ báo đang ghi
+- [ ] **5.6** UI nút ghi âm trong quiz (sau khi trả lời)
+- [ ] **5.7** UI hiển thị kết quả — score card với breakdown 4 chỉ số
+- [ ] **5.8** CSS cho recording state, score card
+
+---
+
 ## Thứ tự thực hiện
 
 ```
-[0] Fix bugs       ←  Làm ngay — app dùng được tốt hơn ngay hôm nay
+[0] Fix bugs       ✅ Xong
       ↓
-[1] Quiz mode      ←  Tăng hiệu quả học rõ rệt
+[1] Quiz mode      ✅ Xong
       ↓
-[2] PWA + GitHub   ←  Dùng được trên mobile, cài Home Screen, share URL
+[2] PWA + GitHub   ✅ Xong
       ↓
-[3] Firebase       ←  Khi cần sync + multi-user
+[3] Firebase       ✅ Xong
+      ↓
+[5] Phát âm        ←  Đang làm
       ↓
 [4] Level 2/3      ←  Khi có đủ data
 ```
@@ -162,15 +219,16 @@ Firestore SDK có offline persistence sẵn — khi mất mạng vẫn đọc/gh
 
 ## Tóm tắt
 
-| Giai đoạn | Kết quả đạt được | Ước tính |
-|---|---|---|
-| 0 — Fix bugs | Không còn bug, UX đúng | ~2h |
-| 1 — Quiz mode | Học hiệu quả hơn rõ rệt | ~4h |
-| 2 — PWA + GitHub | Cài mobile, share URL | ~3h |
-| 3 — Firebase | Multi-user, auto-sync | ~6h |
-| 4 — Level 2/3 | Mở rộng lên 3000 từ | ~2h |
+| Giai đoạn | Kết quả đạt được | Ước tính | Trạng thái |
+|---|---|---|---|
+| 0 — Fix bugs | Không còn bug, UX đúng | ~2h | ✅ |
+| 1 — Quiz mode | Học hiệu quả hơn rõ rệt | ~4h | ✅ |
+| 2 — PWA + GitHub | Cài mobile, share URL | ~3h | ✅ |
+| 3 — Firebase | Multi-user, auto-sync | ~6h | ✅ |
+| 5 — Phát âm | Chấm điểm phát âm realtime | ~5h | 🔄 |
+| 4 — Level 2/3 | Mở rộng lên 3000 từ | ~2h | ⏸️ |
 
-**Tổng:** ~17 giờ từ fix bugs đến full multi-user sync.
+**Tổng:** ~22 giờ từ fix bugs đến full pronunciation scoring.
 
 ---
 
