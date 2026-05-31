@@ -59,11 +59,13 @@ Vanilla JS/CSS  →  Không framework, không bundler
 ## Thứ tự ưu tiên tiếp theo
 
 ```
-[A] Bảo mật         ← LÀM NGAY (critical)
+[A] Bảo mật         ✅ Xong
       ↓
-[B] Quick wins      ← Nhanh, ảnh hưởng lớn (~1h tổng)
+[B] Quick wins      ✅ Xong
       ↓
-[C] Tách data JSON  ← Foundation cho Level 2/3
+[C] Tách data JSON  ✅ Xong (47KB, 20 JSON parts)
+      ↓
+[C+] UI 20 phần     ← LÀM TIẾP (màn hình phần học trong Level 1)
       ↓
 [D] Level 2/3       ← Khi có đủ data (chờ content)
       ↓
@@ -183,39 +185,27 @@ Các fix nhỏ, impact lớn, không cần thay đổi kiến trúc.
 - Service Worker cache riêng data và code → chỉ revalidate khi đúng phần thay đổi
 - Mở đường cho Level 2/3 lazy load
 
-### Cấu trúc file sau khi tách
+### Cấu trúc file (đã hoàn thành)
 
 ```
 english-app/
 ├── index.html
-├── app.js          ← logic thuần (~25KB sau khi bỏ data)
+├── app.js          ← logic thuần (47KB, đã tách data)
 ├── style.css
 ├── manifest.json
 ├── sw.js
-├── icon-192.png
-├── icon-512.png
+├── scripts/
+│   ├── extract-words.mjs   ← tái dùng cho Level 2/3
+│   └── refactor-data.mjs
 └── data/
-    ├── level1.json ← 1000 từ Level 1 (~180KB)
-    ├── level2.json ← (khi có data)
-    └── level3.json ← (khi có data)
+    └── level1/
+        ├── manifest.json   ← { parts: 20, totalWords: 1000 }
+        ├── part01.json     ← từ id 1–50
+        ├── part02.json     ← từ id 51–100
+        └── ... part20.json ← từ id 951–1000
 ```
 
-### Lazy loading strategy
-
-```javascript
-const levelCache = {};  // { 1: [...words], 2: [...], 3: [...] }
-
-async function loadLevel(n) {
-  if (levelCache[n]) return levelCache[n];
-  const res = await fetch(`./data/level${n}.json`);
-  const words = await res.json();
-  levelCache[n] = words;
-  words.forEach(w => { WORD_MAP[w.id] = w; });
-  return words;
-}
-```
-
-- [x] **C.1** Trích 1000 từ từ `app.js` → 20 file `data/level1/part01-20.json` (50 từ/file, script: `scripts/extract-words.mjs`)
+- [x] **C.1** Trích 1000 từ từ `app.js` → 20 file `data/level1/part01-20.json` (50 từ/file)
 - [x] **C.2** Viết `loadLevel1()` — fetch 20 parts song song, cache trong `levelCache`, populate `WORD_MAP`
 - [x] **C.3** `startDeck()` và `startQuiz()` đổi thành async, `await loadLevel1()` trước khi dùng WORDS
 - [ ] **C.4** Hiển thị loading indicator khi fetch (lần đầu tiên user chọn level)
@@ -224,17 +214,71 @@ async function loadLevel(n) {
 
 ---
 
+## Giai đoạn C+ — UI Phần trong Level 1
+
+**Ưu tiên: Cao (làm ngay sau C) | Ước tính: ~3 giờ**
+
+Hiện tại app có nút "Học Level 1" → load hết 1000 từ — user không biết mình đang ở đâu, dễ bị overwhelmed. Phase này chia Level 1 thành 20 phần học rõ ràng với progress từng phần.
+
+### Luồng UI sau thay đổi
+
+```
+Home screen
+└── [Level 1 →]  250/1000 đã thuộc
+        ↓
+    viewLevel1 (màn hình mới)
+    ├── Progress bar tổng: ████░░  250/1000
+    │
+    ├── Phần 1  (1–50)    ████████░░  45/50  [Học] [Quiz]
+    ├── Phần 2  (51–100)  ████░░░░░░  20/50  [Học] [Quiz]
+    ├── Phần 3  (101–150) ░░░░░░░░░░   0/50  [Học] [Quiz]  ← tự động gợi ý học tiếp
+    │   ...
+    └── Phần 20 (951–1000) ░░░░░░░░░░  0/50  [Học] [Quiz]
+        + [Học tất cả Level 1]  [Quiz tất cả Level 1]
+```
+
+### Logic tính progress từng phần
+
+```javascript
+// Part i (0-indexed) chứa WORDS[i*50 .. (i+1)*50 - 1]
+function partStats(partIndex) {
+  const words = levelCache[1].slice(partIndex * 50, (partIndex + 1) * 50);
+  const known = words.filter(w => isKnown(w.id)).length;
+  return { total: words.length, known };
+}
+```
+
+### Giao diện phần học (part card)
+
+- **Màu card:** xanh lá nếu ≥80% thuộc, vàng nếu đang học (có từ learning), xám nếu chưa bắt đầu
+- **Badge "Học tiếp":** đánh dấu phần đầu tiên chưa hoàn thành (dưới 80%)
+- **Loading state:** spinner khi `level1Ready === false` (giải quyết C.4 luôn)
+
+### Tasks
+
+- [ ] **C+.1** Thêm `"level1"` vào state machine và `render()`
+- [ ] **C+.2** Viết `viewLevel1()` — hiển thị 20 part cards với progress bar + nút Học/Quiz
+- [ ] **C+.3** Sửa `startDeck()` hỗ trợ `kind = "level1_part_N"` (N = 0–19)
+- [ ] **C+.4** Sửa `startQuiz()` hỗ trợ `kind = "level1_part_N"`
+- [ ] **C+.5** Sửa Home screen: nút "Học Level 1" → nút điều hướng đến `view = "level1"`
+- [ ] **C+.6** Loading indicator khi `level1Ready === false` (spinner thay vì blank screen)
+- [ ] **C+.7** Highlight part gợi ý học tiếp (phần đầu tiên chưa đạt 80%)
+- [ ] **C+.8** Nút back từ `viewLevel1` về Home
+
+---
+
 ## Giai đoạn D — Level 2 và Level 3
 
-**Chờ data | Ước tính: ~1 giờ code (sau khi có C xong)**
+**Chờ data | Ước tính: ~1 giờ code (sau khi có C+ xong)**
 
-Phase C là prerequisite — phải xong trước.
+Phase C+ là prerequisite — structure phần đã có, chỉ thêm level mới.
 
-- [ ] **D.1** Chuẩn bị `data/level2.json` (1000 từ Level 2) — same schema như level1
-- [ ] **D.2** Chuẩn bị `data/level3.json` (1000 từ Level 3)
-- [ ] **D.3** Thêm Level 2, Level 3 vào home screen với mini progress bar
-- [ ] **D.4** Thêm Quiz Level 2, Level 3 vào section trắc nghiệm
-- [ ] **D.5** Test: lazy load Level 2 lần đầu → spinner → data hiện, Level 2 quiz chạy đúng
+- [ ] **D.1** Chuẩn bị `data/level2/` (1000 từ Level 2, 20 parts) — chạy `scripts/extract-words.mjs` với data mới
+- [ ] **D.2** Chuẩn bị `data/level3/` (1000 từ Level 3)
+- [ ] **D.3** Thêm Level 2, Level 3 vào home screen với progress tổng
+- [ ] **D.4** `viewLevel2()`, `viewLevel3()` — tương tự `viewLevel1()` (refactor thành `viewLevel(n)`)
+- [ ] **D.5** `loadLevel2()`, `loadLevel3()` — tương tự `loadLevel1()`
+- [ ] **D.6** SW cache thêm data/level2/ và data/level3/
 
 **Schema từ (giữ nguyên, tương thích):**
 ```json
@@ -369,10 +413,11 @@ Màu xanh = đúng, màu đỏ = sai/yếu
 
 | # | Giai đoạn | Kết quả đạt được | Ước tính | Trạng thái |
 |---|---|---|---|---|
-| A | Bảo mật | Azure key an toàn, Firestore rules đúng | ~3h | ⏳ Tiếp theo |
-| B | Quick wins | Accessibility + PWA polish | ~1h | ⏳ |
-| C | Tách data JSON | app.js còn 47KB, lazy load levels | ~2h | ✅ |
-| D | Level 2/3 | Mở rộng lên 3000 từ | ~1h + data | ⏸️ Chờ data |
+| A | Bảo mật | Azure key an toàn, Firestore rules đúng | ~3h | ✅ |
+| B | Quick wins | Accessibility + PWA polish | ~1h | ✅ |
+| C | Tách data JSON | app.js còn 47KB, 20 file JSON | ~2h | ✅ |
+| C+ | UI 20 phần Level 1 | Màn hình phần học, progress từng phần | ~3h | ⏳ Tiếp theo |
+| D | Level 2/3 | Mở rộng lên 3000 từ | ~1h + data | ⏸️ Chờ data + C+ |
 | E | Statistics | Dashboard tiến độ học | ~4h | 🔜 |
 | F | Quiz nâng cao | Timer + quiz multi-level | ~3h | 🔜 |
 | G | Push notifications | Nhắc học hàng ngày | ~3h | 🔜 |
