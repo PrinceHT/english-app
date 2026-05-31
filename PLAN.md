@@ -188,14 +188,14 @@ Azure Speech Key sẽ nằm trong `app.js` (public repo). Rủi ro thấp vì:
 
 ### Checklist
 
-- [ ] **5.1** Tạo Azure Speech resource (free tier F0)
-- [ ] **5.2** Thêm Azure config vào `app.js` (key + region)
-- [ ] **5.3** Hàm `startRecording()` / `stopRecording()` — `MediaRecorder` API
-- [ ] **5.4** Hàm `assessPronunciation(word, audioBlob)` — gọi Azure REST API
-- [ ] **5.5** UI nút ghi âm trong màn học (mặt sau thẻ) + chỉ báo đang ghi
-- [ ] **5.6** UI nút ghi âm trong quiz (sau khi trả lời)
-- [ ] **5.7** UI hiển thị kết quả — score card với breakdown 4 chỉ số
-- [ ] **5.8** CSS cho recording state, score card
+- [x] **5.1** Tạo Azure Speech resource (free tier F0)
+- [x] **5.2** Thêm Azure config vào `app.js` (key + region)
+- [x] **5.3** Hàm `startRecording()` / `stopRecording()` — `MediaRecorder` API
+- [x] **5.4** Hàm `assessPronunciation(word, audioBlob)` — gọi Azure REST API
+- [x] **5.5** UI nút ghi âm trong màn học (mặt sau thẻ) + chỉ báo đang ghi
+- [x] **5.6** UI nút ghi âm trong quiz (sau khi trả lời)
+- [x] **5.7** UI hiển thị kết quả — score card với breakdown 4 chỉ số
+- [x] **5.8** CSS cho recording state, score card
 
 ---
 
@@ -210,7 +210,7 @@ Azure Speech Key sẽ nằm trong `app.js` (public repo). Rủi ro thấp vì:
       ↓
 [3] Firebase       ✅ Xong
       ↓
-[5] Phát âm        ←  Đang làm
+[5] Phát âm        ✅ Xong
       ↓
 [4] Level 2/3      ←  Khi có đủ data
 ```
@@ -225,7 +225,7 @@ Azure Speech Key sẽ nằm trong `app.js` (public repo). Rủi ro thấp vì:
 | 1 — Quiz mode | Học hiệu quả hơn rõ rệt | ~4h | ✅ |
 | 2 — PWA + GitHub | Cài mobile, share URL | ~3h | ✅ |
 | 3 — Firebase | Multi-user, auto-sync | ~6h | ✅ |
-| 5 — Phát âm | Chấm điểm phát âm realtime | ~5h | 🔄 |
+| 5 — Phát âm | Chấm điểm phát âm realtime | ~5h | ✅ |
 | 4 — Level 2/3 | Mở rộng lên 3000 từ | ~2h | ⏸️ |
 
 **Tổng:** ~22 giờ từ fix bugs đến full pronunciation scoring.
