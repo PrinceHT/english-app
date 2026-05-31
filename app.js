@@ -1160,6 +1160,7 @@ let audioChunks    = [];
 let recordingWordId = null;
 let pronResult     = null;
 let pronLoading    = false;
+let recordedBlobUrl = null;
 
 const P = id => progress[id] || { status:"new", reps:0, ease:2.5, intervalDays:0, due:0, last:0 };
 const isKnown = id => P(id).status === "known";
@@ -1394,6 +1395,7 @@ function setTheme(t){
    5c) PRONUNCIATION ASSESSMENT — Azure Speech REST API
    ================================================================= */
 function cancelRecording(){
+  if(recordedBlobUrl){ URL.revokeObjectURL(recordedBlobUrl); recordedBlobUrl=null; }
   if(mediaRecorder && mediaRecorder.state !== 'inactive'){
     mediaRecorder.onstop = null;
     mediaRecorder.stop();
@@ -1414,7 +1416,7 @@ async function startRecording(wordId){
     audioChunks = [];
     recordingWordId = wordId;
     pronResult = null;
-    pronLoading = false;
+    if(recordedBlobUrl){ URL.revokeObjectURL(recordedBlobUrl); recordedBlobUrl=null; }
 
     const mime = MediaRecorder.isTypeSupported('audio/webm;codecs=opus') ? 'audio/webm;codecs=opus'
                : MediaRecorder.isTypeSupported('audio/webm')             ? 'audio/webm'
@@ -1427,11 +1429,14 @@ async function startRecording(wordId){
       isRecording = false;
       pronLoading = true;
       updateRecordBtnDOM();
-      const blob = new Blob(audioChunks, {type: mediaRecorder.mimeType||'audio/webm'});
+      const rawBlob = new Blob(audioChunks, {type: mediaRecorder.mimeType||'audio/webm'});
+      recordedBlobUrl = URL.createObjectURL(rawBlob);
       const word = WORD_MAP[recordingWordId];
       if(word){
-        try{ pronResult = await assessPronunciation(word.word, blob, recordingWordId); }
-        catch(e){ toast("Lỗi Azure: "+(e.message||e)); }
+        try{
+          const wavBlob = await blobToWav(rawBlob);
+          pronResult = await assessPronunciation(word.word, wavBlob, recordingWordId);
+        }catch(e){ toast("Lỗi chấm điểm: "+(e.message||e)); }
       }
       pronLoading = false;
       render();
@@ -1455,13 +1460,52 @@ function stopRecording(){
 
 function updateRecordBtnDOM(){
   document.querySelectorAll('.record-btn').forEach(btn=>{
-    btn.textContent = isRecording ? '⏹ Dừng ghi' : pronLoading ? '⏳ Đang chấm...' : '🎙 Ghi âm phát âm';
+    btn.textContent = isRecording ? '⏹ Dừng ghi' : pronLoading ? '⏳ Đang chấm...' : '🎙 Ghi âm';
     btn.classList.toggle('recording', isRecording);
     btn.disabled = pronLoading;
   });
 }
 
-async function assessPronunciation(word, blob, wordId){
+function playRecording(){
+  if(!recordedBlobUrl) return;
+  new Audio(recordedBlobUrl).play().catch(()=>{});
+}
+
+/* Chuyển blob ghi âm → WAV PCM 16kHz mono (Azure yêu cầu) */
+async function blobToWav(blob){
+  const arrayBuf = await blob.arrayBuffer();
+  const decodeCtx = new (window.AudioContext||window.webkitAudioContext)();
+  const sourceBuf = await decodeCtx.decodeAudioData(arrayBuf);
+  decodeCtx.close();
+  const targetRate = 16000;
+  const offCtx = new OfflineAudioContext(1, Math.ceil(sourceBuf.duration*targetRate), targetRate);
+  const src = offCtx.createBufferSource();
+  src.buffer = sourceBuf;
+  src.connect(offCtx.destination);
+  src.start(0);
+  const resampled = await offCtx.startRendering();
+  return pcmToWav(resampled.getChannelData(0), targetRate);
+}
+
+function pcmToWav(pcm, rate){
+  const buf = new ArrayBuffer(44 + pcm.length*2);
+  const v = new DataView(buf);
+  const ws = (o,s)=>{ for(let i=0;i<s.length;i++) v.setUint8(o+i,s.charCodeAt(i)); };
+  ws(0,'RIFF'); v.setUint32(4,36+pcm.length*2,true);
+  ws(8,'WAVE'); ws(12,'fmt '); v.setUint32(16,16,true);
+  v.setUint16(20,1,true); v.setUint16(22,1,true);
+  v.setUint32(24,rate,true); v.setUint32(28,rate*2,true);
+  v.setUint16(32,2,true); v.setUint16(34,16,true);
+  ws(36,'data'); v.setUint32(40,pcm.length*2,true);
+  let o=44;
+  for(let i=0;i<pcm.length;i++){
+    const s=Math.max(-1,Math.min(1,pcm[i]));
+    v.setInt16(o,s<0?s*0x8000:s*0x7FFF,true); o+=2;
+  }
+  return new Blob([buf],{type:'audio/wav'});
+}
+
+async function assessPronunciation(word, wavBlob, wordId){
   const cfg = btoa(unescape(encodeURIComponent(JSON.stringify({
     ReferenceText: word,
     GradingSystem: "HundredMark",
@@ -1473,16 +1517,16 @@ async function assessPronunciation(word, blob, wordId){
     method:'POST',
     headers:{
       'Ocp-Apim-Subscription-Key': AZURE_KEY,
-      'Content-Type': blob.type || 'audio/webm',
+      'Content-Type': 'audio/wav; codecs=audio/pcm; samplerate=16000',
       'Pronunciation-Assessment': cfg
     },
-    body: blob
+    body: wavBlob
   });
-  if(!res.ok){ const t=await res.text(); throw new Error(`${res.status}: ${t.slice(0,120)}`); }
+  if(!res.ok){ const t=await res.text(); throw new Error(`Azure ${res.status}: ${t.slice(0,120)}`); }
   const data = await res.json();
   const pa = data.NBest?.[0]?.PronunciationAssessment;
   if(data.RecognitionStatus !== 'Success' || !pa){
-    return {wordId, score:0, accuracy:0, fluency:0, completeness:0, recognized:'', failed:true};
+    return {wordId, score:0, accuracy:0, fluency:0, completeness:0, recognized:data.DisplayText||'', failed:true, status:data.RecognitionStatus};
   }
   return {
     wordId,
@@ -1499,7 +1543,9 @@ function recordBtn(wordId){
   const active  = isRecording  && recordingWordId===wordId;
   const loading = pronLoading  && recordingWordId===wordId;
   const label   = active ? '⏹ Dừng ghi' : loading ? '⏳ Đang chấm...' : '🎙 Ghi âm phát âm';
-  return `<button class="record-btn${active?' recording':''}" onclick="toggleRecording(${wordId})" ${loading?'disabled':''}>${label}</button>`;
+  const playBtn = !active && !loading && recordedBlobUrl && recordingWordId===wordId
+    ? `<button class="play-rec-btn" onclick="playRecording()" title="Nghe lại giọng của bạn">▶ Nghe lại</button>` : '';
+  return `<div class="record-row">${playBtn}<button class="record-btn${active?' recording':''}" onclick="toggleRecording(${wordId})" ${loading?'disabled':''}>${label}</button></div>`;
 }
 
 function viewPronResult(wordId){
@@ -1507,7 +1553,7 @@ function viewPronResult(wordId){
   const r = pronResult;
   const color = r.score>=80?'var(--known)':r.score>=50?'var(--accent)':'var(--relearn)';
   const bar = v=>`<div class="pron-bar-track"><div class="pron-bar-fill" style="width:${v}%;background:${color}"></div></div>`;
-  if(r.failed) return `<div class="pronun-result"><div class="pron-fail">Không nhận ra được từ 🎙 Thử lại nhé!</div></div>`;
+  if(r.failed) return `<div class="pronun-result"><div class="pron-fail">Không nhận ra được từ (${r.status||'NoMatch'}). Nói to và rõ hơn nhé!</div></div>`;
   return `
   <div class="pronun-result">
     <div class="pron-header">
@@ -1741,7 +1787,7 @@ function viewStudy(){
     </div>
   </div>
 
-  ${flipped ? `<div class="pronun-section">${recordBtn(w.id)}${viewPronResult(w.id)}</div>` : ''}
+  <div id="pronunSection" class="pronun-section" style="${flipped?'':'display:none'}">${recordBtn(w.id)}${viewPronResult(w.id)}</div>
 
   <div class="study-controls">
     <div class="mark-row">
@@ -1897,7 +1943,8 @@ function toggleFlip(){
   flipped = !flipped;
   const c = document.getElementById("card");
   if(c) c.classList.toggle("is-flipped", flipped);
-  // tự đọc câu ví dụ khi lật ra mặt sau (nếu bật)
+  const ps = document.getElementById("pronunSection");
+  if(ps) ps.style.display = flipped ? '' : 'none';
   if(flipped && settings.autoSpeakExample){
     const w = WORD_MAP[deck[pos]];
     if(w && w.examples[0]) setTimeout(()=>speak(w.examples[0].en),350);
