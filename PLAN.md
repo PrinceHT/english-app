@@ -134,13 +134,13 @@ export default {
 };
 ```
 
-- [ ] **A.1.1** Tạo Cloudflare account, tạo Worker project
+- [x] **A.1.1** Tạo Cloudflare account, tạo Worker project (đã làm qua web UI)
 - [x] **A.1.2** Viết Worker: nhận audio → forward Azure → trả JSON (`worker/index.js`)
-- [ ] **A.1.3** Set env vars: `AZURE_KEY`, `AZURE_REGION` qua Wrangler secrets
+- [x] **A.1.3** Set env vars: `AZURE_KEY`, `AZURE_REGION` qua Cloudflare Dashboard → Settings → Variables and Secrets
 - [x] **A.1.4** CORS: chỉ cho phép `princeht.github.io` và `localhost`
 - [x] **A.1.5** Sửa `assessPronunciation()` trong app.js → gọi Worker thay vì Azure trực tiếp
 - [x] **A.1.6** Xóa `AZURE_KEY` khỏi app.js, chỉ giữ `WORKER_URL` placeholder
-- [ ] **A.1.7** Test: ghi âm từ GitHub Pages → Worker → Azure → nhận điểm đúng
+- [ ] **A.1.7** Test end-to-end: ghi âm từ GitHub Pages → Worker → Azure → nhận điểm đúng
 
 ### A.2 — Kiểm tra Firestore Security Rules (~1h)
 
