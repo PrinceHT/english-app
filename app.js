@@ -1374,8 +1374,13 @@ function setTheme(t){
    ================================================================= */
 function signInGoogle(){
   if(!auth) return;
-  auth.signInWithRedirect(new firebase.auth.GoogleAuthProvider())
-    .catch(() => toast("Đăng nhập thất bại. Thử lại nhé."));
+  auth.signInWithPopup(new firebase.auth.GoogleAuthProvider())
+    .catch(e => {
+      if(e.code === 'auth/popup-blocked')
+        toast("Popup bị chặn — hãy cho phép popup trong trình duyệt rồi thử lại.");
+      else if(e.code !== 'auth/popup-closed-by-user')
+        toast("Đăng nhập thất bại: " + (e.message || e.code));
+    });
 }
 
 function doSignOut(){
@@ -1391,7 +1396,6 @@ async function initAuth(){
   setTheme(settings.theme);
   if(!USE_FIREBASE || !auth){ view = "home"; render(); return; }
   app.innerHTML = `<div class="loading-screen"><div class="loading-dot"></div></div>`;
-  try { await auth.getRedirectResult(); } catch(e) {}
   auth.onAuthStateChanged(async user => {
     currentUser = user;
     if(user) await loadFromFirestore();
