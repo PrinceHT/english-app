@@ -1049,6 +1049,13 @@ if (USE_FIREBASE) {
 }
 
 /* =================================================================
+   1c) AZURE SPEECH CONFIG — chấm điểm phát âm
+   ================================================================= */
+const AZURE_KEY    = "BBWFrbBBOkHCng0Tc1ABRN14hve7LGr9Y0JCld5SyRbw1iraMdvOJQQJ99CEACi5YpzXJ3w3AAAYACOGnmY7";
+const AZURE_REGION = "northeurope";
+const USE_AZURE    = true;
+
+/* =================================================================
    2) LỚP LƯU TRỮ — localStorage, tự chuyển sang bộ nhớ tạm
       nếu môi trường chặn (ví dụ trong artifact của Claude.ai)
    ================================================================= */
@@ -1144,6 +1151,15 @@ let quizDeck = [], quizPos = 0, quizMode = "en_vi";
 let quizAnswered = false, quizSelectedId = null, quizCorrectId = null;
 let quizOptions = [], quizScore = { correct:0, total:0 };
 let quizDone = false, lastQuizKind = null;
+
+// Pronunciation assessment state
+let isRecording    = false;
+let mediaRecorder  = null;
+let recordingStream = null;
+let audioChunks    = [];
+let recordingWordId = null;
+let pronResult     = null;
+let pronLoading    = false;
 
 const P = id => progress[id] || { status:"new", reps:0, ease:2.5, intervalDays:0, due:0, last:0 };
 const isKnown = id => P(id).status === "known";
@@ -1293,6 +1309,7 @@ function quizAnswer(selectedId){
   render();
 }
 function quizNext(){
+  cancelRecording();
   if(quizPos < quizDeck.length-1){ quizPos++; prepareQuestion(); render(); }
   else { quizDone = true; render(); }
 }
@@ -1353,7 +1370,8 @@ function viewQuiz(){
   <div class="quiz-answers">${answerBtns}</div>
   ${quizAnswered
     ? `<div class="quiz-score-bar">${quizScore.correct}/${quizScore.total} câu đúng</div>
-       <button class="mark-btn mark-known" onclick="quizNext()" style="width:100%">${quizPos<total-1?'Tiếp theo ›':'Xem kết quả 🏆'}</button>`
+       <button class="mark-btn mark-known" onclick="quizNext()" style="width:100%">${quizPos<total-1?'Tiếp theo ›':'Xem kết quả 🏆'}</button>
+       <div class="pronun-section">${recordBtn(quizCorrectId)}${viewPronResult(quizCorrectId)}</div>`
     : '<div class="quiz-score-bar">Chọn đáp án đúng</div>'}`;
 }
 
@@ -1372,6 +1390,138 @@ function setTheme(t){
 /* =================================================================
    5b) FIREBASE AUTH
    ================================================================= */
+/* =================================================================
+   5c) PRONUNCIATION ASSESSMENT — Azure Speech REST API
+   ================================================================= */
+function cancelRecording(){
+  if(mediaRecorder && mediaRecorder.state !== 'inactive'){
+    mediaRecorder.onstop = null;
+    mediaRecorder.stop();
+  }
+  if(recordingStream){ recordingStream.getTracks().forEach(t=>t.stop()); recordingStream=null; }
+  isRecording=false; pronLoading=false; pronResult=null;
+}
+
+async function toggleRecording(wordId){
+  if(isRecording){ stopRecording(); return; }
+  await startRecording(wordId);
+}
+
+async function startRecording(wordId){
+  try{
+    const stream = await navigator.mediaDevices.getUserMedia({audio:true});
+    recordingStream = stream;
+    audioChunks = [];
+    recordingWordId = wordId;
+    pronResult = null;
+    pronLoading = false;
+
+    const mime = MediaRecorder.isTypeSupported('audio/webm;codecs=opus') ? 'audio/webm;codecs=opus'
+               : MediaRecorder.isTypeSupported('audio/webm')             ? 'audio/webm'
+               : '';
+    mediaRecorder = mime ? new MediaRecorder(stream, {mimeType:mime}) : new MediaRecorder(stream);
+
+    mediaRecorder.ondataavailable = e => { if(e.data.size>0) audioChunks.push(e.data); };
+    mediaRecorder.onstop = async () => {
+      if(recordingStream){ recordingStream.getTracks().forEach(t=>t.stop()); recordingStream=null; }
+      isRecording = false;
+      pronLoading = true;
+      updateRecordBtnDOM();
+      const blob = new Blob(audioChunks, {type: mediaRecorder.mimeType||'audio/webm'});
+      const word = WORD_MAP[recordingWordId];
+      if(word){
+        try{ pronResult = await assessPronunciation(word.word, blob, recordingWordId); }
+        catch(e){ toast("Lỗi Azure: "+(e.message||e)); }
+      }
+      pronLoading = false;
+      render();
+    };
+
+    mediaRecorder.start();
+    isRecording = true;
+    updateRecordBtnDOM();
+    setTimeout(()=>{ if(isRecording) stopRecording(); }, 6000);
+
+  }catch(e){
+    if(e.name==='NotAllowedError') toast("Hãy cho phép truy cập microphone rồi thử lại.");
+    else toast("Lỗi microphone: "+(e.message||e));
+  }
+}
+
+function stopRecording(){
+  if(!mediaRecorder || mediaRecorder.state==='inactive') return;
+  mediaRecorder.stop();
+}
+
+function updateRecordBtnDOM(){
+  document.querySelectorAll('.record-btn').forEach(btn=>{
+    btn.textContent = isRecording ? '⏹ Dừng ghi' : pronLoading ? '⏳ Đang chấm...' : '🎙 Ghi âm phát âm';
+    btn.classList.toggle('recording', isRecording);
+    btn.disabled = pronLoading;
+  });
+}
+
+async function assessPronunciation(word, blob, wordId){
+  const cfg = btoa(unescape(encodeURIComponent(JSON.stringify({
+    ReferenceText: word,
+    GradingSystem: "HundredMark",
+    Granularity: "FullText",
+    EnableMiscue: false
+  }))));
+  const url = `https://${AZURE_REGION}.stt.speech.microsoft.com/speech/recognition/conversation/cognitiveservices/v1?language=en-US&format=detailed`;
+  const res = await fetch(url, {
+    method:'POST',
+    headers:{
+      'Ocp-Apim-Subscription-Key': AZURE_KEY,
+      'Content-Type': blob.type || 'audio/webm',
+      'Pronunciation-Assessment': cfg
+    },
+    body: blob
+  });
+  if(!res.ok){ const t=await res.text(); throw new Error(`${res.status}: ${t.slice(0,120)}`); }
+  const data = await res.json();
+  const pa = data.NBest?.[0]?.PronunciationAssessment;
+  if(data.RecognitionStatus !== 'Success' || !pa){
+    return {wordId, score:0, accuracy:0, fluency:0, completeness:0, recognized:'', failed:true};
+  }
+  return {
+    wordId,
+    score:        Math.round(pa.PronScore),
+    accuracy:     Math.round(pa.AccuracyScore),
+    fluency:      Math.round(pa.FluencyScore),
+    completeness: Math.round(pa.CompletenessScore),
+    recognized:   (data.DisplayText||'').replace(/\.$/, '')
+  };
+}
+
+function recordBtn(wordId){
+  if(!USE_AZURE) return '';
+  const active  = isRecording  && recordingWordId===wordId;
+  const loading = pronLoading  && recordingWordId===wordId;
+  const label   = active ? '⏹ Dừng ghi' : loading ? '⏳ Đang chấm...' : '🎙 Ghi âm phát âm';
+  return `<button class="record-btn${active?' recording':''}" onclick="toggleRecording(${wordId})" ${loading?'disabled':''}>${label}</button>`;
+}
+
+function viewPronResult(wordId){
+  if(!pronResult || pronResult.wordId!==wordId) return '';
+  const r = pronResult;
+  const color = r.score>=80?'var(--known)':r.score>=50?'var(--accent)':'var(--relearn)';
+  const bar = v=>`<div class="pron-bar-track"><div class="pron-bar-fill" style="width:${v}%;background:${color}"></div></div>`;
+  if(r.failed) return `<div class="pronun-result"><div class="pron-fail">Không nhận ra được từ 🎙 Thử lại nhé!</div></div>`;
+  return `
+  <div class="pronun-result">
+    <div class="pron-header">
+      <span class="pron-main" style="color:${color}">${r.score}<span class="pron-pct">%</span></span>
+      <span class="pron-sublabel">Phát âm tổng</span>
+    </div>
+    <div class="pron-breakdown">
+      <div class="pron-row"><span>Chính xác</span>${bar(r.accuracy)}<span class="pron-val">${r.accuracy}</span></div>
+      <div class="pron-row"><span>Lưu loát</span>${bar(r.fluency)}<span class="pron-val">${r.fluency}</span></div>
+      <div class="pron-row"><span>Đầy đủ</span>${bar(r.completeness)}<span class="pron-val">${r.completeness}</span></div>
+    </div>
+    ${r.recognized?`<div class="pron-recognized">Nghe được: "<b>${esc(r.recognized)}</b>"</div>`:''}
+  </div>`;
+}
 function signInGoogle(){
   if(!auth) return;
   auth.signInWithPopup(new firebase.auth.GoogleAuthProvider())
@@ -1591,6 +1741,8 @@ function viewStudy(){
     </div>
   </div>
 
+  ${flipped ? `<div class="pronun-section">${recordBtn(w.id)}${viewPronResult(w.id)}</div>` : ''}
+
   <div class="study-controls">
     <div class="mark-row">
       <button class="mark-btn mark-relearn" onclick="mark('again')">🔁 Học lại</button>
@@ -1740,7 +1892,7 @@ function viewSettings(){
 /* =================================================================
    8) HÀNH ĐỘNG NGƯỜI DÙNG
    ================================================================= */
-function go(v){ view=v; if(v==='study'){} render(); }
+function go(v){ cancelRecording(); view=v; render(); }
 function toggleFlip(){
   flipped = !flipped;
   const c = document.getElementById("card");
@@ -1751,12 +1903,13 @@ function toggleFlip(){
     if(w && w.examples[0]) setTimeout(()=>speak(w.examples[0].en),350);
   }
 }
-function next(){ if(pos<deck.length-1){ pos++; flipped=false; render(); autoSpeak(); } }
-function prev(){ if(pos>0){ pos--; flipped=false; render(); autoSpeak(); } }
+function next(){ if(pos<deck.length-1){ cancelRecording(); pos++; flipped=false; render(); autoSpeak(); } }
+function prev(){ if(pos>0){ cancelRecording(); pos--; flipped=false; render(); autoSpeak(); } }
 function autoSpeak(){
   if(settings.autoSpeak){ const w=WORD_MAP[deck[pos]]; if(w) setTimeout(()=>speak(w.word),250); }
 }
 function mark(quality){
+  cancelRecording();
   const id = deck[pos];
   review(id, quality);
   if(!dailyMarked.has(id)){ bumpDaily(); dailyMarked.add(id); }
