@@ -1,6 +1,6 @@
 # English Vocab App — Kế hoạch phát triển
 
-> Cập nhật: 2026-05-31 · C+ hoàn thành, đang triển khai Listening mode
+> Cập nhật: 2026-05-31 · A, B, C, C+, C++ hoàn thành — tiếp theo: D (chờ data) hoặc E (Statistics)
 
 ## Context
 
@@ -67,9 +67,10 @@ Vanilla JS/CSS  →  Không framework, không bundler
       ↓
 [C+] UI 20 phần     ✅ Xong
       ↓
-[C++] Listening     ← LÀM TIẾP (nghe từ + chọn câu ví dụ đúng)
+[C++] Listening     ✅ Xong
       ↓
 [D] Level 2/3       ← Khi có đủ data (chờ content)
+[E] Statistics      ← Làm được ngay (data đã có)
       ↓
 [E] Statistics      ← Feature người dùng muốn nhất
       ↓
@@ -210,7 +211,7 @@ english-app/
 - [x] **C.1** Trích 1000 từ từ `app.js` → 20 file `data/level1/part01-20.json` (50 từ/file)
 - [x] **C.2** Viết `loadLevel1()` — fetch 20 parts song song, cache trong `levelCache`, populate `WORD_MAP`
 - [x] **C.3** `startDeck()` và `startQuiz()` đổi thành async, `await loadLevel1()` trước khi dùng WORDS
-- [ ] **C.4** Hiển thị loading indicator khi fetch (lần đầu tiên user chọn level)
+- [x] **C.4** Hiển thị loading indicator khi fetch — giải quyết trong C+.6 (spinner trong viewLevel1)
 - [x] **C.5** Cập nhật `sw.js`: cache toàn bộ 20 file JSON cùng với assets
 - [ ] **C.6** Test offline: load lần đầu có mạng, tắt wifi, mở lại → data vẫn có
 
@@ -302,16 +303,16 @@ Câu nào dùng từ vừa nghe?
 
 ### Tasks
 
-- [ ] **C++.1** Xóa section "Trắc nghiệm" (label + 2 nút) khỏi `viewHome()`
-- [ ] **C++.2** Thêm state variables cho Listening vào section 3
-- [ ] **C++.3** Viết helper `blankWord(sentence, word)` — thay từ bằng `___`
-- [ ] **C++.4** Viết `startListening(kind)` — build deck từ `level1_part_N`, shuffle, cap 20
-- [ ] **C++.5** Viết `prepareListeningQuestion()` — chọn từ + 3 distractors cùng phần, tạo 4 options
-- [ ] **C++.6** Viết `listeningAnswer(id)` + `listeningNext()` — xử lý câu trả lời + SM-2 review
-- [ ] **C++.7** Viết `viewListening()` — UI với nút 🔊 Nghe lại, 4 option buttons, score bar
-- [ ] **C++.8** Cập nhật `render()` thêm `view==="listening"`
-- [ ] **C++.9** Cập nhật `viewLevel1()`: thêm nút [👂 Nghe] full-width vào part cards (Option B layout)
-- [ ] **C++.10** Thêm CSS cho listening view
+- [x] **C++.1** Xóa section "Trắc nghiệm" (label + 2 nút) khỏi `viewHome()`
+- [x] **C++.2** Thêm state variables cho Listening vào section 3
+- [x] **C++.3** Viết helper `blankWord(sentence, word)` — thay từ bằng `___`
+- [x] **C++.4** Viết `startListening(kind)` — build deck từ `level1_part_N`, shuffle, cap 20
+- [x] **C++.5** Viết `prepareListeningQuestion()` — chọn từ + 3 distractors cùng phần, tạo 4 options
+- [x] **C++.6** Viết `listeningAnswer(id)` + `listeningNext()` — xử lý câu trả lời + SM-2 review
+- [x] **C++.7** Viết `viewListening()` — UI với nút 🔊 Nghe lại, 4 option buttons, score bar
+- [x] **C++.8** Cập nhật `render()` thêm `view==="listening"`
+- [x] **C++.9** Cập nhật `viewLevel1()`: thêm nút [👂 Nghe] full-width vào part cards (Option B layout)
+- [x] **C++.10** Thêm CSS cho listening view
 
 ---
 
@@ -465,7 +466,7 @@ Màu xanh = đúng, màu đỏ = sai/yếu
 | B | Quick wins | Accessibility + PWA polish | ~1h | ✅ |
 | C | Tách data JSON | app.js còn 47KB, 20 file JSON | ~2h | ✅ |
 | C+ | UI 20 phần Level 1 | Màn hình phần học, progress từng phần | ~3h | ✅ |
-| C++ | Home cleanup + Listening | Bỏ quiz thừa, thêm chế độ nghe từ | ~2h | ⏳ Tiếp theo |
+| C++ | Home cleanup + Listening | Bỏ quiz thừa, thêm chế độ nghe từ | ~2h | ✅ |
 | D | Level 2/3 | Mở rộng lên 3000 từ | ~1h + data | ⏸️ Chờ data |
 | E | Statistics | Dashboard tiến độ học | ~4h | 🔜 |
 | F | Quiz nâng cao | Timer + quiz multi-level | ~3h | 🔜 |
