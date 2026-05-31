@@ -98,6 +98,8 @@ let progress      = Store.get("vocab_progress", {});
 let streak        = Store.get("vocab_streak", { count:0, lastDate:null });
 let daily         = Store.get("vocab_daily",  { date:todayStr(), count:0 });
 let partPositions = Store.get("vocab_part_pos", {});
+let dailyHistory  = Store.get("vocab_daily_history", {});  // { "YYYY-MM-DD": count }
+let bestStreak    = Store.get("vocab_best_streak", 0);
 let currentUser = null;
 let fsWriteTimer = null;
 
@@ -107,6 +109,8 @@ function saveAll(){
   Store.set("vocab_streak", streak);
   Store.set("vocab_daily", daily);
   Store.set("vocab_part_pos", partPositions);
+  Store.set("vocab_daily_history", dailyHistory);
+  Store.set("vocab_best_streak", bestStreak);
   if(currentUser){ clearTimeout(fsWriteTimer); fsWriteTimer = setTimeout(saveToFirestore, 2000); }
 }
 
@@ -114,7 +118,7 @@ async function saveToFirestore(){
   if(!currentUser || !db) return;
   try{
     await db.doc(`users/${currentUser.uid}`).set(
-      { settings, progress, streak, daily,
+      { settings, progress, streak, daily, dailyHistory, bestStreak,
         updatedAt: firebase.firestore.FieldValue.serverTimestamp() },
       { merge: true }
     );
@@ -135,14 +139,18 @@ async function loadFromFirestore(){
       }
       progress = merged;
     }
-    if(d.settings)  settings = Object.assign({...settings}, d.settings);
-    if(d.streak)    streak   = d.streak;
+    if(d.settings)     settings     = Object.assign({...settings}, d.settings);
+    if(d.streak)       streak       = d.streak;
     if(d.daily && d.daily.date === todayStr()) daily = d.daily;
+    if(d.dailyHistory) dailyHistory = Object.assign({...dailyHistory}, d.dailyHistory);
+    if(d.bestStreak != null) bestStreak = Math.max(bestStreak, d.bestStreak);
     setTheme(settings.theme);
-    Store.set("vocab_progress", progress);
-    Store.set("vocab_settings", settings);
-    Store.set("vocab_streak",   streak);
-    Store.set("vocab_daily",    daily);
+    Store.set("vocab_progress",      progress);
+    Store.set("vocab_settings",      settings);
+    Store.set("vocab_streak",        streak);
+    Store.set("vocab_daily",         daily);
+    Store.set("vocab_daily_history", dailyHistory);
+    Store.set("vocab_best_streak",   bestStreak);
   } catch(e){ /* offline or error — use localStorage data */ }
 }
 
@@ -244,12 +252,15 @@ function bumpDaily(){
   const t = todayStr();
   if(daily.date !== t){ daily = { date:t, count:0 }; }
   daily.count += 1;
+  // lịch sử ngày
+  dailyHistory[t] = (dailyHistory[t] || 0) + 1;
   // streak
   if(streak.lastDate !== t){
     const yest = new Date(Date.now()-86400000).toISOString().slice(0,10);
     streak.count = (streak.lastDate === yest) ? streak.count+1 : 1;
     streak.lastDate = t;
   }
+  if(streak.count > bestStreak) bestStreak = streak.count;
 }
 
 /* =================================================================
@@ -850,6 +861,7 @@ function render(){
   else if(view==="level1")     app.innerHTML = viewLevel1();
   else if(view==="listening")  app.innerHTML = viewListening();
   else if(view==="settings")app.innerHTML = viewSettings();
+  else if(view==="stats")   app.innerHTML = viewStats();
   // ép trình duyệt chạy lại animation
   void app.offsetWidth;
 }
@@ -911,6 +923,7 @@ function viewHome(){
   return `
   <div class="topbar">
     <h1><span class="brand-dot"></span> 3000 Từ Vựng</h1>
+    <button class="icon-btn" aria-label="Thống kê" onclick="go('stats')" title="Thống kê">📊</button>
     <button class="icon-btn" aria-label="Tìm kiếm" onclick="go('browse')" title="Tìm kiếm">🔍</button>
     <button class="icon-btn" aria-label="Cài đặt" onclick="go('settings')" title="Cài đặt">⚙️</button>
   </div>
@@ -952,6 +965,128 @@ function viewHome(){
     ${levelRow('🔁','Ôn từ chưa thuộc','Ưu tiên từ cần ôn lại',{count:0},'review',true)}
   </div>
   <div class="app-note" style="margin-top:22px">${currentUser?'☁️ Tiến độ đồng bộ qua tài khoản Google.':Store.available?'':'⚠️ Môi trường này không lưu được tiến độ lâu dài. Khi mở file trên điện thoại/máy tính thật, tiến độ sẽ được lưu tự động.'}</div>`;
+}
+
+/* ---------- MÀN HÌNH THỐNG KÊ ---------- */
+function viewStats(){
+  const s = stats();
+  const t = todayStr();
+
+  // --- Bar chart: 7 ngày gần nhất ---
+  const days7 = [];
+  for(let i=6; i>=0; i--){
+    const d = new Date(Date.now() - i*86400000);
+    const key = d.toISOString().slice(0,10);
+    const label = i===0 ? 'HN' : ['CN','T2','T3','T4','T5','T6','T7'][d.getDay()];
+    days7.push({ key, label, count: dailyHistory[key] || 0 });
+  }
+  const maxDay = Math.max(...days7.map(d=>d.count), 1);
+  const barChart = days7.map(d=>{
+    const h = Math.max(4, Math.round(d.count/maxDay*100));
+    const isToday = d.key === t;
+    return `<div class="bar-col">
+      <div class="bar-val">${d.count||''}</div>
+      <div class="bar-wrap"><div class="bar-fill${isToday?' bar-today':''}" style="height:${h}%"></div></div>
+      <div class="bar-lbl${isToday?' bar-lbl-today':''}">${d.label}</div>
+    </div>`;
+  }).join('');
+
+  // --- Heatmap: 30 ngày gần nhất ---
+  const cells30 = [];
+  for(let i=29; i>=0; i--){
+    const key = new Date(Date.now()-i*86400000).toISOString().slice(0,10);
+    const c = dailyHistory[key] || 0;
+    const lvl = c===0?0:c<10?1:c<20?2:3;
+    cells30.push(`<div class="hm-cell hm-${lvl}" title="${key}: ${c} từ"></div>`);
+  }
+  const heatmap = cells30.join('');
+
+  // --- Phân bố từ loại ---
+  const posGroups = { 'Danh từ':'noun', 'Động từ':'verb', 'Tính từ':'adj', 'Phó từ':'adv' };
+  const posRows = Object.entries(posGroups).map(([label, tag])=>{
+    const all   = WORDS.filter(w=>w.pos.toLowerCase().split(/[\s/,]+/).includes(tag));
+    const known = all.filter(w=>isKnown(w.id)).length;
+    const pct   = all.length ? Math.round(known/all.length*100) : 0;
+    return `<div class="pos-row">
+      <span class="pos-lbl">${label}</span>
+      <div class="pos-track"><div class="pos-fill" style="width:${pct}%"></div></div>
+      <span class="pos-count">${known}/${all.length}</span>
+    </div>`;
+  }).join('');
+
+  // --- Progress theo level ---
+  const lvlBar = (n, emoji)=>{
+    const words = WORDS.filter(w=>w.level===n);
+    if(!words.length) return `<div class="lvl-row"><span class="lvl-lbl">${emoji} Cấp ${n}</span><span class="lvl-count" style="color:var(--ink-soft)">Chưa có dữ liệu</span></div>`;
+    const k = words.filter(w=>isKnown(w.id)).length;
+    const pct = Math.round(k/words.length*100);
+    return `<div class="lvl-row">
+      <span class="lvl-lbl">${emoji} Cấp ${n}</span>
+      <div class="lvl-track"><div class="lvl-fill" style="width:${pct}%"></div></div>
+      <span class="lvl-count">${k}/${words.length}</span>
+    </div>`;
+  };
+
+  const todayCount = daily.date===t ? daily.count : 0;
+  const goalPct = Math.min(100, s.goal ? Math.round(todayCount/s.goal*100) : 0);
+
+  return `
+  <div class="topbar">
+    <button class="icon-btn" aria-label="Về trang chính" onclick="go('home')">‹</button>
+    <h1 style="font-size:1.15rem">Thống kê học tập</h1>
+  </div>
+
+  <div class="stats-cards">
+    <div class="stats-card">
+      <div class="sc-num">${s.known}</div>
+      <div class="sc-lbl">Đã thuộc</div>
+      <div class="sc-sub">/ ${s.total} từ</div>
+    </div>
+    <div class="stats-card">
+      <div class="sc-num">${s.streak}🔥</div>
+      <div class="sc-lbl">Streak</div>
+      <div class="sc-sub">ngày liên tục</div>
+    </div>
+    <div class="stats-card">
+      <div class="sc-num">${bestStreak}⭐</div>
+      <div class="sc-lbl">Best streak</div>
+      <div class="sc-sub">kỷ lục cá nhân</div>
+    </div>
+  </div>
+
+  <div class="stats-section">
+    <div class="stats-section-title">Mục tiêu hôm nay</div>
+    <div class="goal-meta">${todayCount} / ${s.goal} từ</div>
+    <div class="progress-track"><div class="progress-fill" style="width:${goalPct}%"></div></div>
+  </div>
+
+  <div class="stats-section">
+    <div class="stats-section-title">7 ngày gần nhất</div>
+    <div class="bar-chart">${barChart}</div>
+  </div>
+
+  <div class="stats-section">
+    <div class="stats-section-title">30 ngày gần nhất</div>
+    <div class="heatmap">${heatmap}</div>
+    <div class="hm-legend">
+      <span class="hm-cell hm-0"></span><span>0</span>
+      <span class="hm-cell hm-1"></span><span>1–9</span>
+      <span class="hm-cell hm-2"></span><span>10–19</span>
+      <span class="hm-cell hm-3"></span><span>20+</span>
+    </div>
+  </div>
+
+  <div class="stats-section">
+    <div class="stats-section-title">Phân bố từ loại</div>
+    ${posRows}
+  </div>
+
+  <div class="stats-section">
+    <div class="stats-section-title">Tiến độ theo cấp độ</div>
+    ${lvlBar(1,'🌱')}
+    ${lvlBar(2,'🌿')}
+    ${lvlBar(3,'🌳')}
+  </div>`;
 }
 
 /* ---------- MÀN HÌNH HỌC ---------- */

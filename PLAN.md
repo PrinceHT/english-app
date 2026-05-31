@@ -1,6 +1,6 @@
 # English Vocab App — Kế hoạch phát triển
 
-> Cập nhật: 2026-05-31 · A, B, C, C+, C++, C+++ hoàn thành — tiếp theo: D (chờ data) hoặc E (Statistics)
+> Cập nhật: 2026-05-31 · A, B, C, C+, C++, C+++, E hoàn thành — tiếp theo: D (chờ data) hoặc F (Quiz nâng cao)
 
 ## Context
 
@@ -70,6 +70,8 @@ Vanilla JS/CSS  →  Không framework, không bundler
 [C++] Listening     ✅ Xong
       ↓
 [C+++] Lưu vị trí   ✅ Xong
+      ↓
+[E] Statistics      ✅ Xong
       ↓
 [D] Level 2/3       ← Khi có đủ data (chờ content)
 [E] Statistics      ← Làm được ngay (data đã có)
@@ -410,13 +412,13 @@ users/{uid}/
     {date}:  { count, knownAt }   ← thêm mỗi ngày
 ```
 
-- [ ] **E.1** Thêm view `"stats"` vào state machine và navigation
-- [ ] **E.2** Lưu `dailyHistory` vào Firestore — ghi khi `bumpDaily()` được gọi
-- [ ] **E.3** Vẽ bar chart 7 ngày gần nhất — thuần CSS (bar = `height: X%`)
-- [ ] **E.4** Heatmap 30 ngày — grid 30 ô, màu theo số từ học (4 cấp độ màu)
-- [ ] **E.5** Stats cards: known/total, current streak, best streak, ngày học nhiều nhất
-- [ ] **E.6** Progress bar theo level (dựa vào levelCache đã load)
-- [ ] **E.7** Thêm icon "📊" vào topbar để truy cập nhanh
+- [x] **E.1** Thêm view `"stats"` vào state machine và navigation
+- [x] **E.2** Lưu `dailyHistory` + `bestStreak` vào localStorage + Firestore — ghi khi `bumpDaily()` được gọi
+- [x] **E.3** Vẽ bar chart 7 ngày gần nhất — thuần CSS (bar = `height: X%`)
+- [x] **E.4** Heatmap 30 ngày — grid 30 ô, màu theo số từ học (4 cấp độ màu)
+- [x] **E.5** Stats cards: known/total, current streak, best streak
+- [x] **E.6** Progress bar theo level + phân bố từ loại (noun/verb/adj/adv)
+- [x] **E.7** Thêm icon "📊" vào topbar để truy cập nhanh
 
 ---
 
@@ -511,7 +513,7 @@ Màu xanh = đúng, màu đỏ = sai/yếu
 | C++ | Home cleanup + Listening | Bỏ quiz thừa, thêm chế độ nghe từ | ~2h | ✅ |
 | C+++ | Lưu vị trí + Auto-mark | Tiếp tục đúng chỗ, xem = đã học | ~1h | ✅ |
 | D | Level 2/3 | Mở rộng lên 3000 từ | ~1h + data | ⏸️ Chờ data |
-| E | Statistics | Dashboard tiến độ học | ~4h | 🔜 |
+| E | Statistics | Dashboard tiến độ học | ~4h | ✅ |
 | F | Quiz nâng cao | Timer + quiz multi-level | ~3h | 🔜 |
 | G | Push notifications | Nhắc học hàng ngày | ~3h | 🔜 |
 | H | Phoneme feedback | Highlight từng âm sai | ~4h | 🔜 |
